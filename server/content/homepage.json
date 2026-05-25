@@ -1,161 +1,1284 @@
 {
   "meta": {
-    "siteName": "???",
-    "sectionLabel": "?????",
+    "siteName": "蛊真人",
+    "sectionLabel": "世界观档案",
     "adminNote": "local-content"
   },
   "nav": [
     {
-      "label": "??",
-      "href": "#overview"
+      "label": "首页",
+      "href": "/",
+      "route": "home"
     },
     {
-      "label": "???",
-      "href": "#timeline"
+      "label": "名场面",
+      "href": "/moments",
+      "route": "moments"
     },
     {
-      "label": "??",
-      "href": "#players"
+      "label": "时间线",
+      "href": "/timeline",
+      "route": "timeline"
     },
     {
-      "label": "??",
-      "href": "#systems"
+      "label": "棋局",
+      "href": "/players",
+      "route": "players"
+    },
+    {
+      "label": "体系",
+      "href": "/systems",
+      "route": "systems"
+    },
+    {
+      "label": "星图",
+      "href": "/atlas",
+      "route": "atlas"
     }
   ],
   "hero": {
-    "eyebrow": "Reverend Insanity Archive",
-    "title": "???",
-    "subtitle": "????????,??????????????????",
-    "primaryCta": "?????",
-    "secondaryCta": "????",
-    "chips": [
-      "???",
-      "???",
-      "????",
-      "????"
-    ]
+    "eyebrow": "",
+    "title": "",
+    "subtitle": "",
+    "primaryCta": "",
+    "secondaryCta": "",
+    "chips": []
   },
   "productRail": [
     {
-      "title": "?????",
-      "caption": "????",
-      "icon": "timeline",
-      "href": "#timeline"
-    },
-    {
-      "title": "????",
-      "caption": "?????",
-      "icon": "network",
-      "href": "#players"
-    },
-    {
-      "title": "????",
-      "caption": "????",
+      "title": "名场面",
+      "caption": "剧情记忆点",
       "icon": "spark",
-      "href": "#systems"
+      "href": "/moments"
     },
     {
-      "title": "????",
-      "caption": "????",
+      "title": "时间线",
+      "caption": "六段主线",
+      "icon": "timeline",
+      "href": "/timeline"
+    },
+    {
+      "title": "人物棋局",
+      "caption": "立场与代价",
+      "icon": "network",
+      "href": "/players"
+    },
+    {
+      "title": "蛊道体系",
+      "caption": "规则引擎",
+      "icon": "systems",
+      "href": "/systems"
+    },
+    {
+      "title": "众生星图",
+      "caption": "五域两天",
       "icon": "map",
-      "href": "#players"
-    },
-    {
-      "title": "????",
-      "caption": "?????",
-      "icon": "crown",
-      "href": "#timeline"
+      "href": "/atlas"
     }
   ],
   "overview": {
-    "kicker": "???????",
-    "title": "????????,???????????????????",
-    "paragraphs": [
-      "??????????????,????????????????????",
-      "??????????????????????,??????????????",
-      "??????,??????,????????????????????"
-    ]
+    "kicker": "",
+    "title": "",
+    "paragraphs": []
   },
+  "moments": [
+    {
+      "kicker": "青茅山",
+      "title": "重生不是赎罪，而是重新下注。",
+      "text": "春秋蝉把方源送回少年时代。族学、家族、亲情与规则都被重新摆上台面，青茅山不是新手村，而是方源价值观第一次完整亮相的试炼场。",
+      "slot": "青茅山旧局",
+      "accent": "#d4b56f"
+    },
+    {
+      "kicker": "三王山",
+      "title": "凡人阶段的资源赌局被推到极限。",
+      "text": "三王传承让方源、白凝冰、铁家、商家与各路蛊师同台争夺。定仙游的炼成，是凡人篇最锋利的收束：胆量、欺骗、时机和代价同时落子。",
+      "slot": "三王山炼定仙游",
+      "accent": "#b65b4b"
+    },
+    {
+      "kicker": "王庭真阳楼",
+      "title": "北原风雪里，巨阳意志亲自下场。",
+      "text": "狼王身份、王庭之争、八十八角真阳楼与巨阳仙尊的布置交织在一起。方源开始真正接触尊者级棋盘，也第一次看见时代遗产的重量。",
+      "slot": "王庭与真阳楼",
+      "accent": "#8fb8c2"
+    },
+    {
+      "kicker": "义天山",
+      "title": "影宗浮出水面，至尊仙胎成局。",
+      "text": "梦境、僵盟、影宗、天庭与南疆正道同时卷入。义天山大战不是单场大战，而是幽魂魔尊跨时代计划的一次总爆发。",
+      "slot": "义天山大战",
+      "accent": "#9b8bd3"
+    },
+    {
+      "kicker": "宿命大战",
+      "title": "宿命蛊毁灭，世界的叙事权被撕开。",
+      "text": "天庭守护秩序，红莲留下后手，方源逆流而上。宿命大战把个人求生推到历史尺度，也让“大时代”真正开始。",
+      "slot": "宿命蛊毁灭",
+      "accent": "#d15d61"
+    },
+    {
+      "kicker": "大时代",
+      "title": "尊者复苏，方源以大爱之名入局。",
+      "text": "巨阳、星宿、无极、幽魂等布局相继显影。方源不再只是被追杀的异数，而是能与尊者对弈、改写利益结构的棋手。",
+      "slot": "大爱仙尊",
+      "accent": "#8cc5a6"
+    }
+  ],
   "timeline": [
     {
-      "volume": "???",
-      "title": "?????",
-      "detail": "??????????????????????,??????????",
-      "stat": "199?"
+      "volume": "第一段",
+      "title": "青茅山启局",
+      "detail": "重生、族学、花酒遗藏、狼潮、白凝冰与二次重生，奠定方源的生存逻辑。",
+      "stat": "春秋蝉"
     },
     {
-      "volume": "???",
-      "title": "????",
-      "detail": "??????????????????,???????????????",
-      "stat": "206?"
+      "volume": "第二段",
+      "title": "南疆与三王山",
+      "detail": "商家城、力道修行、三王传承与定仙游，让凡人阶段的资源博弈抵达顶点。",
+      "stat": "定仙游"
     },
     {
-      "volume": "???",
-      "title": "??????",
-      "detail": "????????????????????????????????",
-      "stat": "244?"
+      "volume": "第三段",
+      "title": "北原与真阳楼",
+      "detail": "狐仙福地、狼王身份、王庭之争、八十八角真阳楼与巨阳意志逐步合流。",
+      "stat": "巨阳"
     },
     {
-      "volume": "???",
-      "title": "??????",
-      "detail": "?????????????????,?????????????",
-      "stat": "372?"
+      "volume": "第四段",
+      "title": "僵身与义天山",
+      "detail": "仙僵困局、智慧蛊、梦境初显、影宗抬头，最终在义天山引爆至尊仙胎局。",
+      "stat": "影宗"
     },
     {
-      "volume": "???",
-      "title": "????",
-      "detail": "??????????????????????????????",
-      "stat": "945?"
+      "volume": "第五段",
+      "title": "宿命大战",
+      "detail": "逆流河、红莲真传、龙公、天庭与宿命蛊毁灭，个人意志撞上世界秩序。",
+      "stat": "宿命蛊"
     },
     {
-      "volume": "???",
-      "title": "???",
-      "detail": "???????,???????????????????",
-      "stat": "368?"
+      "volume": "第六段",
+      "title": "尊者与大时代",
+      "detail": "宿命之后，尊者复苏，三尊对峙，方源以炼道成尊打开新的利益格局。",
+      "stat": "大爱"
     }
   ],
   "players": [
     {
-      "name": "??",
-      "role": "??",
-      "text": "????????,?????????????,????????????"
+      "name": "方源",
+      "role": "异数",
+      "text": "以永生为唯一终点，善用重生、伪装、交易和背叛，把自身意志压到规则之上。"
     },
     {
-      "name": "??",
-      "role": "??",
-      "text": "??????????????,??????????,?????????"
+      "name": "白凝冰",
+      "role": "镜像",
+      "text": "危险、聪明、好奇且不安分。她像方源早期路上的反光面，提醒读者“疯”也有不同方向。"
     },
     {
-      "name": "??",
-      "role": "??",
-      "text": "????????????,????????????????????"
+      "name": "黑楼兰",
+      "role": "盟友",
+      "text": "从北原权力结构中挣脱，背负仇恨与野心，既能合作也会计算，是方源身边少见的强势变量。"
     },
     {
-      "name": "??",
-      "role": "??",
-      "text": "??????????????????????????,?????????"
+      "name": "影宗",
+      "role": "暗局",
+      "text": "幽魂魔尊留下的跨时代计划，推动义天山、至尊仙胎和后续多重身份错位。"
+    },
+    {
+      "name": "天庭",
+      "role": "秩序",
+      "text": "维护宿命与人族大势的古老组织，既是压迫性的制度机器，也是牺牲者的集合。"
+    },
+    {
+      "name": "红莲魔尊",
+      "role": "裂缝",
+      "text": "他把对宿命的反抗埋进历史深处，让后来者能在看似注定的世界里找到破口。"
+    },
+    {
+      "name": "巨阳仙尊",
+      "role": "血脉",
+      "text": "运道、血脉与北原秩序的象征。他的遗产让王庭真阳楼成为尊者棋盘的一角。"
+    },
+    {
+      "name": "星宿仙尊",
+      "role": "智道",
+      "text": "她代表天庭最深的谋划，也代表一种把自我献给集体秩序后的极端理性。"
     }
   ],
   "systems": [
     {
-      "name": "?",
-      "text": "???????,??????????????????"
+      "name": "蛊",
+      "label": "能力单位",
+      "text": "力量的最小单元，也是经济、身份、战斗与传承体系的核心资源。人炼蛊，蛊也反过来塑造人的路径。"
     },
     {
-      "name": "??",
-      "text": "??????????????????????????????"
+      "name": "道痕",
+      "label": "世界刻度",
+      "text": "道痕决定威能、冲突和增幅，是高阶战斗从招式对拼升级到规则对撞的基础。"
     },
     {
-      "name": "??",
-      "text": "??????????????,???????????????"
+      "name": "仙窍",
+      "label": "个人世界",
+      "text": "仙窍既是资源仓库，也是生态和战争后方。至尊仙窍让方源获得异常扩张性。"
     },
     {
-      "name": "??",
-      "text": "?????????,??????,????????????"
+      "name": "杀招",
+      "label": "组合语言",
+      "text": "蛊虫、道痕和思路组合成杀招。强大的不是单个零件，而是能否把体系写成自己的语法。"
+    },
+    {
+      "name": "梦境",
+      "label": "新时代入口",
+      "text": "梦境让境界、传承和历史记忆变得可争夺，也让旧时代强者的优势出现松动。"
+    },
+    {
+      "name": "宿命",
+      "label": "叙事枷锁",
+      "text": "宿命蛊不只是道具，而是世界叙事的锁。毁掉它，意味着世界进入更混乱也更自由的大时代。"
     }
   ],
+  "gallerySlots": [
+    {
+      "title": "青茅山旧局",
+      "caption": "少年、族学、狼潮、第一次重生"
+    },
+    {
+      "title": "三王山炼定仙游",
+      "caption": "传承、赌局、定仙游成蛊"
+    },
+    {
+      "title": "王庭与真阳楼",
+      "caption": "北原、狼王、巨阳意志"
+    },
+    {
+      "title": "义天山大战",
+      "caption": "影宗、梦境、至尊仙胎"
+    },
+    {
+      "title": "宿命大战",
+      "caption": "龙公、红莲、宿命蛊毁灭"
+    },
+    {
+      "title": "大爱仙尊",
+      "caption": "炼道成尊、尊者对峙、大时代"
+    }
+  ],
+  "atlas": {
+    "title": "众生星图",
+    "subtitle": "按五域两天整理人物档案，并用星图展示角色牵连。人物库会继续扩充到完整名录。",
+    "regions": [
+      {
+        "id": "southern",
+        "name": "南疆",
+        "color": "#b65b4b"
+      },
+      {
+        "id": "central",
+        "name": "中洲",
+        "color": "#d4b56f"
+      },
+      {
+        "id": "northern",
+        "name": "北原",
+        "color": "#8fb8c2"
+      },
+      {
+        "id": "eastern",
+        "name": "东海",
+        "color": "#8cc5a6"
+      },
+      {
+        "id": "western",
+        "name": "西漠",
+        "color": "#c89a6b"
+      },
+      {
+        "id": "white",
+        "name": "太古白天",
+        "color": "#d9d6c7"
+      },
+      {
+        "id": "black",
+        "name": "太古黑天",
+        "color": "#9b8bd3"
+      },
+      {
+        "id": "unverified",
+        "name": "待考",
+        "color": "#aaa398"
+      }
+    ],
+    "characters": [
+      {
+        "id": "fang-yuan",
+        "name": "方源",
+        "region": "southern",
+        "faction": "大爱盟 / 琅琊派 / 影宗残局",
+        "role": "主角，炼道尊者",
+        "intro": "天外之魔，五百年重生者，以永生为终点，后成炼道尊者。",
+        "gu": [
+          "春秋蝉",
+          "定仙游",
+          "态度蛊",
+          "智慧蛊",
+          "变形仙蛊",
+          "我力仙蛊"
+        ],
+        "moves": [
+          "万我",
+          "见面曾相识",
+          "逆流护身印",
+          "上古剑蛟变",
+          "大盗鬼手",
+          "万蛟"
+        ],
+        "houses": [
+          "万年斗飞车",
+          "安土重山堡",
+          "龙宫"
+        ],
+        "relations": [
+          {
+            "target": "fang-zheng",
+            "type": "血亲与对照"
+          },
+          {
+            "target": "bai-ning-bing",
+            "type": "互相利用"
+          },
+          {
+            "target": "hei-lou-lan",
+            "type": "盟友与交易"
+          },
+          {
+            "target": "ying-wu-xie",
+            "type": "影宗纠缠"
+          },
+          {
+            "target": "duke-long",
+            "type": "宿命大战敌手"
+          }
+        ]
+      },
+      {
+        "id": "fang-zheng",
+        "name": "方正",
+        "region": "southern",
+        "faction": "古月山寨 / 中洲仙鹤门 / 天庭",
+        "role": "方源胞弟",
+        "intro": "方源的血亲与命运对照，后被中洲势力培养，卷入天庭与方源的长期对立。",
+        "gu": [
+          "血道蛊虫",
+          "奴道蛊虫"
+        ],
+        "moves": [
+          "血道手段",
+          "仙鹤门传承手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "兄弟"
+          },
+          {
+            "target": "duke-long",
+            "type": "天庭阵营"
+          }
+        ]
+      },
+      {
+        "id": "bai-ning-bing",
+        "name": "白凝冰",
+        "region": "southern",
+        "faction": "白家 / 影宗合作线",
+        "role": "北冥冰魄体",
+        "intro": "早期最重要的同行者之一，危险、好奇、冷酷，与方源长期互相利用。",
+        "gu": [
+          "阳蛊",
+          "阴阳转身相关蛊虫",
+          "冰雪道蛊虫"
+        ],
+        "moves": [
+          "冰道杀招",
+          "白相真传手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "同路与背刺"
+          },
+          {
+            "target": "hei-lou-lan",
+            "type": "阶段性合作"
+          }
+        ]
+      },
+      {
+        "id": "shang-xin-ci",
+        "name": "商心慈",
+        "region": "southern",
+        "faction": "商家",
+        "role": "商家少主",
+        "intro": "方源南疆时期的重要人物，性情温和，后来掌握商家权力。",
+        "gu": [
+          "商道蛊虫"
+        ],
+        "moves": [
+          "商家经营手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "旧识"
+          },
+          {
+            "target": "shang-yan-fei",
+            "type": "父女"
+          }
+        ]
+      },
+      {
+        "id": "shang-yan-fei",
+        "name": "商燕飞",
+        "region": "southern",
+        "faction": "商家",
+        "role": "商家族长",
+        "intro": "南疆商家城的掌权者，精于权衡与经营。",
+        "gu": [
+          "血道蛊虫",
+          "商家传承蛊虫"
+        ],
+        "moves": [
+          "商家杀招"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "shang-xin-ci",
+            "type": "父女"
+          }
+        ]
+      },
+      {
+        "id": "tie-ruo-nan",
+        "name": "铁若男",
+        "region": "southern",
+        "faction": "铁家",
+        "role": "铁家蛊师",
+        "intro": "坚持正道秩序的铁家人物，与方源早期路线形成冲突。",
+        "gu": [
+          "铁家侦查蛊虫",
+          "律道蛊虫"
+        ],
+        "moves": [
+          "铁家侦查手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "追查与对立"
+          },
+          {
+            "target": "tie-xue-leng",
+            "type": "父女"
+          }
+        ]
+      },
+      {
+        "id": "tie-xue-leng",
+        "name": "铁血冷",
+        "region": "southern",
+        "faction": "铁家",
+        "role": "神捕",
+        "intro": "铁家神捕，早期正道秩序的代表人物。",
+        "gu": [
+          "侦查蛊虫",
+          "铁家蛊虫"
+        ],
+        "moves": [
+          "神捕追查手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "tie-ruo-nan",
+            "type": "父女"
+          }
+        ]
+      },
+      {
+        "id": "wu-yong",
+        "name": "武庸",
+        "region": "southern",
+        "faction": "武家",
+        "role": "武家太上大长老",
+        "intro": "南疆枭雄式人物，重振武家，送友风名场面代表其气魄。",
+        "gu": [
+          "风道仙蛊",
+          "武家传承仙蛊"
+        ],
+        "moves": [
+          "送友风",
+          "风道杀招"
+        ],
+        "houses": [
+          "玉清滴风小竹楼"
+        ],
+        "relations": [
+          {
+            "target": "wu-du-xiu",
+            "type": "母子"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "对手与交易"
+          }
+        ]
+      },
+      {
+        "id": "wu-du-xiu",
+        "name": "武独秀",
+        "region": "southern",
+        "faction": "武家",
+        "role": "武家前任支柱",
+        "intro": "南疆武家老一代强者，武庸之母。",
+        "gu": [
+          "武家仙蛊"
+        ],
+        "moves": [
+          "武家传承杀招"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "wu-yong",
+            "type": "母子"
+          }
+        ]
+      },
+      {
+        "id": "lu-wei-yin",
+        "name": "陆畏因",
+        "region": "southern",
+        "faction": "乐土传人",
+        "role": "乐土传承关键人物",
+        "intro": "继承乐土仙尊理念，参与后期尊者棋局。",
+        "gu": [
+          "土道仙蛊",
+          "乐土传承蛊虫"
+        ],
+        "moves": [
+          "三世梦境",
+          "乐土手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "合作与布局"
+          },
+          {
+            "target": "paradise-earth",
+            "type": "传承"
+          }
+        ]
+      },
+      {
+        "id": "feng-jiu-ge",
+        "name": "凤九歌",
+        "region": "central",
+        "faction": "灵缘斋 / 中洲正道",
+        "role": "音道传奇",
+        "intro": "中洲传奇蛊仙，才情极高，命运歌影响宿命大战。",
+        "gu": [
+          "音道仙蛊",
+          "命甲仙蛊"
+        ],
+        "moves": [
+          "天地歌",
+          "命运歌",
+          "俯首歌"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "feng-jin-huang",
+            "type": "父女"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "敌手与变量"
+          }
+        ]
+      },
+      {
+        "id": "feng-jin-huang",
+        "name": "凤金煌",
+        "region": "central",
+        "faction": "灵缘斋",
+        "role": "梦翼仙蛊之主",
+        "intro": "大梦仙尊候选式人物，梦道天赋极高。",
+        "gu": [
+          "梦翼仙蛊"
+        ],
+        "moves": [
+          "梦道手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "feng-jiu-ge",
+            "type": "父女"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "梦道竞争"
+          }
+        ]
+      },
+      {
+        "id": "zhao-lian-yun",
+        "name": "赵怜云",
+        "region": "central",
+        "faction": "灵缘斋",
+        "role": "天外之魔",
+        "intro": "来自异世，因马鸿运卷入中洲与北原大局。",
+        "gu": [
+          "爱情蛊"
+        ],
+        "moves": [
+          "爱情蛊相关手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "ma-hong-yun",
+            "type": "恋人"
+          },
+          {
+            "target": "feng-jin-huang",
+            "type": "同门竞争"
+          }
+        ]
+      },
+      {
+        "id": "duke-long",
+        "name": "龙公",
+        "region": "central",
+        "faction": "天庭",
+        "role": "天庭支柱",
+        "intro": "天庭宿命大战核心战力，龙人之祖，代表天庭意志。",
+        "gu": [
+          "气道仙蛊",
+          "变化道仙蛊"
+        ],
+        "moves": [
+          "三气归来",
+          "龙御上宾",
+          "气道杀招"
+        ],
+        "houses": [
+          "监天塔"
+        ],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "死敌"
+          },
+          {
+            "target": "red-lotus",
+            "type": "师徒"
+          },
+          {
+            "target": "zi-wei",
+            "type": "同阵营"
+          }
+        ]
+      },
+      {
+        "id": "zi-wei",
+        "name": "紫薇仙子",
+        "region": "central",
+        "faction": "天庭",
+        "role": "智道大能",
+        "intro": "天庭智道代表人物，长期推演方源和影宗。",
+        "gu": [
+          "智道仙蛊",
+          "星道仙蛊"
+        ],
+        "moves": [
+          "智道推算",
+          "星道手段"
+        ],
+        "houses": [
+          "星宿棋盘"
+        ],
+        "relations": [
+          {
+            "target": "duke-long",
+            "type": "同阵营"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "追杀与推演"
+          },
+          {
+            "target": "spectral-soul",
+            "type": "后期牵连"
+          }
+        ]
+      },
+      {
+        "id": "star-constellation",
+        "name": "星宿仙尊",
+        "region": "central",
+        "faction": "天庭",
+        "role": "智道尊者",
+        "intro": "天庭最深层布局者之一，智道影响横跨时代。",
+        "gu": [
+          "智道仙蛊",
+          "星道仙蛊"
+        ],
+        "moves": [
+          "星宿棋盘推演",
+          "智道尊者手段"
+        ],
+        "houses": [
+          "星宿棋盘"
+        ],
+        "relations": [
+          {
+            "target": "duke-long",
+            "type": "天庭传承"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "尊者对弈"
+          },
+          {
+            "target": "giant-sun",
+            "type": "三尊对峙"
+          }
+        ]
+      },
+      {
+        "id": "ma-hong-yun",
+        "name": "马鸿运",
+        "region": "northern",
+        "faction": "北原散修 / 巨阳运道棋子",
+        "role": "鸿运齐天",
+        "intro": "运道宠儿，北原篇重要变量。",
+        "gu": [
+          "鸿运齐天蛊"
+        ],
+        "moves": [
+          "运道庇护"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "zhao-lian-yun",
+            "type": "恋人"
+          },
+          {
+            "target": "giant-sun",
+            "type": "运道牵连"
+          }
+        ]
+      },
+      {
+        "id": "hei-lou-lan",
+        "name": "黑楼兰",
+        "region": "northern",
+        "faction": "黑家 / 黎山仙子一系",
+        "role": "大力真武体",
+        "intro": "北原重要盟友，强势、隐忍，背负复仇目标。",
+        "gu": [
+          "力道仙蛊",
+          "气力相关蛊虫"
+        ],
+        "moves": [
+          "力道杀招",
+          "炎道手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "盟约与交易"
+          },
+          {
+            "target": "hei-cheng",
+            "type": "父女仇怨"
+          },
+          {
+            "target": "li-shan",
+            "type": "亲族同盟"
+          }
+        ]
+      },
+      {
+        "id": "hei-cheng",
+        "name": "黑城",
+        "region": "northern",
+        "faction": "黑家",
+        "role": "黑家蛊仙",
+        "intro": "黑楼兰之父，北原黑家权力斗争中的关键人物。",
+        "gu": [
+          "暗道仙蛊"
+        ],
+        "moves": [
+          "暗箭杀招"
+        ],
+        "houses": [
+          "黑牢"
+        ],
+        "relations": [
+          {
+            "target": "hei-lou-lan",
+            "type": "父女仇怨"
+          }
+        ]
+      },
+      {
+        "id": "li-shan",
+        "name": "黎山仙子",
+        "region": "northern",
+        "faction": "北原散修",
+        "role": "信道蛊仙",
+        "intro": "黑楼兰的重要支撑，擅长盟约与信道。",
+        "gu": [
+          "信道仙蛊"
+        ],
+        "moves": [
+          "山盟誓约"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "hei-lou-lan",
+            "type": "亲族同盟"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "盟约交易"
+          }
+        ]
+      },
+      {
+        "id": "tai-bai-yun-sheng",
+        "name": "太白云生",
+        "region": "northern",
+        "faction": "北原散修 / 方源同行者",
+        "role": "宙道治疗蛊仙",
+        "intro": "北原篇重要同行者，性情仁厚，与方源长期同行。",
+        "gu": [
+          "人如故",
+          "江山如故"
+        ],
+        "moves": [
+          "宙道治疗手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "同行与信任"
+          }
+        ]
+      },
+      {
+        "id": "chu-du",
+        "name": "楚度",
+        "region": "northern",
+        "faction": "楚门",
+        "role": "霸仙",
+        "intro": "北原力道强者，开创楚门，重视力道传承。",
+        "gu": [
+          "力道仙蛊"
+        ],
+        "moves": [
+          "力道杀招"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "交易合作"
+          }
+        ]
+      },
+      {
+        "id": "giant-sun",
+        "name": "巨阳仙尊",
+        "region": "northern",
+        "faction": "长生天",
+        "role": "运道尊者",
+        "intro": "北原尊者，血脉、运道和长生天秩序的源头。",
+        "gu": [
+          "运道仙蛊",
+          "血道相关积累"
+        ],
+        "moves": [
+          "运道尊者手段"
+        ],
+        "houses": [
+          "劫运坛"
+        ],
+        "relations": [
+          {
+            "target": "ma-hong-yun",
+            "type": "运道棋子"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "尊者对弈"
+          },
+          {
+            "target": "star-constellation",
+            "type": "三尊对峙"
+          }
+        ]
+      },
+      {
+        "id": "qi-sea",
+        "name": "气海老祖",
+        "region": "eastern",
+        "faction": "东海正气盟",
+        "role": "方源气道分身",
+        "intro": "方源分身之一，以气道强者身份活动于东海。",
+        "gu": [
+          "气道仙蛊"
+        ],
+        "moves": [
+          "气海无量",
+          "气道杀招"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "分身"
+          }
+        ]
+      },
+      {
+        "id": "wu-shuai",
+        "name": "吴帅",
+        "region": "eastern",
+        "faction": "龙人一脉 / 方源分身",
+        "role": "龙人分身",
+        "intro": "龙人身份与龙宫牵连极深，后为方源重要分身。",
+        "gu": [
+          "奴道仙蛊",
+          "龙人传承蛊虫"
+        ],
+        "moves": [
+          "奴道杀招",
+          "龙人手段"
+        ],
+        "houses": [
+          "龙宫"
+        ],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "分身"
+          },
+          {
+            "target": "duke-long",
+            "type": "龙人因果"
+          }
+        ]
+      },
+      {
+        "id": "song-yi-shi",
+        "name": "宋亦诗",
+        "region": "eastern",
+        "faction": "宋家",
+        "role": "东海宋家蛊仙",
+        "intro": "东海宋家人物，与方源早期东海行动有交集。",
+        "gu": [
+          "水道蛊虫"
+        ],
+        "moves": [
+          "宋家水道手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "东海旧事"
+          }
+        ]
+      },
+      {
+        "id": "shen-cong-sheng",
+        "name": "沈从声",
+        "region": "eastern",
+        "faction": "沈家",
+        "role": "东海强者",
+        "intro": "东海正道代表之一，参与龙宫和东海局势。",
+        "gu": [
+          "音道仙蛊"
+        ],
+        "moves": [
+          "音道杀招"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "qi-sea",
+            "type": "东海阵营"
+          }
+        ]
+      },
+      {
+        "id": "fang-gong",
+        "name": "房功",
+        "region": "western",
+        "faction": "房家",
+        "role": "西漠房家太上大长老",
+        "intro": "西漠房家支柱，参与豆神宫相关大局。",
+        "gu": [
+          "土道仙蛊",
+          "房家仙蛊"
+        ],
+        "moves": [
+          "房家土道手段"
+        ],
+        "houses": [
+          "豆神宫",
+          "问津坞"
+        ],
+        "relations": [
+          {
+            "target": "fang-di-chang",
+            "type": "同族"
+          }
+        ]
+      },
+      {
+        "id": "fang-di-chang",
+        "name": "房睇长",
+        "region": "western",
+        "faction": "房家",
+        "role": "智道蛊仙",
+        "intro": "房家智道核心，与豆神宫和西漠局势深度相关。",
+        "gu": [
+          "智道仙蛊"
+        ],
+        "moves": [
+          "智道推算"
+        ],
+        "houses": [
+          "豆神宫"
+        ],
+        "relations": [
+          {
+            "target": "fang-gong",
+            "type": "同族"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "算计与争夺"
+          }
+        ]
+      },
+      {
+        "id": "thousand-transformations",
+        "name": "千变老祖",
+        "region": "western",
+        "faction": "西漠散修",
+        "role": "变化道大能",
+        "intro": "西漠八转变化道强者，拥有狂蛮真传牵连。",
+        "gu": [
+          "变化道仙蛊"
+        ],
+        "moves": [
+          "万像宫",
+          "变化道杀招"
+        ],
+        "houses": [
+          "万像宫"
+        ],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "真传争夺"
+          }
+        ]
+      },
+      {
+        "id": "hua-wen",
+        "name": "华文洞主",
+        "region": "white",
+        "faction": "两天洞天",
+        "role": "洞天之主",
+        "intro": "太古白天洞天势力代表，后卷入方源与两天大局。",
+        "gu": [
+          "信道仙蛊"
+        ],
+        "moves": [
+          "洞天经营手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "fang-yuan",
+            "type": "两天大局"
+          }
+        ]
+      },
+      {
+        "id": "qi-jue",
+        "name": "气绝魔仙",
+        "region": "unverified",
+        "faction": "复苏魔仙",
+        "role": "气道强者",
+        "intro": "因时代变局复苏的气道强者，与气道传承和尊者棋局有关。",
+        "gu": [
+          "气道仙蛊"
+        ],
+        "moves": [
+          "兮地气道手段",
+          "气道杀招"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "qi-sea",
+            "type": "气道对照"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "冲突与交易"
+          }
+        ]
+      },
+      {
+        "id": "spectral-soul",
+        "name": "幽魂魔尊",
+        "region": "southern",
+        "faction": "影宗",
+        "role": "魂道尊者",
+        "intro": "影宗源头，至尊仙胎局的幕后存在，魂道杀伐登峰造极。",
+        "gu": [
+          "魂道仙蛊",
+          "食道积累"
+        ],
+        "moves": [
+          "魂道尊者手段",
+          "杀戮相关手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "ying-wu-xie",
+            "type": "分魂牵连"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "夺胎与追杀"
+          },
+          {
+            "target": "zi-wei",
+            "type": "后期控制"
+          }
+        ]
+      },
+      {
+        "id": "ying-wu-xie",
+        "name": "影无邪",
+        "region": "southern",
+        "faction": "影宗",
+        "role": "幽魂分魂",
+        "intro": "影宗关键人物，义天山后与方源身份和魂魄牵连极深。",
+        "gu": [
+          "梦道蛊虫",
+          "魂道蛊虫"
+        ],
+        "moves": [
+          "引魂入梦"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "spectral-soul",
+            "type": "分魂"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "身份错位"
+          },
+          {
+            "target": "bai-ning-bing",
+            "type": "影宗同路"
+          }
+        ]
+      },
+      {
+        "id": "red-lotus",
+        "name": "红莲魔尊",
+        "region": "central",
+        "faction": "红莲真传",
+        "role": "宙道尊者",
+        "intro": "反抗宿命的核心尊者，留下多重真传影响宿命大战。",
+        "gu": [
+          "春秋蝉",
+          "悔蛊",
+          "宙道仙蛊"
+        ],
+        "moves": [
+          "宙道尊者手段",
+          "红莲真传布置"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "duke-long",
+            "type": "师徒"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "真传受益者"
+          }
+        ]
+      },
+      {
+        "id": "paradise-earth",
+        "name": "乐土仙尊",
+        "region": "southern",
+        "faction": "乐土传承",
+        "role": "土道尊者",
+        "intro": "主张救赎和调和的尊者，后期布局与方源大局相连。",
+        "gu": [
+          "土道仙蛊",
+          "乐土传承仙蛊"
+        ],
+        "moves": [
+          "乐土尊者手段"
+        ],
+        "houses": [],
+        "relations": [
+          {
+            "target": "lu-wei-yin",
+            "type": "传承"
+          },
+          {
+            "target": "fang-yuan",
+            "type": "后手布局"
+          }
+        ]
+      }
+    ]
+  },
   "closing": {
-    "title": "????,?????",
-    "text": "????,????????????????;???????,?????????????"
+    "title": "",
+    "text": ""
   }
 }
