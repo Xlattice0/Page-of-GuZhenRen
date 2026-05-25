@@ -76,7 +76,7 @@ REGION_BY_NAME = {
     "宋亦诗": "eastern",
     "沈从声": "eastern",
     "气绝魔仙": "white",
-    "华文洞主": "white",
+    "华语老仙": "white",
     "房功": "western",
     "房睇长": "western",
     "千变老祖": "western",
@@ -137,7 +137,7 @@ REGION_BY_NAME.update({
     "青仇": "western", "韩立": "western", "萧家老祖": "western",
     "冰晶仙王": "black", "萧荷尖": "black", "寒灰仙姑": "black",
     "夜天狼君": "black",
-    "火原洞主": "white", "骷髅姥姥": "white", "华文洞主": "white",
+    "火原洞主": "white", "骷髅姥姥": "white", "华语老仙": "white",
     "气绝魔仙": "unverified", "人祖": "unverified", "大梦仙尊": "unverified",
 })
 
@@ -338,7 +338,7 @@ KNOWN_PEOPLE = {
     "萧荷尖",
     "夜天狼君",
     "骷髅姥姥",
-    "华文洞主",
+    "华语老仙",
     "彩石仙妃",
     "黄金仙王",
     "气绝魔仙",
@@ -912,7 +912,7 @@ def make_js_string(value: str) -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
-def write_generated_js(characters: list[dict], manual_names: set[str]) -> None:
+def write_generated_js(characters: list[dict], manual_names: set[str], chapter_count: int) -> None:
     supplemental = [item for item in characters if item["name"] not in manual_names]
     lines = [
         "export const generatedAtlasCharacters = [",
@@ -944,6 +944,32 @@ def write_generated_js(characters: list[dict], manual_names: set[str]) -> None:
             ]
         )
     lines.append("];")
+    lines.append("")
+    lines.extend(
+        [
+            "export const atlasSourceSummary = {",
+            '  title: "《蛊真人》EPUB 全文检索",',
+            f"  chapterCount: {chapter_count},",
+            f"  confirmedCount: {len(characters)},",
+            "};",
+            "",
+            "export const characterEvidenceByName = {",
+        ]
+    )
+    for item in characters:
+        lines.extend(
+            [
+                f"  {make_js_string(item['name'])}: {{",
+                f"    firstChapter: {json.dumps(item.get('firstChapter'), ensure_ascii=False)},",
+                f"    lastChapter: {json.dumps(item.get('lastChapter'), ensure_ascii=False)},",
+                f"    count: {item['count']},",
+                f"    chapters: {item.get('chapters', 0)},",
+                f"    regionLabel: {make_js_string(REGION_LABELS.get(item['region'], '待考'))},",
+                '    status: "原著检索已确认",',
+                "  },",
+            ]
+        )
+    lines.append("};")
     lines.append("")
     GENERATED_JS.write_text("\n".join(lines), encoding="utf-8")
 
@@ -1085,7 +1111,7 @@ def main() -> None:
         md_lines.append(f"{index}. {row['name']}｜{row['regionLabel']}｜首次第 {row['firstChapter']} 章｜分数 {row['score']}")
     REVIEW_MD.write_text("\n".join(md_lines) + "\n", encoding="utf-8")
 
-    write_generated_js(cleaned, manual_names)
+    write_generated_js(cleaned, manual_names, raw["chapterCount"])
 
     print(
         json.dumps(

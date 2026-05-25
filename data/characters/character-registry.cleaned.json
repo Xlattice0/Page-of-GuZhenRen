@@ -3,7 +3,7 @@
   "chapterCount": 2342,
   "inputCandidates": 86629,
   "rejectedAsNoise": 30550,
-  "confirmedCount": 227,
+  "confirmedCount": 228,
   "reviewCount": 1795,
   "characters": [
     {
@@ -38476,6 +38476,52 @@
           "chapter": 39,
           "pattern": "possessive",
           "context": "小。打破其中的规矩惯例，别人也会看不起我们漠家的。”漠颜几次张口欲言，但在古月漠尘的目光注视下，她最终还是低下了头，回答：“是，爷爷。孙女明白了。”她垂首"
+        }
+      ],
+      "personContext": 0
+    },
+    {
+      "name": "华语老仙",
+      "level": "confirmed",
+      "score": 133.66,
+      "count": 8,
+      "chapters": 7,
+      "firstChapter": 2030,
+      "lastChapter": 2305,
+      "region": "white",
+      "regionLabel": "太古白天",
+      "evidence": {
+        "surname": 7,
+        "speech": 1
+      },
+      "aliases": {
+        "华语老仙": 8
+      },
+      "contexts": [
+        {
+          "chapter": 2030,
+          "pattern": "surname",
+          "context": "，气得满来通红，怒吼声响彻天地。龙宫中吴帅哈哈大笑，随后笑声蓦地一止：“华语老仙，你不知进退，不识好歹！本盟主三番五次去信招揽你，你居然屡屡推托，不把本"
+        },
+        {
+          "chapter": 2031,
+          "pattern": "surname",
+          "context": "话，他也会犹豫不决。两天联盟的蛊仙们不断肆虐。烽烟四起，一片生灵涂炭。“华语老仙，你还有什么底牌快施展出来吧，再不用的话，可就救不了你这洞天了。哈哈哈。"
+        },
+        {
+          "chapter": 2129,
+          "pattern": "surname",
+          "context": "毁了！！”恐怖的蚁灾，在一瞬间横扫正气盟的诸多蛊仙。两天的洞天是重灾区，华语老仙、骷髅姥姥、火原洞主等人是最主要的受害者。除此之外，就是宋家、若来家、蔡"
+        },
+        {
+          "chapter": 2250,
+          "pattern": "surname",
+          "context": "，他们的基业都是在两天中，因此被东海超级势力隐隐排斥。本来这也没有什么。华语老仙、骷髅姥姥等人只需要紧抱住气海老祖的大腿就可以了。但现在，气海老祖身份曝"
+        },
+        {
+          "chapter": 2250,
+          "pattern": "surname",
+          "context": "份曝光，竟然是他们最大仇敌方源的分身。原来一直抱着的大腿，是方源的大腿！华语老仙、骷髅姥姥们难免懵了。而两天剧变，又让他们一直疲于应付。就在这个时候，方"
         }
       ],
       "personContext": 0

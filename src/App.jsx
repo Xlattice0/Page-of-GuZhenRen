@@ -1,8 +1,10 @@
 import {
+  ArrowLeft,
   BookOpen,
   Boxes,
   CircleDot,
   Crown,
+  ExternalLink,
   GitBranch,
   Home,
   ImagePlus,
@@ -16,12 +18,12 @@ import {
   Sparkles,
   Trash2,
   Waves,
-  X,
 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { fallbackContent } from "./fallbackContent.js";
+import { atlasSourceSummary, characterEvidenceByName } from "./generatedAtlasCharacters.js";
 
 const iconMap = {
   timeline: GitBranch,
@@ -36,6 +38,127 @@ const iconMap = {
 
 const accents = ["#d4b56f", "#b65b4b", "#8fb8c2", "#9b8bd3", "#d15d61", "#8cc5a6"];
 const STAR_NODE_LIMIT = 300;
+const externalCharacterSources = {
+  方源: [
+    {
+      label: "百度百科：古月方源",
+      href: "https://baike.baidu.com/item/%E5%8F%A4%E6%9C%88%E6%96%B9%E6%BA%90?fromModule=lemma_search-box",
+      type: "人物外部词条",
+    },
+  ],
+  方正: [
+    {
+      label: "百度百科：古月方正",
+      href: "https://baike.baidu.com/item/%E5%8F%A4%E6%9C%88%E6%96%B9%E6%AD%A3/19812746",
+      type: "人物外部词条",
+    },
+  ],
+};
+const verifiedImmortalGuProfiles = {
+  方源: {
+    groups: [
+      {
+        path: "智道",
+        items: [
+          { name: "智慧蛊", rank: "九转", note: "未炼化" },
+          { name: "态度蛊", rank: "八转" },
+          { name: "慧剑蛊", rank: "八转" },
+          { name: "解谜蛊", rank: "六转" },
+        ],
+      },
+      {
+        path: "剑道",
+        items: [
+          { name: "剑遁蛊", rank: "七转" },
+          { name: "浪剑蛊", rank: "七转" },
+          { name: "剑眉蛊", rank: "七转" },
+        ],
+      },
+      { path: "魂道", items: [{ name: "换魂蛊", rank: "七转" }] },
+      { path: "血道", items: [{ name: "血本蛊", rank: "六转" }] },
+      { path: "暗道", items: [{ name: "暗渡仙蛊", rank: "六转" }] },
+      { path: "运道", items: [{ name: "狗屎运仙蛊", rank: "六转" }] },
+    ],
+  },
+  方正: {
+    groups: [
+      {
+        path: "血道",
+        items: [{ name: "冷血仙蛊" }, { name: "血仇仙蛊" }],
+      },
+    ],
+  },
+};
+const immortalGuPaths = [
+  "天道",
+  "人道",
+  "炼道",
+  "木道",
+  "智道",
+  "梦道",
+  "宙道",
+  "变化道",
+  "律道",
+  "运道",
+  "力道",
+  "剑道",
+  "血道",
+  "魂道",
+  "信道",
+  "宇道",
+  "偷道",
+  "土道",
+  "食道",
+  "阵道",
+  "奴道",
+  "刀道",
+  "气道",
+  "水道",
+  "音道",
+  "雷道",
+  "金道",
+  "毒道",
+  "炎道",
+  "星道",
+  "暗道",
+  "骨道",
+  "冰雪道",
+  "风道",
+  "云道",
+  "光道",
+  "火道",
+  "虚道",
+  "幻道",
+  "画道",
+  "丹道",
+  "香道",
+];
+const immortalGuRanks = ["五转", "六转", "七转", "八转", "九转"];
+const verifiedKillerMoveProfiles = {
+  方源: {
+    immortal: [
+      "万我",
+      "解梦",
+      "见面曾相识",
+      "逆流护身印",
+      "上古剑蛟变",
+      "大盗鬼手",
+      "万蛟",
+      "换魂",
+      "鬼不觉",
+      "暗岐杀",
+      "剑痕索命",
+      "血漂流",
+      "血愈湖",
+      "舍命血印",
+    ],
+    mortal: [],
+  },
+  方正: {
+    immortal: ["血渐冷", "血亲心仇"],
+    mortal: [],
+  },
+};
 const atlasAmbiences = {
   southern: {
     clear: 0x030505,
@@ -82,8 +205,7 @@ const atlasAmbiences = {
   western: {
     clear: 0x090604,
     fog: 0x100a05,
-    framing: 1.26,
-    compactFraming: 1.48,
+    fitSparseScene: true,
     core: 0xb36f2d,
     orbit: [0x987046, 0x71503a],
     ribbon: [0xd5a152, 0xbd7143, 0x8c6b48],
@@ -94,6 +216,7 @@ const atlasAmbiences = {
   white: {
     clear: 0x090b0e,
     fog: 0x10151b,
+    fitSparseScene: true,
     core: 0xc5c5b0,
     orbit: [0xc4c6bb, 0x7ca1b2],
     ribbon: [0xf0ebd2, 0xaacbd6, 0xcfc5ad],
@@ -104,6 +227,7 @@ const atlasAmbiences = {
   black: {
     clear: 0x030308,
     fog: 0x080711,
+    fitSparseScene: true,
     core: 0x6350a0,
     orbit: [0x655394, 0x374c74],
     ribbon: [0x9f83e4, 0x4f8da7, 0xc06b99],
@@ -259,8 +383,23 @@ function curateAtlasCharacters(characters = []) {
       ...character,
       region: curatedAtlasRegions[character.name] || character.region,
       relations,
+      immortalGuProfile: verifiedImmortalGuProfiles[character.name],
+      killerMoveProfile: verifiedKillerMoveProfiles[character.name],
+      source: {
+        ...(characterEvidenceByName[character.name] || {}),
+        ...(character.source || {}),
+      },
     };
   });
+}
+
+function characterHref(characterId) {
+  return `/atlas/person/${encodeURIComponent(characterId)}`;
+}
+
+function getCharacterRouteId() {
+  const match = window.location.pathname.match(/^\/atlas\/person\/([^/]+)\/?$/);
+  return match ? decodeURIComponent(match[1]) : "";
 }
 
 function getRoute() {
@@ -270,6 +409,7 @@ function getRoute() {
   if (path === "/players") return "players";
   if (path === "/systems") return "systems";
   if (path === "/atlas") return "atlas";
+  if (path.startsWith("/atlas/person/")) return "character";
   if (path === "/admin") return "admin";
   return "home";
 }
@@ -1107,7 +1247,18 @@ function disposeObject(object) {
   });
 }
 
-function ThreeAtlasScene({ characters, regions, activeRegion, selectedId, onSelect }) {
+function resolveAtlasFraming(ambience, population, compactViewport) {
+  if (!ambience.fitSparseScene) {
+    return compactViewport ? ambience.compactFraming || ambience.framing || 1 : ambience.framing || 1;
+  }
+
+  const sparseRatio = THREE.MathUtils.clamp((14 - population) / 10, 0, 1);
+  return compactViewport
+    ? THREE.MathUtils.lerp(1.62, 2.2, sparseRatio)
+    : THREE.MathUtils.lerp(1.4, 1.96, sparseRatio);
+}
+
+function ThreeAtlasScene({ characters, regions, activeRegion, regionPopulation, selectedId, onSelect }) {
   const mountRef = useRef(null);
   const onSelectRef = useRef(onSelect);
   const sceneStateRef = useRef(null);
@@ -1129,9 +1280,7 @@ function ThreeAtlasScene({ characters, regions, activeRegion, selectedId, onSele
     scene.fog = new THREE.FogExp2(ambience.fog, 0.0045);
 
     const camera = new THREE.PerspectiveCamera(49, 1, 0.1, 1000);
-    const framing = window.innerWidth < 760
-      ? ambience.compactFraming || ambience.framing || 1
-      : ambience.framing || 1;
+    const framing = resolveAtlasFraming(ambience, regionPopulation, window.innerWidth < 760);
     camera.position.set(maxRadius * 0.92 * framing, maxRadius * 0.64 * framing, maxRadius * 1.28 * framing);
     camera.lookAt(0, 1, 0);
 
@@ -1239,11 +1388,18 @@ function ThreeAtlasScene({ characters, regions, activeRegion, selectedId, onSele
     const regionColor = new Map(regions.map((region) => [region.id, region.color || "#d4b56f"]));
     const nodeMap = new Map(nodes.map((node) => [node.id, node]));
     const nodeMeshes = [];
+    const pickMeshes = [];
     const nodeHalos = new Map();
     const baseLabels = new Map();
     const selectionGroup = new THREE.Group();
     root.add(selectionGroup);
     const sphereGeometry = new THREE.IcosahedronGeometry(0.7, 3);
+    const pickGeometry = new THREE.SphereGeometry(characters.length > 52 ? 1.28 : 1.52, 8, 8);
+    const pickMaterial = new THREE.MeshBasicMaterial({
+      transparent: true,
+      opacity: 0,
+      depthWrite: false,
+    });
     const labelScale = characters.length > 52 ? 3.12 : characters.length > 28 ? 3.35 : 3.62;
 
     nodes.forEach((node, index) => {
@@ -1284,6 +1440,12 @@ function ThreeAtlasScene({ characters, regions, activeRegion, selectedId, onSele
       root.add(mesh);
       nodeMeshes.push(mesh);
 
+      const pickMesh = new THREE.Mesh(pickGeometry, pickMaterial);
+      pickMesh.position.copy(node.position);
+      pickMesh.userData = { characterId: node.id, displayMesh: mesh };
+      root.add(pickMesh);
+      pickMeshes.push(pickMesh);
+
       const label = createTextSprite(node.name, "#e2c98a", labelScale);
       positionAtlasLabel(label, node, 2.18);
       root.add(label);
@@ -1317,13 +1479,15 @@ function ThreeAtlasScene({ characters, regions, activeRegion, selectedId, onSele
 
     const handlePointerMove = (event) => {
       updatePointer(event);
-      const hit = raycaster.intersectObjects(nodeMeshes, false)[0]?.object || null;
+      const hit = raycaster.intersectObjects(pickMeshes, false)[0]?.object || null;
       if (hoveredMesh && hoveredMesh !== hit && hoveredMesh.userData.characterId !== selectedRef.current) {
-        hoveredMesh.scale.setScalar(relatedIdsRef.current.has(hoveredMesh.userData.characterId) ? 1.55 : 1);
+        hoveredMesh.userData.displayMesh.scale.setScalar(
+          relatedIdsRef.current.has(hoveredMesh.userData.characterId) ? 1.55 : 1,
+        );
       }
       hoveredMesh = hit;
       renderer.domElement.style.cursor = hit ? "pointer" : "grab";
-      if (hit && hit.userData.characterId !== selectedRef.current) hit.scale.setScalar(1.7);
+      if (hit && hit.userData.characterId !== selectedRef.current) hit.userData.displayMesh.scale.setScalar(1.7);
     };
 
     const handlePointerDown = (event) => {
@@ -1337,7 +1501,7 @@ function ThreeAtlasScene({ characters, regions, activeRegion, selectedId, onSele
       pointerDown = null;
       if (moved > 8) return;
       updatePointer(event);
-      const hit = raycaster.intersectObjects(nodeMeshes, false)[0]?.object;
+      const hit = raycaster.intersectObjects(pickMeshes, false)[0]?.object;
       if (hit?.userData.characterId) onSelectRef.current(hit.userData.characterId);
     };
 
@@ -1409,7 +1573,7 @@ function ThreeAtlasScene({ characters, regions, activeRegion, selectedId, onSele
       renderer.dispose();
       renderer.domElement.remove();
     };
-  }, [characters, regions, activeRegion]);
+  }, [characters, regions, activeRegion, regionPopulation]);
 
   useEffect(() => {
     selectedRef.current = selectedId;
@@ -1483,51 +1647,13 @@ function ThreeAtlasScene({ characters, regions, activeRegion, selectedId, onSele
   return <div className="atlas-three-scene" ref={mountRef} aria-label="三维人物星图" />;
 }
 
-function CharacterDrawer({ character, characters, regions, onClose, onSelect }) {
-  if (!character) return null;
-  return (
-    <aside className="character-drawer" data-testid="character-drawer">
-      <button className="drawer-close" onClick={onClose} title="关闭" type="button">
-        <X size={19} />
-      </button>
-      <p>{regions.find((region) => region.id === character.region)?.name}</p>
-      <h2>{character.name}</h2>
-      <span>{character.role}</span>
-      <strong>{character.faction}</strong>
-      <em>{character.intro}</em>
-      <DetailList title="蛊虫" items={character.gu} />
-      <DetailList title="杀招" items={character.moves} />
-      <DetailList title="仙蛊屋" items={character.houses} />
-      <div className="relation-list">
-        <h3>牵连</h3>
-        {!character.relations?.length && <p>无已核实牵连</p>}
-        {(character.relations || []).map((relation) => {
-          const target = characters.find((item) => item.id === relation.target);
-          return (
-            <button
-              key={`${relation.target}-${relation.type}`}
-              onClick={() => target && onSelect(target)}
-              type="button"
-            >
-              <span>{target?.name || relation.target}</span>
-              {relation.type}
-            </button>
-          );
-        })}
-      </div>
-    </aside>
-  );
-}
-
 function AtlasPage({ content }) {
   const atlas = content.atlas || fallbackContent.atlas;
   const regions = atlas.regions || [];
   const characters = useMemo(() => curateAtlasCharacters(atlas.characters || []), [atlas.characters]);
   const [activeRegion, setActiveRegion] = useState(regions[0]?.id || "southern");
-  const [selectedId, setSelectedId] = useState("");
   const [query, setQuery] = useState("");
   const normalizedQuery = query.trim();
-  const selectedCharacter = characters.find((character) => character.id === selectedId);
   const activeRegionMeta = regions.find((region) => region.id === activeRegion);
 
   const regionCharacters = useMemo(
@@ -1541,19 +1667,7 @@ function AtlasPage({ content }) {
       return haystack.includes(normalizedQuery);
     });
   }, [normalizedQuery, regionCharacters, characters]);
-  const sceneCharacters = useMemo(() => {
-    const relatedCharacters = (selectedCharacter?.relations || []).flatMap((relation) => {
-      const target = characters.find((character) => character.id === relation.target);
-      return target && target.region !== activeRegion ? [target] : [];
-    });
-    return mergeById(regionCharacters, relatedCharacters).slice(0, STAR_NODE_LIMIT);
-  }, [activeRegion, characters, regionCharacters, selectedCharacter]);
-
-  const selectCharacter = (character) => {
-    setActiveRegion(character.region);
-    setSelectedId(character.id);
-    setQuery("");
-  };
+  const sceneCharacters = useMemo(() => regionCharacters.slice(0, STAR_NODE_LIMIT), [regionCharacters]);
 
   return (
     <PublicLayout content={content} activeRoute="atlas" showRail={false}>
@@ -1562,10 +1676,10 @@ function AtlasPage({ content }) {
           characters={sceneCharacters}
           regions={regions}
           activeRegion={activeRegion}
-          selectedId={selectedId}
+          regionPopulation={regionCharacters.length}
+          selectedId=""
           onSelect={(id) => {
-            const next = characters.find((character) => character.id === id);
-            if (next) selectCharacter(next);
+            window.location.assign(characterHref(id));
           }}
         />
 
@@ -1581,7 +1695,6 @@ function AtlasPage({ content }) {
                 key={region.id}
                 onClick={() => {
                   setActiveRegion(region.id);
-                  setSelectedId("");
                   setQuery("");
                 }}
                 type="button"
@@ -1604,36 +1717,267 @@ function AtlasPage({ content }) {
             <div className="atlas-search-results">
               <strong>{filteredCharacters.length} 个结果</strong>
               {filteredCharacters.slice(0, 12).map((character) => (
-                <button key={character.id} onClick={() => selectCharacter(character)} type="button">
+                <a href={characterHref(character.id)} key={character.id}>
                   <span>{character.role}</span>
                   {character.name}
-                </button>
+                </a>
               ))}
             </div>
           )}
         </div>
 
         <div className="atlas-help">
-          <span className="desktop-help">左键拖拽旋转 · 滚轮缩放 · 点击星点查看人物</span>
-          <span className="mobile-help">拖动旋转 · 双指缩放 · 轻触星点查看人物</span>
+          <span className="desktop-help">左键拖拽旋转 · 滚轮缩放 · 点击星点进入人物条目</span>
+          <span className="mobile-help">拖动旋转 · 双指缩放 · 轻触星点进入人物条目</span>
         </div>
-
-        <CharacterDrawer
-          character={selectedCharacter}
-          characters={characters}
-          regions={regions}
-          onClose={() => setSelectedId("")}
-          onSelect={selectCharacter}
-        />
       </section>
     </PublicLayout>
+  );
+}
+
+function CharacterArticlePage({ content, characterId }) {
+  const atlas = content.atlas || fallbackContent.atlas;
+  const regions = atlas.regions || [];
+  const characters = useMemo(() => curateAtlasCharacters(atlas.characters || []), [atlas.characters]);
+  const character = characters.find((item) => item.id === characterId);
+
+  if (!character) {
+    return (
+      <PublicLayout content={content} activeRoute="atlas" showRail={false}>
+        <section className="entry-missing">
+          <p>人物条目</p>
+          <h1>未找到该人物</h1>
+          <a href="/atlas">
+            <ArrowLeft size={17} />
+            返回众生星图
+          </a>
+        </section>
+      </PublicLayout>
+    );
+  }
+
+  const region = regions.find((item) => item.id === character.region);
+  const source = character.source || {};
+  const externalSources = externalCharacterSources[character.name] || [];
+  const hasCuratedRecord = !String(character.id).startsWith("auto-");
+
+  return (
+    <PublicLayout content={content} activeRoute="atlas" showRail={false}>
+      <section className="character-entry">
+        <div className="entry-breadcrumb">
+          <a href="/atlas">
+            <ArrowLeft size={16} />
+            众生星图
+          </a>
+          <span>/</span>
+          <span>{region?.name || "待考"}</span>
+          <span>/</span>
+          <strong>{character.name}</strong>
+        </div>
+
+        <header className="entry-heading">
+          <p>{region?.name || "五域两天"} · 人物条目</p>
+          <h1>{character.name}</h1>
+          <span>{character.role}</span>
+        </header>
+
+        <div className="entry-layout">
+          <nav className="entry-toc" aria-label="条目目录">
+            <strong>目录</strong>
+            <a href="#summary">人物概览</a>
+            <a href="#immortal-gu">仙蛊</a>
+            <a href="#killer-moves">杀招</a>
+            <a href="#immortal-house">仙蛊屋</a>
+            <a href="#references">资料依据</a>
+          </nav>
+
+          <article className="entry-article">
+            <section className="entry-section" id="summary">
+              <h2>人物概览</h2>
+              <p className="entry-intro">{character.intro}</p>
+              <div className="entry-status">
+                <span>整理状态</span>
+                <strong>{hasCuratedRecord ? "主要设定已录入" : "原文定位完成，设定待细校"}</strong>
+              </div>
+            </section>
+
+            <section className="entry-section entry-matrix-section" id="immortal-gu">
+              <h2>仙蛊</h2>
+              <ImmortalGuMatrix profile={character.immortalGuProfile} />
+            </section>
+
+            <section className="entry-section" id="killer-moves">
+              <h2>杀招</h2>
+              <KillerMoveGroups profile={character.killerMoveProfile} />
+            </section>
+
+            <section className="entry-section" id="immortal-house">
+              <h2>仙蛊屋</h2>
+              <DetailList items={character.houses} />
+            </section>
+
+            <section className="entry-section" id="references">
+              <h2>资料依据</h2>
+              <div className="source-note">
+                <strong>{atlasSourceSummary.title}</strong>
+                <p>
+                  本条目基于提供的原著全文索引建立。涉及仙蛊、杀招与仙蛊屋的内容，
+                  只展示已经整理录入的项目；仙蛊栏不收入凡蛊或无法确认品阶的泛称。
+                </p>
+                {source.status ? (
+                  <dl>
+                    <div>
+                      <dt>索引状态</dt>
+                      <dd>{source.status}</dd>
+                    </div>
+                    <div>
+                      <dt>首次定位</dt>
+                      <dd>第 {source.firstChapter} 章</dd>
+                    </div>
+                    <div>
+                      <dt>末次定位</dt>
+                      <dd>第 {source.lastChapter} 章</dd>
+                    </div>
+                    <div>
+                      <dt>文本命中</dt>
+                      <dd>{source.count} 次</dd>
+                    </div>
+                    <div>
+                      <dt>涉及章节</dt>
+                      <dd>{source.chapters} 章</dd>
+                    </div>
+                    <div>
+                      <dt>全文范围</dt>
+                      <dd>{atlasSourceSummary.chapterCount} 章</dd>
+                    </div>
+                  </dl>
+                ) : (
+                  <p className="entry-empty">该条目的原文索引关联仍待复核。</p>
+                )}
+              </div>
+
+              {externalSources.length > 0 && (
+                <div className="external-sources">
+                  <h3>外部核对</h3>
+                  {externalSources.map((item) => (
+                    <a href={item.href} key={item.href} rel="noreferrer" target="_blank">
+                      <span>{item.type}</span>
+                      <strong>{item.label}</strong>
+                      <ExternalLink size={16} />
+                    </a>
+                  ))}
+                </div>
+              )}
+            </section>
+          </article>
+
+          <aside className="entry-infobox">
+            <div className="entry-portrait" aria-label="人物图像待补充">
+              <CircleDot size={40} strokeWidth={1.1} />
+              <span>人物图像待补充</span>
+            </div>
+            <h2>{character.name}</h2>
+            <p>{character.role}</p>
+            <dl>
+              <div>
+                <dt>地域</dt>
+                <dd>{region?.name || "待考"}</dd>
+              </div>
+              <div>
+                <dt>势力</dt>
+                <dd>{character.faction || "待核录"}</dd>
+              </div>
+              <div>
+                <dt>资料等级</dt>
+                <dd>{hasCuratedRecord ? "人物档案" : "全文定位"}</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+    </PublicLayout>
+  );
+}
+
+function ImmortalGuMatrix({ profile }) {
+  const extraPaths = (profile?.groups || []).map((group) => group.path);
+  const paths = [...new Set([...immortalGuPaths, ...extraPaths])];
+  const cellContents = new Map();
+
+  (profile?.groups || []).forEach((group) => {
+    group.items.forEach((item) => {
+      if (!immortalGuRanks.includes(item.rank)) return;
+      const key = `${item.rank}-${group.path}`;
+      cellContents.set(key, [...(cellContents.get(key) || []), item]);
+    });
+  });
+
+  return (
+    <div className="gu-matrix-frame">
+      <table className="gu-matrix">
+        <thead>
+          <tr>
+            <th scope="col">转数</th>
+            {paths.map((path) => (
+              <th key={path} scope="col">{path}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {immortalGuRanks.map((rank) => (
+            <tr key={rank}>
+              <th scope="row">{rank}</th>
+              {paths.map((path) => {
+                const items = cellContents.get(`${rank}-${path}`) || [];
+                return (
+                  <td className={items.length ? "filled" : ""} key={`${rank}-${path}`}>
+                    {items.length
+                      ? items.map((item) => (
+                        <span className="gu-matrix-item" key={item.name}>
+                          {item.name}
+                          {item.note && <small>{item.note}</small>}
+                        </span>
+                      ))
+                      : <span className="gu-matrix-empty">-</span>}
+                  </td>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function KillerMoveGroups({ profile }) {
+  const categories = [
+    { label: "仙道杀招", items: profile?.immortal || [] },
+    { label: "凡道杀招", items: profile?.mortal || [] },
+  ];
+
+  return (
+    <div className="killer-move-groups">
+      {categories.map((category) => (
+        <section key={category.label}>
+          <h3>{category.label}</h3>
+          {category.items.length ? (
+            <ul>
+              {category.items.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+          ) : (
+            <p>-</p>
+          )}
+        </section>
+      ))}
+    </div>
   );
 }
 
 function DetailList({ title, items = [] }) {
   return (
     <div className="detail-list">
-      <h3>{title}</h3>
+      {title && <h3>{title}</h3>}
       {items.length ? (
         <ul>
           {items.map((item) => (
@@ -1641,7 +1985,7 @@ function DetailList({ title, items = [] }) {
           ))}
         </ul>
       ) : (
-        <p>暂无明确记录</p>
+        <p>待逐章核录</p>
       )}
     </div>
   );
@@ -2037,5 +2381,6 @@ export default function App() {
   if (route === "players") return <PlayersPage content={content} />;
   if (route === "systems") return <SystemsPage content={content} />;
   if (route === "atlas") return <AtlasPage content={content} />;
+  if (route === "character") return <CharacterArticlePage characterId={getCharacterRouteId()} content={content} />;
   return <HomePage content={content} loading={loading} error={error} />;
 }
