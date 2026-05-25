@@ -136,27 +136,119 @@ const immortalGuPaths = [
 const immortalGuRanks = ["五转", "六转", "七转", "八转", "九转"];
 const verifiedKillerMoveProfiles = {
   方源: {
-    immortal: [
-      "万我",
-      "解梦",
-      "见面曾相识",
-      "逆流护身印",
-      "上古剑蛟变",
-      "大盗鬼手",
-      "万蛟",
-      "换魂",
-      "鬼不觉",
-      "暗岐杀",
-      "剑痕索命",
-      "血漂流",
-      "血愈湖",
-      "舍命血印",
+    sections: [
+      {
+        label: "复合",
+        groups: [
+          {
+            label: "攻伐",
+            items: [
+              "力道大手印", "万蛟", "斗战胜伏奴", "大盗鬼手", "阎罗战场", "阎罗网",
+              "万剑鬼蛟", "万一鬼蛟剑", "万念剑瀑", "剑客", "剑羽刀翅", "化炼蝶",
+              "痛心泣血", "雷韵丝流", "偷袭战场", "十里宙疾风", "舌剑龙魂",
+              "腐毒阴烬", "遗毒蚁祸", "五术虹光", "七杀虹光", "彼来龙蛇尘雾爆魄风",
+              "此去惊年梦浪荡魂音",
+            ],
+          },
+          { label: "防御", items: ["阎帝", "鬼官衣", "天鬼匿形", "混彩虹光"] },
+          { label: "移动", items: ["翠流珠", "天地游", "风火光电轮"] },
+          { label: "治疗", items: ["人如故"] },
+          { label: "经营", items: ["江山如故"] },
+        ],
+      },
+      {
+        label: "九转",
+        groups: [
+          { label: "攻伐", items: ["残炼"] },
+          { label: "防御", items: ["鬼不觉", "天机混淆", "天网恢恢"] },
+          { label: "辅助", items: ["天相", "盗天机", "石洞天机", "天消意散", "天纲地常", "天地无情"] },
+        ],
+      },
+      {
+        label: "八转",
+        groups: [
+          {
+            label: "攻伐",
+            items: [
+              "炼阵雨", "天妒英才", "运往来动", "梦里轻烟", "人间烟火", "五禁玄光气",
+              "落魄印", "荡魂落魄印", "魂河", "五指拳心剑", "金丝剑", "气海无量",
+              "乎昂", "归海气宗", "刀气", "阴阳大杀手", "暴气吼", "弹指神通",
+              "流气环", "气绝逢生", "光阴飞刃", "未来身", "春剪", "夏扇",
+              "流年不利", "年兽召来", "太古剑龙变", "太古匪猴变", "太古年兽变",
+              "气罡猪变化", "一气鹤变化", "落星棒子变", "奔雷黄鸟变", "囫囵蓝豹变",
+              "内息绿鱼变", "自由残缺变", "图腾",
+            ],
+          },
+          { label: "防御", items: ["冬裘", "血染征袍", "逆流护身印", "镇定自若", "罡布衣", "天罡斗衣", "万籁俱寂"] },
+          { label: "侦查", items: ["气运交感", "察运", "秋毫", "三息后现"] },
+          { label: "移动", items: ["生路", "血漂流"] },
+          { label: "治疗", items: ["炼己", "血愈湖", "舍命血印", "吐气如兰"] },
+          {
+            label: "辅助",
+            items: [
+              "吞食天地", "因果神树", "运筹帷幄", "固运", "人复活海", "爱的劝慰",
+              "退一步海阔天空", "万物大同变", "见面曾相识", "三世梦渡有缘人",
+              "梦中之梦", "天人感应", "天工人代", "自在天痕", "缩时", "后患无穷",
+              "年富力强", "百年好合", "蚁念",
+            ],
+          },
+          { label: "战场", items: ["万军蚁穴", "紫辰断命"] },
+          {
+            label: "经营",
+            items: [
+              "贤才入瓮", "一方乐土", "春耕", "夏耘", "秋收", "冬藏", "丰年",
+              "度日如年", "度月如年", "度年如日", "度年如月", "春芽", "夏日",
+            ],
+          },
+        ],
+      },
+      {
+        label: "七转",
+        groups: [
+          {
+            label: "攻伐",
+            items: [
+              "万我", "引魂入梦", "领袖群星", "百八十奴", "剑痕索命", "剑浪三叠",
+              "无形飞剑", "云霄飞剑", "万里飞剑", "穷追飞剑", "暗歧杀", "燃念飞石",
+              "一念花开", "一念化万千", "乱方混向雾", "智取", "紫念洞悉·灵动星芒",
+              "意解纷呈", "杂念丛生", "血光镇灵", "剑蛟变", "卜卦龟背变",
+            ],
+          },
+          { label: "移动", items: ["随意祥云"] },
+          { label: "防御", items: ["刚背", "紫念光护", "定真枝丫变"] },
+          {
+            label: "辅助",
+            items: [
+              "吃力", "天光轮转", "春秋必成", "春秋准定", "成竹在胸", "纯梦求真变",
+              "梦中换魂", "燃魂爆运", "魂兽召来", "魂穿", "分魂", "换魂", "魂爆",
+              "魂压", "洁身自好", "集思广益", "智平祸", "斗志昂扬", "暗久藏",
+              "仙劫锻窍",
+            ],
+          },
+          { label: "经营", items: ["菌光普照"] },
+        ],
+      },
+      {
+        label: "六转",
+        groups: [
+          {
+            label: "攻伐",
+            items: ["万我", "毒气喷吐", "万星飞萤", "见面似相识", "星云磨盘", "星蛇索", "六幻星身", "位星移", "星魂战场", "飞熊变"],
+          },
+          { label: "移动", items: ["星火遁"] },
+          { label: "侦察", items: ["外映星念", "星感应"] },
+          { label: "辅助", items: ["解梦", "造梦", "蝶探天机", "生死仙窍转换法", "力转生死", "取窍法门", "血丝游", "春星雨"] },
+        ],
+      },
     ],
-    mortal: [],
   },
   方正: {
-    immortal: ["血渐冷", "血亲心仇"],
-    mortal: [],
+    sections: [
+      {
+        label: "已录入",
+        groups: [{ label: "血道", items: ["血渐冷", "血亲心仇"] }],
+      },
+    ],
   },
 };
 const atlasAmbiences = {
@@ -1775,21 +1867,23 @@ function CharacterArticlePage({ content, characterId }) {
           <strong>{character.name}</strong>
         </div>
 
-        <header className="entry-heading">
-          <p>{region?.name || "五域两天"} · 人物条目</p>
-          <h1>{character.name}</h1>
-          <span>{character.role}</span>
-        </header>
-
         <div className="entry-layout">
-          <nav className="entry-toc" aria-label="条目目录">
-            <strong>目录</strong>
-            <a href="#summary">人物概览</a>
-            <a href="#immortal-gu">仙蛊</a>
-            <a href="#killer-moves">杀招</a>
-            <a href="#immortal-house">仙蛊屋</a>
-            <a href="#references">资料依据</a>
-          </nav>
+          <aside className="entry-sidebar">
+            <header className="entry-heading">
+              <p>{region?.name || "五域两天"} · 人物条目</p>
+              <h1>{character.name}</h1>
+              <span>{character.role}</span>
+            </header>
+
+            <nav className="entry-toc" aria-label="条目目录">
+              <strong>目录</strong>
+              <a href="#summary">人物概览</a>
+              <a href="#immortal-gu">仙蛊</a>
+              <a href="#killer-moves">仙道杀招</a>
+              <a href="#immortal-house">仙蛊屋</a>
+              <a href="#references">资料依据</a>
+            </nav>
+          </aside>
 
           <article className="entry-article">
             <section className="entry-section" id="summary">
@@ -1807,7 +1901,7 @@ function CharacterArticlePage({ content, characterId }) {
             </section>
 
             <section className="entry-section" id="killer-moves">
-              <h2>杀招</h2>
+              <h2>仙道杀招</h2>
               <KillerMoveGroups profile={character.killerMoveProfile} />
             </section>
 
@@ -1907,7 +2001,7 @@ function ImmortalGuMatrix({ profile }) {
   (profile?.groups || []).forEach((group) => {
     group.items.forEach((item) => {
       if (!immortalGuRanks.includes(item.rank)) return;
-      const key = `${item.rank}-${group.path}`;
+      const key = `${group.path}-${item.rank}`;
       cellContents.set(key, [...(cellContents.get(key) || []), item]);
     });
   });
@@ -1917,20 +2011,23 @@ function ImmortalGuMatrix({ profile }) {
       <table className="gu-matrix">
         <thead>
           <tr>
-            <th scope="col">转数</th>
-            {paths.map((path) => (
-              <th key={path} scope="col">{path}</th>
+            <th className="gu-matrix-corner" scope="col">
+              <span className="matrix-rank-label">转数</span>
+              <span className="matrix-path-label">流派</span>
+            </th>
+            {immortalGuRanks.map((rank) => (
+              <th key={rank} scope="col">{rank}</th>
             ))}
           </tr>
         </thead>
         <tbody>
-          {immortalGuRanks.map((rank) => (
-            <tr key={rank}>
-              <th scope="row">{rank}</th>
-              {paths.map((path) => {
-                const items = cellContents.get(`${rank}-${path}`) || [];
+          {paths.map((path) => (
+            <tr key={path}>
+              <th scope="row">{path}</th>
+              {immortalGuRanks.map((rank) => {
+                const items = cellContents.get(`${path}-${rank}`) || [];
                 return (
-                  <td className={items.length ? "filled" : ""} key={`${rank}-${path}`}>
+                  <td className={items.length ? "filled" : ""} key={`${path}-${rank}`}>
                     {items.length
                       ? items.map((item) => (
                         <span className="gu-matrix-item" key={item.name}>
@@ -1951,23 +2048,25 @@ function ImmortalGuMatrix({ profile }) {
 }
 
 function KillerMoveGroups({ profile }) {
-  const categories = [
-    { label: "仙道杀招", items: profile?.immortal || [] },
-    { label: "凡道杀招", items: profile?.mortal || [] },
-  ];
+  const sections = profile?.sections || [];
+
+  if (!sections.length) return <p className="entry-empty">-</p>;
 
   return (
     <div className="killer-move-groups">
-      {categories.map((category) => (
-        <section key={category.label}>
-          <h3>{category.label}</h3>
-          {category.items.length ? (
-            <ul>
-              {category.items.map((item) => <li key={item}>{item}</li>)}
-            </ul>
-          ) : (
-            <p>-</p>
-          )}
+      {sections.map((section) => (
+        <section className="killer-move-tier" key={section.label}>
+          <h3>{section.label}</h3>
+          <div className="killer-move-grid">
+            {section.groups.map((group) => (
+              <section className="killer-move-category" key={`${section.label}-${group.label}`}>
+                <h4>{group.label}</h4>
+                <ul>
+                  {group.items.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </section>
+            ))}
+          </div>
         </section>
       ))}
     </div>

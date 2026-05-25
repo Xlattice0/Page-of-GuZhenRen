@@ -1125,8 +1125,7 @@ button {
 }
 
 .entry-heading {
-  max-width: calc(100% - 348px);
-  margin-bottom: 44px;
+  margin-bottom: 42px;
 }
 
 .entry-heading p {
@@ -1139,7 +1138,7 @@ button {
 .entry-heading h1 {
   margin: 0 0 16px;
   color: #fff;
-  font-size: 4.3rem;
+  font-size: 4rem;
   font-weight: 730;
   line-height: 1.06;
   overflow-wrap: anywhere;
@@ -1152,14 +1151,18 @@ button {
 
 .entry-layout {
   display: grid;
-  grid-template-columns: 146px minmax(0, 1fr) 304px;
+  grid-template-columns: 208px minmax(0, 1fr) 304px;
   gap: clamp(22px, 2vw, 36px);
   align-items: start;
 }
 
-.entry-toc {
+.entry-sidebar {
   position: sticky;
   top: 78px;
+  min-width: 0;
+}
+
+.entry-toc {
   display: grid;
   gap: 4px;
   padding-top: 9px;
@@ -1241,7 +1244,7 @@ button {
 }
 
 .gu-matrix {
-  width: max-content;
+  width: 100%;
   min-width: 100%;
   border-spacing: 0;
   color: rgba(247, 242, 231, 0.76);
@@ -1250,8 +1253,7 @@ button {
 
 .gu-matrix th,
 .gu-matrix td {
-  min-width: 72px;
-  max-width: 112px;
+  min-width: 96px;
   padding: 11px 9px;
   border-right: 1px solid rgba(247, 242, 231, 0.07);
   border-bottom: 1px solid rgba(247, 242, 231, 0.07);
@@ -1263,7 +1265,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 1;
-  height: 48px;
+  height: 62px;
   background: #151311;
   color: rgba(212, 181, 111, 0.9);
   font-weight: 710;
@@ -1274,7 +1276,7 @@ button {
   position: sticky;
   left: 0;
   z-index: 2;
-  min-width: 66px;
+  min-width: 128px;
   background: #151311;
   color: rgba(212, 181, 111, 0.9);
 }
@@ -1283,8 +1285,34 @@ button {
   z-index: 3;
 }
 
+.gu-matrix-corner {
+  position: relative;
+  padding: 0 !important;
+  background:
+    linear-gradient(to top right, transparent calc(50% - 0.5px), rgba(212, 181, 111, 0.34) 50%, transparent calc(50% + 0.5px)),
+    #151311 !important;
+}
+
+.matrix-rank-label,
+.matrix-path-label {
+  position: absolute;
+  color: rgba(212, 181, 111, 0.92);
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+.matrix-rank-label {
+  top: 12px;
+  right: 12px;
+}
+
+.matrix-path-label {
+  bottom: 12px;
+  left: 12px;
+}
+
 .gu-matrix td {
-  height: 62px;
+  height: 56px;
   color: rgba(247, 242, 231, 0.4);
 }
 
@@ -1317,22 +1345,40 @@ button {
 
 .killer-move-groups {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  gap: 30px;
 }
 
-.killer-move-groups section {
-  min-height: 128px;
-  padding: 18px;
-  border: 1px solid rgba(247, 242, 231, 0.11);
-  border-radius: 6px;
-  background: rgba(247, 242, 231, 0.025);
+.killer-move-tier {
+  display: grid;
+  gap: 16px;
 }
 
-.killer-move-groups h3 {
-  margin: 0 0 14px;
+.killer-move-tier > h3 {
+  margin: 0;
   color: var(--gold);
-  font-size: 0.86rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.killer-move-grid {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid rgba(247, 242, 231, 0.11);
+}
+
+.killer-move-category {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 18px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(247, 242, 231, 0.08);
+}
+
+.killer-move-category h4 {
+  margin: 4px 0 0;
+  color: rgba(212, 181, 111, 0.84);
+  font-size: 0.8rem;
+  font-weight: 680;
 }
 
 .killer-move-groups ul {
@@ -1449,7 +1495,7 @@ button {
 .entry-infobox {
   position: sticky;
   top: 76px;
-  margin-top: -182px;
+  margin-top: 0;
   overflow: hidden;
   border: 1px solid rgba(247, 242, 231, 0.13);
   border-radius: 6px;
@@ -1879,20 +1925,46 @@ button {
 
 @media (max-width: 1120px) {
   .entry-layout {
-    grid-template-columns: minmax(0, 1fr) 292px;
+    grid-template-columns: 184px minmax(0, 1fr);
     gap: 30px;
+  }
+
+  .entry-heading h1 {
+    font-size: 3.35rem;
+  }
+
+  .entry-infobox {
+    grid-column: 2;
+    position: static;
+  }
+
+  .killer-move-category {
+    grid-template-columns: 62px minmax(0, 1fr);
+  }
+
+  .source-note dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .entry-sidebar {
+    position: static;
+  }
+
+  .entry-infobox {
+    grid-column: auto;
   }
 
   .entry-toc {
     position: static;
-    grid-column: 1 / -1;
     display: flex;
-    gap: 20px;
+    gap: 14px;
     align-items: center;
   }
 
   .entry-toc strong {
-    margin: 0 8px 0 0;
+    margin: 0;
   }
 }
 
