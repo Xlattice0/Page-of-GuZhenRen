@@ -82,6 +82,8 @@ const atlasAmbiences = {
   western: {
     clear: 0x090604,
     fog: 0x100a05,
+    framing: 1.26,
+    compactFraming: 1.48,
     core: 0xb36f2d,
     orbit: [0x987046, 0x71503a],
     ribbon: [0xd5a152, 0xbd7143, 0x8c6b48],
@@ -1127,7 +1129,9 @@ function ThreeAtlasScene({ characters, regions, activeRegion, selectedId, onSele
     scene.fog = new THREE.FogExp2(ambience.fog, 0.0045);
 
     const camera = new THREE.PerspectiveCamera(49, 1, 0.1, 1000);
-    const framing = ambience.framing || 1;
+    const framing = window.innerWidth < 760
+      ? ambience.compactFraming || ambience.framing || 1
+      : ambience.framing || 1;
     camera.position.set(maxRadius * 0.92 * framing, maxRadius * 0.64 * framing, maxRadius * 1.28 * framing);
     camera.lookAt(0, 1, 0);
 
