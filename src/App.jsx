@@ -850,6 +850,56 @@ function createFaintTwinkles(radius, colors, glowTexture) {
   return group;
 }
 
+function createDriftingGlints(colors, glowTexture) {
+  const group = new THREE.Group();
+  const palette = [colors[0], colors[1], 0xd47c50, 0xe0b75b, 0x64b092, 0x62a7c0, 0x9070c5, 0xc56562];
+  for (let index = 0; index < 26; index += 1) {
+    const sprite = new THREE.Sprite(
+      new THREE.SpriteMaterial({
+        map: glowTexture,
+        color: palette[index % palette.length],
+        transparent: true,
+        opacity: 0.44 + seededValue(index * 4.3 + 5) * 0.22,
+        fog: false,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending,
+      }),
+    );
+    const scale = 1.38 + seededValue(index * 7.4 + 4) * 1.12;
+    sprite.scale.set(scale, scale, 1);
+    sprite.userData = {
+      baseOpacity: sprite.material.opacity,
+      baseScale: scale,
+      phase: seededValue(index * 4.07 + 7) * Math.PI * 2,
+      position: {
+        x: -0.9 + seededValue(index * 6.19 + 3) * 1.8,
+        y: -0.84 + seededValue(index * 9.31 + 8) * 1.68,
+      },
+      drift: {
+        x: 0.018 + seededValue(index * 5.33 + 18) * 0.05,
+        y: 0.014 + seededValue(index * 8.11 + 26) * 0.045,
+        speed: 0.46 + seededValue(index * 3.71 + 33) * 0.62,
+      },
+    };
+    group.add(sprite);
+  }
+  return group;
+}
+
+function positionDriftingGlints(group, camera, time = 0) {
+  const distance = 180;
+  const halfHeight = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2)) * distance;
+  const halfWidth = halfHeight * camera.aspect;
+  group.children.forEach((glint) => {
+    const travel = time * glint.userData.drift.speed + glint.userData.phase;
+    glint.position.set(
+      (glint.userData.position.x + Math.sin(travel) * glint.userData.drift.x) * halfWidth,
+      (glint.userData.position.y + Math.cos(travel * 0.82) * glint.userData.drift.y) * halfHeight,
+      -distance,
+    );
+  });
+}
+
 function createAtmosphericLine(points, color, opacity = 0.26, closed = false) {
   const curve = new THREE.CatmullRomCurve3(points, closed, "catmullrom", 0.45);
   const geometry = new THREE.BufferGeometry().setFromPoints(curve.getPoints(closed ? 132 : 84));
@@ -1116,12 +1166,15 @@ function ThreeAtlasScene({ characters, regions, activeRegion, selectedId, onSele
     const coldStars = createStarCloud(760, maxRadius + 15, maxRadius + 94, ambience.stars[1], 0.34, 0.28, glowTexture);
     const fieldDust = createStarCloud(380, maxRadius * 0.18, maxRadius * 1.18, ambience.stars[0], 0.18, 0.16, glowTexture);
     const twinkles = createFaintTwinkles(maxRadius, ambience.stars, glowTexture);
+    const driftingGlints = createDriftingGlints(ambience.stars, glowTexture);
     const primaryMist = createSpiralMist(1280, maxRadius * 0.94, ambience.ribbon[0], 0.25, 0.16, 8.4, glowTexture);
     const secondaryMist = createSpiralMist(760, maxRadius * 0.84, ambience.ribbon[1], 0.2, 0.12, -7.3, glowTexture);
     primaryMist.rotation.set(0.22, -0.28, 0.14);
     secondaryMist.rotation.set(-0.34, 0.12, -0.2);
     const domainSignature = createDomainSignature(ambience.signature, maxRadius, ambience.ribbon);
     scene.add(farStars, coldStars, fieldDust, twinkles, primaryMist, secondaryMist);
+    camera.add(driftingGlints);
+    scene.add(camera);
     root.add(domainSignature);
 
     const orbitDusts = [];
@@ -1245,6 +1298,7 @@ function ThreeAtlasScene({ characters, regions, activeRegion, selectedId, onSele
       renderer.setSize(width, height, false);
       camera.aspect = width / height;
       camera.updateProjectionMatrix();
+      positionDriftingGlints(driftingGlints, camera);
     };
 
     const updatePointer = (event) => {
@@ -1317,6 +1371,13 @@ function ThreeAtlasScene({ characters, regions, activeRegion, selectedId, onSele
       fieldDust.rotation.y += 0.00018;
       fieldDust.rotation.z = Math.sin(frame * 0.001) * 0.025;
       twinkles.rotation.y -= 0.00009;
+      positionDriftingGlints(driftingGlints, camera, frame * 0.004);
+      driftingGlints.children.forEach((glint) => {
+        const shimmer = 0.86 + Math.sin(frame * 0.012 + glint.userData.phase) * 0.14;
+        const scale = glint.userData.baseScale * (0.94 + shimmer * 0.08);
+        glint.material.opacity = glint.userData.baseOpacity * shimmer;
+        glint.scale.set(scale, scale, 1);
+      });
       primaryMist.rotation.y += 0.00022;
       secondaryMist.rotation.y -= 0.00027;
       controls.update();
