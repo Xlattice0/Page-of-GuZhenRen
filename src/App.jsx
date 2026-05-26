@@ -902,15 +902,143 @@ function ArchiveLibraryPage({ content, activeRoute, eyebrow, title, entries }) {
   );
 }
 
-function RealmsPage({ content }) {
+const realmVisions = {
+  光阴长河: { motif: "river", accent: "#d4b56f", glow: "#596f89" },
+  荡魂山: { motif: "mountain", accent: "#c6d4b2", glow: "#446452" },
+  落魄谷: { motif: "valley", accent: "#b5a1d0", glow: "#3d3452" },
+  逆流河: { motif: "river", accent: "#8fb8c2", glow: "#2f5462" },
+  生死门: { motif: "gate", accent: "#c0b6a8", glow: "#403735" },
+  乎地: { motif: "air", accent: "#cfbf8a", glow: "#66553b" },
+  市井: { motif: "city", accent: "#d2a275", glow: "#5b4032" },
+  元境: { motif: "horizon", accent: "#e2d4a2", glow: "#585147" },
+  乾坤晶壁: { motif: "crystal", accent: "#8fc8d2", glow: "#284853" },
+  书山: { motif: "terraces", accent: "#c9bd90", glow: "#514632" },
+  成败山: { motif: "mountain", accent: "#bf8870", glow: "#53352f" },
+  人山人海: { motif: "city", accent: "#d69186", glow: "#553437" },
+  非议峰: { motif: "mountain", accent: "#a99abb", glow: "#423747" },
+  炼海: { motif: "forge", accent: "#d78059", glow: "#63372c" },
+  漂游炼巢: { motif: "forge", accent: "#e2b46a", glow: "#58442b" },
+};
+
+function RealmPhenomenon({ realm }) {
+  const vision = realmVisions[realm.name] || realmVisions.光阴长河;
   return (
-    <ArchiveLibraryPage
-      activeRoute="realms"
-      content={content}
-      entries={secretRealmEntries}
-      eyebrow="SECRET REALMS"
-      title="天地秘境"
-    />
+    <div className={`realm-phenomenon ${vision.motif}`} key={realm.name} aria-hidden="true">
+      <span />
+      <span />
+      <span />
+      <span />
+    </div>
+  );
+}
+
+function RealmsPage({ content, focusName = "" }) {
+  const targetIndex = Math.max(0, secretRealmEntries.findIndex((item) => item.name === focusName));
+  const [activeIndex, setActiveIndex] = useState(targetIndex);
+  const activeRealm = secretRealmEntries[activeIndex] || secretRealmEntries[0];
+  const vision = realmVisions[activeRealm.name] || realmVisions.光阴长河;
+  const totalHits = secretRealmEntries.reduce((sum, item) => sum + item.hits, 0);
+
+  useEffect(() => {
+    setActiveIndex(targetIndex);
+  }, [focusName, targetIndex]);
+
+  const selectRealm = (index) => {
+    setActiveIndex(index);
+  };
+
+  return (
+    <PublicLayout content={content} activeRoute="realms" showRail={false}>
+      <section
+        className="realms-page"
+        style={{ "--realm-accent": vision.accent, "--realm-glow": vision.glow }}
+      >
+        <header className="realms-heading" data-reveal>
+          <p>SECRET REALMS</p>
+          <h1>天地秘境</h1>
+          <dl>
+            <div>
+              <dt>条目</dt>
+              <dd>{secretRealmEntries.length}</dd>
+            </div>
+            <div>
+              <dt>章节文档</dt>
+              <dd>{archiveAudit.chapterDocuments}</dd>
+            </div>
+            <div>
+              <dt>全文命中</dt>
+              <dd>{totalHits}</dd>
+            </div>
+          </dl>
+        </header>
+
+        <nav className="realms-strip" aria-label="秘境目录">
+          {secretRealmEntries.map((realm, index) => (
+            <button
+              aria-current={index === activeIndex ? "true" : undefined}
+              className={index === activeIndex ? "active" : ""}
+              key={realm.name}
+              onClick={() => selectRealm(index)}
+              type="button"
+            >
+              {realm.name}
+            </button>
+          ))}
+        </nav>
+
+        <div className="realms-showcase">
+          <aside className="realms-stage">
+            <div className="realms-canvas">
+              <RealmPhenomenon realm={activeRealm} />
+            </div>
+            <div className="realms-stage-caption" key={activeRealm.name}>
+              <small>{activeRealm.category} / {activeRealm.path}</small>
+              <strong>{activeRealm.name}</strong>
+              <p>{activeRealm.summary}</p>
+            </div>
+          </aside>
+
+          <article className="realms-detail" key={activeRealm.name} aria-live="polite">
+            <header className="realms-scene-heading">
+              <span>{String(activeIndex + 1).padStart(2, "0")}</span>
+              <p>{activeRealm.category} / {activeRealm.path}</p>
+              <h2>{activeRealm.name}</h2>
+            </header>
+            <p className="realms-intro">{activeRealm.story.intro}</p>
+            <div className="realms-beats">
+              {activeRealm.story.timeline.map((moment) => (
+                <div key={moment.phase}>
+                  <small>{moment.anchor}</small>
+                  <h3>{moment.phase}</h3>
+                  <p>{moment.text}</p>
+                </div>
+              ))}
+            </div>
+            <div className="realms-related" aria-label="牵连事物">
+              {activeRealm.story.related.map((item) => <span key={item}>{item}</span>)}
+            </div>
+            <footer className="realms-evidence">
+              <span>{activeRealm.hits} 次正文命中 / 第 {activeRealm.first}-{activeRealm.last} 篇</span>
+              {activeRealm.story.sources.filter((source) => source.href).map((source) => (
+                <a href={source.href} key={source.label} rel="noreferrer" target="_blank">
+                  {source.kind}
+                  <ExternalLink size={13} />
+                </a>
+              ))}
+            </footer>
+          </article>
+        </div>
+
+        <footer className="realms-source-dock">
+          <span>{archiveAudit.corpus}</span>
+          <a href={archiveAudit.publicSources[0].href} rel="noreferrer" target="_blank">
+            {archiveAudit.publicSources[0].label}
+            <ExternalLink size={14} />
+          </a>
+          <small>抖音公开检索仅保留核对入口，未纳入剧情表述。</small>
+        </footer>
+      </section>
+    </PublicLayout>
   );
 }
 
@@ -2867,6 +2995,11 @@ export default function App() {
   if (route === "realms") return <RealmsPage content={content} />;
   if (route === "gu-catalog") return <GuCatalogPage content={content} />;
   if (route === "character") return <CharacterArticlePage characterId={getCharacterRouteId()} content={content} />;
-  if (route === "reference") return <ReferencePlaceholderPage content={content} entry={getReferenceRouteEntry()} />;
+  if (route === "reference") {
+    const entry = getReferenceRouteEntry();
+    return entry?.type === "realm"
+      ? <RealmsPage content={content} focusName={entry.name} />
+      : <ReferencePlaceholderPage content={content} entry={entry} />;
+  }
   return <HomePage content={content} loading={loading} error={error} />;
 }
