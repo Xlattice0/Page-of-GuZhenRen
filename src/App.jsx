@@ -55,50 +55,6 @@ const externalCharacterSources = {
     },
   ],
 };
-const immortalGuPaths = [
-  "天道",
-  "人道",
-  "炼道",
-  "木道",
-  "智道",
-  "梦道",
-  "宙道",
-  "变化道",
-  "律道",
-  "运道",
-  "力道",
-  "剑道",
-  "血道",
-  "魂道",
-  "信道",
-  "宇道",
-  "偷道",
-  "土道",
-  "食道",
-  "阵道",
-  "奴道",
-  "刀道",
-  "气道",
-  "水道",
-  "音道",
-  "雷道",
-  "金道",
-  "毒道",
-  "炎道",
-  "星道",
-  "暗道",
-  "骨道",
-  "冰雪道",
-  "风道",
-  "云道",
-  "光道",
-  "火道",
-  "虚道",
-  "幻道",
-  "画道",
-  "丹道",
-  "香道",
-];
 const immortalGuRanks = ["九转", "八转", "七转", "六转", "五转"];
 const atlasAmbiences = {
   southern: {
@@ -1962,8 +1918,9 @@ function CharacterArticlePage({ content, characterId }) {
 }
 
 function ImmortalGuMatrix({ profile }) {
-  const extraPaths = (profile?.groups || []).map((group) => group.path);
-  const paths = [...new Set([...immortalGuPaths, ...extraPaths])];
+  const paths = [...new Set((profile?.groups || [])
+    .filter((group) => group.items?.some((item) => immortalGuRanks.includes(item.rank)))
+    .map((group) => group.path))];
   const cellContents = new Map();
 
   (profile?.groups || []).forEach((group) => {
