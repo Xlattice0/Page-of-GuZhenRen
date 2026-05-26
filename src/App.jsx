@@ -1504,7 +1504,8 @@ function ThreeAtlasScene({ characters, regions, activeRegion, regionPopulation, 
 
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
-    controls.dampingFactor = 0.07;
+    controls.dampingFactor = 0.032;
+    controls.rotateSpeed = 0.72;
     controls.enablePan = false;
     controls.target.set(0, 1, 0);
     controls.minDistance = 16;
