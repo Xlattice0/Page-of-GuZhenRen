@@ -722,6 +722,390 @@ button {
   line-height: 1.68;
 }
 
+.river-page {
+  --river-accent: #d4b56f;
+  min-height: 100vh;
+  padding-top: 48px;
+  background:
+    linear-gradient(180deg, #050505 0%, #07090b 23%, #080a0c 48%, #080707 75%, #050505 100%);
+  transition: --river-accent 720ms ease;
+}
+
+.river-heading {
+  display: grid;
+  align-content: end;
+  width: min(calc(100% - 48px), 1440px);
+  min-height: 318px;
+  margin: 0 auto;
+  padding: 54px 0 40px;
+}
+
+.river-heading > p {
+  margin: 0 0 18px;
+  color: var(--gold);
+  font-size: 0.76rem;
+  font-weight: 760;
+}
+
+.river-heading h1 {
+  margin: 0 0 13px;
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 730;
+  line-height: 1.04;
+}
+
+.river-heading > span {
+  margin-bottom: 34px;
+  color: rgba(247, 242, 231, 0.62);
+  font-size: 1.05rem;
+}
+
+.river-heading dl {
+  display: flex;
+  margin: 0;
+  border-top: 1px solid rgba(247, 242, 231, 0.12);
+}
+
+.river-heading dl div {
+  min-width: 178px;
+  padding: 16px 34px 0 0;
+}
+
+.river-heading dt {
+  color: rgba(247, 242, 231, 0.43);
+  font-size: 0.72rem;
+}
+
+.river-heading dd {
+  margin: 7px 0 0;
+  color: rgba(247, 242, 231, 0.9);
+  font-size: 1.22rem;
+  font-weight: 650;
+}
+
+.river-tabs {
+  position: sticky;
+  z-index: 24;
+  top: 48px;
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  padding: 12px max(calc((100% - 1440px) / 2), 24px);
+  border-top: 1px solid rgba(247, 242, 231, 0.08);
+  border-bottom: 1px solid rgba(247, 242, 231, 0.1);
+  background: rgba(5, 6, 7, 0.83);
+  backdrop-filter: saturate(170%) blur(23px);
+  scrollbar-width: none;
+}
+
+.river-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.river-tabs button {
+  display: grid;
+  flex: 0 0 auto;
+  gap: 4px;
+  min-width: 128px;
+  padding: 9px 13px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: rgba(247, 242, 231, 0.55);
+  text-align: left;
+  transition:
+    border-color 360ms ease,
+    background 360ms ease,
+    color 360ms ease;
+}
+
+.river-tabs button small {
+  color: rgba(247, 242, 231, 0.37);
+  font-size: 0.68rem;
+}
+
+.river-tabs button span {
+  font-size: 0.79rem;
+}
+
+.river-tabs button.active {
+  border-color: color-mix(in srgb, var(--river-accent) 42%, transparent);
+  background: color-mix(in srgb, var(--river-accent) 9%, transparent);
+  color: color-mix(in srgb, var(--river-accent) 76%, white);
+}
+
+.river-tabs button.active small {
+  color: color-mix(in srgb, var(--river-accent) 58%, white);
+}
+
+.river-journey {
+  display: grid;
+  grid-template-columns: minmax(355px, 0.9fr) minmax(520px, 1fr);
+  gap: clamp(44px, 8vw, 116px);
+  width: min(calc(100% - 48px), 1440px);
+  margin: 0 auto;
+  padding: 36px 0 80px;
+}
+
+.river-stage {
+  position: sticky;
+  top: 118px;
+  height: calc(100svh - 148px);
+  min-height: 566px;
+  align-self: start;
+}
+
+.river-map {
+  position: absolute;
+  inset: 0 0 180px;
+  overflow: hidden;
+}
+
+.river-water {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.river-bank {
+  fill: none;
+  stroke: rgba(143, 184, 194, 0.075);
+  stroke-linecap: round;
+  stroke-width: 70;
+}
+
+.river-channel {
+  fill: none;
+  stroke: rgba(95, 138, 160, 0.22);
+  stroke-linecap: round;
+  stroke-width: 42;
+  filter: drop-shadow(0 0 22px rgba(102, 157, 180, 0.16));
+}
+
+.river-current {
+  fill: none;
+  stroke: color-mix(in srgb, var(--river-accent) 48%, #7ab5c2);
+  stroke-dasharray: 9 22;
+  stroke-linecap: round;
+  stroke-width: 2;
+  animation: river-current-flow 4.8s linear infinite;
+  transition: stroke 700ms ease;
+}
+
+.river-nodes {
+  position: absolute;
+  inset: 0;
+}
+
+.river-nodes span {
+  position: absolute;
+  top: calc(18px + (100% - 36px) * var(--node-position));
+  left: var(--node-left);
+  width: 9px;
+  height: 9px;
+  border: 1px solid rgba(247, 242, 231, 0.38);
+  border-radius: 50%;
+  background: #0b0e10;
+  transform: translate(-50%, -50%);
+  transition:
+    width 420ms ease,
+    height 420ms ease,
+    border-color 420ms ease,
+    background 420ms ease,
+    box-shadow 420ms ease;
+}
+
+.river-nodes span.active {
+  width: 20px;
+  height: 20px;
+  border-color: color-mix(in srgb, var(--river-accent) 75%, white);
+  background: color-mix(in srgb, var(--river-accent) 48%, #050505);
+  box-shadow:
+    0 0 0 7px color-mix(in srgb, var(--river-accent) 10%, transparent),
+    0 0 28px color-mix(in srgb, var(--river-accent) 48%, transparent);
+}
+
+.river-stage-copy {
+  position: absolute;
+  right: 0;
+  bottom: 18px;
+  left: 0;
+  display: grid;
+  gap: 11px;
+  animation: river-copy-enter 640ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.river-stage-copy small {
+  color: color-mix(in srgb, var(--river-accent) 76%, white);
+  font-size: 0.75rem;
+  font-weight: 680;
+}
+
+.river-stage-copy strong {
+  max-width: 430px;
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.river-stage-copy p {
+  max-width: 450px;
+  margin: 0;
+  color: rgba(247, 242, 231, 0.58);
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+.river-reaches {
+  min-width: 0;
+}
+
+.river-reach {
+  display: grid;
+  align-content: center;
+  gap: 27px;
+  min-height: max(660px, calc(100svh - 98px));
+  padding: 56px 0 74px;
+  opacity: 0.32;
+  transform: translateY(20px);
+  transition:
+    opacity 680ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 680ms cubic-bezier(0.16, 1, 0.3, 1);
+  scroll-margin-top: 96px;
+}
+
+.river-reach.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.river-reach header {
+  display: grid;
+  gap: 10px;
+}
+
+.river-reach header > span {
+  color: color-mix(in srgb, var(--river-accent) 66%, transparent);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.river-reach header p {
+  margin: 0;
+  color: color-mix(in srgb, var(--river-accent) 82%, white);
+  font-size: 0.78rem;
+  font-weight: 680;
+}
+
+.river-reach h2 {
+  margin: 2px 0 0;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 710;
+  line-height: 1.12;
+}
+
+.river-summary {
+  max-width: 690px;
+  margin: 0;
+  color: rgba(247, 242, 231, 0.77);
+  font-size: 1rem;
+  line-height: 1.87;
+}
+
+.river-events {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(247, 242, 231, 0.11);
+  list-style: none;
+  counter-reset: river-events;
+}
+
+.river-events li {
+  position: relative;
+  min-height: 64px;
+  padding: 16px 0 16px 42px;
+  border-bottom: 1px solid rgba(247, 242, 231, 0.08);
+  color: rgba(247, 242, 231, 0.64);
+  font-size: 0.87rem;
+  line-height: 1.76;
+  counter-increment: river-events;
+}
+
+.river-events li::before {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  color: color-mix(in srgb, var(--river-accent) 72%, white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  content: "0" counter(river-events);
+}
+
+.river-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.river-tags span {
+  padding: 7px 11px;
+  border: 1px solid rgba(247, 242, 231, 0.11);
+  border-radius: 999px;
+  color: rgba(247, 242, 231, 0.62);
+  font-size: 0.76rem;
+}
+
+.river-reach footer {
+  padding-top: 15px;
+  border-top: 1px solid rgba(247, 242, 231, 0.08);
+  color: rgba(143, 184, 194, 0.67);
+  font-size: 0.74rem;
+}
+
+.river-source {
+  display: flex;
+  gap: 12px 24px;
+  align-items: center;
+  width: min(calc(100% - 48px), 1440px);
+  margin: 0 auto;
+  padding: 20px 0 74px;
+  border-top: 1px solid rgba(247, 242, 231, 0.1);
+  color: rgba(247, 242, 231, 0.5);
+  font-size: 0.78rem;
+}
+
+.river-source small {
+  color: rgba(247, 242, 231, 0.38);
+}
+
+@keyframes river-current-flow {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: -124;
+  }
+}
+
+@keyframes river-copy-enter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .players-section {
   align-items: start;
 }
@@ -4191,6 +4575,122 @@ button {
   .gu-matrix td {
     min-width: 68px;
     padding: 10px 8px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .river-journey {
+    grid-template-columns: minmax(280px, 0.72fr) minmax(430px, 1fr);
+    gap: 40px;
+  }
+
+  .river-stage-copy strong {
+    font-size: 2.25rem;
+  }
+
+  .river-reach h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .river-page {
+    padding-top: 46px;
+  }
+
+  .river-heading {
+    width: calc(100% - 32px);
+    min-height: 284px;
+    padding: 44px 0 30px;
+  }
+
+  .river-heading h1 {
+    font-size: 3.25rem;
+  }
+
+  .river-heading > span {
+    margin-bottom: 34px;
+    font-size: 0.92rem;
+  }
+
+  .river-heading dl div {
+    flex: 1;
+    min-width: 0;
+    padding-right: 9px;
+  }
+
+  .river-heading dd {
+    font-size: 0.98rem;
+  }
+
+  .river-tabs {
+    top: 46px;
+    padding: 10px 16px;
+  }
+
+  .river-tabs button {
+    min-width: 109px;
+    padding: 8px 11px;
+  }
+
+  .river-journey {
+    display: block;
+    width: calc(100% - 32px);
+    padding: 24px 0 52px;
+  }
+
+  .river-stage {
+    position: relative;
+    top: auto;
+    height: 425px;
+    min-height: 0;
+    margin-bottom: 30px;
+  }
+
+  .river-map {
+    inset: 0 0 128px;
+  }
+
+  .river-stage-copy {
+    bottom: 0;
+  }
+
+  .river-stage-copy strong {
+    font-size: 1.9rem;
+  }
+
+  .river-stage-copy p {
+    font-size: 0.82rem;
+    line-height: 1.65;
+  }
+
+  .river-reach {
+    min-height: 0;
+    padding: 54px 0 64px;
+    border-top: 1px solid rgba(247, 242, 231, 0.08);
+    opacity: 1;
+    transform: none;
+    scroll-margin-top: 112px;
+  }
+
+  .river-reach h2 {
+    font-size: 2.18rem;
+  }
+
+  .river-summary {
+    font-size: 0.92rem;
+  }
+
+  .river-events li {
+    padding-left: 34px;
+    font-size: 0.83rem;
+  }
+
+  .river-source {
+    flex-direction: column;
+    align-items: start;
+    width: calc(100% - 32px);
+    padding: 20px 0 62px;
   }
 }
 

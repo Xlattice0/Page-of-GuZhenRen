@@ -27,6 +27,7 @@ import { archiveAudit, guArchiveEntries, secretRealmEntries } from "./archiveCol
 import { characterProfiles } from "./characterProfiles.js";
 import { fallbackContent } from "./fallbackContent.js";
 import { atlasSourceSummary, characterEvidenceByName } from "./generatedAtlasCharacters.js";
+import { timeRiverAudit, timeRiverReaches } from "./timelineChronicle.js";
 
 const iconMap = {
   timeline: GitBranch,
@@ -708,21 +709,179 @@ function MomentsPage({ content }) {
 }
 
 function TimelinePage({ content }) {
+  const riverNodeOffsets = [61, 35, 58, 40, 63, 45, 34, 58, 43, 57, 37, 39];
+  const reaches = content.timelineRiver || timeRiverReaches;
+  const [activeIndex, setActiveIndex] = useState(0);
+  const reachRefs = useRef([]);
+  const seekingRef = useRef(null);
+  const scrollFrameRef = useRef(0);
+  const scrollBehaviorRef = useRef(null);
+  const activeReach = reaches[activeIndex] || reaches[0];
+
+  useEffect(() => {
+    const nodes = reachRefs.current.filter(Boolean);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible && seekingRef.current === null) {
+          setActiveIndex(Number(visible.target.dataset.reachIndex));
+        }
+      },
+      { rootMargin: "-22% 0px -34% 0px", threshold: [0.15, 0.34, 0.56] },
+    );
+    nodes.forEach((node) => observer.observe(node));
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(scrollFrameRef.current);
+      if (scrollBehaviorRef.current !== null) {
+        document.documentElement.style.scrollBehavior = scrollBehaviorRef.current;
+        scrollBehaviorRef.current = null;
+      }
+    };
+  }, [reaches]);
+
+  const seekReach = (index) => {
+    const target = reachRefs.current[index];
+    if (!target) return;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const start = window.scrollY;
+    const destination = Math.max(0, target.getBoundingClientRect().top + window.scrollY - 106);
+    setActiveIndex(index);
+    seekingRef.current = index;
+    cancelAnimationFrame(scrollFrameRef.current);
+    if (scrollBehaviorRef.current === null) {
+      scrollBehaviorRef.current = document.documentElement.style.scrollBehavior;
+    }
+    document.documentElement.style.scrollBehavior = "auto";
+    if (reduceMotion) {
+      window.scrollTo(0, destination);
+      seekingRef.current = null;
+      document.documentElement.style.scrollBehavior = scrollBehaviorRef.current;
+      scrollBehaviorRef.current = null;
+      return;
+    }
+
+    const began = performance.now();
+    const duration = 740;
+    const animateScroll = (time) => {
+      const progress = Math.min(1, (time - began) / duration);
+      const eased = 1 - Math.pow(1 - progress, 4);
+      window.scrollTo(0, start + (destination - start) * eased);
+      if (progress < 1) {
+        scrollFrameRef.current = requestAnimationFrame(animateScroll);
+      } else {
+        seekingRef.current = null;
+        document.documentElement.style.scrollBehavior = scrollBehaviorRef.current;
+        scrollBehaviorRef.current = null;
+        setActiveIndex(index);
+      }
+    };
+    scrollFrameRef.current = requestAnimationFrame(animateScroll);
+  };
+
   return (
-    <PublicLayout content={content} activeRoute="timeline">
-      <PageHero eyebrow="Timeline" title="时间线" text="六段主线单独成页，首页不再承载这些内容。" />
-      <section className="timeline-section page-section">
-        <div className="timeline-track">
-          {(content.timeline || []).map((item, index) => (
-            <article className="timeline-card" data-reveal key={`${item.volume}-${item.title}`}>
-              <span className="timeline-index">{String(index + 1).padStart(2, "0")}</span>
-              <span className="timeline-stat">{item.stat}</span>
-              <p>{item.volume}</p>
-              <h3>{item.title}</h3>
-              <span>{item.detail}</span>
-            </article>
+    <PublicLayout content={content} activeRoute="timeline" showRail={false}>
+      <section
+        className="river-page"
+        style={{ "--river-accent": activeReach.accent }}
+      >
+        <header className="river-heading" data-reveal>
+          <p>FANG YUAN / CHRONICLE</p>
+          <h1>光阴长河</h1>
+          <span>古月方源 · 两世纪年</span>
+          <dl>
+            <div>
+              <dt>河段</dt>
+              <dd>{reaches.length}</dd>
+            </div>
+            <div>
+              <dt>起点</dt>
+              <dd>五百年前世</dd>
+            </div>
+            <div>
+              <dt>正文所至</dt>
+              <dd>三尊争战</dd>
+            </div>
+          </dl>
+        </header>
+
+        <nav className="river-tabs" aria-label="光阴河段">
+          {reaches.map((reach, index) => (
+            <button
+              aria-current={index === activeIndex ? "true" : undefined}
+              className={index === activeIndex ? "active" : ""}
+              key={reach.title}
+              onClick={() => seekReach(index)}
+              type="button"
+            >
+              <small>{reach.age}</small>
+              <span>{reach.current}</span>
+            </button>
           ))}
+        </nav>
+
+        <div className="river-journey">
+          <aside className="river-stage">
+            <div className="river-map">
+              <svg className="river-water" viewBox="0 0 300 760" preserveAspectRatio="none" aria-hidden="true">
+                <path className="river-bank" d="M184 -30 C54 80 247 142 109 244 C29 303 226 366 143 470 C56 576 224 613 113 790" />
+                <path className="river-channel" d="M184 -30 C54 80 247 142 109 244 C29 303 226 366 143 470 C56 576 224 613 113 790" />
+                <path className="river-current" d="M184 -30 C54 80 247 142 109 244 C29 303 226 366 143 470 C56 576 224 613 113 790" />
+              </svg>
+              <div className="river-nodes" aria-hidden="true">
+                {reaches.map((reach, index) => (
+                  <span
+                    className={index === activeIndex ? "active" : ""}
+                    key={reach.title}
+                    style={{
+                      "--node-left": `${riverNodeOffsets[index % riverNodeOffsets.length] || 50}%`,
+                      "--node-position": reaches.length > 1 ? index / (reaches.length - 1) : 0.5,
+                    }}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="river-stage-copy" key={activeReach.title}>
+              <small>{activeReach.age} / {activeReach.current}</small>
+              <strong>{activeReach.title}</strong>
+              <p>{activeReach.summary}</p>
+            </div>
+          </aside>
+
+          <div className="river-reaches">
+            {reaches.map((reach, index) => (
+              <article
+                className={`river-reach${index === activeIndex ? " is-active" : ""}`}
+                data-reach-index={index}
+                key={reach.title}
+                ref={(node) => {
+                  reachRefs.current[index] = node;
+                }}
+              >
+                <header>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <p>{reach.age} / {reach.current}</p>
+                  <h2>{reach.title}</h2>
+                </header>
+                <p className="river-summary">{reach.summary}</p>
+                <ol className="river-events">
+                  {reach.events.map((event) => <li key={event}>{event}</li>)}
+                </ol>
+                <div className="river-tags">
+                  {reach.tags.map((tag) => <span key={tag}>{tag}</span>)}
+                </div>
+                <footer>{reach.evidence}</footer>
+              </article>
+            ))}
+          </div>
         </div>
+
+        <footer className="river-source">
+          <span>{timeRiverAudit.corpus} / {timeRiverAudit.chapterDocuments} 篇章节文档</span>
+          <small>{timeRiverAudit.note}</small>
+        </footer>
       </section>
     </PublicLayout>
   );

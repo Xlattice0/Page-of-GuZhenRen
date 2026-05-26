@@ -1,4 +1,5 @@
 import { generatedAtlasCharacters } from "./generatedAtlasCharacters.js";
+import { timeRiverReaches } from "./timelineChronicle.js";
 
 export const fallbackContent = {
   meta: {
@@ -9,7 +10,7 @@ export const fallbackContent = {
   nav: [
     { label: "首页", href: "/", route: "home" },
     { label: "名场面", href: "/moments", route: "moments" },
-    { label: "时间线", href: "/timeline", route: "timeline" },
+    { label: "光阴长河", href: "/timeline", route: "timeline" },
     { label: "棋局", href: "/players", route: "players" },
     { label: "体系", href: "/systems", route: "systems" },
     { label: "星图", href: "/atlas", route: "atlas" },
@@ -26,7 +27,7 @@ export const fallbackContent = {
   },
   productRail: [
     { title: "名场面", caption: "剧情记忆点", icon: "spark", href: "/moments" },
-    { title: "时间线", caption: "六段主线", icon: "timeline", href: "/timeline" },
+    { title: "光阴长河", caption: "两世纪年", icon: "timeline", href: "/timeline" },
     { title: "人物棋局", caption: "立场与代价", icon: "network", href: "/players" },
     { title: "蛊道体系", caption: "规则引擎", icon: "systems", href: "/systems" },
     { title: "众生星图", caption: "五域两天", icon: "map", href: "/atlas" },
@@ -126,6 +127,7 @@ export const fallbackContent = {
       stat: "大爱",
     },
   ],
+  timelineRiver: timeRiverReaches,
   players: [
     {
       name: "方源",

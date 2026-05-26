@@ -16,7 +16,7 @@
       "route": "moments"
     },
     {
-      "label": "时间线",
+      "label": "光阴长河",
       "href": "/timeline",
       "route": "timeline"
     },
@@ -52,8 +52,8 @@
       "href": "/moments"
     },
     {
-      "title": "时间线",
-      "caption": "六段主线",
+      "title": "光阴长河",
+      "caption": "两世纪年",
       "icon": "timeline",
       "href": "/timeline"
     },
