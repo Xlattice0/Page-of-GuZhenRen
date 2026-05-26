@@ -722,387 +722,504 @@ button {
   line-height: 1.68;
 }
 
-.river-page {
-  --river-accent: #d4b56f;
-  min-height: 100vh;
-  padding-top: 48px;
-  background:
-    linear-gradient(180deg, #050505 0%, #07090b 23%, #080a0c 48%, #080707 75%, #050505 100%);
-  transition: --river-accent 720ms ease;
-}
-
-.river-heading {
-  display: grid;
-  align-content: end;
-  width: min(calc(100% - 48px), 1440px);
-  min-height: 318px;
-  margin: 0 auto;
-  padding: 54px 0 40px;
-}
-
-.river-heading > p {
-  margin: 0 0 18px;
-  color: var(--gold);
-  font-size: 0.76rem;
-  font-weight: 760;
-}
-
-.river-heading h1 {
-  margin: 0 0 13px;
-  color: #fff;
-  font-size: 4.5rem;
-  font-weight: 730;
-  line-height: 1.04;
-}
-
-.river-heading > span {
-  margin-bottom: 34px;
-  color: rgba(247, 242, 231, 0.62);
-  font-size: 1.05rem;
-}
-
-.river-heading dl {
-  display: flex;
-  margin: 0;
-  border-top: 1px solid rgba(247, 242, 231, 0.12);
-}
-
-.river-heading dl div {
-  min-width: 178px;
-  padding: 16px 34px 0 0;
-}
-
-.river-heading dt {
-  color: rgba(247, 242, 231, 0.43);
-  font-size: 0.72rem;
-}
-
-.river-heading dd {
-  margin: 7px 0 0;
-  color: rgba(247, 242, 231, 0.9);
-  font-size: 1.22rem;
-  font-weight: 650;
-}
-
-.river-tabs {
-  position: sticky;
-  z-index: 24;
-  top: 48px;
-  display: flex;
-  gap: 7px;
-  overflow-x: auto;
-  padding: 12px max(calc((100% - 1440px) / 2), 24px);
-  border-top: 1px solid rgba(247, 242, 231, 0.08);
-  border-bottom: 1px solid rgba(247, 242, 231, 0.1);
-  background: rgba(5, 6, 7, 0.83);
-  backdrop-filter: saturate(170%) blur(23px);
-  scrollbar-width: none;
-}
-
-.river-tabs::-webkit-scrollbar {
-  display: none;
-}
-
-.river-tabs button {
-  display: grid;
-  flex: 0 0 auto;
-  gap: 4px;
-  min-width: 128px;
-  padding: 9px 13px;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  background: transparent;
-  color: rgba(247, 242, 231, 0.55);
-  text-align: left;
-  transition:
-    border-color 360ms ease,
-    background 360ms ease,
-    color 360ms ease;
-}
-
-.river-tabs button small {
-  color: rgba(247, 242, 231, 0.37);
-  font-size: 0.68rem;
-}
-
-.river-tabs button span {
-  font-size: 0.79rem;
-}
-
-.river-tabs button.active {
-  border-color: color-mix(in srgb, var(--river-accent) 42%, transparent);
-  background: color-mix(in srgb, var(--river-accent) 9%, transparent);
-  color: color-mix(in srgb, var(--river-accent) 76%, white);
-}
-
-.river-tabs button.active small {
-  color: color-mix(in srgb, var(--river-accent) 58%, white);
-}
-
-.river-journey {
-  display: grid;
-  grid-template-columns: minmax(355px, 0.9fr) minmax(520px, 1fr);
-  gap: clamp(44px, 8vw, 116px);
-  width: min(calc(100% - 48px), 1440px);
-  margin: 0 auto;
-  padding: 36px 0 80px;
-}
-
-.river-stage {
-  position: sticky;
-  top: 118px;
-  height: calc(100svh - 148px);
-  min-height: 566px;
-  align-self: start;
-}
-
-.river-map {
-  position: absolute;
-  inset: 0 0 180px;
+.chronostream {
+  --river-accent: #83afbf;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: 100svh;
+  min-height: 620px;
   overflow: hidden;
+  background: #010308;
 }
 
-.river-water {
+.chronostream-landscape,
+.chronostream-landscape img,
+.chronostream-shade,
+.chronostream-flow,
+.chronostream-motes,
+.chronostream-eras,
+.chronostream-nodes {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
 }
 
-.river-bank {
-  fill: none;
-  stroke: rgba(143, 184, 194, 0.075);
-  stroke-linecap: round;
-  stroke-width: 70;
+.chronostream-landscape img {
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.86) contrast(1.04) saturate(1.04);
 }
 
-.river-channel {
-  fill: none;
-  stroke: rgba(95, 138, 160, 0.22);
-  stroke-linecap: round;
-  stroke-width: 42;
-  filter: drop-shadow(0 0 22px rgba(102, 157, 180, 0.16));
+.chronostream-shade {
+  z-index: 1;
+  background:
+    radial-gradient(circle at 49% 46%, transparent 27%, rgba(1, 3, 8, 0.06) 60%, rgba(1, 3, 8, 0.58) 100%),
+    linear-gradient(105deg, rgba(1, 3, 8, 0.46), transparent 30%, transparent 66%, rgba(1, 3, 8, 0.44));
+  pointer-events: none;
 }
 
-.river-current {
-  fill: none;
-  stroke: color-mix(in srgb, var(--river-accent) 48%, #7ab5c2);
-  stroke-dasharray: 9 22;
-  stroke-linecap: round;
-  stroke-width: 2;
-  animation: river-current-flow 4.8s linear infinite;
-  transition: stroke 700ms ease;
+.chronostream-flow {
+  z-index: 2;
+  pointer-events: none;
 }
 
-.river-nodes {
+.chronostream-main-current {
+  fill: none;
+  stroke: rgba(199, 224, 239, 0.3);
+  stroke-dasharray: 0.45 4.5;
+  stroke-linecap: round;
+  stroke-width: 0.15;
+  animation: chronostream-current 7.8s linear infinite;
+}
+
+.chronostream-era-current {
+  fill: none;
+  stroke: rgba(219, 189, 107, 0.34);
+  stroke-dasharray: 0.5 2.5;
+  stroke-linecap: round;
+  stroke-width: 0.2;
+  opacity: 0.56;
+  filter: drop-shadow(0 0 2px rgba(212, 181, 111, 0.4));
+  transition: opacity 720ms ease, filter 720ms ease;
+  animation: chronostream-current 6.8s linear infinite;
+}
+
+.chronostream-era-current.second {
+  stroke: rgba(153, 209, 227, 0.43);
+}
+
+.chronostream-era-current.is-muted {
+  opacity: 0.08;
+  filter: blur(0.8px);
+}
+
+.chronostream-motes {
+  z-index: 3;
+  pointer-events: none;
+}
+
+.chronostream-motes span {
   position: absolute;
-  inset: 0;
-}
-
-.river-nodes span {
-  position: absolute;
-  top: calc(18px + (100% - 36px) * var(--node-position));
-  left: var(--node-left);
-  width: 9px;
-  height: 9px;
-  border: 1px solid rgba(247, 242, 231, 0.38);
+  width: var(--mote-size, 3px);
+  height: var(--mote-size, 3px);
   border-radius: 50%;
-  background: #0b0e10;
-  transform: translate(-50%, -50%);
-  transition:
-    width 420ms ease,
-    height 420ms ease,
-    border-color 420ms ease,
-    background 420ms ease,
-    box-shadow 420ms ease;
+  background: rgba(214, 181, 111, 0.72);
+  box-shadow: 0 0 13px rgba(214, 181, 111, 0.58);
+  opacity: 0.32;
+  animation: chronostream-mote 14s ease-in-out infinite alternate;
 }
 
-.river-nodes span.active {
-  width: 20px;
-  height: 20px;
-  border-color: color-mix(in srgb, var(--river-accent) 75%, white);
-  background: color-mix(in srgb, var(--river-accent) 48%, #050505);
-  box-shadow:
-    0 0 0 7px color-mix(in srgb, var(--river-accent) 10%, transparent),
-    0 0 28px color-mix(in srgb, var(--river-accent) 48%, transparent);
-}
+.chronostream-motes span:nth-child(1) { --mote-size: 3px; top: 15%; left: 18%; animation-delay: -4s; }
+.chronostream-motes span:nth-child(2) { --mote-size: 2px; top: 22%; left: 27%; animation-delay: -8s; }
+.chronostream-motes span:nth-child(3) { --mote-size: 3px; top: 30%; left: 39%; animation-delay: -1s; }
+.chronostream-motes span:nth-child(4) { --mote-size: 2px; top: 38%; left: 48%; animation-delay: -9s; }
+.chronostream-motes span:nth-child(5) { --mote-size: 3px; top: 49%; left: 53%; animation-delay: -5s; }
+.chronostream-motes span:nth-child(6) { --mote-size: 2px; top: 57%; left: 63%; animation-delay: -11s; }
+.chronostream-motes span:nth-child(7) { --mote-size: 3px; top: 65%; left: 69%; animation-delay: -3s; }
+.chronostream-motes span:nth-child(8) { --mote-size: 2px; top: 72%; left: 77%; animation-delay: -10s; }
+.chronostream-motes span:nth-child(9) { --mote-size: 3px; top: 82%; left: 86%; animation-delay: -7s; }
+.chronostream-motes span:nth-child(10) { --mote-size: 2px; top: 11%; left: 61%; animation-delay: -2s; }
+.chronostream-motes span:nth-child(11) { --mote-size: 2px; top: 68%; left: 16%; animation-delay: -12s; }
+.chronostream-motes span:nth-child(12) { --mote-size: 3px; top: 42%; left: 82%; animation-delay: -6s; }
+.chronostream-motes span:nth-child(13) { --mote-size: 2px; top: 88%; left: 44%; animation-delay: -9s; }
+.chronostream-motes span:nth-child(14) { --mote-size: 3px; top: 26%; left: 7%; animation-delay: -13s; }
 
-.river-stage-copy {
+.chronostream-exit {
   position: absolute;
-  right: 0;
-  bottom: 18px;
-  left: 0;
+  z-index: 40;
+  top: 22px;
+  right: 25px;
   display: grid;
-  gap: 11px;
-  animation: river-copy-enter 640ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(247, 242, 231, 0.18);
+  border-radius: 50%;
+  background: rgba(3, 6, 7, 0.32);
+  color: rgba(247, 242, 231, 0.78);
+  backdrop-filter: blur(14px);
+  transition: border-color 260ms ease, color 260ms ease, background 260ms ease;
 }
 
-.river-stage-copy small {
-  color: color-mix(in srgb, var(--river-accent) 76%, white);
-  font-size: 0.75rem;
+.chronostream-exit:hover {
+  border-color: rgba(247, 242, 231, 0.38);
+  background: rgba(3, 6, 7, 0.58);
+  color: #fff;
+}
+
+.chronostream-overview {
+  position: absolute;
+  z-index: 40;
+  top: 22px;
+  right: 78px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(247, 242, 231, 0.18);
+  border-radius: 50%;
+  background: rgba(3, 5, 12, 0.32);
+  color: rgba(247, 242, 231, 0.72);
+  backdrop-filter: blur(14px);
+}
+
+.chronostream-eras {
+  z-index: 9;
+}
+
+.chronostream-era {
+  position: absolute;
+  top: var(--node-y);
+  left: var(--node-x);
+  display: block;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(247, 242, 231, 0.74);
+  transform: translate(-50%, -50%);
+  transition: filter 720ms ease, opacity 720ms ease;
+}
+
+.chronostream-era::before {
+  position: absolute;
+  inset: -22px;
+  content: "";
+}
+
+.chronostream-era.is-muted {
+  opacity: 0.2;
+  filter: blur(3.4px);
+}
+
+.chronostream-era-copy {
+  position: absolute;
+  top: 50%;
+  display: grid;
+  gap: 4px;
+  width: max-content;
+  text-align: left;
+  text-shadow: 0 3px 13px rgba(0, 0, 0, 0.86);
+  transform: translateY(-50%);
+}
+
+.chronostream-era.first .chronostream-era-copy {
+  left: 30px;
+}
+
+.chronostream-era.second .chronostream-era-copy {
+  right: 30px;
+  text-align: right;
+}
+
+.chronostream-era.first.is-active .chronostream-era-copy {
+  left: clamp(92px, 8vw, 124px);
+}
+
+.chronostream-era.second.is-active .chronostream-era-copy {
+  right: clamp(82px, 7vw, 110px);
+}
+
+.chronostream-era-copy small {
+  color: rgba(222, 195, 124, 0.84);
+  font-size: 0.68rem;
   font-weight: 680;
 }
 
-.river-stage-copy strong {
-  max-width: 430px;
-  color: #fff;
-  font-size: 2.8rem;
-  font-weight: 700;
+.chronostream-era-copy strong {
+  color: rgba(255, 252, 246, 0.94);
+  font-size: clamp(1.1rem, 1.48vw, 1.52rem);
+  font-weight: 650;
   line-height: 1.12;
 }
 
-.river-stage-copy p {
-  max-width: 450px;
-  margin: 0;
-  color: rgba(247, 242, 231, 0.58);
-  font-size: 0.88rem;
-  line-height: 1.75;
+.chronostream-era-copy em {
+  color: rgba(247, 242, 231, 0.55);
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 480;
 }
 
-.river-reaches {
-  min-width: 0;
+.chronostream-era.is-active .chronostream-era-copy strong {
+  color: #fff;
+  text-shadow: 0 0 20px color-mix(in srgb, var(--river-accent) 42%, transparent);
 }
 
-.river-reach {
+.chronostream-nodes {
+  z-index: 10;
+}
+
+.chronostream-node {
+  position: absolute;
+  top: var(--node-y);
+  left: var(--node-x);
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(247, 242, 231, 0.72);
+  transform: translate(-50%, -50%);
+}
+
+.chronostream-node::before {
+  position: absolute;
+  inset: -15px;
+  content: "";
+}
+
+.chronostream-beacon {
+  position: absolute;
+  inset: 3px;
+  display: block;
+  border: 1px solid rgba(225, 205, 156, 0.76);
+  border-radius: 50%;
+  background: rgba(8, 15, 16, 0.78);
+  box-shadow: 0 0 0 3px rgba(6, 11, 12, 0.42);
+  transition: transform 320ms ease, border-color 320ms ease, background 320ms ease, box-shadow 320ms ease;
+}
+
+.chronostream-era:hover .chronostream-beacon,
+.chronostream-era.is-active .chronostream-beacon,
+.chronostream-node:hover .chronostream-beacon,
+.chronostream-node.is-active .chronostream-beacon {
+  border-color: color-mix(in srgb, var(--river-accent) 64%, white);
+  background: color-mix(in srgb, var(--river-accent) 46%, #071012);
+  box-shadow:
+    0 0 0 6px color-mix(in srgb, var(--river-accent) 15%, transparent),
+    0 0 23px color-mix(in srgb, var(--river-accent) 65%, transparent);
+  transform: scale(1.42);
+}
+
+.chronostream-node-copy {
+  position: absolute;
+  top: 50%;
   display: grid;
-  align-content: center;
-  gap: 27px;
-  min-height: max(660px, calc(100svh - 98px));
-  padding: 56px 0 74px;
-  opacity: 0.32;
-  transform: translateY(20px);
-  transition:
-    opacity 680ms cubic-bezier(0.16, 1, 0.3, 1),
-    transform 680ms cubic-bezier(0.16, 1, 0.3, 1);
-  scroll-margin-top: 96px;
+  gap: 4px;
+  width: max-content;
+  max-width: 185px;
+  text-shadow: 0 2px 9px rgba(0, 0, 0, 0.92);
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: opacity 280ms ease;
 }
 
-.river-reach.is-active {
+.chronostream-node.is-east .chronostream-node-copy {
+  left: 28px;
+  text-align: left;
+}
+
+.chronostream-node.is-west .chronostream-node-copy {
+  right: 28px;
+  text-align: right;
+}
+
+.chronostream-node.is-active.is-east .chronostream-node-copy {
+  left: clamp(74px, 7.4vw, 106px);
+}
+
+.chronostream-node.is-active.is-west .chronostream-node-copy {
+  right: clamp(74px, 7.4vw, 106px);
+}
+
+.chronostream-node-copy small {
+  color: rgba(229, 215, 181, 0.76);
+  font-size: clamp(0.58rem, 0.67vw, 0.7rem);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.chronostream-node-copy strong {
+  color: rgba(247, 242, 231, 0.72);
+  font-size: clamp(0.64rem, 0.76vw, 0.82rem);
+  font-weight: 570;
+  line-height: 1.34;
+  opacity: 0;
+  white-space: nowrap;
+  transform: translateY(-3px);
+  transition: color 320ms ease, opacity 280ms ease, transform 280ms ease;
+}
+
+.chronostream-node:hover .chronostream-node-copy,
+.chronostream-node.is-active .chronostream-node-copy {
+  opacity: 1;
+}
+
+.chronostream-node:hover .chronostream-node-copy strong,
+.chronostream-node.is-active .chronostream-node-copy strong {
+  color: #fff;
   opacity: 1;
   transform: translateY(0);
 }
 
-.river-reach header {
-  display: grid;
-  gap: 10px;
-}
-
-.river-reach header > span {
-  color: color-mix(in srgb, var(--river-accent) 66%, transparent);
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
-.river-reach header p {
-  margin: 0;
-  color: color-mix(in srgb, var(--river-accent) 82%, white);
-  font-size: 0.78rem;
-  font-weight: 680;
-}
-
-.river-reach h2 {
-  margin: 2px 0 0;
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 710;
-  line-height: 1.12;
-}
-
-.river-summary {
-  max-width: 690px;
-  margin: 0;
-  color: rgba(247, 242, 231, 0.77);
-  font-size: 1rem;
-  line-height: 1.87;
-}
-
-.river-events {
-  display: grid;
-  gap: 0;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid rgba(247, 242, 231, 0.11);
-  list-style: none;
-  counter-reset: river-events;
-}
-
-.river-events li {
-  position: relative;
-  min-height: 64px;
-  padding: 16px 0 16px 42px;
-  border-bottom: 1px solid rgba(247, 242, 231, 0.08);
-  color: rgba(247, 242, 231, 0.64);
-  font-size: 0.87rem;
-  line-height: 1.76;
-  counter-increment: river-events;
-}
-
-.river-events li::before {
+.chronostream-pet {
   position: absolute;
-  top: 18px;
-  left: 0;
+  z-index: 22;
+  top: var(--pet-y);
+  left: var(--pet-x);
+  width: clamp(72px, 7.4vw, 114px);
+  aspect-ratio: 192 / 208;
+  pointer-events: none;
+  transform: translate(-50%, -78%);
+  filter: drop-shadow(0 7px 11px rgba(0, 0, 0, 0.62));
+}
+
+.chronostream-pet span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/pets/fang-yuan-spritesheet.webp");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 800% 900%;
+}
+
+.chronostream-pet.is-idle span {
+  animation: fang-yuan-idle 1.7s steps(5) infinite;
+}
+
+.chronostream-pet.is-moving.is-right span {
+  animation: fang-yuan-walk-right 0.8s steps(7) infinite;
+}
+
+.chronostream-pet.is-moving.is-left span {
+  animation: fang-yuan-walk-left 0.8s steps(7) infinite;
+}
+
+.chronostream-memory {
+  position: absolute;
+  z-index: 30;
+  right: clamp(24px, 4vw, 54px);
+  bottom: clamp(22px, 4vh, 40px);
+  width: min(430px, calc(100% - 48px));
+  max-height: min(66svh, 604px);
+  overflow-y: auto;
+  padding: 24px 25px 22px;
+  border: 1px solid rgba(247, 242, 231, 0.16);
+  border-radius: 7px;
+  background: rgba(5, 9, 10, 0.7);
+  backdrop-filter: blur(22px) saturate(125%);
+  box-shadow: 0 18px 64px rgba(0, 0, 0, 0.3);
+  animation: chronostream-memory-enter 380ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.chronostream-memory.on-left {
+  right: auto;
+  left: clamp(24px, 4vw, 54px);
+}
+
+.chronostream-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border: 1px solid rgba(247, 242, 231, 0.14);
+  border-radius: 50%;
+  background: transparent;
+  color: rgba(247, 242, 231, 0.64);
+}
+
+.chronostream-memory > p {
+  margin: 0 38px 10px 0;
   color: color-mix(in srgb, var(--river-accent) 72%, white);
   font-size: 0.72rem;
-  font-weight: 700;
-  content: "0" counter(river-events);
+  font-weight: 660;
 }
 
-.river-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.chronostream-memory h2 {
+  margin: 0 0 13px;
+  color: #fff;
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-weight: 680;
+  line-height: 1.25;
 }
 
-.river-tags span {
-  padding: 7px 11px;
-  border: 1px solid rgba(247, 242, 231, 0.11);
-  border-radius: 999px;
-  color: rgba(247, 242, 231, 0.62);
-  font-size: 0.76rem;
+.chronostream-memory > span {
+  display: block;
+  margin-bottom: 15px;
+  color: rgba(247, 242, 231, 0.75);
+  font-size: 0.85rem;
+  line-height: 1.74;
 }
 
-.river-reach footer {
-  padding-top: 15px;
-  border-top: 1px solid rgba(247, 242, 231, 0.08);
-  color: rgba(143, 184, 194, 0.67);
-  font-size: 0.74rem;
+.chronostream-memory ol {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 15px 0 0 21px;
+  border-top: 1px solid rgba(247, 242, 231, 0.12);
+  color: rgba(247, 242, 231, 0.63);
+  font-size: 0.79rem;
+  line-height: 1.62;
 }
 
-.river-source {
-  display: flex;
-  gap: 12px 24px;
-  align-items: center;
-  width: min(calc(100% - 48px), 1440px);
-  margin: 0 auto;
-  padding: 20px 0 74px;
-  border-top: 1px solid rgba(247, 242, 231, 0.1);
-  color: rgba(247, 242, 231, 0.5);
-  font-size: 0.78rem;
-}
-
-.river-source small {
-  color: rgba(247, 242, 231, 0.38);
-}
-
-@keyframes river-current-flow {
+@keyframes chronostream-current {
   from {
     stroke-dashoffset: 0;
   }
 
   to {
-    stroke-dashoffset: -124;
+    stroke-dashoffset: -36;
   }
 }
 
-@keyframes river-copy-enter {
+@keyframes chronostream-mote {
+  from {
+    opacity: 0.16;
+    transform: translate3d(-4px, 7px, 0) scale(0.82);
+  }
+
+  to {
+    opacity: 0.58;
+    transform: translate3d(9px, -12px, 0) scale(1.18);
+  }
+}
+
+@keyframes chronostream-memory-enter {
   from {
     opacity: 0;
-    transform: translateY(14px);
+    transform: translateY(10px) scale(0.986);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fang-yuan-idle {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 71.428% 0%;
+  }
+}
+
+@keyframes fang-yuan-walk-right {
+  from {
+    background-position: 0% 12.5%;
+  }
+
+  to {
+    background-position: 100% 12.5%;
+  }
+}
+
+@keyframes fang-yuan-walk-left {
+  from {
+    background-position: 0% 25%;
+  }
+
+  to {
+    background-position: 100% 25%;
   }
 }
 
@@ -4579,118 +4696,154 @@ button {
 }
 
 @media (max-width: 1120px) {
-  .river-journey {
-    grid-template-columns: minmax(280px, 0.72fr) minmax(430px, 1fr);
-    gap: 40px;
+  .chronostream-era-copy strong {
+    font-size: 1.06rem;
   }
 
-  .river-stage-copy strong {
-    font-size: 2.25rem;
-  }
-
-  .river-reach h2 {
-    font-size: 2.5rem;
+  .chronostream-node-copy {
+    max-width: 150px;
   }
 }
 
 @media (max-width: 860px) {
-  .river-page {
-    padding-top: 46px;
+  .chronostream-memory {
+    width: min(382px, calc(100% - 32px));
+    padding: 20px 21px;
+  }
+}
+
+@media (max-width: 700px) {
+  .chronostream {
+    min-height: 570px;
   }
 
-  .river-heading {
-    width: calc(100% - 32px);
-    min-height: 284px;
-    padding: 44px 0 30px;
+  .chronostream-landscape img {
+    object-position: center top;
   }
 
-  .river-heading h1 {
-    font-size: 3.25rem;
+  .chronostream-shade {
+    background:
+      radial-gradient(circle at 50% 50%, transparent 25%, rgba(3, 6, 7, 0.12) 68%, rgba(3, 6, 7, 0.46) 100%);
   }
 
-  .river-heading > span {
-    margin-bottom: 34px;
-    font-size: 0.92rem;
+  .chronostream-flow {
+    opacity: 0.3;
   }
 
-  .river-heading dl div {
-    flex: 1;
-    min-width: 0;
-    padding-right: 9px;
+  .chronostream-exit {
+    top: 14px;
+    right: 14px;
+    width: 38px;
+    height: 38px;
   }
 
-  .river-heading dd {
-    font-size: 0.98rem;
+  .chronostream-overview {
+    top: 14px;
+    right: 60px;
+    width: 38px;
+    height: 38px;
   }
 
-  .river-tabs {
-    top: 46px;
-    padding: 10px 16px;
+  .chronostream-era-copy {
+    gap: 3px;
   }
 
-  .river-tabs button {
-    min-width: 109px;
-    padding: 8px 11px;
+  .chronostream-era.first .chronostream-era-copy {
+    left: 24px;
   }
 
-  .river-journey {
+  .chronostream-era.second .chronostream-era-copy {
+    right: 24px;
+  }
+
+  .chronostream-era.first.is-active .chronostream-era-copy {
+    left: 64px;
+  }
+
+  .chronostream-era.second.is-active .chronostream-era-copy {
+    right: 64px;
+  }
+
+  .chronostream-era-copy small {
+    font-size: 0.58rem;
+  }
+
+  .chronostream-era-copy strong {
+    font-size: 0.9rem;
+  }
+
+  .chronostream-era-copy em {
+    display: none;
+  }
+
+  .chronostream-node {
+    width: 16px;
+    height: 16px;
+  }
+
+  .chronostream-node-copy {
+    max-width: 118px;
+    gap: 2px;
+  }
+
+  .chronostream-node.is-east .chronostream-node-copy {
+    left: 22px;
+  }
+
+  .chronostream-node.is-west .chronostream-node-copy {
+    right: 22px;
+  }
+
+  .chronostream-node.is-active.is-east .chronostream-node-copy {
+    left: 64px;
+  }
+
+  .chronostream-node.is-active.is-west .chronostream-node-copy {
+    right: 64px;
+  }
+
+  .chronostream-node-copy small {
+    font-size: 0.55rem;
+  }
+
+  .chronostream-node-copy strong {
+    display: none;
+    font-size: 0.64rem;
+    white-space: normal;
+  }
+
+  .chronostream-node.is-active .chronostream-node-copy strong {
     display: block;
-    width: calc(100% - 32px);
-    padding: 24px 0 52px;
   }
 
-  .river-stage {
-    position: relative;
-    top: auto;
-    height: 425px;
-    min-height: 0;
-    margin-bottom: 30px;
+  .chronostream-pet {
+    width: clamp(58px, 19vw, 76px);
   }
 
-  .river-map {
-    inset: 0 0 128px;
+  .chronostream-memory {
+    right: 12px;
+    bottom: 12px;
+    left: 12px !important;
+    width: auto;
+    max-height: min(45svh, 392px);
+    padding: 18px 18px 18px;
   }
 
-  .river-stage-copy {
-    bottom: 0;
+  .chronostream-memory.is-upper {
+    top: 60px;
+    bottom: auto;
   }
 
-  .river-stage-copy strong {
-    font-size: 1.9rem;
+  .chronostream-memory h2 {
+    font-size: 1.24rem;
   }
 
-  .river-stage-copy p {
-    font-size: 0.82rem;
-    line-height: 1.65;
+  .chronostream-memory > span {
+    font-size: 0.79rem;
   }
 
-  .river-reach {
-    min-height: 0;
-    padding: 54px 0 64px;
-    border-top: 1px solid rgba(247, 242, 231, 0.08);
-    opacity: 1;
-    transform: none;
-    scroll-margin-top: 112px;
-  }
-
-  .river-reach h2 {
-    font-size: 2.18rem;
-  }
-
-  .river-summary {
-    font-size: 0.92rem;
-  }
-
-  .river-events li {
-    padding-left: 34px;
-    font-size: 0.83rem;
-  }
-
-  .river-source {
-    flex-direction: column;
-    align-items: start;
-    width: calc(100% - 32px);
-    padding: 20px 0 62px;
+  .chronostream-memory ol {
+    font-size: 0.74rem;
   }
 }
 

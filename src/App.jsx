@@ -19,6 +19,7 @@ import {
   Sparkles,
   Trash2,
   Waves,
+  X,
 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
@@ -27,7 +28,7 @@ import { archiveAudit, guArchiveEntries, secretRealmEntries } from "./archiveCol
 import { characterProfiles } from "./characterProfiles.js";
 import { fallbackContent } from "./fallbackContent.js";
 import { atlasSourceSummary, characterEvidenceByName } from "./generatedAtlasCharacters.js";
-import { timeRiverAudit, timeRiverReaches } from "./timelineChronicle.js";
+import { timeRiverReaches } from "./timelineChronicle.js";
 
 const iconMap = {
   timeline: GitBranch,
@@ -708,182 +709,256 @@ function MomentsPage({ content }) {
   );
 }
 
+const timeRiverDesktopLayout = {
+  source: { x: 7, y: 12 },
+  first: { x: 35, y: 34, side: "east" },
+  secondGate: { x: 56, y: 53, side: "west" },
+  second: [
+    { x: 59, y: 57, side: "east" },
+    { x: 62, y: 60, side: "west" },
+    { x: 65, y: 63, side: "east" },
+    { x: 68, y: 66, side: "west" },
+    { x: 71, y: 69, side: "east" },
+    { x: 74, y: 72, side: "west" },
+    { x: 77, y: 75, side: "east" },
+    { x: 80, y: 78, side: "west" },
+    { x: 83, y: 81, side: "east" },
+    { x: 86, y: 84, side: "west" },
+    { x: 89, y: 87, side: "west" },
+  ],
+};
+
+const timeRiverMobileLayout = {
+  source: { x: 9, y: 10 },
+  first: { x: 30, y: 34, side: "east" },
+  secondGate: { x: 54, y: 55, side: "west" },
+  second: [
+    { x: 57, y: 58, side: "east" },
+    { x: 60, y: 61, side: "west" },
+    { x: 63, y: 64, side: "east" },
+    { x: 66, y: 67, side: "west" },
+    { x: 69, y: 70, side: "east" },
+    { x: 72, y: 73, side: "west" },
+    { x: 75, y: 76, side: "east" },
+    { x: 78, y: 79, side: "west" },
+    { x: 81, y: 82, side: "east" },
+    { x: 84, y: 85, side: "west" },
+    { x: 87, y: 88, side: "west" },
+  ],
+};
+
 function TimelinePage({ content }) {
-  const riverNodeOffsets = [61, 35, 58, 40, 63, 45, 34, 58, 43, 57, 37, 39];
   const reaches = content.timelineRiver || timeRiverReaches;
-  const [activeIndex, setActiveIndex] = useState(0);
-  const reachRefs = useRef([]);
-  const seekingRef = useRef(null);
-  const scrollFrameRef = useRef(0);
-  const scrollBehaviorRef = useRef(null);
-  const activeReach = reaches[activeIndex] || reaches[0];
+  const [isNarrow, setIsNarrow] = useState(() => window.matchMedia("(max-width: 700px)").matches);
+  const layout = isNarrow ? timeRiverMobileLayout : timeRiverDesktopLayout;
+  const petPointRef = useRef(layout.source);
+  const travelFrameRef = useRef(0);
+  const [activeEra, setActiveEra] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [memoryIndex, setMemoryIndex] = useState(null);
+  const [petPoint, setPetPoint] = useState(layout.source);
+  const [petDirection, setPetDirection] = useState("right");
+  const [travelling, setTravelling] = useState(false);
+  const activeReach = activeIndex === null ? null : reaches[activeIndex];
+  const memoryReach = memoryIndex === null ? null : reaches[memoryIndex];
 
   useEffect(() => {
-    const nodes = reachRefs.current.filter(Boolean);
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible && seekingRef.current === null) {
-          setActiveIndex(Number(visible.target.dataset.reachIndex));
-        }
-      },
-      { rootMargin: "-22% 0px -34% 0px", threshold: [0.15, 0.34, 0.56] },
-    );
-    nodes.forEach((node) => observer.observe(node));
+    const media = window.matchMedia("(max-width: 700px)");
+    const updateCourse = () => setIsNarrow(media.matches);
+    media.addEventListener("change", updateCourse);
     return () => {
-      observer.disconnect();
-      cancelAnimationFrame(scrollFrameRef.current);
-      if (scrollBehaviorRef.current !== null) {
-        document.documentElement.style.scrollBehavior = scrollBehaviorRef.current;
-        scrollBehaviorRef.current = null;
-      }
+      media.removeEventListener("change", updateCourse);
+      cancelAnimationFrame(travelFrameRef.current);
     };
-  }, [reaches]);
+  }, []);
 
-  const seekReach = (index) => {
-    const target = reachRefs.current[index];
-    if (!target) return;
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const start = window.scrollY;
-    const destination = Math.max(0, target.getBoundingClientRect().top + window.scrollY - 106);
-    setActiveIndex(index);
-    seekingRef.current = index;
-    cancelAnimationFrame(scrollFrameRef.current);
-    if (scrollBehaviorRef.current === null) {
-      scrollBehaviorRef.current = document.documentElement.style.scrollBehavior;
-    }
-    document.documentElement.style.scrollBehavior = "auto";
-    if (reduceMotion) {
-      window.scrollTo(0, destination);
-      seekingRef.current = null;
-      document.documentElement.style.scrollBehavior = scrollBehaviorRef.current;
-      scrollBehaviorRef.current = null;
+  useEffect(() => {
+    const point = activeIndex === null
+      ? layout.source
+      : activeIndex === 0
+        ? layout.first
+        : layout.second[activeIndex - 1];
+    petPointRef.current = point;
+    setPetPoint(point);
+  }, [isNarrow]);
+
+  const movePetTo = (target, onArrival) => {
+    const from = petPointRef.current;
+    const dx = target.x - from.x;
+    const dy = target.y - from.y;
+    const distance = Math.hypot(dx, dy);
+    setMemoryIndex(null);
+    cancelAnimationFrame(travelFrameRef.current);
+    if (distance < 0.1 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      petPointRef.current = target;
+      setPetPoint(target);
+      setTravelling(false);
+      onArrival();
       return;
     }
 
+    setPetDirection(dx >= 0 ? "right" : "left");
+    setTravelling(true);
     const began = performance.now();
-    const duration = 740;
-    const animateScroll = (time) => {
+    const duration = Math.min(3200, 680 + distance * 42);
+
+    const move = (time) => {
       const progress = Math.min(1, (time - began) / duration);
-      const eased = 1 - Math.pow(1 - progress, 4);
-      window.scrollTo(0, start + (destination - start) * eased);
+      const eased = progress < 0.5
+        ? 4 * progress * progress * progress
+        : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+      const point = {
+        x: from.x + dx * eased,
+        y: from.y + dy * eased,
+      };
+      petPointRef.current = point;
+      setPetPoint(point);
       if (progress < 1) {
-        scrollFrameRef.current = requestAnimationFrame(animateScroll);
+        travelFrameRef.current = requestAnimationFrame(move);
       } else {
-        seekingRef.current = null;
-        document.documentElement.style.scrollBehavior = scrollBehaviorRef.current;
-        scrollBehaviorRef.current = null;
-        setActiveIndex(index);
+        petPointRef.current = target;
+        setPetPoint(target);
+        setTravelling(false);
+        onArrival();
       }
     };
-    scrollFrameRef.current = requestAnimationFrame(animateScroll);
+    travelFrameRef.current = requestAnimationFrame(move);
+  };
+
+  const enterEra = (era) => {
+    const index = era === "first" ? 0 : 1;
+    const target = era === "first" ? layout.first : layout.second[0];
+    setActiveEra(era);
+    setActiveIndex(index);
+    movePetTo(target, () => setMemoryIndex(index));
+  };
+
+  const travelToSecondReach = (index) => {
+    setActiveEra("second");
+    setActiveIndex(index);
+    movePetTo(layout.second[index - 1], () => setMemoryIndex(index));
+  };
+
+  const returnToSource = () => {
+    setActiveEra(null);
+    setActiveIndex(null);
+    setMemoryIndex(null);
+    movePetTo(layout.source, () => {});
+  };
+
+  const closeMemory = () => {
+    setMemoryIndex(null);
   };
 
   return (
-    <PublicLayout content={content} activeRoute="timeline" showRail={false}>
-      <section
-        className="river-page"
-        style={{ "--river-accent": activeReach.accent }}
-      >
-        <header className="river-heading" data-reveal>
-          <p>FANG YUAN / CHRONICLE</p>
-          <h1>光阴长河</h1>
-          <span>古月方源 · 两世纪年</span>
-          <dl>
-            <div>
-              <dt>河段</dt>
-              <dd>{reaches.length}</dd>
-            </div>
-            <div>
-              <dt>起点</dt>
-              <dd>五百年前世</dd>
-            </div>
-            <div>
-              <dt>正文所至</dt>
-              <dd>三尊争战</dd>
-            </div>
-          </dl>
-        </header>
+    <main
+      className={`chronostream${activeEra ? ` is-${activeEra}` : ""}`}
+      style={{ "--river-accent": activeReach?.accent || "#83afbf" }}
+    >
+      <picture className="chronostream-landscape" aria-hidden="true">
+        <source media="(max-width: 700px)" srcSet="/assets/timeline/river-of-time-epoch-mobile.webp" />
+        <img alt="" src="/assets/timeline/river-of-time-epoch-desktop.webp" />
+      </picture>
+      <div className="chronostream-shade" aria-hidden="true" />
+      <div className="chronostream-motes" aria-hidden="true">
+        {Array.from({ length: 14 }, (_, index) => <span key={index} />)}
+      </div>
+      <svg className="chronostream-flow" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path className="chronostream-main-current" d="M -4 10 C 9 13, 20 20, 29 29 S 45 43, 55 53 S 76 74, 104 96" />
+        <path className={`chronostream-era-current first${activeEra === "second" ? " is-muted" : ""}`} d="M 13 18 C 22 23, 28 29, 39 39" />
+        <path className={`chronostream-era-current second${activeEra === "first" ? " is-muted" : ""}`} d="M 53 52 C 63 60, 74 75, 92 90" />
+      </svg>
+      <a className="chronostream-exit" href="/" aria-label="返回首页" title="返回首页">
+        <ArrowLeft size={18} />
+      </a>
+      {activeEra && (
+        <button className="chronostream-overview" onClick={returnToSource} type="button" aria-label="回到长河源头" title="回到长河源头">
+          <Waves size={18} />
+        </button>
+      )}
 
-        <nav className="river-tabs" aria-label="光阴河段">
-          {reaches.map((reach, index) => (
-            <button
-              aria-current={index === activeIndex ? "true" : undefined}
-              className={index === activeIndex ? "active" : ""}
-              key={reach.title}
-              onClick={() => seekReach(index)}
-              type="button"
-            >
-              <small>{reach.age}</small>
-              <span>{reach.current}</span>
-            </button>
-          ))}
-        </nav>
+      <div className="chronostream-eras" aria-label="两世河域">
+        <button
+          aria-current={activeEra === "first" ? "true" : undefined}
+          className={`chronostream-era first${activeEra === "first" ? " is-active" : ""}${activeEra === "second" ? " is-muted" : ""}`}
+          onClick={() => enterEra("first")}
+          style={{ "--node-x": `${layout.first.x}%`, "--node-y": `${layout.first.y}%` }}
+          type="button"
+        >
+          <span className="chronostream-beacon" />
+          <span className="chronostream-era-copy">
+            <small>第一世</small>
+            <strong>五百年</strong>
+            <em>漫长前尘，终以春秋回转</em>
+          </span>
+        </button>
+        <button
+          aria-current={activeEra === "second" ? "true" : undefined}
+          className={`chronostream-era second${activeEra === "second" ? " is-active" : ""}${activeEra === "first" ? " is-muted" : ""}`}
+          onClick={() => enterEra("second")}
+          style={{ "--node-x": `${layout.secondGate.x}%`, "--node-y": `${layout.secondGate.y}%` }}
+          type="button"
+        >
+          <span className="chronostream-beacon" />
+          <span className="chronostream-era-copy">
+            <small>第二世 · 重生后</small>
+            <strong>五十七年</strong>
+            <em>春秋蝉逆流，再入大时代</em>
+          </span>
+        </button>
+      </div>
 
-        <div className="river-journey">
-          <aside className="river-stage">
-            <div className="river-map">
-              <svg className="river-water" viewBox="0 0 300 760" preserveAspectRatio="none" aria-hidden="true">
-                <path className="river-bank" d="M184 -30 C54 80 247 142 109 244 C29 303 226 366 143 470 C56 576 224 613 113 790" />
-                <path className="river-channel" d="M184 -30 C54 80 247 142 109 244 C29 303 226 366 143 470 C56 576 224 613 113 790" />
-                <path className="river-current" d="M184 -30 C54 80 247 142 109 244 C29 303 226 366 143 470 C56 576 224 613 113 790" />
-              </svg>
-              <div className="river-nodes" aria-hidden="true">
-                {reaches.map((reach, index) => (
-                  <span
-                    className={index === activeIndex ? "active" : ""}
-                    key={reach.title}
-                    style={{
-                      "--node-left": `${riverNodeOffsets[index % riverNodeOffsets.length] || 50}%`,
-                      "--node-position": reaches.length > 1 ? index / (reaches.length - 1) : 0.5,
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
-            <div className="river-stage-copy" key={activeReach.title}>
-              <small>{activeReach.age} / {activeReach.current}</small>
-              <strong>{activeReach.title}</strong>
-              <p>{activeReach.summary}</p>
-            </div>
-          </aside>
-
-          <div className="river-reaches">
-            {reaches.map((reach, index) => (
-              <article
-                className={`river-reach${index === activeIndex ? " is-active" : ""}`}
-                data-reach-index={index}
+      {activeEra === "second" && (
+        <div className="chronostream-nodes" aria-label="第二世纪年">
+          {reaches.slice(1).map((reach, offset) => {
+            const index = offset + 1;
+            const point = layout.second[offset];
+            return (
+              <button
+                aria-current={index === activeIndex ? "true" : undefined}
+                aria-label={`${reach.age} ${reach.title}`}
+                className={`chronostream-node is-${point.side}${index === activeIndex ? " is-active" : ""}`}
                 key={reach.title}
-                ref={(node) => {
-                  reachRefs.current[index] = node;
-                }}
+                onClick={() => travelToSecondReach(index)}
+                style={{ "--node-x": `${point.x}%`, "--node-y": `${point.y}%` }}
+                type="button"
               >
-                <header>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <p>{reach.age} / {reach.current}</p>
-                  <h2>{reach.title}</h2>
-                </header>
-                <p className="river-summary">{reach.summary}</p>
-                <ol className="river-events">
-                  {reach.events.map((event) => <li key={event}>{event}</li>)}
-                </ol>
-                <div className="river-tags">
-                  {reach.tags.map((tag) => <span key={tag}>{tag}</span>)}
-                </div>
-                <footer>{reach.evidence}</footer>
-              </article>
-            ))}
-          </div>
+                <span className="chronostream-beacon" />
+                <span className="chronostream-node-copy">
+                  <small>{reach.age}</small>
+                  <strong>{reach.title}</strong>
+                </span>
+              </button>
+            );
+          })}
         </div>
+      )}
 
-        <footer className="river-source">
-          <span>{timeRiverAudit.corpus} / {timeRiverAudit.chapterDocuments} 篇章节文档</span>
-          <small>{timeRiverAudit.note}</small>
-        </footer>
-      </section>
-    </PublicLayout>
+      <div
+        aria-label="沿光阴长河行走的方源"
+        className={`chronostream-pet ${travelling ? `is-moving is-${petDirection}` : "is-idle"}`}
+        style={{ "--pet-x": `${petPoint.x}%`, "--pet-y": `${petPoint.y}%` }}
+      >
+        <span />
+      </div>
+
+      {memoryReach && (
+        <aside
+          className={`chronostream-memory${memoryIndex > 6 ? " is-upper" : ""}${(memoryIndex === 0 ? layout.first.x : layout.second[memoryIndex - 1].x) > 55 ? " on-left" : " on-right"}`}
+          key={memoryReach.title}
+        >
+          <button className="chronostream-close" onClick={closeMemory} type="button" aria-label="关闭剧情">
+            <X size={16} />
+          </button>
+          <p>{memoryIndex === 0 ? "第一世 / 五百年" : `第二世 / ${memoryReach.age}`}</p>
+          <h2>{memoryReach.title}</h2>
+          <span>{memoryReach.summary}</span>
+          <ol>
+            {memoryReach.events.map((event) => <li key={event}>{event}</li>)}
+          </ol>
+        </aside>
+      )}
+    </main>
   );
 }
 
