@@ -15,6 +15,7 @@ import {
   Plus,
   RefreshCw,
   Save,
+  Search,
   Sparkles,
   Trash2,
   Waves,
@@ -22,6 +23,7 @@ import {
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { archiveAudit, guArchiveEntries, secretRealmEntries } from "./archiveCollections.js";
 import { characterProfiles } from "./characterProfiles.js";
 import { fallbackContent } from "./fallbackContent.js";
 import { atlasSourceSummary, characterEvidenceByName } from "./generatedAtlasCharacters.js";
@@ -35,6 +37,8 @@ const iconMap = {
   book: BookOpen,
   systems: Boxes,
   image: ImagePlus,
+  realms: Waves,
+  gu: BookOpen,
 };
 
 const accents = ["#d4b56f", "#b65b4b", "#8fb8c2", "#9b8bd3", "#d15d61", "#8cc5a6"];
@@ -68,6 +72,8 @@ const referenceTypeLabels = {
   physique: "体质",
   path: "流派",
   "immortal-gu": "仙蛊",
+  "mortal-gu": "凡蛊",
+  gu: "蛊虫",
   "killer-move": "仙道杀招",
   realm: "天地秘境",
   formation: "蛊阵",
@@ -275,6 +281,16 @@ function mergeById(baseItems = [], incomingItems = []) {
 
 function mergeContent(base, incoming = {}) {
   const merged = { ...base, ...incoming };
+  const mergeNavigation = (baseItems = [], incomingItems = []) => {
+    const baseByHref = new Map(baseItems.map((item) => [item.href, item]));
+    const incomingHrefs = new Set(incomingItems.map((item) => item.href));
+    return [
+      ...incomingItems.map((item) => ({ ...(baseByHref.get(item.href) || {}), ...item })),
+      ...baseItems.filter((item) => !incomingHrefs.has(item.href)),
+    ];
+  };
+  merged.nav = mergeNavigation(base.nav, incoming.nav);
+  merged.productRail = mergeNavigation(base.productRail, incoming.productRail);
   merged.atlas = {
     ...(base.atlas || {}),
     ...(incoming.atlas || {}),
@@ -347,6 +363,8 @@ function getRoute() {
   if (path === "/players") return "players";
   if (path === "/systems") return "systems";
   if (path === "/atlas") return "atlas";
+  if (path === "/realms") return "realms";
+  if (path === "/gu-catalog") return "gu-catalog";
   if (path.startsWith("/atlas/person/")) return "character";
   if (path.startsWith("/archive/")) return "reference";
   if (path === "/admin") return "admin";
@@ -780,6 +798,130 @@ function SystemsPage({ content }) {
         <SystemExplorer systems={content.systems || []} />
       </section>
     </PublicLayout>
+  );
+}
+
+function ArchiveLibraryPage({ content, activeRoute, eyebrow, title, entries }) {
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState("全部");
+  const categories = ["全部", ...new Set(entries.map((item) => item.category))];
+  const keyword = query.trim().toLowerCase();
+  const filteredEntries = entries.filter((item) => {
+    const inCategory = category === "全部" || item.category === category;
+    const inSearch = !keyword || [item.name, item.category, item.path, item.summary]
+      .join(" ")
+      .toLowerCase()
+      .includes(keyword);
+    return inCategory && inSearch;
+  });
+  const totalHits = entries.reduce((sum, item) => sum + item.hits, 0);
+
+  return (
+    <PublicLayout content={content} activeRoute={activeRoute} showRail={false}>
+      <section className="library-page">
+        <header className="library-heading">
+          <p>{eyebrow}</p>
+          <h1>{title}</h1>
+          <dl>
+            <div>
+              <dt>条目</dt>
+              <dd>{entries.length}</dd>
+            </div>
+            <div>
+              <dt>章节文档</dt>
+              <dd>{archiveAudit.chapterDocuments}</dd>
+            </div>
+            <div>
+              <dt>全文命中</dt>
+              <dd>{totalHits}</dd>
+            </div>
+          </dl>
+        </header>
+
+        <div className="library-toolbar">
+          <label className="library-search">
+            <Search size={17} />
+            <input
+              aria-label={`检索${title}`}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="检索条目"
+              type="search"
+              value={query}
+            />
+          </label>
+          <div className="library-filters" role="group" aria-label="类别筛选">
+            {categories.map((item) => (
+              <button
+                aria-pressed={category === item}
+                className={category === item ? "active" : ""}
+                key={item}
+                onClick={() => setCategory(item)}
+                type="button"
+              >
+                {item}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="library-source">
+          <span>{archiveAudit.corpus}</span>
+          <a href={archiveAudit.publicSource.href} rel="noreferrer" target="_blank">
+            {archiveAudit.publicSource.label}
+            <ExternalLink size={14} />
+          </a>
+        </div>
+
+        <div className="library-grid">
+          {filteredEntries.map((item) => (
+            <a className="library-record" href={referenceHref(item.referenceType, item.name)} key={item.name}>
+              <div className="library-record-head">
+                <span>{item.category}</span>
+                <b>{item.path}</b>
+              </div>
+              <h2>{item.name}</h2>
+              <p>{item.summary}</p>
+              <div className="library-evidence">
+                {item.hits > 0 ? (
+                  <>
+                    <strong>{item.hits} 次命中</strong>
+                    <span>第 {item.first}-{item.last} 篇</span>
+                  </>
+                ) : (
+                  <strong>公开词条核对</strong>
+                )}
+                <ExternalLink size={15} />
+              </div>
+            </a>
+          ))}
+          {!filteredEntries.length && <p className="library-empty">无匹配条目</p>}
+        </div>
+      </section>
+    </PublicLayout>
+  );
+}
+
+function RealmsPage({ content }) {
+  return (
+    <ArchiveLibraryPage
+      activeRoute="realms"
+      content={content}
+      entries={secretRealmEntries}
+      eyebrow="SECRET REALMS"
+      title="天地秘境"
+    />
+  );
+}
+
+function GuCatalogPage({ content }) {
+  return (
+    <ArchiveLibraryPage
+      activeRoute="gu-catalog"
+      content={content}
+      entries={guArchiveEntries}
+      eyebrow="GU ARCHIVE"
+      title="万蛊图鉴"
+    />
   );
 }
 
@@ -1964,6 +2106,11 @@ function CharacterArticlePage({ content, characterId }) {
 
 function ReferencePlaceholderPage({ content, entry }) {
   const typeLabel = referenceTypeLabels[entry?.type] || "资料";
+  const record = entry?.type === "realm"
+    ? secretRealmEntries.find((item) => item.name === entry.name)
+    : ["immortal-gu", "mortal-gu", "gu"].includes(entry?.type)
+      ? guArchiveEntries.find((item) => item.name === entry.name)
+      : null;
 
   return (
     <PublicLayout content={content} activeRoute="atlas" showRail={false}>
@@ -1980,10 +2127,38 @@ function ReferencePlaceholderPage({ content, entry }) {
           <p>{typeLabel} · 条目</p>
           <h1>{entry?.name || "待整理条目"}</h1>
         </header>
-        <div className="reference-pending">
-          <strong>条目待整理</strong>
-          <p>资料尚未核录。</p>
-        </div>
+        {record ? (
+          <article className="reference-record">
+            <div className="reference-tags">
+              <span>{record.category}</span>
+              <span>{record.path}</span>
+            </div>
+            <p>{record.summary}</p>
+            <dl>
+              <div>
+                <dt>文本底稿</dt>
+                <dd>{archiveAudit.corpus}</dd>
+              </div>
+              <div>
+                <dt>正文命中</dt>
+                <dd>{record.hits > 0 ? `${record.hits} 次` : "待继续定位"}</dd>
+              </div>
+              <div>
+                <dt>篇章范围</dt>
+                <dd>{record.hits > 0 ? `第 ${record.first}-${record.last} 篇` : "公开词条核对"}</dd>
+              </div>
+            </dl>
+            <a className="reference-source-link" href={archiveAudit.publicSource.href} rel="noreferrer" target="_blank">
+              {archiveAudit.publicSource.label}
+              <ExternalLink size={15} />
+            </a>
+          </article>
+        ) : (
+          <div className="reference-pending">
+            <strong>条目待整理</strong>
+            <p>资料尚未核录。</p>
+          </div>
+        )}
       </section>
     </PublicLayout>
   );
@@ -2633,6 +2808,8 @@ export default function App() {
   if (route === "players") return <PlayersPage content={content} />;
   if (route === "systems") return <SystemsPage content={content} />;
   if (route === "atlas") return <AtlasPage content={content} />;
+  if (route === "realms") return <RealmsPage content={content} />;
+  if (route === "gu-catalog") return <GuCatalogPage content={content} />;
   if (route === "character") return <CharacterArticlePage characterId={getCharacterRouteId()} content={content} />;
   if (route === "reference") return <ReferencePlaceholderPage content={content} entry={getReferenceRouteEntry()} />;
   return <HomePage content={content} loading={loading} error={error} />;

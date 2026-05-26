@@ -13,6 +13,8 @@ export const fallbackContent = {
     { label: "棋局", href: "/players", route: "players" },
     { label: "体系", href: "/systems", route: "systems" },
     { label: "星图", href: "/atlas", route: "atlas" },
+    { label: "秘境", href: "/realms", route: "realms" },
+    { label: "万蛊", href: "/gu-catalog", route: "gu-catalog" },
   ],
   hero: {
     eyebrow: "",
@@ -28,6 +30,8 @@ export const fallbackContent = {
     { title: "人物棋局", caption: "立场与代价", icon: "network", href: "/players" },
     { title: "蛊道体系", caption: "规则引擎", icon: "systems", href: "/systems" },
     { title: "众生星图", caption: "五域两天", icon: "map", href: "/atlas" },
+    { title: "天地秘境", caption: "山河遗藏", icon: "realms", href: "/realms" },
+    { title: "万蛊图鉴", caption: "蛊虫档案", icon: "gu", href: "/gu-catalog" },
   ],
   overview: {
     kicker: "",
