@@ -1,4331 +1,8144 @@
 export const generatedAtlasCharacters = [
   {
-    id: "auto-0001-a35093e97c",
-    name: "元莲仙尊",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 171 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 171, count: 343, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0002-ec8450b4e9",
-    name: "元始仙尊",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 615 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 615, count: 378, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0003-8cd04ea0e2",
-    name: "长毛老祖",
-    region: "northern",
-    faction: "北原归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 471 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 471, count: 356, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0004-65f58166fe",
-    name: "绿蚁居士",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 1851 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1851, count: 46, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0005-7acc3c3f9c",
-    name: "明皓仙子",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 2182 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 2182, count: 94, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0006-fc7650950b",
-    name: "万寿娘子",
-    region: "northern",
-    faction: "北原归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 830 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 830, count: 13, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0007-243b28eb92",
-    name: "幻灭仙子",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 967 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 967, count: 4, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0008-824385b18a",
-    name: "白晴仙子",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 417 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 417, count: 246, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0009-69a74509e7",
-    name: "盗天魔尊",
-    region: "western",
-    faction: "西漠归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入西漠。首次出现第 445 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 445, count: 635, regionLabel: "西漠" },
-  },
-  {
-    id: "auto-0010-81ac35e1e8",
-    name: "琅琊地灵",
-    region: "northern",
-    faction: "北原归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 472 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 472, count: 3215, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0011-6401c9d90c",
-    name: "凤仙太子",
-    region: "northern",
-    faction: "北原归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 753 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 753, count: 769, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0012-48ddf5be57",
-    name: "白兔姑娘",
-    region: "southern",
-    faction: "南疆归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1233 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1233, count: 461, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0013-a40e2b2844",
-    name: "雷鬼真君",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 1575 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1575, count: 273, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0014-106e40afab",
-    name: "焚天魔女",
-    region: "northern",
-    faction: "北原归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 760 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 760, count: 12, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0015-1de39f22cd",
-    name: "冰晶仙王",
-    region: "black",
-    faction: "太古黑天归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入太古黑天。首次出现第 1991 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1991, count: 12, regionLabel: "太古黑天" },
-  },
-  {
-    id: "auto-0016-54e3becb96",
-    name: "花酒行者",
-    region: "southern",
-    faction: "南疆归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 12 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 12, count: 208, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0017-a44a2ea22f",
-    name: "天鹤上人",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 200 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 200, count: 508, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0018-9e05e367ad",
-    name: "紫山真君",
-    region: "southern",
-    faction: "南疆归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 629 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 629, count: 1009, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0019-ef2a13e61b",
-    name: "雪胡老祖",
-    region: "northern",
-    faction: "北原归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 652 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 652, count: 893, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0020-bc6fcc51c2",
-    name: "无极魔尊",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 955 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 955, count: 510, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0021-624bda19d0",
-    name: "妙音仙子",
-    region: "southern",
-    faction: "南疆归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1234 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1234, count: 423, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0022-65ff348529",
-    name: "骷髅姥姥",
-    region: "white",
-    faction: "太古白天归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入太古白天。首次出现第 1997 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1997, count: 3, regionLabel: "太古白天" },
-  },
-  {
-    id: "auto-0023-0e261f0015",
-    name: "萧荷尖",
-    region: "black",
-    faction: "太古黑天归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入太古黑天。首次出现第 2019 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 2019, count: 19, regionLabel: "太古黑天" },
-  },
-  {
-    id: "auto-0024-7f18bba1c4",
-    name: "黄史上人",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 1425 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1425, count: 145, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0025-a0ee02f64a",
-    name: "狂蛮魔尊",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文人物",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 611 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 611, count: 156, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0026-9e5a698d52",
-    name: "毓秀仙子",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 2190 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 2190, count: 90, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0027-4f371d0ee8",
-    name: "苏白曼",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 763 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 763, count: 15, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0028-496d5166a4",
-    name: "多宝真人",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文人物",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 477 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 477, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0029-f1bf082eaa",
-    name: "空绝老仙",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 612 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 612, count: 11, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0030-dfca631f6d",
-    name: "苍郁仙子",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 684 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 684, count: 61, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0031-ca973f9e12",
-    name: "翠波仙子",
-    region: "western",
-    faction: "西漠归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入西漠。首次出现第 1415 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1415, count: 96, regionLabel: "西漠" },
-  },
-  {
-    id: "auto-0032-e803268f63",
-    name: "花蝶女仙",
-    region: "eastern",
-    faction: "东海归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1172 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1172, count: 23, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0033-947b1cebad",
-    name: "大梦仙尊",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文人物",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 472 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 472, count: 81, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0034-fee4db2292",
-    name: "狐仙地灵",
-    region: "central",
-    faction: "中洲归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 374 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 374, count: 35, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0035-1b081c67e0",
-    name: "火原洞主",
-    region: "white",
-    faction: "太古白天归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入太古白天。首次出现第 2129 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 2129, count: 52, regionLabel: "太古白天" },
-  },
-  {
-    id: "auto-0036-666ea49108",
-    name: "姜钰",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 707 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 707, count: 138, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0037-1331e3d613",
-    name: "萧家老祖",
-    region: "western",
-    faction: "西漠归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入西漠。首次出现第 980 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 980, count: 9, regionLabel: "西漠" },
-  },
-  {
-    id: "auto-0038-ac594b0e96",
-    name: "江牙",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 20 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 20, count: 5, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0039-2146b17869",
-    name: "贾金生",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 50 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 50, count: 13, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0040-e4d25eced6",
-    name: "百八十奴",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1395 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1395, count: 2, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0041-1a314f88e5",
-    name: "古月空井",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 96 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 96, count: 1, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0042-d7eb852c9d",
-    name: "阳骏",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1713 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1713, count: 1, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0043-2626e3cf7a",
-    name: "古月方想",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 2273 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 2273, count: 3, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0044-e8ceb82e1f",
-    name: "林大鸟",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 949 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 949, count: 2, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0045-9425674797",
-    name: "叶凡",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 696 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 696, count: 33, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0046-3eb9bcca5a",
-    name: "东方长凡",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 675 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 675, count: 22, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0047-7a4436c6d5",
-    name: "商一帆",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 330 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 330, count: 2, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0048-85e813b476",
-    name: "百草率",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 225 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 225, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0049-83be1bfaa4",
-    name: "百陌亭",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 225 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 225, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0050-2385b476d9",
-    name: "百盛景",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 226 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 226, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0051-d8f7cecb06",
-    name: "史宏",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 846 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 846, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0052-471aee99ea",
-    name: "二毛",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 900 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 900, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0053-ef52a5e53e",
-    name: "黑心道人",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 1739 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1739, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0054-a1ef37ebf2",
-    name: "钟义",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 2126 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 2126, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0055-1c80a6db15",
-    name: "白沧水",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 889 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 889, count: 20, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0056-e1538559ad",
-    name: "童画",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1321 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1321, count: 38, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0057-a5723af7e7",
-    name: "宋紫星",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 722 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 722, count: 25, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0058-a4cbb93d1d",
-    name: "秦鼎菱",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 1847 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1847, count: 59, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0059-a356662cec",
-    name: "厉煌",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 1654 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1654, count: 44, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0060-dab9be0319",
-    name: "秦百胜",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 693 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 693, count: 43, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0061-ec33913fa1",
-    name: "陈衣",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 1530 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1530, count: 39, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0062-8fb3a9f170",
-    name: "沈伤",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1930 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1930, count: 36, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0063-b7ad490ebf",
-    name: "韩立",
-    region: "western",
-    faction: "西漠归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入西漠。首次出现第 688 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 688, count: 13, regionLabel: "西漠" },
-  },
-  {
-    id: "auto-0064-317cb311ae",
-    name: "墨瑶",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 581 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 581, count: 26, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0065-ab0a73ad5a",
-    name: "乔丝柳",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1238 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1238, count: 23, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0066-16be5e792c",
-    name: "人祖",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 13 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 13, count: 20, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0067-1593ddb90b",
-    name: "池曲由",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1402 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1402, count: 27, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0068-3f898c739e",
-    name: "百莲",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 225 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 225, count: 7, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0069-b9144c1c04",
-    name: "古月阴荒",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 189 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 189, count: 6, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0070-ff63629c57",
-    name: "君神光",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 1626 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1626, count: 5, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0071-df5d3eee67",
-    name: "常丽",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 591 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 591, count: 8, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0072-e077887457",
-    name: "赤舌",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 101 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 101, count: 3, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0073-9bf4c845f7",
-    name: "江鹤",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 77 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 77, count: 2, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0074-30eb3727da",
-    name: "苏仙儿",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 539 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 539, count: 3, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0075-6d57e74faa",
-    name: "房棱",
-    region: "western",
-    faction: "西漠归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入西漠。首次出现第 1526 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1526, count: 36, regionLabel: "西漠" },
-  },
-  {
-    id: "auto-0076-b15b505756",
-    name: "毛六",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 1092 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1092, count: 23, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0077-71c3a2476f",
-    name: "商睚眦",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 270 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 270, count: 9, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0078-be2827755e",
-    name: "薄青",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 972 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 972, count: 23, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0079-42b82d2f8f",
-    name: "万紫红",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 1737 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1737, count: 21, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0080-07ba78b6e4",
-    name: "百足天君",
-    region: "northern",
-    faction: "北原归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 781 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 781, count: 12, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0081-3a40abafc4",
-    name: "鹤风扬",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 219 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 219, count: 15, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0082-d13ded15bb",
-    name: "白相",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1053 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1053, count: 40, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0083-713883f120",
-    name: "贺狼子",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 768 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 768, count: 17, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0084-3e514702f0",
-    name: "任修平",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1174 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1174, count: 16, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0085-6b13f750da",
-    name: "宋启元",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1712 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1712, count: 18, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0086-c08fb2ea24",
-    name: "房云",
-    region: "western",
-    faction: "西漠归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入西漠。首次出现第 1526 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1526, count: 17, regionLabel: "西漠" },
-  },
-  {
-    id: "auto-0087-f5674ab2a1",
-    name: "古月博",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 66 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 66, count: 16, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0088-602d92b8b4",
-    name: "车尾",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 1739 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1739, count: 18, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0089-5ae0fde4dd",
-    name: "陈鑫",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 242 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 242, count: 3, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0090-8487133444",
-    name: "皮水寒",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 799 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 799, count: 19, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0091-792b1d0019",
-    name: "古月赤练",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 12 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 12, count: 13, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0092-f1f800e9bf",
-    name: "自在书生",
-    region: "northern",
-    faction: "北原归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 768 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 768, count: 5, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0093-9ff1b5b1f6",
-    name: "庙明神",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1317 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1317, count: 18, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0094-3b4934acef",
-    name: "洪易",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 691 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 691, count: 15, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0095-65d46853da",
-    name: "夏槎",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1621 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1621, count: 14, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0096-330c9120da",
-    name: "魏央",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 272 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 272, count: 12, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0097-edd5508f21",
-    name: "苏琪涵",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 1892 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1892, count: 11, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0098-b0afe2ec3a",
-    name: "马尊",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 449 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 449, count: 13, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0099-3eda5609ae",
-    name: "古月药红",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 90 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 90, count: 1, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0100-f9487d7d96",
-    name: "张阴",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1712 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1712, count: 11, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0101-e4cf87a9a8",
-    name: "李然",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 288 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 288, count: 14, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0102-c98421e2b3",
-    name: "古月药姬",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 85 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 85, count: 12, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0103-0ac3ce8594",
-    name: "古月青书",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 147 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 147, count: 12, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0104-0798931243",
-    name: "古月一代",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 192 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 192, count: 10, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0105-ea73001be3",
-    name: "巴十八",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1748 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1748, count: 10, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0106-792dde5da8",
-    name: "寒灰仙姑",
-    region: "black",
-    faction: "太古黑天归档",
-    role: "全文人物",
-    intro: "原文人物档案，按出身或主要势力根基归入太古黑天。首次出现第 1991 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1991, count: 4, regionLabel: "太古黑天" },
-  },
-  {
-    id: "auto-0107-ab29bac128",
-    name: "毛十二",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 903 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 903, count: 12, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0108-9461b5d46f",
-    name: "石宗",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 1480 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1480, count: 14, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0109-6c548409ec",
-    name: "万象星君",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 681 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 681, count: 8, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0110-168ae9e260",
-    name: "熊力",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 129 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 129, count: 7, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0111-f429a0d9f5",
-    name: "张柱",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 246 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 246, count: 6, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0112-339ca8dfd8",
-    name: "商青青",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1129 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1129, count: 4, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0113-973f02da35",
-    name: "容婆",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1710 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1710, count: 11, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0114-970fe15ed0",
-    name: "古月漠尘",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 29 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 29, count: 6, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0115-ff8d9782c8",
-    name: "池伤",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1349 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1349, count: 14, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0116-ef56109f0b",
-    name: "曾落子",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1672 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1672, count: 10, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0117-0a97a787a2",
-    name: "卫德馨",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 338 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 338, count: 11, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0118-fa3033e66e",
-    name: "乔志材",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1360 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1360, count: 10, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0119-a5a6542b97",
-    name: "萧芒",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 402 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 402, count: 9, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0120-3c92d0d42e",
-    name: "武八重",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 2009 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 2009, count: 8, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0121-01f924b589",
-    name: "常极右",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 546 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 546, count: 7, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0122-92035ebae4",
-    name: "易酒仙姑",
-    region: "unverified",
-    faction: "地域待考",
-    role: "称号人物",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 1851 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1851, count: 2, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0123-d6a6fdb33b",
-    name: "萧山",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 980 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 980, count: 10, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0124-720c714915",
-    name: "熊姜",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 129 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 129, count: 4, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0125-74019928e2",
-    name: "古月赤城",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 12 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 12, count: 6, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0126-43671c4a4a",
-    name: "古月漠北",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 12 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 12, count: 8, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0127-1a85016b9c",
-    name: "夏飞快",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1328 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1328, count: 8, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0128-1da783cd55",
-    name: "熊林",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 143 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 143, count: 5, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0129-f2a1e119a0",
-    name: "房化生",
-    region: "western",
-    faction: "西漠归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入西漠。首次出现第 1549 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1549, count: 5, regionLabel: "西漠" },
-  },
-  {
-    id: "auto-0130-49954183af",
-    name: "武罚",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1333 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1333, count: 10, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0131-df8375635d",
-    name: "贾富",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 52 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 52, count: 8, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0132-4047a7497a",
-    name: "古月蛮石",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 115 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 115, count: 2, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0133-cb193a6027",
-    name: "房沉",
-    region: "western",
-    faction: "西漠归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入西漠。首次出现第 1541 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1541, count: 4, regionLabel: "西漠" },
-  },
-  {
-    id: "auto-0134-d3fb639ad9",
-    name: "熊骄嫚",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 134 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 134, count: 3, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0135-1d99d226ce",
-    name: "石磊",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 732 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 732, count: 6, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0136-7cd541e1ca",
-    name: "武雨伯",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1324 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1324, count: 3, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0137-30ca838aa3",
-    name: "石淼",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1747 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1747, count: 3, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0138-9e3489a9b1",
-    name: "毒蝎娘子",
-    region: "unverified",
-    faction: "地域待考",
-    role: "称号人物",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 444 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 444, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0139-fb755901f3",
-    name: "烈魔仙",
-    region: "unverified",
-    faction: "地域待考",
-    role: "称号人物",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 865 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 865, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0140-d2be79f09f",
-    name: "金珠仙王",
-    region: "unverified",
-    faction: "地域待考",
-    role: "称号人物",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 1733 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1733, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0141-cb384a048d",
-    name: "黑凡",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 964 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 964, count: 22, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0142-7ec0b51abc",
-    name: "监天塔主",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 863 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 863, count: 15, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0143-e100d51ae0",
-    name: "战部渡",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 1846 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1846, count: 7, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0144-24e65d5e68",
-    name: "百岁童子",
-    region: "unverified",
-    faction: "地域待考",
-    role: "称号人物",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 352 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 352, count: 64, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0145-7e0e5b18bd",
-    name: "青仇",
-    region: "western",
-    faction: "西漠归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入西漠。首次出现第 1540 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1540, count: 8, regionLabel: "西漠" },
-  },
-  {
-    id: "auto-0146-ae8ecd243e",
-    name: "黄沙",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 471 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 471, count: 17, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0147-a415e3dd1a",
-    name: "砚石老人",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 479 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 479, count: 6, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0148-8a7e6d86cd",
-    name: "回风子",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 796 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 796, count: 6, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0149-614ea199b4",
-    name: "巨开碑",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 314 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 314, count: 4, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0150-c9b3d93b39",
-    name: "药皇",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 774 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 774, count: 4, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0151-b80c612ae7",
-    name: "万海龙流",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 1070 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1070, count: 6, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0152-777ef1bd1c",
-    name: "碧晨天",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 975 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 975, count: 8, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0153-50e812484c",
-    name: "马英杰",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 500 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 500, count: 7, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0154-7ce3dc1af4",
-    name: "雪松子",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 703 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 703, count: 4, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0155-77b8210b82",
-    name: "蜂将",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1911 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1911, count: 3, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0156-3093fdb8ae",
-    name: "铁霸修",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 368 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 368, count: 4, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0157-141eaa5430",
-    name: "廿二富",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 1124 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1124, count: 4, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0158-4fe4980097",
-    name: "耶律群星",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 1221 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1221, count: 4, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0159-1d61c1b456",
-    name: "炎突",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 322 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 322, count: 3, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0160-4bc852fdc7",
-    name: "古凉",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 1863 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1863, count: 10, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0161-31ee0b74a7",
-    name: "血海老祖",
-    region: "unverified",
-    faction: "地域待考",
-    role: "称号人物",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 191 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 191, count: 30, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0162-947bf60dd6",
-    name: "铁区中",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 1638 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1638, count: 3, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0163-3384bd6f1f",
-    name: "星象地灵",
-    region: "unverified",
-    faction: "地域待考",
-    role: "称号人物",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 868 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 868, count: 27, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0164-65e3c3e9b1",
-    name: "古月冻土",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 109 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 109, count: 2, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0165-c95d5929b6",
-    name: "廿二平之",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 1213 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1213, count: 2, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0166-dfcf122e3b",
-    name: "铁刀苦",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 229 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 229, count: 4, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0167-09e529ff75",
-    name: "小蝶",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 252 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 252, count: 1, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0168-691d5ba104",
-    name: "商螭吻",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 317 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 317, count: 1, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0169-63a678fa00",
-    name: "商蒲牢",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 338 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 338, count: 1, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0170-90dc1b3ddb",
-    name: "铁慕白",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 381 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 381, count: 1, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0171-c9d53a5677",
-    name: "气相",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1664 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1664, count: 1, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0172-d4a39b6806",
-    name: "奚雪",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 550 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 550, count: 3, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0173-a3fcb77a30",
-    name: "土头驮",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1672 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1672, count: 2, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0174-781343ae50",
-    name: "红袖",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 764 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 764, count: 2, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0175-71cfaa095c",
-    name: "李逍遥",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 912 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 912, count: 2, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0176-c7d733f23b",
-    name: "七星子",
-    region: "central",
-    faction: "中洲归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入中洲。首次出现第 742 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 742, count: 3, regionLabel: "中洲" },
-  },
-  {
-    id: "auto-0177-bbd33b34fe",
-    name: "青岳安",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1723 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1723, count: 2, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0178-8b6afcaf93",
-    name: "康巴",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 1067 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1067, count: 6, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0179-02a5252d51",
-    name: "古月药乐",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 155 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 155, count: 1, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0180-4177b2e288",
-    name: "商嘲风",
-    region: "southern",
-    faction: "南疆归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入南疆。首次出现第 336 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 336, count: 1, regionLabel: "南疆" },
-  },
-  {
-    id: "auto-0181-7d0673cbde",
-    name: "黑柏",
-    region: "northern",
-    faction: "北原归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入北原。首次出现第 530 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 530, count: 1, regionLabel: "北原" },
-  },
-  {
-    id: "auto-0182-7144eb1b3b",
-    name: "鬼七爷",
-    region: "eastern",
-    faction: "东海归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入东海。首次出现第 1912 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1912, count: 1, regionLabel: "东海" },
-  },
-  {
-    id: "auto-0183-4b5693cc13",
-    name: "夜天狼君",
-    region: "black",
-    faction: "太古黑天归档",
-    role: "人物档案",
-    intro: "原文人物档案，按出身或主要势力根基归入太古黑天。首次出现第 1992 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1992, count: 1, regionLabel: "太古黑天" },
-  },
-  {
-    id: "auto-0184-f866d85f78",
-    name: "旋空童子",
-    region: "unverified",
-    faction: "地域待考",
-    role: "称号人物",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 1741 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1741, count: 19, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0185-d380efa273",
-    name: "百陌行",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 223 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 223, count: 4, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0186-9b15abcbb1",
-    name: "陈双全",
-    region: "unverified",
-    faction: "地域待考",
-    role: "人物档案",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 260 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 260, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0187-7ac7ed710b",
-    name: "尸爆雷王",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 947 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 947, count: 2, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0188-e0793ca165",
-    name: "丹仙",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 1148 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1148, count: 2, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0189-9247634258",
-    name: "白光刀客",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 372 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 372, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0190-cfa1d1b7be",
-    name: "火工龙头",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 857 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 857, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0191-4a9f6f6e06",
-    name: "蒋基",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 1145 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1145, count: 1, regionLabel: "待考" },
-  },
-  {
-    id: "auto-0192-5aaee69543",
-    name: "夜煞女",
-    region: "unverified",
-    faction: "地域待考",
-    role: "全文候选",
-    intro: "原文已出现，地域归属尚待逐条复核。首次出现第 1443 章。",
-    gu: [],
-    moves: [],
-    houses: [],
-    relations: [],
-    source: { firstChapter: 1443, count: 1, regionLabel: "待考" },
-  },
+    "id": "curated-b790651253",
+    "name": "白凝冰",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "青茅山白家天才蛊师，北冥冰魄体。与古月方源从同门到互相利用，多次交锋亦敌亦友。",
+    "gu": [
+      "阳蛊(八转)",
+      "阴蛊",
+      "冰雪道仙蛊(八转)",
+      "阴阳转身蛊"
+    ],
+    "moves": [
+      "北冥冰魄杀招(八转)",
+      "冰封天地(八转)",
+      "白相真传杀招"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "炎道",
+          "items": [
+            {
+              "name": "阳蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "待考",
+          "items": [
+            {
+              "name": "阴蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "冰雪道",
+          "items": [
+            {
+              "name": "冰雪道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "阴阳转身蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-9fcda65b80",
+    "name": "古月方源",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "《蛊真人》主角。古月一族子弟，五百年前世为魔尊重生，以春秋蝉逆转光阴。从青茅山起步，一路成就炼天魔尊/大爱仙尊。心性极端利己，追寻永生。",
+    "gu": [
+      "天机蛊(九转)",
+      "天网蛊(九转)",
+      "天生蛊(八转)",
+      "天妒蛊(八转)",
+      "至尊仙胎蛊(九转/已用)",
+      "万我蛊(八转)",
+      "坚持蛊(七转)",
+      "贼人蛊(七转)",
+      "升炼蛊(九转)",
+      "水炼蛊(八转)",
+      "强炼蛊(八转)",
+      "天元宝皇莲(九转)",
+      "森林蛊(八转)",
+      "成竹蛊(八转)",
+      "木芽蛊(七转)",
+      "智慧蛊(九转)",
+      "态度蛊(八转)",
+      "大惊蛊(八转)",
+      "悔蛊(八转)",
+      "爱意蛊(七转)",
+      "自爱蛊(七转)",
+      "智障蛊(七转)",
+      "解谜蛊(六转)",
+      "金刚念蛊(六转)",
+      "慧剑蛊(八转/剑智双属)",
+      "如梦令(八转)",
+      "做梦蛊(七转)",
+      "梦甲蛊(七转)",
+      "梦蝶蛊(六转)",
+      "春秋蝉(六转)",
+      "春蛊(八转)",
+      "夏蛊(八转)",
+      "似水流年(八转)",
+      "极往(八转)",
+      "年蛊(八转)",
+      "以后蛊(八转)",
+      "一刹蛊(八转)",
+      "那时蛊(八转)",
+      "江山如故(八转)",
+      "人如故(八转)",
+      "早秋蛊(八转)",
+      "中秋蛊(八转)",
+      "晚秋蛊(八转)",
+      "秋蛊(七转)",
+      "冬蛊(七转)",
+      "日蛊(七转)",
+      "时蛊(七转)",
+      "时隐蛊(七转)",
+      "时针蛊(七转)",
+      "日子蛊(七转)",
+      "月子蛊(七转)",
+      "一旬蛊(六转)",
+      "昨日蛊(六转)",
+      "累年蛊(六转)",
+      "宙锚蛊(六转)",
+      "月蛊(六转)",
+      "瞬不转(六转)",
+      "之前蛊(?转)",
+      "堪回首(?转)",
+      "变通蛊(八转)",
+      "变异蛊(八转)",
+      "硬肝蛊(八转)",
+      "变形蛊(七转)",
+      "龙息蛊(七转)",
+      "龙鳞蛊(七转)",
+      "卜卦龟背蛊(七转)",
+      "界蛊(八转)",
+      "加蛊(八转)",
+      "镇蛊(八转)",
+      "锁蛊(八转)",
+      "限蛊(八转)",
+      "去蛊(八转)",
+      "大蛊(七转)",
+      "一蛊(七转)",
+      "三蛊(七转)",
+      "七蛊(七转)",
+      "关蛊(七转)",
+      "防备蛊(七转)",
+      "斗蛊(七转)",
+      "正常蛊(七转)",
+      "狗屎运蛊(八转)",
+      "气运蛊(八转)",
+      "察运蛊(八转)",
+      "连运蛊(八转)",
+      "时运蛊(八转)",
+      "运筹蛊(八转)",
+      "招灾蛊(七转/外借)",
+      "能力蛊(八转)",
+      "定力蛊(八转)",
+      "努力蛊(八转)",
+      "龙力蛊(七转)",
+      "我力蛊(六转)",
+      "拔山蛊(六转)",
+      "挽澜蛊(六转)",
+      "吃力蛊(六转)",
+      "铁冠鹰力蛊(六转)",
+      "飞熊之力蛊(六转)",
+      "力蛊",
+      "飞剑蛊(七转)",
+      "浪剑蛊(七转)",
+      "剑遁蛊(七转)",
+      "剑眉蛊(七转)",
+      "慧剑(剑智双属)",
+      "血本蛊(八转)",
+      "血脉蛊(七转)",
+      "血气蛊(六转)",
+      "血颅蛊(六转)",
+      "血迹蛊",
+      "血誓蛊",
+      "换魂蛊(七转)",
+      "搜魂蛊(七转)",
+      "摄魂蛊(七转)",
+      "净魂蛊(七转)",
+      "信封蛊(七转)",
+      "名缰蛊(七转)",
+      "诗壁蛊(七转)",
+      "道可道蛊(六转)",
+      "提纲蛊",
+      "定仙游(七转)",
+      "镇宇蛊(七转)",
+      "行空蛊(七转)",
+      "定空蛊(七转)",
+      "拓宇蛊(七转)",
+      "偷生蛊(八转)",
+      "大盗蛊(八转)",
+      "偷袭蛊",
+      "地脉蛊(八转)",
+      "领土蛊(七转)",
+      "黄沙蛊(六转)",
+      "煮蛊(七转)",
+      "大吃蛊(七转)",
+      "吃香蛊(六转)",
+      "阵旗蛊(八转)",
+      "阵灵蛊(八转)",
+      "阵盘蛊(七转)",
+      "魂兽令(八转)",
+      "蚁穴蛊(八转)",
+      "奴兽蛊(六转)",
+      "白面蚁后(六转)",
+      "刃蛊(八转)",
+      "刀翅蛊(七转)",
+      "大气蛊(八转)",
+      "大家之气蛊(七转)",
+      "力气蛊(六转)",
+      "大浪蛊(八转)",
+      "铃音蛊(八转)",
+      "雷电蛊(八转)",
+      "铁壁蛊(七转)",
+      "妇人心蛊(六转)",
+      "赤铜火蚁蛊(七转)",
+      "星念蛊",
+      "星光蛊",
+      "星芽蛊",
+      "星痕蛊",
+      "星眸蛊",
+      "暗渡蛊",
+      "骨刺蛊"
+    ],
+    "moves": [
+      "万我(七转)",
+      "逆流护身印(八转)",
+      "万蛟",
+      "大盗鬼手",
+      "阎罗战场",
+      "万剑鬼蛟",
+      "剑客",
+      "剑羽刀翅",
+      "万念剑瀑",
+      "阎帝",
+      "鬼官衣",
+      "人如故",
+      "江山如故",
+      "春剪(八转)",
+      "夏扇(八转)",
+      "冬裘(八转)",
+      "秋毫(八转)",
+      "天相(九转)",
+      "盗天机(九转)",
+      "天机混淆(九转)",
+      "残炼(九转)",
+      "鬼不觉(九转)",
+      "吞食天地(八转)",
+      "因果神树(八转)",
+      "运筹帷幄(八转)",
+      "见面曾相识(八转)",
+      "自由残缺变(八转)",
+      "图腾(八转)",
+      "太古剑龙变(八转)",
+      "五禁玄光气(八转)",
+      "梦里轻烟(八转)",
+      "天妒英才(八转)",
+      "未来身(八转)",
+      "流年不利(八转)",
+      "年兽召来(八转)",
+      "三息后现(八转)",
+      "后患无穷(八转)",
+      "血染征袍(八转)",
+      "落星棒子变(八转)",
+      "归海气宗(八转)",
+      "气海无量(八转)",
+      "缩时(八转)",
+      "血漂流(八转)",
+      "人复活海(八转)",
+      "引魂入梦(七转)",
+      "纯梦求真变(七转)",
+      "星火遁(六转)",
+      "星云磨盘(六转)",
+      "万星飞萤(六转)",
+      "翠流珠",
+      "天地游",
+      "风火光电轮"
+    ],
+    "houses": [
+      "四元方悔血炼池(九转)",
+      "煮运锅(八转)",
+      "龙宫",
+      "万年斗飞车(八转)",
+      "山河扇",
+      "安土重山堡",
+      "贼巢(八转)"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "天道",
+          "items": [
+            {
+              "name": "天机蛊",
+              "rank": "九转"
+            },
+            {
+              "name": "天网蛊",
+              "rank": "九转"
+            },
+            {
+              "name": "天生蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "天妒蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "人道",
+          "items": [
+            {
+              "name": "至尊仙胎蛊",
+              "rank": "九转/已用"
+            },
+            {
+              "name": "万我蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "坚持蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "贼人蛊",
+              "rank": "七转"
+            }
+          ]
+        },
+        {
+          "path": "炼道",
+          "items": [
+            {
+              "name": "升炼蛊",
+              "rank": "九转"
+            },
+            {
+              "name": "水炼蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "强炼蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "木道",
+          "items": [
+            {
+              "name": "天元宝皇莲",
+              "rank": "九转"
+            },
+            {
+              "name": "森林蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "成竹蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "木芽蛊",
+              "rank": "七转"
+            }
+          ]
+        },
+        {
+          "path": "智道",
+          "items": [
+            {
+              "name": "智慧蛊",
+              "rank": "九转"
+            },
+            {
+              "name": "态度蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "大惊蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "爱意蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "自爱蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "智障蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "解谜蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "金刚念蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "慧剑蛊",
+              "rank": "八转/剑智双属"
+            }
+          ]
+        },
+        {
+          "path": "宙道",
+          "items": [
+            {
+              "name": "悔蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "春秋蝉",
+              "rank": "六转"
+            },
+            {
+              "name": "春蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "夏蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "似水流年",
+              "rank": "八转"
+            },
+            {
+              "name": "极往",
+              "rank": "八转"
+            },
+            {
+              "name": "年蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "以后蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "一刹蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "那时蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "江山如故",
+              "rank": "八转"
+            },
+            {
+              "name": "人如故",
+              "rank": "八转"
+            },
+            {
+              "name": "早秋蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "中秋蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "晚秋蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "秋蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "冬蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "日蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "时蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "时隐蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "时针蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "日子蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "月子蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "一旬蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "昨日蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "累年蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "宙锚蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "月蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "瞬不转",
+              "rank": "六转"
+            },
+            {
+              "name": "之前蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "堪回首",
+              "rank": "?转"
+            },
+            {
+              "name": "定仙游",
+              "rank": "七转"
+            }
+          ]
+        },
+        {
+          "path": "梦道",
+          "items": [
+            {
+              "name": "如梦令",
+              "rank": "八转"
+            },
+            {
+              "name": "做梦蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "梦甲蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "梦蝶蛊",
+              "rank": "六转"
+            }
+          ]
+        },
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变通蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "变异蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "硬肝蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "变形蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "龙息蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "龙鳞蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "卜卦龟背蛊",
+              "rank": "七转"
+            }
+          ]
+        },
+        {
+          "path": "律道",
+          "items": [
+            {
+              "name": "界蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "加蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "镇蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "锁蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "限蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "去蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "大蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "一蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "三蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "七蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "关蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "防备蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "斗蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "正常蛊",
+              "rank": "七转"
+            }
+          ]
+        },
+        {
+          "path": "运道",
+          "items": [
+            {
+              "name": "狗屎运蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "气运蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "察运蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "连运蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "时运蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "运筹蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "招灾蛊",
+              "rank": "七转/外借"
+            }
+          ]
+        },
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "能力蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "定力蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "努力蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "龙力蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "我力蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "拔山蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "挽澜蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "吃力蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "铁冠鹰力蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "飞熊之力蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "力蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "剑道",
+          "items": [
+            {
+              "name": "飞剑蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "浪剑蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "剑遁蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "剑眉蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "慧剑",
+              "rank": "剑智双属"
+            }
+          ]
+        },
+        {
+          "path": "血道",
+          "items": [
+            {
+              "name": "血本蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "血脉蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "血气蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "血颅蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "血迹蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "血誓蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "魂道",
+          "items": [
+            {
+              "name": "换魂蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "搜魂蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "摄魂蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "净魂蛊",
+              "rank": "七转"
+            }
+          ]
+        },
+        {
+          "path": "信道",
+          "items": [
+            {
+              "name": "信封蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "名缰蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "诗壁蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "道可道蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "提纲蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "宇道",
+          "items": [
+            {
+              "name": "镇宇蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "行空蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "定空蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "拓宇蛊",
+              "rank": "七转"
+            }
+          ]
+        },
+        {
+          "path": "偷道",
+          "items": [
+            {
+              "name": "偷生蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "大盗蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "偷袭蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "土道",
+          "items": [
+            {
+              "name": "地脉蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "领土蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "黄沙蛊",
+              "rank": "六转"
+            }
+          ]
+        },
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "煮蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "大吃蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "吃香蛊",
+              "rank": "六转"
+            }
+          ]
+        },
+        {
+          "path": "阵道",
+          "items": [
+            {
+              "name": "阵旗蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "阵灵蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "阵盘蛊",
+              "rank": "七转"
+            }
+          ]
+        },
+        {
+          "path": "奴道",
+          "items": [
+            {
+              "name": "魂兽令",
+              "rank": "八转"
+            },
+            {
+              "name": "蚁穴蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "奴兽蛊",
+              "rank": "六转"
+            },
+            {
+              "name": "白面蚁后",
+              "rank": "六转"
+            }
+          ]
+        },
+        {
+          "path": "刀道",
+          "items": [
+            {
+              "name": "刃蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "刀翅蛊",
+              "rank": "七转"
+            }
+          ]
+        },
+        {
+          "path": "气道",
+          "items": [
+            {
+              "name": "大气蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "大家之气蛊",
+              "rank": "七转"
+            },
+            {
+              "name": "力气蛊",
+              "rank": "六转"
+            }
+          ]
+        },
+        {
+          "path": "水道",
+          "items": [
+            {
+              "name": "大浪蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "音道",
+          "items": [
+            {
+              "name": "铃音蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "雷道",
+          "items": [
+            {
+              "name": "雷电蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "金道",
+          "items": [
+            {
+              "name": "铁壁蛊",
+              "rank": "七转"
+            }
+          ]
+        },
+        {
+          "path": "毒道",
+          "items": [
+            {
+              "name": "妇人心蛊",
+              "rank": "六转"
+            }
+          ]
+        },
+        {
+          "path": "炎道",
+          "items": [
+            {
+              "name": "赤铜火蚁蛊",
+              "rank": "七转"
+            }
+          ]
+        },
+        {
+          "path": "星道",
+          "items": [
+            {
+              "name": "星念蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "星光蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "星芽蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "星痕蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "星眸蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "暗道",
+          "items": [
+            {
+              "name": "暗渡蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "骨道",
+          "items": [
+            {
+              "name": "骨刺蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-4f943ba53a",
+    "name": "古月方正",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "古月方源的同族弟弟，资质中上，性格温和善良。与方源形成鲜明对照，后期被天庭收为弟子。",
+    "gu": [
+      "冷血仙蛊",
+      "血仇仙蛊",
+      "奴道仙蛊"
+    ],
+    "moves": [
+      "血渐冷",
+      "血亲心仇"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "血道",
+          "items": [
+            {
+              "name": "冷血仙蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "血仇仙蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "奴道",
+          "items": [
+            {
+              "name": "奴道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-6ae71c255d",
+    "name": "乐土仙尊",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "南疆仙尊，乐土祖地开创者。陆畏因的传承来源，对古月方源留下后手布局。",
+    "gu": [
+      "土道仙蛊(九转)",
+      "乐土传承仙蛊",
+      "救赎仙蛊"
+    ],
+    "moves": [
+      "三世梦境(九转)",
+      "乐土救赎杀招",
+      "大地复苏"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "土道",
+          "items": [
+            {
+              "name": "土道仙蛊",
+              "rank": "九转"
+            },
+            {
+              "name": "乐土传承仙蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "待考",
+          "items": [
+            {
+              "name": "救赎仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-8a84e16997",
+    "name": "陆畏因",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "南疆蛊仙，乐土仙尊的传承者。与古月方源有合作与布局关系。",
+    "gu": [
+      "土道仙蛊",
+      "乐土传承仙蛊"
+    ],
+    "moves": [
+      "三世梦境(八转)",
+      "乐土救赎术"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "土道",
+          "items": [
+            {
+              "name": "土道仙蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "乐土传承仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-b8311dfb9a",
+    "name": "商心慈",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "南疆商家大小姐，商燕飞之女。在商道和经营上有极高天赋，与古月方源有旧识和交易。",
+    "gu": [
+      "商道仙蛊"
+    ],
+    "moves": [
+      "商家经营术",
+      "商道博弈"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-cac70564b1",
+    "name": "商燕飞",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "南疆商家现任家主，商心慈的父亲。在商道上与古月方源有交锋。",
+    "gu": [
+      "血道仙蛊",
+      "商道仙蛊"
+    ],
+    "moves": [
+      "商家经营杀招",
+      "血道杀招"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "血道",
+          "items": [
+            {
+              "name": "血道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-7a4436c6d5",
+    "name": "商一帆",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "南疆商家蛊仙，商家长老。",
+    "gu": [
+      "商道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-f0566221e9",
+    "name": "铁若男",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "南疆铁家家主的女儿，性格刚烈嫉恶如仇。追查方源的踪迹并与之对立。",
+    "gu": [
+      "律道仙蛊",
+      "铁家侦查仙蛊"
+    ],
+    "moves": [
+      "律道追查",
+      "铁家侦查术"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "律道",
+          "items": [
+            {
+              "name": "律道仙蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "铁家侦查仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-4c0df358a7",
+    "name": "铁血冷",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "南疆铁家前任家主，铁若男的父亲。",
+    "gu": [
+      "侦查仙蛊",
+      "律道仙蛊(八转)"
+    ],
+    "moves": [
+      "神捕追查(八转)",
+      "律道压制"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "律道",
+          "items": [
+            {
+              "name": "侦查仙蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "律道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-fe263cdf56",
+    "name": "武独秀",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "南疆武家老祖母，武庸的母亲。实力高深莫测。",
+    "gu": [
+      "风道仙蛊(八转)",
+      "武家仙蛊"
+    ],
+    "moves": [
+      "风道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "风道",
+          "items": [
+            {
+              "name": "风道仙蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "武家仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-5842853a47",
+    "name": "武庸",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "南疆武家继承人，武独秀之子。与古月方源既是敌手也有交易，性格刚硬重视家族利益。",
+    "gu": [
+      "风道仙蛊(八转)",
+      "武家传承仙蛊(八转)"
+    ],
+    "moves": [
+      "送友风(八转)",
+      "风道杀招(八转)"
+    ],
+    "houses": [
+      "玉清滴风小竹楼"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "风道",
+          "items": [
+            {
+              "name": "风道仙蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "武家传承仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-4a57efcd6c",
+    "name": "影无邪",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "幽魂魔尊的分魂之一，影宗真传。与古月方源有夺胎因果，曾附体古月方源。",
+    "gu": [
+      "梦道仙蛊(八转)",
+      "魂道仙蛊(八转)",
+      "引魂入梦蛊"
+    ],
+    "moves": [
+      "引魂入梦(七转)",
+      "魂道杀招"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "梦道",
+          "items": [
+            {
+              "name": "梦道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "魂道",
+          "items": [
+            {
+              "name": "魂道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "待考",
+          "items": [
+            {
+              "name": "引魂入梦蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-ea4ee7ef26",
+    "name": "幽魂魔尊",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "影宗之主，魂道至尊。以分魂之术分裂出影无邪紫山真君等，与古月方源争夺至尊仙胎蛊。",
+    "gu": [
+      "魂道仙蛊(九转)",
+      "至尊仙胎蛊(炼制者)",
+      "食道仙蛊"
+    ],
+    "moves": [
+      "井井有条(九转)",
+      "魂道灭世杀招",
+      "至尊仙胎炼制法",
+      "魂穿"
+    ],
+    "houses": [
+      "万鬼楼",
+      "武魂殿"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "魂道",
+          "items": [
+            {
+              "name": "魂道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        },
+        {
+          "path": "人道",
+          "items": [
+            {
+              "name": "至尊仙胎蛊",
+              "rank": "炼制者"
+            }
+          ]
+        },
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "食道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-824385b18a",
+    "name": "白晴仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "灵缘斋蛊仙，凤九歌的妻子，凤金煌的母亲。",
+    "gu": [
+      "音道仙蛊"
+    ],
+    "moves": [
+      "音道杀招"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "音道",
+          "items": [
+            {
+              "name": "音道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-04f7444636",
+    "name": "凤金煌",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "凤九歌与白晴仙子的女儿，灵缘斋当代仙子。与古月方源在梦道领域竞争。",
+    "gu": [
+      "梦翼仙蛊",
+      "梦道仙蛊"
+    ],
+    "moves": [
+      "梦翼翱翔(八转)",
+      "梦道杀招"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "梦道",
+          "items": [
+            {
+              "name": "梦翼仙蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "梦道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-756fc27292",
+    "name": "凤九歌",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "中洲灵缘斋音道蛊仙，凤金煌之父，白晴仙子的丈夫。执掌命运歌，与古月方源为敌手。",
+    "gu": [
+      "音道仙蛊(八转)",
+      "命甲仙蛊"
+    ],
+    "moves": [
+      "命运歌(八转)",
+      "天地歌(八转)",
+      "俯首歌(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "音道",
+          "items": [
+            {
+              "name": "音道仙蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "命甲仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-975f301d82",
+    "name": "红莲魔尊",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭出身的魔尊，龙公的弟子。开创红莲真传，古月方源受益于其传承。",
+    "gu": [
+      "春秋蝉(六转)",
+      "悔蛊",
+      "宙道仙蛊(九转)"
+    ],
+    "moves": [
+      "红莲真传(九转)",
+      "春秋蝉逆转(九转)",
+      "宙道杀招"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "宙道",
+          "items": [
+            {
+              "name": "春秋蝉",
+              "rank": "六转"
+            },
+            {
+              "name": "悔蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "宙道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-7f8a8170d4",
+    "name": "龙公",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭守护者，红莲魔尊的师尊。实力登顶亚仙尊，与古月方源在宿命大战中正面交锋。",
+    "gu": [
+      "气道仙蛊(八转)",
+      "变化道仙蛊(八转)"
+    ],
+    "moves": [
+      "三气归来(八转)",
+      "龙御上宾(八转)",
+      "气道杀招"
+    ],
+    "houses": [
+      "监天塔"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "气道",
+          "items": [
+            {
+              "name": "气道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-b3300b6805",
+    "name": "星宿仙尊",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭尊者之一，星道始祖。在天庭之战中与古月方源巨阳仙尊形成三尊对峙。",
+    "gu": [
+      "智道仙蛊(九转)",
+      "星道仙蛊(九转)"
+    ],
+    "moves": [
+      "星宿棋盘推演(九转)",
+      "智道尊者杀招"
+    ],
+    "houses": [
+      "星宿棋盘"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "智道",
+          "items": [
+            {
+              "name": "智道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        },
+        {
+          "path": "星道",
+          "items": [
+            {
+              "name": "星道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-eb745fbf5a",
+    "name": "赵怜云",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "灵缘斋运道仙子，马鸿运的恋人。继承巨阳仙尊运道传承，与古月方源有多次运道交锋。",
+    "gu": [
+      "爱情蛊(八转)",
+      "运道仙蛊"
+    ],
+    "moves": [
+      "爱情蛊杀招(八转)",
+      "运道协同"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "运道",
+          "items": [
+            {
+              "name": "爱情蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "运道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-b6d15834d0",
+    "name": "紫薇仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭智道蛊仙，擅长推演天机。多次推算古月方源的行踪，后期受制于幽魂魔尊。",
+    "gu": [
+      "智道仙蛊(八转)",
+      "星道仙蛊(八转)"
+    ],
+    "moves": [
+      "智道推算(八转)",
+      "星道推演(八转)"
+    ],
+    "houses": [
+      "星宿棋盘"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "智道",
+          "items": [
+            {
+              "name": "智道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "星道",
+          "items": [
+            {
+              "name": "星道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-6f9d1f072b",
+    "name": "楚度",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原力道八转蛊仙。与古月方源有多次力道交易和对抗。",
+    "gu": [
+      "力道仙蛊(八转)"
+    ],
+    "moves": [
+      "楚门力道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-9e0b4fec17",
+    "name": "黑城",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原黑家前任家主，黑楼兰的父亲。与黑楼兰有父女仇怨，扶持姜钰。",
+    "gu": [
+      "暗道仙蛊(八转)"
+    ],
+    "moves": [
+      "暗箭杀招(八转)",
+      "黑牢囚困"
+    ],
+    "houses": [
+      "黑牢"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "暗道",
+          "items": [
+            {
+              "name": "暗道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-43edeb34ce",
+    "name": "黑楼兰",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原黑家继承人，十绝体之一的大力真武体。与古月方源建立盟约，联手在北原争夺真阳楼。",
+    "gu": [
+      "力道仙蛊(八转)",
+      "炎道仙蛊"
+    ],
+    "moves": [
+      "大力真武杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "炎道",
+          "items": [
+            {
+              "name": "炎道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-e40500e3a5",
+    "name": "巨阳仙尊",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原仙尊，运道始祖。与古月方源多次尊者级对弈，与星宿仙尊形成三尊对峙。",
+    "gu": [
+      "运道仙蛊(九转)",
+      "血道仙蛊"
+    ],
+    "moves": [
+      "运道庇护(九转)",
+      "血脉追踪",
+      "劫运坛发动"
+    ],
+    "houses": [
+      "劫运坛",
+      "八十八角真阳楼"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "运道",
+          "items": [
+            {
+              "name": "运道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        },
+        {
+          "path": "血道",
+          "items": [
+            {
+              "name": "血道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-81ac35e1e8",
+    "name": "琅琊地灵",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "琅琊洞天之地灵，掌管琅琊派。与古月方源有合作与决裂，与毛六潜伏关系复杂。",
+    "gu": [
+      "炼道仙蛊",
+      "长毛传承仙蛊"
+    ],
+    "moves": [
+      "炼道主持",
+      "长毛炼道大阵"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "炼道",
+          "items": [
+            {
+              "name": "炼道仙蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "长毛传承仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-50c0ae8528",
+    "name": "黎山仙子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原蛊仙，与黑楼兰有亲族同盟关系，与古月方源有盟约交易。",
+    "gu": [
+      "信道仙蛊(八转)"
+    ],
+    "moves": [
+      "山盟誓约(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "信道",
+          "items": [
+            {
+              "name": "信道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-41e530ad47",
+    "name": "马鸿运",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原马家运道传人，赵怜云的恋人。运道天赋异禀，与巨阳仙尊有运道牵连。",
+    "gu": [
+      "鸿运齐天蛊(八转)"
+    ],
+    "moves": [
+      "鸿运齐天(被动·运道庇护)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "运道",
+          "items": [
+            {
+              "name": "鸿运齐天蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-7c69ea65cb",
+    "name": "太白云生",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "东海蛊仙，人如故杀招的持有者。与古月方源同行，在东海和北原多次联手。",
+    "gu": [
+      "人如故(八转)",
+      "江山如故(八转)",
+      "宙道仙蛊"
+    ],
+    "moves": [
+      "人如故(治疗)",
+      "江山如故(修复)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "宙道",
+          "items": [
+            {
+              "name": "人如故",
+              "rank": "八转"
+            },
+            {
+              "name": "江山如故",
+              "rank": "八转"
+            },
+            {
+              "name": "宙道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-39735db8ac",
+    "name": "气海老祖",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "主要人物",
+    "intro": "东海气海洞天之主，古月方源的分身之一。",
+    "gu": [
+      "气道仙蛊(八转)"
+    ],
+    "moves": [
+      "气海无量(八转)",
+      "归海气宗(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "气道",
+          "items": [
+            {
+              "name": "气道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-ba7cd5c1fa",
+    "name": "沈从声",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "主要人物",
+    "intro": "东海蛊仙，俘虏古月方正，后天庭赎回。",
+    "gu": [
+      "音道仙蛊(八转)"
+    ],
+    "moves": [
+      "音道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "音道",
+          "items": [
+            {
+              "name": "音道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-1432c25f15",
+    "name": "宋亦诗",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "主要人物",
+    "intro": "东海蛊仙，与古月方源有东海旧事。",
+    "gu": [
+      "水道仙蛊"
+    ],
+    "moves": [
+      "水道杀招"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "水道",
+          "items": [
+            {
+              "name": "水道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-bf5238aed0",
+    "name": "吴帅",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "主要人物",
+    "intro": "东海龙人蛊仙，后被古月方源炼化为分身，负责东海事务。",
+    "gu": [
+      "奴道仙蛊(八转)",
+      "龙人传承仙蛊"
+    ],
+    "moves": [
+      "龙人战法(八转)",
+      "奴道行军",
+      "万军蚁穴(战场)"
+    ],
+    "houses": [
+      "龙宫"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "奴道",
+          "items": [
+            {
+              "name": "奴道仙蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "龙人传承仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-88f198cade",
+    "name": "房睇长",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "主要人物",
+    "intro": "西漠房家继承人，房功之子。与古月方源有算计与争夺。",
+    "gu": [
+      "智道仙蛊(八转)"
+    ],
+    "moves": [
+      "智道推算(八转)"
+    ],
+    "houses": [
+      "豆神宫"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "智道",
+          "items": [
+            {
+              "name": "智道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-d5f9b080f3",
+    "name": "房功",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "主要人物",
+    "intro": "西漠房家家主，房睇长的父亲。",
+    "gu": [
+      "土道仙蛊(八转)",
+      "房家仙蛊"
+    ],
+    "moves": [
+      "土道固守(八转)"
+    ],
+    "houses": [
+      "豆神宫",
+      "问津坞"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "土道",
+          "items": [
+            {
+              "name": "土道仙蛊",
+              "rank": "八转"
+            },
+            {
+              "name": "房家仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-1d6c68355f",
+    "name": "千变老祖",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "主要人物",
+    "intro": "西漠蛊仙，变化道修行者。与古月方源在真传争夺中交锋。",
+    "gu": [
+      "变化道仙蛊(八转)"
+    ],
+    "moves": [
+      "万像宫变化(八转)"
+    ],
+    "houses": [
+      "万像宫"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "curated-7747061ed3",
+    "name": "华文洞主",
+    "region": "white",
+    "faction": "太古白天归档",
+    "role": "主要人物",
+    "intro": "太古白天洞天之主。",
+    "gu": [
+      "信道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "信道",
+          "items": [
+            {
+              "name": "信道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0012-ea73001be3",
+    "name": "巴十八",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "力道仙蛊(八转)"
+    ],
+    "moves": [
+      "力道重击(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0008-48ddf5be57",
+    "name": "白兔姑娘",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "变化道仙蛊(八转)"
+    ],
+    "moves": [
+      "白兔变化(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0056-d13ded15bb",
+    "name": "白相",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "变化道相关蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道相关蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0216-d380efa273",
+    "name": "百陌行",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "商道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0214-9b15abcbb1",
+    "name": "陈双全",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "医道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "木道",
+          "items": [
+            {
+              "name": "医道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0215-5ae0fde4dd",
+    "name": "陈鑫",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "金道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "金道",
+          "items": [
+            {
+              "name": "金道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0016-1593ddb90b",
+    "name": "池曲由",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "水道仙蛊(八转)"
+    ],
+    "moves": [
+      "水道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "水道",
+          "items": [
+            {
+              "name": "水道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0017-ff8d9782c8",
+    "name": "池伤",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "水道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "水道",
+          "items": [
+            {
+              "name": "水道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0187-d2b0d288ba",
+    "name": "大树地灵",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0057-9e3489a9b1",
+    "name": "毒蝎娘子",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "毒道仙蛊(八转)"
+    ],
+    "moves": [
+      "毒道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "待考",
+          "items": [
+            {
+              "name": "毒道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0309-4c4bcf413f",
+    "name": "芳土",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0188-0e6085f8ac",
+    "name": "粉红地灵",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0004-f5674ab2a1",
+    "name": "古月博",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "家法蛊",
+      "月光蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "律道",
+          "items": [
+            {
+              "name": "家法蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "光道",
+          "items": [
+            {
+              "name": "月光蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0002-74019928e2",
+    "name": "古月赤城",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "力道相关蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道相关蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0050-792b1d0019",
+    "name": "古月赤练",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "赤练蛇蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "奴道",
+          "items": [
+            {
+              "name": "赤练蛇蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0053-65e3c3e9b1",
+    "name": "古月冻土",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "冰道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "冰雪道",
+          "items": [
+            {
+              "name": "冰道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0054-4047a7497a",
+    "name": "古月蛮石",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "兽力虚影蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "兽力虚影蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0003-43671c4a4a",
+    "name": "古月漠北",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "力道相关蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道相关蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0049-970fe15ed0",
+    "name": "古月漠尘",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0001-0ac3ce8594",
+    "name": "古月青书",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "月光蛊",
+      "治疗蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "光道",
+          "items": [
+            {
+              "name": "月光蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "木道",
+          "items": [
+            {
+              "name": "治疗蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0051-3eda5609ae",
+    "name": "古月药红",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "药道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "木道",
+          "items": [
+            {
+              "name": "药道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0005-c98421e2b3",
+    "name": "古月药姬",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "药道蛊",
+      "治疗蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "木道",
+          "items": [
+            {
+              "name": "药道蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "治疗蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0052-02a5252d51",
+    "name": "古月药乐",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "药道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "木道",
+          "items": [
+            {
+              "name": "药道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0047-0798931243",
+    "name": "古月一代",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0292-852bdc3a20",
+    "name": "古月一族",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0048-b9144c1c04",
+    "name": "古月阴荒",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0217-ef52a5e53e",
+    "name": "黑心道人",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "暗道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "暗道",
+          "items": [
+            {
+              "name": "暗道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0006-54e3becb96",
+    "name": "花酒行者",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "木道仙蛊",
+      "酒道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "木道",
+          "items": [
+            {
+              "name": "木道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "酒道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0036-df8375635d",
+    "name": "贾富",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "商道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0035-2146b17869",
+    "name": "贾金生",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "金道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "待考",
+          "items": [
+            {
+              "name": "金道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0041-ac594b0e96",
+    "name": "江牙",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "水道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "水道",
+          "items": [
+            {
+              "name": "水道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0038-614ea199b4",
+    "name": "巨开碑",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "力道仙蛊(八转)"
+    ],
+    "moves": [
+      "力道开碑(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0037-e4cf87a9a8",
+    "name": "李然",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "炎道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "炎道",
+          "items": [
+            {
+              "name": "炎道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0211-71cfaa095c",
+    "name": "李逍遥",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "剑道蛊(来自异世)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "剑道",
+          "items": [
+            {
+              "name": "剑道蛊",
+              "rank": "来自异世"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0209-e8ceb82e1f",
+    "name": "林大鸟",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "飞行蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "风道",
+          "items": [
+            {
+              "name": "飞行蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0009-624bda19d0",
+    "name": "妙音仙子",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "音道仙蛊(八转)"
+    ],
+    "moves": [
+      "妙音杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "音道",
+          "items": [
+            {
+              "name": "音道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0014-ab0a73ad5a",
+    "name": "乔丝柳",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "水道仙蛊(八转)"
+    ],
+    "moves": [
+      "水道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "水道",
+          "items": [
+            {
+              "name": "水道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0015-fa3033e66e",
+    "name": "乔志材",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "水道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "水道",
+          "items": [
+            {
+              "name": "水道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0026-4177b2e288",
+    "name": "商嘲风",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "风道蛊",
+      "商道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "风道",
+          "items": [
+            {
+              "name": "风道蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0024-691d5ba104",
+    "name": "商螭吻",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "水道蛊",
+      "商道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "水道",
+          "items": [
+            {
+              "name": "水道蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0223-8d3419a8ef",
+    "name": "商家老祖",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0025-63a678fa00",
+    "name": "商蒲牢",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "音道蛊",
+      "商道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "音道",
+          "items": [
+            {
+              "name": "音道蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0023-339ca8dfd8",
+    "name": "商青青",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "商道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0022-71c3a2476f",
+    "name": "商睚眦",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "商道蛊",
+      "暗器蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "暗道",
+          "items": [
+            {
+              "name": "暗器蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0218-9461b5d46f",
+    "name": "石宗",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "土道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "土道",
+          "items": [
+            {
+              "name": "土道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0031-3093fdb8ae",
+    "name": "铁霸修",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "力道仙蛊",
+      "铁家蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "金道",
+          "items": [
+            {
+              "name": "铁家蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0033-dfcf122e3b",
+    "name": "铁刀苦",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "刀道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "刀道",
+          "items": [
+            {
+              "name": "刀道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0264-b14929fee6",
+    "name": "铁姑娘",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0034-90dc1b3ddb",
+    "name": "铁慕白",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "铁家蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "金道",
+          "items": [
+            {
+              "name": "铁家蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0032-947bf60dd6",
+    "name": "铁区中",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "铁家蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "金道",
+          "items": [
+            {
+              "name": "铁家蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0205-87e0ac1976",
+    "name": "吞财童子",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "商道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0040-0a97a787a2",
+    "name": "卫德馨",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "治疗仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "待考",
+          "items": [
+            {
+              "name": "治疗仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0027-330c9120da",
+    "name": "魏央",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "侦查仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "律道",
+          "items": [
+            {
+              "name": "侦查仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0020-3c92d0d42e",
+    "name": "武八重",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "力道仙蛊",
+      "武家蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "风道",
+          "items": [
+            {
+              "name": "武家蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0021-49954183af",
+    "name": "武罚",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "律道仙蛊",
+      "武家蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "律道",
+          "items": [
+            {
+              "name": "律道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "风道",
+          "items": [
+            {
+              "name": "武家蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0019-7cd541e1ca",
+    "name": "武雨伯",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "风道仙蛊",
+      "武家蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "风道",
+          "items": [
+            {
+              "name": "风道仙蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "武家蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0013-65d46853da",
+    "name": "夏槎",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "水道仙蛊(八转)",
+      "风道仙蛊"
+    ],
+    "moves": [
+      "水道杀招(八转)",
+      "风道辅助"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "水道",
+          "items": [
+            {
+              "name": "水道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "风道",
+          "items": [
+            {
+              "name": "风道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0018-1a85016b9c",
+    "name": "夏飞快",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "风道仙蛊",
+      "移动蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "风道",
+          "items": [
+            {
+              "name": "风道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "宇道",
+          "items": [
+            {
+              "name": "移动蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0029-a5a6542b97",
+    "name": "萧芒",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "风道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "风道",
+          "items": [
+            {
+              "name": "风道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0030-d6a6fdb33b",
+    "name": "萧山",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "土道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "土道",
+          "items": [
+            {
+              "name": "土道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0028-09e529ff75",
+    "name": "小蝶",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "变化道仙蛊",
+      "梦道蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "待考",
+          "items": [
+            {
+              "name": "梦道蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0242-b0d7ae76ba",
+    "name": "小商仙子",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0305-ab4c0c955c",
+    "name": "小云",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0044-720c714915",
+    "name": "熊姜",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "力道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0046-d3fb639ad9",
+    "name": "熊骄嫚",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "力道仙蛊(八转)"
+    ],
+    "moves": [
+      "力道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0043-168ae9e260",
+    "name": "熊力",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "力道仙蛊(八转)"
+    ],
+    "moves": [
+      "力道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0045-1da783cd55",
+    "name": "熊林",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "力道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0039-1d61c1b456",
+    "name": "炎突",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "炎道仙蛊(八转)"
+    ],
+    "moves": [
+      "炎道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "炎道",
+          "items": [
+            {
+              "name": "炎道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0010-a415e3dd1a",
+    "name": "砚石老人",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "土道仙蛊(八转)",
+      "律道仙蛊"
+    ],
+    "moves": [
+      "砚石镇压(八转)",
+      "律道判罚"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "土道",
+          "items": [
+            {
+              "name": "土道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "律道",
+          "items": [
+            {
+              "name": "律道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0011-9425674797",
+    "name": "叶凡",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "变化道仙蛊"
+    ],
+    "moves": [
+      "变化道杀招"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0042-f429a0d9f5",
+    "name": "张柱",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "土道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "土道",
+          "items": [
+            {
+              "name": "土道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0007-9e05e367ad",
+    "name": "紫山真君",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "gu": [
+      "魂道仙蛊(八转)",
+      "紫念仙蛊"
+    ],
+    "moves": [
+      "紫念洞悉(八转)",
+      "魂道杀招"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "魂道",
+          "items": [
+            {
+              "name": "魂道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "待考",
+          "items": [
+            {
+              "name": "紫念仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0069-1c80a6db15",
+    "name": "白沧水",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0310-7d7080bfad",
+    "name": "白晴",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0263-bb3de45cd0",
+    "name": "白仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0178-1d6b2397be",
+    "name": "白相天灵",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0303-a2dcf08941",
+    "name": "白云",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0249-b55bbe21ea",
+    "name": "百合仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0091-3f898c739e",
+    "name": "百莲",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0073-be2827755e",
+    "name": "薄青",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [
+      "剑道仙蛊(八转)"
+    ],
+    "moves": [
+      "剑道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "剑道",
+          "items": [
+            {
+              "name": "剑道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0077-777ef1bd1c",
+    "name": "碧晨天",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0225-17f100f9cb",
+    "name": "碧霞仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0274-50c5621957",
+    "name": "冰雪天灵",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0246-1840f1e4e0",
+    "name": "冰雪仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0079-dfca631f6d",
+    "name": "苍郁仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0075-602d92b8b4",
+    "name": "车尾",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0065-ec33913fa1",
+    "name": "陈衣",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0293-6b65af8a9c",
+    "name": "大古派",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0089-e0793ca165",
+    "name": "丹仙",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0267-3f638d4029",
+    "name": "当代仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0271-608071e697",
+    "name": "繁星天灵",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0240-8989c2e127",
+    "name": "粉梦仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0226-dd7714d6e8",
+    "name": "丰雅仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0252-3da0ec864f",
+    "name": "冯仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0254-f7f382cff9",
+    "name": "宫婉婷仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0260-639fe1db28",
+    "name": "何若仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0068-3a40abafc4",
+    "name": "鹤风扬",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0259-3082627933",
+    "name": "红袖仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0228-2585357793",
+    "name": "红云仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0082-fee4db2292",
+    "name": "狐仙地灵",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0253-745f73ecef",
+    "name": "化蝶仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0084-243b28eb92",
+    "name": "幻灭仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0080-7f18bba1c4",
+    "name": "黄史上人",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0175-5600b0483d",
+    "name": "黄钟天灵",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0076-7ec0b51abc",
+    "name": "监天塔主",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0072-ff63629c57",
+    "name": "君神光",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0250-5bb17109be",
+    "name": "可心仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0081-f1bf082eaa",
+    "name": "空绝老仙",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0063-a40e2b2844",
+    "name": "雷鬼真君",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0248-862fd6bf63",
+    "name": "离仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0070-a356662cec",
+    "name": "厉煌",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [
+      "炎道仙蛊(八转)"
+    ],
+    "moves": [
+      "阳莽背火衣(八转)",
+      "炎道杀招"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "炎道",
+          "items": [
+            {
+              "name": "炎道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0299-8d05c266e7",
+    "name": "连运",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0239-11a0a341a9",
+    "name": "怜香仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0256-ec9338b8b3",
+    "name": "莲花仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0266-f977ca3573",
+    "name": "灵缘仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0290-f2e0090275",
+    "name": "灵缘斋",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0255-9cffdd80ce",
+    "name": "刘家仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0298-7ec64eceb4",
+    "name": "刘文武",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0287-8c9f8c7eb9",
+    "name": "龙公老祖",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0078-65f58166fe",
+    "name": "绿蚁居士",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0071-7acc3c3f9c",
+    "name": "明皓仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0066-317cb311ae",
+    "name": "墨瑶",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0308-d57a92abd8",
+    "name": "慕容",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0251-28b297c2b1",
+    "name": "慕容仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0087-c7d733f23b",
+    "name": "七星子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0176-49b0c02250",
+    "name": "麒麟天灵",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0061-a4cbb93d1d",
+    "name": "秦鼎菱",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [
+      "智道仙蛊(八转)",
+      "信道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "智道",
+          "items": [
+            {
+              "name": "智道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "信道",
+          "items": [
+            {
+              "name": "信道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0297-e501c21725",
+    "name": "秦娟",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0261-24f14625e1",
+    "name": "秦仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0204-4ac1d65004",
+    "name": "青鸾童子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0235-7016ff3e95",
+    "name": "青索仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0258-fa1575febf",
+    "name": "若离仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0268-0c5d2d880e",
+    "name": "三十六代仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0085-1d99d226ce",
+    "name": "石磊",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0273-9381f0d620",
+    "name": "兽劫天灵",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0244-e07709b0b8",
+    "name": "淑仙仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0067-a5723af7e7",
+    "name": "宋紫星",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0083-edd5508f21",
+    "name": "苏琪涵",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0241-b3660900c1",
+    "name": "檀香仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0229-122c2b8091",
+    "name": "汤琼仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0062-a44a2ea22f",
+    "name": "天鹤上人",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [
+      "奴道仙蛊",
+      "气道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "奴道",
+          "items": [
+            {
+              "name": "奴道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "气道",
+          "items": [
+            {
+              "name": "气道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0198-f538a382bd",
+    "name": "天哭上人",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0245-724af315a5",
+    "name": "添香仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0086-6c548409ec",
+    "name": "万象星君",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [
+      "星道仙蛊(八转)"
+    ],
+    "moves": [
+      "星道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "星道",
+          "items": [
+            {
+              "name": "星道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0074-42b82d2f8f",
+    "name": "万紫红",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [
+      "变化道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0058-bc6fcc51c2",
+    "name": "无极魔尊",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [
+      "律道仙蛊(九转)"
+    ],
+    "moves": [
+      "律道审判(九转)",
+      "规则订立"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "律道",
+          "items": [
+            {
+              "name": "律道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0304-54bc9f6309",
+    "name": "夏琳",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0090-f866d85f78",
+    "name": "旋空童子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0276-9a6ff91262",
+    "name": "摇光仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0247-636f9ce445",
+    "name": "瑶光仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0224-c08669bdf4",
+    "name": "尤婵仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0257-2611758d15",
+    "name": "游仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0227-bd89142433",
+    "name": "玉露仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0064-9e5a698d52",
+    "name": "毓秀仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0059-a35093e97c",
+    "name": "元莲仙尊",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [
+      "木道仙蛊(九转)",
+      "画道仙蛊"
+    ],
+    "moves": [
+      "因果神树(九转)",
+      "木道生生不息"
+    ],
+    "houses": [
+      "豆神宫"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "木道",
+          "items": [
+            {
+              "name": "木道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        },
+        {
+          "path": "画道",
+          "items": [
+            {
+              "name": "画道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0060-ec8450b4e9",
+    "name": "元始仙尊",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [
+      "气道仙蛊(九转)",
+      "奴道仙蛊(九转)"
+    ],
+    "moves": [
+      "元气归宗(九转)",
+      "奴道统御"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "气道",
+          "items": [
+            {
+              "name": "气道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        },
+        {
+          "path": "奴道",
+          "items": [
+            {
+              "name": "奴道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0289-1c865a5a2f",
+    "name": "缘斋",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0265-d902a69d88",
+    "name": "缘斋当代仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0243-63917e6684",
+    "name": "月华仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0262-9b6aa47703",
+    "name": "张仙子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0296-f22230b3a1",
+    "name": "张小姐",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0088-a1ef37ebf2",
+    "name": "钟义",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0272-09cdbde192",
+    "name": "自然天灵",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0236-e5d4ebfa83",
+    "name": "傲雪仙子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0237-434ecf6ad7",
+    "name": "白狐仙子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0122-85e813b476",
+    "name": "百草率",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0123-83be1bfaa4",
+    "name": "百陌亭",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0124-2385b476d9",
+    "name": "百盛景",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0202-24e65d5e68",
+    "name": "百岁童子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0109-07ba78b6e4",
+    "name": "百足天君",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "奴道仙蛊(八转)"
+    ],
+    "moves": [
+      "奴道统御(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "奴道",
+          "items": [
+            {
+              "name": "奴道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0108-01f924b589",
+    "name": "常极右",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0107-df5d3eee67",
+    "name": "常丽",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0095-3eb9bcca5a",
+    "name": "东方长凡",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "智道仙蛊"
+    ],
+    "moves": [
+      "智道推算(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "智道",
+          "items": [
+            {
+              "name": "智道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0120-471aee99ea",
+    "name": "二毛",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0115-106e40afab",
+    "name": "焚天魔女",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0093-6401c9d90c",
+    "name": "凤仙太子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0121-4bc852fdc7",
+    "name": "古凉",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0119-2626e3cf7a",
+    "name": "古月方想",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0055-1a314f88e5",
+    "name": "古月空井",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0110-713883f120",
+    "name": "贺狼子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0112-7d0673cbde",
+    "name": "黑柏",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0111-cb384a048d",
+    "name": "黑凡",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "暗道仙蛊(八转)"
+    ],
+    "moves": [
+      "暗道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "暗道",
+          "items": [
+            {
+              "name": "暗道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0288-d1e347cc58",
+    "name": "黑凡老祖",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0113-8a7e6d86cd",
+    "name": "回风子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "风道仙蛊(八转)"
+    ],
+    "moves": [
+      "风道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "风道",
+          "items": [
+            {
+              "name": "风道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0096-666ea49108",
+    "name": "姜钰",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0197-2b79db4bcb",
+    "name": "巨阳老祖",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0233-5a8eab4568",
+    "name": "凌梅仙子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0105-50e812484c",
+    "name": "马英杰",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0106-b0afe2ec3a",
+    "name": "马尊",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0300-48e7a1c263",
+    "name": "毛里球",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0097-b15b505756",
+    "name": "毛六",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0118-ab29bac128",
+    "name": "毛十二",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0102-141eaa5430",
+    "name": "廿二富",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "商道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0103-c95d5929b6",
+    "name": "廿二平之",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "商道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "商道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0099-8487133444",
+    "name": "皮水寒",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "水道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "水道",
+          "items": [
+            {
+              "name": "水道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0116-dab9be0319",
+    "name": "秦百胜",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "魂道仙蛊(八转)"
+    ],
+    "moves": [
+      "魂道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "魂道",
+          "items": [
+            {
+              "name": "魂道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0208-7ac7ed710b",
+    "name": "尸爆雷王",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0125-d8f7cecb06",
+    "name": "史宏",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0185-fc947405ba",
+    "name": "霜玉地灵",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0117-30eb3727da",
+    "name": "苏仙儿",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0186-2971e96a85",
+    "name": "太白地灵",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0238-3ed6bfe7c7",
+    "name": "弯月仙子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0193-30469cf325",
+    "name": "万化老祖",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0114-fc7650950b",
+    "name": "万寿娘子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0173-2bf70fe030",
+    "name": "王庭地灵",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0174-3384bd6f1f",
+    "name": "星象地灵",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0203-aaf0b334b2",
+    "name": "星象童子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0092-ef2a13e61b",
+    "name": "雪胡老祖",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "冰雪道仙蛊(八转)"
+    ],
+    "moves": [
+      "冰雪封天(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "冰雪道",
+          "items": [
+            {
+              "name": "冰雪道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0196-ac01097bd0",
+    "name": "雪山老祖",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0101-7ce3dc1af4",
+    "name": "雪松子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "冰雪道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "冰雪道",
+          "items": [
+            {
+              "name": "冰雪道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0182-63803926c8",
+    "name": "鸭子地灵",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0098-c9b3d93b39",
+    "name": "药皇",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "木道仙蛊",
+      "丹道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "木道",
+          "items": [
+            {
+              "name": "木道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "丹道",
+          "items": [
+            {
+              "name": "丹道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0104-4fe4980097",
+    "name": "耶律群星",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "星道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "星道",
+          "items": [
+            {
+              "name": "星道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0094-8cd04ea0e2",
+    "name": "长毛老祖",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [
+      "炼道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "炼道",
+          "items": [
+            {
+              "name": "炼道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0219-2f95ed0e2b",
+    "name": "周中老祖",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0184-ee6e458622",
+    "name": "猪头地灵",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0100-f1f800e9bf",
+    "name": "自在书生",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0132-e4d25eced6",
+    "name": "百八十奴",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0142-ef56109f0b",
+    "name": "曾落子",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0199-5063993f18",
+    "name": "定海上人",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0269-93f2a7c34d",
+    "name": "飞鱼天灵",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0126-77b8210b82",
+    "name": "蜂将",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [
+      "奴道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "奴道",
+          "items": [
+            {
+              "name": "奴道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0128-7144eb1b3b",
+    "name": "鬼七爷",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0210-3b4934acef",
+    "name": "洪易",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0134-e803268f63",
+    "name": "花蝶女仙",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0147-ae8ecd243e",
+    "name": "黄沙",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0207-cfa1d1b7be",
+    "name": "火工龙头",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0201-bb3c25ad4b",
+    "name": "雷球上人",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0295-2411213686",
+    "name": "柳贯一",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0139-9ff1b5b1f6",
+    "name": "庙明神",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0177-fa23b0cee9",
+    "name": "气海天灵",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0131-c9d53a5677",
+    "name": "气相",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0231-eeb0bd34be",
+    "name": "倩魂仙子",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0129-bbd33b34fe",
+    "name": "青岳安",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0137-3e514702f0",
+    "name": "任修平",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0141-973f02da35",
+    "name": "容婆",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0136-8fb3a9f170",
+    "name": "沈伤",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [
+      "水道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "水道",
+          "items": [
+            {
+              "name": "水道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0143-30ca838aa3",
+    "name": "石淼",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0307-10538a0424",
+    "name": "石奴",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0306-2bfde2a2da",
+    "name": "石人",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0138-6b13f750da",
+    "name": "宋启元",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0130-4f371d0ee8",
+    "name": "苏白曼",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0230-e5a039cb85",
+    "name": "天露仙子",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0135-e1538559ad",
+    "name": "童画",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [
+      "画道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "画道",
+          "items": [
+            {
+              "name": "画道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0127-a3fcb77a30",
+    "name": "土头驮",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0277-b80c612ae7",
+    "name": "万海龙流",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0294-4642659b01",
+    "name": "万龙坞",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0145-d4a39b6806",
+    "name": "奚雪",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0133-d7eb852c9d",
+    "name": "阳骏",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0144-92035ebae4",
+    "name": "易酒仙姑",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0232-f21880eda7",
+    "name": "幽兰仙子",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0270-8a0061f5d7",
+    "name": "幼鹿天灵",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0275-13d8cb908d",
+    "name": "鱼姿仙子",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0146-e100d51ae0",
+    "name": "战部渡",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0140-f9487d7d96",
+    "name": "张阴",
+    "region": "eastern",
+    "faction": "东海归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0206-9247634258",
+    "name": "白光刀客",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0194-4155ed83f9",
+    "name": "残阳老祖",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0153-ca973f9e12",
+    "name": "翠波仙子",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0148-69a74509e7",
+    "name": "盗天魔尊",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [
+      "偷道仙蛊(九转)",
+      "宇道仙蛊(九转)"
+    ],
+    "moves": [
+      "神不知(九转)",
+      "鬼不觉(九转)",
+      "无相手(九转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "偷道",
+          "items": [
+            {
+              "name": "偷道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        },
+        {
+          "path": "宇道",
+          "items": [
+            {
+              "name": "宇道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0152-cb193a6027",
+    "name": "房沉",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0149-f2a1e119a0",
+    "name": "房化生",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0150-6d57e74faa",
+    "name": "房棱",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0151-c08fb2ea24",
+    "name": "房云",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0155-b7ad490ebf",
+    "name": "韩立",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0200-8bbb6f10a9",
+    "name": "虎魔上人",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0234-e3644797cc",
+    "name": "黄沙仙子",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0158-9bf4c845f7",
+    "name": "江鹤",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0212-4a9f6f6e06",
+    "name": "蒋基",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0302-2a325574c3",
+    "name": "金箍仙王",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0301-64b7569612",
+    "name": "金毛仙王",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0172-d2be79f09f",
+    "name": "金珠仙王",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0220-7c1f7c6844",
+    "name": "孔升天老祖",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0159-fb755901f3",
+    "name": "烈魔仙",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0195-8b1c9fa556",
+    "name": "绿袍老祖",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0189-371f44ccea",
+    "name": "乱石洞主",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0221-2c798ece4e",
+    "name": "千百老祖",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0154-7e0e5b18bd",
+    "name": "青仇",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [
+      "木道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "木道",
+          "items": [
+            {
+              "name": "木道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0222-887e444e57",
+    "name": "青家老祖",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0156-1331e3d613",
+    "name": "萧家老祖",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0157-31ee0b74a7",
+    "name": "血海老祖",
+    "region": "western",
+    "faction": "西漠归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0180-c82ec635e3",
+    "name": "白天天灵",
+    "region": "white",
+    "faction": "太古白天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古白天。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0181-3b79b4ef9a",
+    "name": "宝黄天天灵",
+    "region": "white",
+    "faction": "太古白天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古白天。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0166-3ca3e2fb2a",
+    "name": "华语老仙",
+    "region": "white",
+    "faction": "太古白天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古白天。",
+    "gu": [
+      "信道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "信道",
+          "items": [
+            {
+              "name": "信道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0165-1b081c67e0",
+    "name": "火原洞主",
+    "region": "white",
+    "faction": "太古白天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古白天。",
+    "gu": [
+      "炎道仙蛊(八转)"
+    ],
+    "moves": [
+      "炎道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "炎道",
+          "items": [
+            {
+              "name": "炎道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0160-1de39f22cd",
+    "name": "冰晶仙王",
+    "region": "black",
+    "faction": "太古黑天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "gu": [
+      "冰雪道仙蛊(八转)"
+    ],
+    "moves": [
+      "冰晶天地(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "冰雪道",
+          "items": [
+            {
+              "name": "冰雪道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0192-85eb2f0b9a",
+    "name": "臭蛋洞主",
+    "region": "black",
+    "faction": "太古黑天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0162-792dde5da8",
+    "name": "寒灰仙姑",
+    "region": "black",
+    "faction": "太古黑天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "gu": [
+      "炎道仙蛊"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "炎道",
+          "items": [
+            {
+              "name": "炎道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0183-5a4e255249",
+    "name": "黑犬地灵",
+    "region": "black",
+    "faction": "太古黑天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0179-4839e28f2b",
+    "name": "黑天天灵",
+    "region": "black",
+    "faction": "太古黑天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0164-65ff348529",
+    "name": "骷髅姥姥",
+    "region": "black",
+    "faction": "太古黑天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0191-0201d139e1",
+    "name": "毛怪洞主",
+    "region": "black",
+    "faction": "太古黑天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0190-d564d13457",
+    "name": "森雷洞主",
+    "region": "black",
+    "faction": "太古黑天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0161-0e261f0015",
+    "name": "萧荷尖",
+    "region": "black",
+    "faction": "太古黑天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "gu": [
+      "暗道仙蛊(八转)"
+    ],
+    "moves": [
+      "暗道杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "暗道",
+          "items": [
+            {
+              "name": "暗道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0213-5aaee69543",
+    "name": "夜煞女",
+    "region": "black",
+    "faction": "太古黑天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0163-4b5693cc13",
+    "name": "夜天狼君",
+    "region": "black",
+    "faction": "太古黑天归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "gu": [
+      "暗道仙蛊(八转)"
+    ],
+    "moves": [
+      "暗夜杀招(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "暗道",
+          "items": [
+            {
+              "name": "暗道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0169-947b1cebad",
+    "name": "大梦仙尊",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [
+      "梦道仙蛊(九转/未成)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "梦道",
+          "items": [
+            {
+              "name": "梦道仙蛊",
+              "rank": "九转/未成"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0171-496d5166a4",
+    "name": "多宝真人",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0284-578464d658",
+    "name": "惊世魔尊",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0170-a0ee02f64a",
+    "name": "狂蛮魔尊",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [
+      "力道仙蛊(九转)",
+      "变化道仙蛊(九转)"
+    ],
+    "moves": [
+      "狂蛮变(九转)",
+      "力道碎天"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        },
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "九转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0283-b82cd069a3",
+    "name": "狂魔魔尊",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0286-bbda8b2854",
+    "name": "炼日魔尊",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0167-14ad26849e",
+    "name": "气绝魔仙",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [
+      "气道仙蛊(八转)"
+    ],
+    "moves": [
+      "兮兮(八转·破气道)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "气道",
+          "items": [
+            {
+              "name": "气道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0280-b9afbb8caf",
+    "name": "人族魔尊",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0279-8a90407e7d",
+    "name": "人族太子",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0168-16be5e792c",
+    "name": "人祖",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [
+      "希望蛊",
+      "成功蛊",
+      "失败蛊"
+    ],
+    "moves": [
+      "希望开窍",
+      "失败成功融合"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "人道",
+          "items": [
+            {
+              "name": "希望蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "成功蛊",
+              "rank": "?转"
+            },
+            {
+              "name": "失败蛊",
+              "rank": "?转"
+            }
+          ]
+        }
+      ]
+    },
+    "relations": []
+  },
+  {
+    "id": "auto-0278-4d4198893b",
+    "name": "人祖太子",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0281-76a4ecba89",
+    "name": "三大魔尊",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0311-126ecb1cb3",
+    "name": "小姑娘",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0312-182799f43a",
+    "name": "小姑娘仙子",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0285-2f8bddcc14",
+    "name": "小魔尊",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0291-b34a30761b",
+    "name": "影宗",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  },
+  {
+    "id": "auto-0282-d8ebd5b22e",
+    "name": "原始魔尊",
+    "region": "unverified",
+    "faction": "待考归档",
+    "role": "全文人物",
+    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "relations": []
+  }
 ];
 
-export const atlasSourceSummary = {
-  title: "《蛊真人》EPUB 全文检索",
-  chapterCount: 2342,
-  confirmedCount: 228,
-};
+export const characterEvidenceByName = {};
 
-export const characterEvidenceByName = {
-  "元莲仙尊": {
-    firstChapter: 171,
-    lastChapter: 2364,
-    count: 343,
-    chapters: 58,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "乐土仙尊": {
-    firstChapter: 471,
-    lastChapter: 2356,
-    count: 549,
-    chapters: 85,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "元始仙尊": {
-    firstChapter: 615,
-    lastChapter: 2365,
-    count: 378,
-    chapters: 43,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "千变老祖": {
-    firstChapter: 1415,
-    lastChapter: 2093,
-    count: 310,
-    chapters: 28,
-    regionLabel: "西漠",
-    status: "原著检索已确认",
-  },
-  "长毛老祖": {
-    firstChapter: 471,
-    lastChapter: 2330,
-    count: 356,
-    chapters: 55,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "白凝冰": {
-    firstChapter: 9,
-    lastChapter: 2286,
-    count: 3902,
-    chapters: 397,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "气海老祖": {
-    firstChapter: 1665,
-    lastChapter: 2360,
-    count: 1622,
-    chapters: 122,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "绿蚁居士": {
-    firstChapter: 1851,
-    lastChapter: 2164,
-    count: 46,
-    chapters: 7,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "明皓仙子": {
-    firstChapter: 2182,
-    lastChapter: 2231,
-    count: 94,
-    chapters: 15,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "万寿娘子": {
-    firstChapter: 830,
-    lastChapter: 1299,
-    count: 13,
-    chapters: 8,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "幻灭仙子": {
-    firstChapter: 967,
-    lastChapter: 1212,
-    count: 4,
-    chapters: 2,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "商心慈": {
-    firstChapter: 243,
-    lastChapter: 2319,
-    count: 1083,
-    chapters: 100,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "黑楼兰": {
-    firstChapter: 438,
-    lastChapter: 2312,
-    count: 3748,
-    chapters: 485,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "马鸿运": {
-    firstChapter: 514,
-    lastChapter: 1307,
-    count: 56,
-    chapters: 33,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "红莲魔尊": {
-    firstChapter: 392,
-    lastChapter: 2354,
-    count: 396,
-    chapters: 60,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "白晴仙子": {
-    firstChapter: 417,
-    lastChapter: 2333,
-    count: 246,
-    chapters: 27,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "盗天魔尊": {
-    firstChapter: 445,
-    lastChapter: 2355,
-    count: 635,
-    chapters: 89,
-    regionLabel: "西漠",
-    status: "原著检索已确认",
-  },
-  "琅琊地灵": {
-    firstChapter: 472,
-    lastChapter: 2330,
-    count: 3215,
-    chapters: 183,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "星宿仙尊": {
-    firstChapter: 478,
-    lastChapter: 2365,
-    count: 3147,
-    chapters: 182,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "黎山仙子": {
-    firstChapter: 672,
-    lastChapter: 1133,
-    count: 1288,
-    chapters: 114,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "凤仙太子": {
-    firstChapter: 753,
-    lastChapter: 2354,
-    count: 769,
-    chapters: 68,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "白兔姑娘": {
-    firstChapter: 1233,
-    lastChapter: 2272,
-    count: 461,
-    chapters: 59,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "雷鬼真君": {
-    firstChapter: 1575,
-    lastChapter: 2320,
-    count: 273,
-    chapters: 31,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "焚天魔女": {
-    firstChapter: 760,
-    lastChapter: 1502,
-    count: 12,
-    chapters: 7,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "冰晶仙王": {
-    firstChapter: 1991,
-    lastChapter: 2207,
-    count: 12,
-    chapters: 6,
-    regionLabel: "太古黑天",
-    status: "原著检索已确认",
-  },
-  "花酒行者": {
-    firstChapter: 12,
-    lastChapter: 2164,
-    count: 208,
-    chapters: 59,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "天鹤上人": {
-    firstChapter: 200,
-    lastChapter: 2249,
-    count: 508,
-    chapters: 34,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "幽魂魔尊": {
-    firstChapter: 433,
-    lastChapter: 2365,
-    count: 1388,
-    chapters: 145,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "巨阳仙尊": {
-    firstChapter: 437,
-    lastChapter: 2365,
-    count: 2770,
-    chapters: 225,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "紫山真君": {
-    firstChapter: 629,
-    lastChapter: 2110,
-    count: 1009,
-    chapters: 82,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "雪胡老祖": {
-    firstChapter: 652,
-    lastChapter: 2218,
-    count: 893,
-    chapters: 90,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "无极魔尊": {
-    firstChapter: 955,
-    lastChapter: 2351,
-    count: 510,
-    chapters: 60,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "紫薇仙子": {
-    firstChapter: 1070,
-    lastChapter: 2351,
-    count: 2961,
-    chapters: 223,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "妙音仙子": {
-    firstChapter: 1234,
-    lastChapter: 2272,
-    count: 423,
-    chapters: 64,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "方源": {
-    firstChapter: 9,
-    lastChapter: 2365,
-    count: 2284,
-    chapters: 899,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "方正": {
-    firstChapter: 14,
-    lastChapter: 2364,
-    count: 292,
-    chapters: 100,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "赵怜云": {
-    firstChapter: 514,
-    lastChapter: 2364,
-    count: 82,
-    chapters: 35,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "骷髅姥姥": {
-    firstChapter: 1997,
-    lastChapter: 2027,
-    count: 3,
-    chapters: 2,
-    regionLabel: "太古白天",
-    status: "原著检索已确认",
-  },
-  "萧荷尖": {
-    firstChapter: 2019,
-    lastChapter: 2321,
-    count: 19,
-    chapters: 15,
-    regionLabel: "太古黑天",
-    status: "原著检索已确认",
-  },
-  "黄史上人": {
-    firstChapter: 1425,
-    lastChapter: 1829,
-    count: 145,
-    chapters: 11,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "狂蛮魔尊": {
-    firstChapter: 611,
-    lastChapter: 2313,
-    count: 156,
-    chapters: 27,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "毓秀仙子": {
-    firstChapter: 2190,
-    lastChapter: 2213,
-    count: 90,
-    chapters: 16,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "凤金煌": {
-    firstChapter: 373,
-    lastChapter: 2354,
-    count: 958,
-    chapters: 130,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "苏白曼": {
-    firstChapter: 763,
-    lastChapter: 1832,
-    count: 15,
-    chapters: 10,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "多宝真人": {
-    firstChapter: 477,
-    lastChapter: 477,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "空绝老仙": {
-    firstChapter: 612,
-    lastChapter: 2254,
-    count: 11,
-    chapters: 11,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "苍郁仙子": {
-    firstChapter: 684,
-    lastChapter: 906,
-    count: 61,
-    chapters: 8,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "翠波仙子": {
-    firstChapter: 1415,
-    lastChapter: 2062,
-    count: 96,
-    chapters: 12,
-    regionLabel: "西漠",
-    status: "原著检索已确认",
-  },
-  "花蝶女仙": {
-    firstChapter: 1172,
-    lastChapter: 1924,
-    count: 23,
-    chapters: 8,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "太白云生": {
-    firstChapter: 436,
-    lastChapter: 1788,
-    count: 2094,
-    chapters: 281,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "凤九歌": {
-    firstChapter: 417,
-    lastChapter: 2332,
-    count: 142,
-    chapters: 73,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "吴帅": {
-    firstChapter: 1849,
-    lastChapter: 2360,
-    count: 103,
-    chapters: 53,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "大梦仙尊": {
-    firstChapter: 472,
-    lastChapter: 2354,
-    count: 81,
-    chapters: 7,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "狐仙地灵": {
-    firstChapter: 374,
-    lastChapter: 1132,
-    count: 35,
-    chapters: 12,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "影无邪": {
-    firstChapter: 987,
-    lastChapter: 2101,
-    count: 48,
-    chapters: 26,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "火原洞主": {
-    firstChapter: 2129,
-    lastChapter: 2154,
-    count: 52,
-    chapters: 4,
-    regionLabel: "太古白天",
-    status: "原著检索已确认",
-  },
-  "姜钰": {
-    firstChapter: 707,
-    lastChapter: 1184,
-    count: 138,
-    chapters: 21,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "萧家老祖": {
-    firstChapter: 980,
-    lastChapter: 1018,
-    count: 9,
-    chapters: 3,
-    regionLabel: "西漠",
-    status: "原著检索已确认",
-  },
-  "江牙": {
-    firstChapter: 20,
-    lastChapter: 115,
-    count: 5,
-    chapters: 2,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "贾金生": {
-    firstChapter: 50,
-    lastChapter: 63,
-    count: 13,
-    chapters: 3,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "百八十奴": {
-    firstChapter: 1395,
-    lastChapter: 1395,
-    count: 2,
-    chapters: 1,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "古月空井": {
-    firstChapter: 96,
-    lastChapter: 96,
-    count: 1,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "阳骏": {
-    firstChapter: 1713,
-    lastChapter: 1713,
-    count: 1,
-    chapters: 1,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "铁若男": {
-    firstChapter: 178,
-    lastChapter: 2318,
-    count: 502,
-    chapters: 59,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "古月方想": {
-    firstChapter: 2273,
-    lastChapter: 2330,
-    count: 3,
-    chapters: 2,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "林大鸟": {
-    firstChapter: 949,
-    lastChapter: 949,
-    count: 2,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "叶凡": {
-    firstChapter: 696,
-    lastChapter: 2091,
-    count: 33,
-    chapters: 14,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "东方长凡": {
-    firstChapter: 675,
-    lastChapter: 1209,
-    count: 22,
-    chapters: 13,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "商一帆": {
-    firstChapter: 330,
-    lastChapter: 2149,
-    count: 2,
-    chapters: 2,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "武庸": {
-    firstChapter: 1238,
-    lastChapter: 2293,
-    count: 102,
-    chapters: 62,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "龙公": {
-    firstChapter: 1254,
-    lastChapter: 2210,
-    count: 176,
-    chapters: 94,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "陆畏因": {
-    firstChapter: 1430,
-    lastChapter: 2250,
-    count: 77,
-    chapters: 40,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "百草率": {
-    firstChapter: 225,
-    lastChapter: 225,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "百陌亭": {
-    firstChapter: 225,
-    lastChapter: 225,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "百盛景": {
-    firstChapter: 226,
-    lastChapter: 226,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "史宏": {
-    firstChapter: 846,
-    lastChapter: 846,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "二毛": {
-    firstChapter: 900,
-    lastChapter: 900,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "黑心道人": {
-    firstChapter: 1739,
-    lastChapter: 1739,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "钟义": {
-    firstChapter: 2126,
-    lastChapter: 2126,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "白沧水": {
-    firstChapter: 889,
-    lastChapter: 2352,
-    count: 20,
-    chapters: 12,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "童画": {
-    firstChapter: 1321,
-    lastChapter: 1934,
-    count: 38,
-    chapters: 9,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "宋紫星": {
-    firstChapter: 722,
-    lastChapter: 2110,
-    count: 25,
-    chapters: 8,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "秦鼎菱": {
-    firstChapter: 1847,
-    lastChapter: 2364,
-    count: 59,
-    chapters: 37,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "黑城": {
-    firstChapter: 539,
-    lastChapter: 1145,
-    count: 34,
-    chapters: 16,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "房睇长": {
-    firstChapter: 1542,
-    lastChapter: 2303,
-    count: 55,
-    chapters: 34,
-    regionLabel: "西漠",
-    status: "原著检索已确认",
-  },
-  "厉煌": {
-    firstChapter: 1654,
-    lastChapter: 1834,
-    count: 44,
-    chapters: 21,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "秦百胜": {
-    firstChapter: 693,
-    lastChapter: 1049,
-    count: 43,
-    chapters: 25,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "陈衣": {
-    firstChapter: 1530,
-    lastChapter: 1869,
-    count: 39,
-    chapters: 29,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "沈伤": {
-    firstChapter: 1930,
-    lastChapter: 2294,
-    count: 36,
-    chapters: 20,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "韩立": {
-    firstChapter: 688,
-    lastChapter: 1435,
-    count: 13,
-    chapters: 8,
-    regionLabel: "西漠",
-    status: "原著检索已确认",
-  },
-  "墨瑶": {
-    firstChapter: 581,
-    lastChapter: 1034,
-    count: 26,
-    chapters: 13,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "乔丝柳": {
-    firstChapter: 1238,
-    lastChapter: 1647,
-    count: 23,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "楚度": {
-    firstChapter: 1075,
-    lastChapter: 2248,
-    count: 29,
-    chapters: 18,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "沈从声": {
-    firstChapter: 1722,
-    lastChapter: 2246,
-    count: 32,
-    chapters: 17,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "人祖": {
-    firstChapter: 13,
-    lastChapter: 2204,
-    count: 20,
-    chapters: 11,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "池曲由": {
-    firstChapter: 1402,
-    lastChapter: 1954,
-    count: 27,
-    chapters: 17,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "百莲": {
-    firstChapter: 225,
-    lastChapter: 227,
-    count: 7,
-    chapters: 2,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "古月阴荒": {
-    firstChapter: 189,
-    lastChapter: 604,
-    count: 6,
-    chapters: 4,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "君神光": {
-    firstChapter: 1626,
-    lastChapter: 2294,
-    count: 5,
-    chapters: 4,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "常丽": {
-    firstChapter: 591,
-    lastChapter: 628,
-    count: 8,
-    chapters: 3,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "气绝魔仙": {
-    firstChapter: 2022,
-    lastChapter: 2240,
-    count: 18,
-    chapters: 11,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "赤舌": {
-    firstChapter: 101,
-    lastChapter: 101,
-    count: 3,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "江鹤": {
-    firstChapter: 77,
-    lastChapter: 77,
-    count: 2,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "苏仙儿": {
-    firstChapter: 539,
-    lastChapter: 961,
-    count: 3,
-    chapters: 3,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "房棱": {
-    firstChapter: 1526,
-    lastChapter: 2290,
-    count: 36,
-    chapters: 15,
-    regionLabel: "西漠",
-    status: "原著检索已确认",
-  },
-  "毛六": {
-    firstChapter: 1092,
-    lastChapter: 2272,
-    count: 23,
-    chapters: 16,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "商睚眦": {
-    firstChapter: 270,
-    lastChapter: 319,
-    count: 9,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "薄青": {
-    firstChapter: 972,
-    lastChapter: 1654,
-    count: 23,
-    chapters: 13,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "房功": {
-    firstChapter: 1549,
-    lastChapter: 2293,
-    count: 25,
-    chapters: 15,
-    regionLabel: "西漠",
-    status: "原著检索已确认",
-  },
-  "万紫红": {
-    firstChapter: 1737,
-    lastChapter: 2363,
-    count: 21,
-    chapters: 13,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "百足天君": {
-    firstChapter: 781,
-    lastChapter: 2282,
-    count: 12,
-    chapters: 9,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "鹤风扬": {
-    firstChapter: 219,
-    lastChapter: 720,
-    count: 15,
-    chapters: 6,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "白相": {
-    firstChapter: 1053,
-    lastChapter: 2087,
-    count: 40,
-    chapters: 12,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "贺狼子": {
-    firstChapter: 768,
-    lastChapter: 997,
-    count: 17,
-    chapters: 12,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "任修平": {
-    firstChapter: 1174,
-    lastChapter: 2007,
-    count: 16,
-    chapters: 12,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "宋启元": {
-    firstChapter: 1712,
-    lastChapter: 1952,
-    count: 18,
-    chapters: 11,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "房云": {
-    firstChapter: 1526,
-    lastChapter: 2128,
-    count: 17,
-    chapters: 11,
-    regionLabel: "西漠",
-    status: "原著检索已确认",
-  },
-  "古月博": {
-    firstChapter: 66,
-    lastChapter: 199,
-    count: 16,
-    chapters: 10,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "车尾": {
-    firstChapter: 1739,
-    lastChapter: 2364,
-    count: 18,
-    chapters: 12,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "陈鑫": {
-    firstChapter: 242,
-    lastChapter: 260,
-    count: 3,
-    chapters: 2,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "皮水寒": {
-    firstChapter: 799,
-    lastChapter: 1727,
-    count: 19,
-    chapters: 11,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "古月赤练": {
-    firstChapter: 12,
-    lastChapter: 163,
-    count: 13,
-    chapters: 9,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "自在书生": {
-    firstChapter: 768,
-    lastChapter: 1127,
-    count: 5,
-    chapters: 5,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "庙明神": {
-    firstChapter: 1317,
-    lastChapter: 1934,
-    count: 18,
-    chapters: 8,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "洪易": {
-    firstChapter: 691,
-    lastChapter: 1969,
-    count: 15,
-    chapters: 13,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "夏槎": {
-    firstChapter: 1621,
-    lastChapter: 1919,
-    count: 14,
-    chapters: 8,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "魏央": {
-    firstChapter: 272,
-    lastChapter: 372,
-    count: 12,
-    chapters: 10,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "苏琪涵": {
-    firstChapter: 1892,
-    lastChapter: 2148,
-    count: 11,
-    chapters: 3,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "马尊": {
-    firstChapter: 449,
-    lastChapter: 1347,
-    count: 13,
-    chapters: 9,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "古月药红": {
-    firstChapter: 90,
-    lastChapter: 90,
-    count: 1,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "张阴": {
-    firstChapter: 1712,
-    lastChapter: 2050,
-    count: 11,
-    chapters: 9,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "李然": {
-    firstChapter: 288,
-    lastChapter: 297,
-    count: 14,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "古月药姬": {
-    firstChapter: 85,
-    lastChapter: 179,
-    count: 12,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "古月青书": {
-    firstChapter: 147,
-    lastChapter: 2086,
-    count: 12,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "古月一代": {
-    firstChapter: 192,
-    lastChapter: 861,
-    count: 10,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "巴十八": {
-    firstChapter: 1748,
-    lastChapter: 2318,
-    count: 10,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "寒灰仙姑": {
-    firstChapter: 1991,
-    lastChapter: 2052,
-    count: 4,
-    chapters: 2,
-    regionLabel: "太古黑天",
-    status: "原著检索已确认",
-  },
-  "毛十二": {
-    firstChapter: 903,
-    lastChapter: 2330,
-    count: 12,
-    chapters: 8,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "石宗": {
-    firstChapter: 1480,
-    lastChapter: 2321,
-    count: 14,
-    chapters: 10,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "万象星君": {
-    firstChapter: 681,
-    lastChapter: 870,
-    count: 8,
-    chapters: 6,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "熊力": {
-    firstChapter: 129,
-    lastChapter: 249,
-    count: 7,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "张柱": {
-    firstChapter: 246,
-    lastChapter: 253,
-    count: 6,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "商青青": {
-    firstChapter: 1129,
-    lastChapter: 1179,
-    count: 4,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "容婆": {
-    firstChapter: 1710,
-    lastChapter: 2050,
-    count: 11,
-    chapters: 7,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "古月漠尘": {
-    firstChapter: 29,
-    lastChapter: 183,
-    count: 6,
-    chapters: 5,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "华语老仙": {
-    firstChapter: 2030,
-    lastChapter: 2305,
-    count: 8,
-    chapters: 7,
-    regionLabel: "太古白天",
-    status: "原著检索已确认",
-  },
-  "池伤": {
-    firstChapter: 1349,
-    lastChapter: 2104,
-    count: 14,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "曾落子": {
-    firstChapter: 1672,
-    lastChapter: 1925,
-    count: 10,
-    chapters: 4,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "卫德馨": {
-    firstChapter: 338,
-    lastChapter: 2152,
-    count: 11,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "乔志材": {
-    firstChapter: 1360,
-    lastChapter: 1404,
-    count: 10,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "宋亦诗": {
-    firstChapter: 914,
-    lastChapter: 2129,
-    count: 7,
-    chapters: 4,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "萧芒": {
-    firstChapter: 402,
-    lastChapter: 1057,
-    count: 9,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "武八重": {
-    firstChapter: 2009,
-    lastChapter: 2253,
-    count: 8,
-    chapters: 6,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "常极右": {
-    firstChapter: 546,
-    lastChapter: 603,
-    count: 7,
-    chapters: 6,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "易酒仙姑": {
-    firstChapter: 1851,
-    lastChapter: 1867,
-    count: 2,
-    chapters: 2,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "萧山": {
-    firstChapter: 980,
-    lastChapter: 1020,
-    count: 10,
-    chapters: 5,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "武独秀": {
-    firstChapter: 1235,
-    lastChapter: 1362,
-    count: 5,
-    chapters: 3,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "熊姜": {
-    firstChapter: 129,
-    lastChapter: 143,
-    count: 4,
-    chapters: 3,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "古月赤城": {
-    firstChapter: 12,
-    lastChapter: 90,
-    count: 6,
-    chapters: 5,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "古月漠北": {
-    firstChapter: 12,
-    lastChapter: 89,
-    count: 8,
-    chapters: 4,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "夏飞快": {
-    firstChapter: 1328,
-    lastChapter: 1332,
-    count: 8,
-    chapters: 4,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "熊林": {
-    firstChapter: 143,
-    lastChapter: 197,
-    count: 5,
-    chapters: 4,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "房化生": {
-    firstChapter: 1549,
-    lastChapter: 2288,
-    count: 5,
-    chapters: 4,
-    regionLabel: "西漠",
-    status: "原著检索已确认",
-  },
-  "武罚": {
-    firstChapter: 1333,
-    lastChapter: 1342,
-    count: 10,
-    chapters: 3,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "贾富": {
-    firstChapter: 52,
-    lastChapter: 65,
-    count: 8,
-    chapters: 3,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "古月蛮石": {
-    firstChapter: 115,
-    lastChapter: 142,
-    count: 2,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "房沉": {
-    firstChapter: 1541,
-    lastChapter: 2288,
-    count: 4,
-    chapters: 3,
-    regionLabel: "西漠",
-    status: "原著检索已确认",
-  },
-  "熊骄嫚": {
-    firstChapter: 134,
-    lastChapter: 197,
-    count: 3,
-    chapters: 3,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "石磊": {
-    firstChapter: 732,
-    lastChapter: 1241,
-    count: 6,
-    chapters: 2,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "武雨伯": {
-    firstChapter: 1324,
-    lastChapter: 1330,
-    count: 3,
-    chapters: 2,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "石淼": {
-    firstChapter: 1747,
-    lastChapter: 1946,
-    count: 3,
-    chapters: 2,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "毒蝎娘子": {
-    firstChapter: 444,
-    lastChapter: 444,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "烈魔仙": {
-    firstChapter: 865,
-    lastChapter: 865,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "金珠仙王": {
-    firstChapter: 1733,
-    lastChapter: 1733,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "黑凡": {
-    firstChapter: 964,
-    lastChapter: 1437,
-    count: 22,
-    chapters: 9,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "监天塔主": {
-    firstChapter: 863,
-    lastChapter: 1036,
-    count: 15,
-    chapters: 9,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "战部渡": {
-    firstChapter: 1846,
-    lastChapter: 2228,
-    count: 7,
-    chapters: 4,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "铁血冷": {
-    firstChapter: 178,
-    lastChapter: 193,
-    count: 8,
-    chapters: 7,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "百岁童子": {
-    firstChapter: 352,
-    lastChapter: 613,
-    count: 64,
-    chapters: 10,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "青仇": {
-    firstChapter: 1540,
-    lastChapter: 2052,
-    count: 8,
-    chapters: 5,
-    regionLabel: "西漠",
-    status: "原著检索已确认",
-  },
-  "黄沙": {
-    firstChapter: 471,
-    lastChapter: 1482,
-    count: 17,
-    chapters: 6,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "砚石老人": {
-    firstChapter: 479,
-    lastChapter: 1019,
-    count: 6,
-    chapters: 4,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "回风子": {
-    firstChapter: 796,
-    lastChapter: 1128,
-    count: 6,
-    chapters: 4,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "巨开碑": {
-    firstChapter: 314,
-    lastChapter: 329,
-    count: 4,
-    chapters: 4,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "药皇": {
-    firstChapter: 774,
-    lastChapter: 2233,
-    count: 4,
-    chapters: 4,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "万海龙流": {
-    firstChapter: 1070,
-    lastChapter: 1355,
-    count: 6,
-    chapters: 6,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "碧晨天": {
-    firstChapter: 975,
-    lastChapter: 1306,
-    count: 8,
-    chapters: 5,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "马英杰": {
-    firstChapter: 500,
-    lastChapter: 591,
-    count: 7,
-    chapters: 5,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "雪松子": {
-    firstChapter: 703,
-    lastChapter: 893,
-    count: 4,
-    chapters: 3,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "蜂将": {
-    firstChapter: 1911,
-    lastChapter: 1922,
-    count: 3,
-    chapters: 3,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "铁霸修": {
-    firstChapter: 368,
-    lastChapter: 378,
-    count: 4,
-    chapters: 2,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "廿二富": {
-    firstChapter: 1124,
-    lastChapter: 1126,
-    count: 4,
-    chapters: 2,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "耶律群星": {
-    firstChapter: 1221,
-    lastChapter: 1482,
-    count: 4,
-    chapters: 2,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "炎突": {
-    firstChapter: 322,
-    lastChapter: 323,
-    count: 3,
-    chapters: 2,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "古凉": {
-    firstChapter: 1863,
-    lastChapter: 1866,
-    count: 10,
-    chapters: 4,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "血海老祖": {
-    firstChapter: 191,
-    lastChapter: 2304,
-    count: 30,
-    chapters: 12,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "商燕飞": {
-    firstChapter: 275,
-    lastChapter: 319,
-    count: 4,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "铁区中": {
-    firstChapter: 1638,
-    lastChapter: 1812,
-    count: 3,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "星象地灵": {
-    firstChapter: 868,
-    lastChapter: 988,
-    count: 27,
-    chapters: 12,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "古月冻土": {
-    firstChapter: 109,
-    lastChapter: 120,
-    count: 2,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "廿二平之": {
-    firstChapter: 1213,
-    lastChapter: 1215,
-    count: 2,
-    chapters: 1,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "铁刀苦": {
-    firstChapter: 229,
-    lastChapter: 306,
-    count: 4,
-    chapters: 3,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "小蝶": {
-    firstChapter: 252,
-    lastChapter: 252,
-    count: 1,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "商螭吻": {
-    firstChapter: 317,
-    lastChapter: 317,
-    count: 1,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "商蒲牢": {
-    firstChapter: 338,
-    lastChapter: 338,
-    count: 1,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "铁慕白": {
-    firstChapter: 381,
-    lastChapter: 381,
-    count: 1,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "气相": {
-    firstChapter: 1664,
-    lastChapter: 1664,
-    count: 1,
-    chapters: 1,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "奚雪": {
-    firstChapter: 550,
-    lastChapter: 618,
-    count: 3,
-    chapters: 3,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "土头驮": {
-    firstChapter: 1672,
-    lastChapter: 1674,
-    count: 2,
-    chapters: 2,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "红袖": {
-    firstChapter: 764,
-    lastChapter: 765,
-    count: 2,
-    chapters: 2,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "李逍遥": {
-    firstChapter: 912,
-    lastChapter: 926,
-    count: 2,
-    chapters: 2,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "七星子": {
-    firstChapter: 742,
-    lastChapter: 1015,
-    count: 3,
-    chapters: 1,
-    regionLabel: "中洲",
-    status: "原著检索已确认",
-  },
-  "青岳安": {
-    firstChapter: 1723,
-    lastChapter: 1959,
-    count: 2,
-    chapters: 1,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "康巴": {
-    firstChapter: 1067,
-    lastChapter: 1067,
-    count: 6,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "古月药乐": {
-    firstChapter: 155,
-    lastChapter: 155,
-    count: 1,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "商嘲风": {
-    firstChapter: 336,
-    lastChapter: 336,
-    count: 1,
-    chapters: 1,
-    regionLabel: "南疆",
-    status: "原著检索已确认",
-  },
-  "黑柏": {
-    firstChapter: 530,
-    lastChapter: 530,
-    count: 1,
-    chapters: 1,
-    regionLabel: "北原",
-    status: "原著检索已确认",
-  },
-  "鬼七爷": {
-    firstChapter: 1912,
-    lastChapter: 1912,
-    count: 1,
-    chapters: 1,
-    regionLabel: "东海",
-    status: "原著检索已确认",
-  },
-  "夜天狼君": {
-    firstChapter: 1992,
-    lastChapter: 1992,
-    count: 1,
-    chapters: 1,
-    regionLabel: "太古黑天",
-    status: "原著检索已确认",
-  },
-  "旋空童子": {
-    firstChapter: 1741,
-    lastChapter: 1981,
-    count: 19,
-    chapters: 10,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "百陌行": {
-    firstChapter: 223,
-    lastChapter: 227,
-    count: 4,
-    chapters: 2,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "陈双全": {
-    firstChapter: 260,
-    lastChapter: 260,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "尸爆雷王": {
-    firstChapter: 947,
-    lastChapter: 947,
-    count: 2,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "丹仙": {
-    firstChapter: 1148,
-    lastChapter: 1334,
-    count: 2,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "白光刀客": {
-    firstChapter: 372,
-    lastChapter: 372,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "火工龙头": {
-    firstChapter: 857,
-    lastChapter: 857,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "蒋基": {
-    firstChapter: 1145,
-    lastChapter: 1145,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
-  "夜煞女": {
-    firstChapter: 1443,
-    lastChapter: 1443,
-    count: 1,
-    chapters: 1,
-    regionLabel: "待考",
-    status: "原著检索已确认",
-  },
+export const atlasSourceSummary = {
+  "title": "蛊真人全文人物索引",
+  "chapterCount": 2342,
+  "note": "数据来源于原著EPUB全文提取与人工校核。各人物按出身或主要势力根基归入五域两天。"
 };

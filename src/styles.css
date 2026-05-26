@@ -1151,7 +1151,7 @@ button {
 
 .entry-layout {
   display: grid;
-  grid-template-columns: 208px minmax(0, 1fr) 304px;
+  grid-template-columns: auto minmax(0, 1fr) 304px;
   gap: clamp(22px, 2vw, 36px);
   align-items: start;
 }
@@ -1159,7 +1159,7 @@ button {
 .entry-sidebar {
   position: sticky;
   top: 78px;
-  min-width: 0;
+  min-width: max-content;
 }
 
 .entry-toc {
@@ -1167,6 +1167,11 @@ button {
   gap: 4px;
   padding-top: 9px;
   border-top: 1px solid rgba(247, 242, 231, 0.13);
+  max-height: calc(100vh - 318px);
+  overflow-y: auto;
+  padding-right: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212, 181, 111, 0.26) transparent;
 }
 
 .entry-toc strong {
@@ -1206,6 +1211,13 @@ button {
   font-weight: 700;
 }
 
+.entry-subheading {
+  margin: 29px 0 16px;
+  color: var(--gold);
+  font-size: 0.96rem;
+  font-weight: 720;
+}
+
 .entry-intro {
   margin: 0 0 24px;
   color: rgba(247, 242, 231, 0.78);
@@ -1227,6 +1239,154 @@ button {
 .entry-status strong {
   color: rgba(247, 242, 231, 0.82);
   font-size: 0.88rem;
+}
+
+.dossier-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0 0 26px;
+  border-top: 1px solid rgba(247, 242, 231, 0.11);
+}
+
+.dossier-facts div {
+  display: grid;
+  gap: 6px;
+  padding: 14px 18px 14px 0;
+  border-bottom: 1px solid rgba(247, 242, 231, 0.08);
+}
+
+.dossier-facts dt {
+  color: rgba(212, 181, 111, 0.8);
+  font-size: 0.72rem;
+  font-weight: 680;
+}
+
+.dossier-facts dd {
+  margin: 0;
+  color: rgba(247, 242, 231, 0.78);
+  font-size: 0.88rem;
+  line-height: 1.58;
+}
+
+.dossier-aliases {
+  display: grid;
+  grid-template-columns: 94px minmax(0, 1fr);
+  gap: 16px;
+  margin-bottom: 26px;
+  align-items: start;
+}
+
+.dossier-aliases strong {
+  padding-top: 7px;
+  color: rgba(212, 181, 111, 0.84);
+  font-size: 0.78rem;
+}
+
+.dossier-aliases ul,
+.archive-row ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dossier-aliases li,
+.archive-row li {
+  padding: 6px 10px;
+  border: 1px solid rgba(247, 242, 231, 0.12);
+  border-radius: 999px;
+  color: rgba(247, 242, 231, 0.76);
+  font-size: 0.81rem;
+  line-height: 1.4;
+}
+
+.phase-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.phase-item {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 18px;
+  padding: 18px 0;
+  border-top: 1px solid rgba(247, 242, 231, 0.09);
+}
+
+.phase-marker {
+  color: rgba(212, 181, 111, 0.65);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.phase-item h3 {
+  margin: 0 0 8px;
+  color: rgba(247, 242, 231, 0.92);
+  font-size: 0.96rem;
+}
+
+.phase-item p {
+  margin: 0;
+  color: rgba(247, 242, 231, 0.66);
+  font-size: 0.88rem;
+  line-height: 1.72;
+}
+
+.record-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 22px;
+  border-top: 1px solid rgba(247, 242, 231, 0.1);
+}
+
+.record-item {
+  min-width: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(247, 242, 231, 0.08);
+}
+
+.record-item h4 {
+  margin: 0 0 5px;
+  color: rgba(247, 242, 231, 0.93);
+  font-size: 0.91rem;
+}
+
+.record-item span {
+  color: rgba(212, 181, 111, 0.78);
+  font-size: 0.74rem;
+}
+
+.record-item p {
+  margin: 9px 0 0;
+  color: rgba(247, 242, 231, 0.62);
+  font-size: 0.83rem;
+  line-height: 1.65;
+}
+
+.archive-groups {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid rgba(247, 242, 231, 0.1);
+}
+
+.archive-row {
+  display: grid;
+  grid-template-columns: 116px minmax(0, 1fr);
+  gap: 18px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(247, 242, 231, 0.08);
+}
+
+.archive-row h4 {
+  margin: 6px 0 0;
+  color: rgba(212, 181, 111, 0.83);
+  font-size: 0.8rem;
 }
 
 .entry-detail-grid {
@@ -1451,6 +1611,41 @@ button {
   margin: 0;
   color: rgba(247, 242, 231, 0.85);
   font-size: 0.84rem;
+}
+
+.evidence-checks {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(247, 242, 231, 0.1);
+}
+
+.evidence-checks > strong {
+  color: rgba(212, 181, 111, 0.78);
+  font-size: 0.76rem;
+}
+
+.evidence-checks ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 13px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.evidence-checks li {
+  display: flex;
+  gap: 8px;
+  padding: 7px 10px;
+  border: 1px solid rgba(247, 242, 231, 0.11);
+  border-radius: 999px;
+  color: rgba(247, 242, 231, 0.65);
+  font-size: 0.79rem;
+}
+
+.evidence-checks b {
+  color: rgba(143, 184, 194, 0.85);
+  font-weight: 650;
 }
 
 .external-sources {
@@ -1857,9 +2052,9 @@ button {
 }
 
 .character-index {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   align-content: start;
   max-height: 560px;
   margin-top: 16px;
@@ -1871,12 +2066,14 @@ button {
   display: grid;
   gap: 4px;
   min-height: 70px;
-  padding: 12px;
+  padding: 12px 14px;
   border: 1px solid rgba(247, 242, 231, 0.12);
   border-radius: 8px;
   background: rgba(247, 242, 231, 0.035);
   color: #fff;
   text-align: left;
+  white-space: nowrap;
+  flex: 0 1 auto;
 }
 
 .character-index button span {
@@ -1925,7 +2122,7 @@ button {
 
 @media (max-width: 1120px) {
   .entry-layout {
-    grid-template-columns: 184px minmax(0, 1fr);
+    grid-template-columns: auto minmax(0, 1fr);
     gap: 30px;
   }
 
@@ -2346,6 +2543,7 @@ button {
 
   .character-entry {
     width: 100%;
+    box-sizing: border-box;
     padding: 78px 16px 82px;
   }
 
@@ -2365,11 +2563,22 @@ button {
   .entry-layout {
     grid-template-columns: 1fr;
     gap: 30px;
+    min-width: 0;
+  }
+
+  .entry-sidebar {
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .entry-toc {
     order: 1;
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
     overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
     scrollbar-width: none;
   }
@@ -2390,6 +2599,28 @@ button {
 
   .entry-article {
     order: 3;
+  }
+
+  .dossier-facts,
+  .record-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dossier-aliases,
+  .archive-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .dossier-aliases strong,
+  .archive-row h4 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .phase-item {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 12px;
   }
 
   .source-note dl {
@@ -2466,7 +2697,7 @@ button {
   }
 
   .character-index {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
   }
 
   .system-stage {
@@ -2558,8 +2789,8 @@ button {
     font-size: 0.66rem;
   }
 
-  .character-index {
-    grid-template-columns: 1fr;
+  .character-index button {
+    min-width: 0;
   }
 
   .entry-heading h1 {

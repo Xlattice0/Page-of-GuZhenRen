@@ -22,6 +22,7 @@ import {
 import { useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { characterProfiles } from "./characterProfiles.js";
 import { fallbackContent } from "./fallbackContent.js";
 import { atlasSourceSummary, characterEvidenceByName } from "./generatedAtlasCharacters.js";
 
@@ -39,55 +40,20 @@ const iconMap = {
 const accents = ["#d4b56f", "#b65b4b", "#8fb8c2", "#9b8bd3", "#d15d61", "#8cc5a6"];
 const STAR_NODE_LIMIT = 300;
 const externalCharacterSources = {
-  方源: [
+  古月方源: [
     {
       label: "百度百科：古月方源",
       href: "https://baike.baidu.com/item/%E5%8F%A4%E6%9C%88%E6%96%B9%E6%BA%90?fromModule=lemma_search-box",
       type: "人物外部词条",
     },
   ],
-  方正: [
+  古月方正: [
     {
       label: "百度百科：古月方正",
       href: "https://baike.baidu.com/item/%E5%8F%A4%E6%9C%88%E6%96%B9%E6%AD%A3/19812746",
       type: "人物外部词条",
     },
   ],
-};
-const verifiedImmortalGuProfiles = {
-  方源: {
-    groups: [
-      {
-        path: "智道",
-        items: [
-          { name: "智慧蛊", rank: "九转", note: "未炼化" },
-          { name: "态度蛊", rank: "八转" },
-          { name: "慧剑蛊", rank: "八转" },
-          { name: "解谜蛊", rank: "六转" },
-        ],
-      },
-      {
-        path: "剑道",
-        items: [
-          { name: "剑遁蛊", rank: "七转" },
-          { name: "浪剑蛊", rank: "七转" },
-          { name: "剑眉蛊", rank: "七转" },
-        ],
-      },
-      { path: "魂道", items: [{ name: "换魂蛊", rank: "七转" }] },
-      { path: "血道", items: [{ name: "血本蛊", rank: "六转" }] },
-      { path: "暗道", items: [{ name: "暗渡仙蛊", rank: "六转" }] },
-      { path: "运道", items: [{ name: "狗屎运仙蛊", rank: "六转" }] },
-    ],
-  },
-  方正: {
-    groups: [
-      {
-        path: "血道",
-        items: [{ name: "冷血仙蛊" }, { name: "血仇仙蛊" }],
-      },
-    ],
-  },
 };
 const immortalGuPaths = [
   "天道",
@@ -133,124 +99,7 @@ const immortalGuPaths = [
   "丹道",
   "香道",
 ];
-const immortalGuRanks = ["五转", "六转", "七转", "八转", "九转"];
-const verifiedKillerMoveProfiles = {
-  方源: {
-    sections: [
-      {
-        label: "复合",
-        groups: [
-          {
-            label: "攻伐",
-            items: [
-              "力道大手印", "万蛟", "斗战胜伏奴", "大盗鬼手", "阎罗战场", "阎罗网",
-              "万剑鬼蛟", "万一鬼蛟剑", "万念剑瀑", "剑客", "剑羽刀翅", "化炼蝶",
-              "痛心泣血", "雷韵丝流", "偷袭战场", "十里宙疾风", "舌剑龙魂",
-              "腐毒阴烬", "遗毒蚁祸", "五术虹光", "七杀虹光", "彼来龙蛇尘雾爆魄风",
-              "此去惊年梦浪荡魂音",
-            ],
-          },
-          { label: "防御", items: ["阎帝", "鬼官衣", "天鬼匿形", "混彩虹光"] },
-          { label: "移动", items: ["翠流珠", "天地游", "风火光电轮"] },
-          { label: "治疗", items: ["人如故"] },
-          { label: "经营", items: ["江山如故"] },
-        ],
-      },
-      {
-        label: "九转",
-        groups: [
-          { label: "攻伐", items: ["残炼"] },
-          { label: "防御", items: ["鬼不觉", "天机混淆", "天网恢恢"] },
-          { label: "辅助", items: ["天相", "盗天机", "石洞天机", "天消意散", "天纲地常", "天地无情"] },
-        ],
-      },
-      {
-        label: "八转",
-        groups: [
-          {
-            label: "攻伐",
-            items: [
-              "炼阵雨", "天妒英才", "运往来动", "梦里轻烟", "人间烟火", "五禁玄光气",
-              "落魄印", "荡魂落魄印", "魂河", "五指拳心剑", "金丝剑", "气海无量",
-              "乎昂", "归海气宗", "刀气", "阴阳大杀手", "暴气吼", "弹指神通",
-              "流气环", "气绝逢生", "光阴飞刃", "未来身", "春剪", "夏扇",
-              "流年不利", "年兽召来", "太古剑龙变", "太古匪猴变", "太古年兽变",
-              "气罡猪变化", "一气鹤变化", "落星棒子变", "奔雷黄鸟变", "囫囵蓝豹变",
-              "内息绿鱼变", "自由残缺变", "图腾",
-            ],
-          },
-          { label: "防御", items: ["冬裘", "血染征袍", "逆流护身印", "镇定自若", "罡布衣", "天罡斗衣", "万籁俱寂"] },
-          { label: "侦查", items: ["气运交感", "察运", "秋毫", "三息后现"] },
-          { label: "移动", items: ["生路", "血漂流"] },
-          { label: "治疗", items: ["炼己", "血愈湖", "舍命血印", "吐气如兰"] },
-          {
-            label: "辅助",
-            items: [
-              "吞食天地", "因果神树", "运筹帷幄", "固运", "人复活海", "爱的劝慰",
-              "退一步海阔天空", "万物大同变", "见面曾相识", "三世梦渡有缘人",
-              "梦中之梦", "天人感应", "天工人代", "自在天痕", "缩时", "后患无穷",
-              "年富力强", "百年好合", "蚁念",
-            ],
-          },
-          { label: "战场", items: ["万军蚁穴", "紫辰断命"] },
-          {
-            label: "经营",
-            items: [
-              "贤才入瓮", "一方乐土", "春耕", "夏耘", "秋收", "冬藏", "丰年",
-              "度日如年", "度月如年", "度年如日", "度年如月", "春芽", "夏日",
-            ],
-          },
-        ],
-      },
-      {
-        label: "七转",
-        groups: [
-          {
-            label: "攻伐",
-            items: [
-              "万我", "引魂入梦", "领袖群星", "百八十奴", "剑痕索命", "剑浪三叠",
-              "无形飞剑", "云霄飞剑", "万里飞剑", "穷追飞剑", "暗歧杀", "燃念飞石",
-              "一念花开", "一念化万千", "乱方混向雾", "智取", "紫念洞悉·灵动星芒",
-              "意解纷呈", "杂念丛生", "血光镇灵", "剑蛟变", "卜卦龟背变",
-            ],
-          },
-          { label: "移动", items: ["随意祥云"] },
-          { label: "防御", items: ["刚背", "紫念光护", "定真枝丫变"] },
-          {
-            label: "辅助",
-            items: [
-              "吃力", "天光轮转", "春秋必成", "春秋准定", "成竹在胸", "纯梦求真变",
-              "梦中换魂", "燃魂爆运", "魂兽召来", "魂穿", "分魂", "换魂", "魂爆",
-              "魂压", "洁身自好", "集思广益", "智平祸", "斗志昂扬", "暗久藏",
-              "仙劫锻窍",
-            ],
-          },
-          { label: "经营", items: ["菌光普照"] },
-        ],
-      },
-      {
-        label: "六转",
-        groups: [
-          {
-            label: "攻伐",
-            items: ["万我", "毒气喷吐", "万星飞萤", "见面似相识", "星云磨盘", "星蛇索", "六幻星身", "位星移", "星魂战场", "飞熊变"],
-          },
-          { label: "移动", items: ["星火遁"] },
-          { label: "侦察", items: ["外映星念", "星感应"] },
-          { label: "辅助", items: ["解梦", "造梦", "蝶探天机", "生死仙窍转换法", "力转生死", "取窍法门", "血丝游", "春星雨"] },
-        ],
-      },
-    ],
-  },
-  方正: {
-    sections: [
-      {
-        label: "已录入",
-        groups: [{ label: "血道", items: ["血渐冷", "血亲心仇"] }],
-      },
-    ],
-  },
-};
+const immortalGuRanks = ["九转", "八转", "七转", "六转", "五转"];
 const atlasAmbiences = {
   southern: {
     clear: 0x030505,
@@ -373,53 +222,53 @@ const curatedAtlasRegions = {
 };
 
 const curatedAtlasLinks = {
-  方源: [["方正", "兄弟对照"], ["白凝冰", "互相利用"], ["黑楼兰", "盟约与交易"], ["影无邪", "夺胎因果"], ["龙公", "宿命大战敌手"]],
-  方正: [["方源", "兄弟对照"]],
-  白凝冰: [["方源", "同路与背刺"], ["影无邪", "影宗同行"]],
-  商心慈: [["方源", "旧识"], ["商燕飞", "父女"]],
+  古月方源: [["古月方正", "兄弟对照"], ["白凝冰", "互相利用"], ["黑楼兰", "盟约与交易"], ["影无邪", "夺胎因果"], ["龙公", "宿命大战敌手"]],
+  古月方正: [["古月方源", "兄弟对照"]],
+  白凝冰: [["古月方源", "同路与背刺"], ["影无邪", "影宗同行"]],
+  商心慈: [["古月方源", "旧识"], ["商燕飞", "父女"]],
   商燕飞: [["商心慈", "父女"]],
-  铁若男: [["方源", "追查与对立"], ["铁血冷", "父女"]],
+  铁若男: [["古月方源", "追查与对立"], ["铁血冷", "父女"]],
   铁血冷: [["铁若男", "父女"]],
-  武庸: [["武独秀", "母子"], ["方源", "对手与交易"]],
+  武庸: [["武独秀", "母子"], ["古月方源", "对手与交易"]],
   武独秀: [["武庸", "母子"]],
-  陆畏因: [["乐土仙尊", "传承"], ["方源", "合作与布局"]],
-  凤九歌: [["凤金煌", "父女"], ["白晴仙子", "夫妻"], ["方源", "敌手与变量"]],
-  凤金煌: [["凤九歌", "父女"], ["白晴仙子", "母女"], ["方源", "梦道竞争"]],
+  陆畏因: [["乐土仙尊", "传承"], ["古月方源", "合作与布局"]],
+  凤九歌: [["凤金煌", "父女"], ["白晴仙子", "夫妻"], ["古月方源", "敌手与变量"]],
+  凤金煌: [["凤九歌", "父女"], ["白晴仙子", "母女"], ["古月方源", "梦道竞争"]],
   白晴仙子: [["凤九歌", "夫妻"], ["凤金煌", "母女"]],
   赵怜云: [["马鸿运", "恋人"]],
-  龙公: [["红莲魔尊", "师徒"], ["方源", "宿命大战敌手"]],
-  紫薇仙子: [["方源", "推演与追杀"], ["幽魂魔尊", "后期受制"]],
-  星宿仙尊: [["方源", "尊者对弈"], ["巨阳仙尊", "三尊对峙"]],
+  龙公: [["红莲魔尊", "师徒"], ["古月方源", "宿命大战敌手"]],
+  紫薇仙子: [["古月方源", "推演与追杀"], ["幽魂魔尊", "后期受制"]],
+  星宿仙尊: [["古月方源", "尊者对弈"], ["巨阳仙尊", "三尊对峙"]],
   马鸿运: [["赵怜云", "恋人"], ["巨阳仙尊", "运道牵连"]],
-  黑楼兰: [["方源", "盟约与交易"], ["黑城", "父女仇怨"], ["黎山仙子", "亲族同盟"]],
+  黑楼兰: [["古月方源", "盟约与交易"], ["黑城", "父女仇怨"], ["黎山仙子", "亲族同盟"]],
   黑城: [["黑楼兰", "父女仇怨"], ["姜钰", "扶持与利用"]],
-  黎山仙子: [["黑楼兰", "亲族同盟"], ["方源", "盟约交易"]],
-  太白云生: [["方源", "同行"]],
-  楚度: [["方源", "力道交易"]],
-  巨阳仙尊: [["马鸿运", "运道牵连"], ["方源", "尊者对弈"], ["星宿仙尊", "三尊对峙"]],
+  黎山仙子: [["黑楼兰", "亲族同盟"], ["古月方源", "盟约交易"]],
+  太白云生: [["古月方源", "同行"]],
+  楚度: [["古月方源", "力道交易"]],
+  巨阳仙尊: [["马鸿运", "运道牵连"], ["古月方源", "尊者对弈"], ["星宿仙尊", "三尊对峙"]],
   雪胡老祖: [["万寿娘子", "夫妻"]],
   万寿娘子: [["雪胡老祖", "夫妻"]],
-  琅琊地灵: [["方源", "合作与决裂"], ["毛六", "潜伏者"]],
-  气海老祖: [["方源", "分身"], ["气绝魔仙", "气道交锋"]],
-  吴帅: [["方源", "分身"]],
-  宋亦诗: [["方源", "东海旧事"]],
+  琅琊地灵: [["古月方源", "合作与决裂"], ["毛六", "潜伏者"]],
+  气海老祖: [["古月方源", "分身"], ["气绝魔仙", "气道交锋"]],
+  吴帅: [["古月方源", "分身"]],
+  宋亦诗: [["古月方源", "东海旧事"]],
   沈从声: [],
   房功: [["房睇长", "同族"]],
-  房睇长: [["房功", "同族"], ["方源", "算计与争夺"]],
-  千变老祖: [["方源", "真传争夺"]],
+  房睇长: [["房功", "同族"], ["古月方源", "算计与争夺"]],
+  千变老祖: [["古月方源", "真传争夺"]],
   华文洞主: [],
-  气绝魔仙: [["气海老祖", "气道交锋"], ["方源", "冲突与交易"]],
-  幽魂魔尊: [["影无邪", "分魂"], ["紫山真君", "分魂"], ["方源", "至尊仙胎争夺"], ["紫薇仙子", "后期控制"]],
-  影无邪: [["幽魂魔尊", "分魂"], ["方源", "夺胎因果"], ["白凝冰", "影宗同行"], ["妙音仙子", "影宗同行"], ["白兔姑娘", "影宗同行"]],
+  气绝魔仙: [["气海老祖", "气道交锋"], ["古月方源", "冲突与交易"]],
+  幽魂魔尊: [["影无邪", "分魂"], ["紫山真君", "分魂"], ["古月方源", "至尊仙胎争夺"], ["紫薇仙子", "后期控制"]],
+  影无邪: [["幽魂魔尊", "分魂"], ["古月方源", "夺胎因果"], ["白凝冰", "影宗同行"], ["妙音仙子", "影宗同行"], ["白兔姑娘", "影宗同行"]],
   紫山真君: [["幽魂魔尊", "分魂"], ["影无邪", "影宗传承"]],
   妙音仙子: [["影无邪", "影宗同行"], ["白兔姑娘", "南疆同路"]],
   白兔姑娘: [["影无邪", "影宗同行"], ["妙音仙子", "南疆同路"]],
   姜钰: [["黑城", "扶持与利用"], ["影无邪", "影宗线"]],
-  毛六: [["琅琊地灵", "潜伏"], ["方源", "敌对与交易"]],
+  毛六: [["琅琊地灵", "潜伏"], ["古月方源", "敌对与交易"]],
   冰晶仙王: [["萧荷尖", "两天盟共事"]],
   萧荷尖: [["冰晶仙王", "两天盟共事"]],
-  红莲魔尊: [["龙公", "师徒"], ["方源", "真传受益"]],
-  乐土仙尊: [["陆畏因", "传承"], ["方源", "后手布局"]],
+  红莲魔尊: [["龙公", "师徒"], ["古月方源", "真传受益"]],
+  乐土仙尊: [["陆畏因", "传承"], ["古月方源", "后手布局"]],
 };
 
 const adminTabs = [
@@ -463,6 +312,7 @@ function curateAtlasCharacters(characters = []) {
   const byName = new Map(characters.map((character) => [character.name, character]));
 
   return characters.map((character) => {
+    const dossier = characterProfiles[character.name] || null;
     const linkDefinitions = curatedAtlasLinks[character.name];
     const relations = linkDefinitions
       ? linkDefinitions.flatMap(([targetName, type]) => {
@@ -473,10 +323,21 @@ function curateAtlasCharacters(characters = []) {
 
     return {
       ...character,
+      ...(dossier
+        ? {
+            role: dossier.role,
+            faction: dossier.faction,
+            intro: dossier.intro,
+            immortalGuProfile: dossier.immortalGuProfile,
+            killerMoveProfile: dossier.killerMoveProfile,
+            dossier,
+          }
+        : {
+            immortalGuProfile: character.immortalGuProfile || null,
+            killerMoveProfile: character.killerMoveProfile || null,
+          }),
       region: curatedAtlasRegions[character.name] || character.region,
       relations,
-      immortalGuProfile: verifiedImmortalGuProfiles[character.name],
-      killerMoveProfile: verifiedKillerMoveProfiles[character.name],
       source: {
         ...(characterEvidenceByName[character.name] || {}),
         ...(character.source || {}),
@@ -1852,6 +1713,7 @@ function CharacterArticlePage({ content, characterId }) {
   const source = character.source || {};
   const externalSources = externalCharacterSources[character.name] || [];
   const hasCuratedRecord = !String(character.id).startsWith("auto-");
+  const dossier = character.dossier || null;
 
   return (
     <PublicLayout content={content} activeRoute="atlas" showRail={false}>
@@ -1878,9 +1740,13 @@ function CharacterArticlePage({ content, characterId }) {
             <nav className="entry-toc" aria-label="条目目录">
               <strong>目录</strong>
               <a href="#summary">人物概览</a>
+              {dossier && <a href="#path">身份历程</a>}
+              {dossier && <a href="#cultivation">体质境界</a>}
               <a href="#immortal-gu">仙蛊</a>
               <a href="#killer-moves">仙道杀招</a>
+              {dossier && <a href="#domains">秘境蛊阵</a>}
               <a href="#immortal-house">仙蛊屋</a>
+              {dossier && <a href="#forces">分身势力</a>}
               <a href="#references">资料依据</a>
             </nav>
           </aside>
@@ -1889,36 +1755,122 @@ function CharacterArticlePage({ content, characterId }) {
             <section className="entry-section" id="summary">
               <h2>人物概览</h2>
               <p className="entry-intro">{character.intro}</p>
+              {dossier && (
+                <>
+                  <FactGrid items={dossier.facts} />
+                  <div className="dossier-aliases">
+                    <strong>身份与称号</strong>
+                    <ul>
+                      {dossier.aliases.map((item) => <li key={item}>{item}</li>)}
+                    </ul>
+                  </div>
+                </>
+              )}
               <div className="entry-status">
                 <span>整理状态</span>
-                <strong>{hasCuratedRecord ? "主要设定已录入" : "原文定位完成，设定待细校"}</strong>
+                <strong>{dossier ? "原著全文与公开词条已交叉整理" : hasCuratedRecord ? "主要设定已录入" : "原文定位完成，设定待细校"}</strong>
               </div>
             </section>
 
+            {dossier && (
+              <section className="entry-section" id="path">
+                <h2>身份历程</h2>
+                <PhaseList items={dossier.phases} />
+              </section>
+            )}
+
+            {dossier && (
+              <section className="entry-section" id="cultivation">
+                <h2>体质与流派境界</h2>
+                <h3 className="entry-subheading">体质</h3>
+                <NamedRecordList items={dossier.physiques} />
+                <h3 className="entry-subheading">流派境界</h3>
+                <ArchiveGroups groups={dossier.attainments} />
+              </section>
+            )}
+
             <section className="entry-section entry-matrix-section" id="immortal-gu">
               <h2>仙蛊</h2>
-              <ImmortalGuMatrix profile={character.immortalGuProfile} />
+              {dossier?.natalGu?.length > 0 && (
+                <>
+                  <h3 className="entry-subheading">本命仙蛊</h3>
+                  <NamedRecordList items={dossier.natalGu} />
+                  <h3 className="entry-subheading">持有仙蛊</h3>
+                </>
+              )}
+              {character.immortalGuProfile?.groups?.length ? (
+                <ImmortalGuMatrix profile={character.immortalGuProfile} />
+              ) : (
+                <p className="entry-empty">待逐章核录</p>
+              )}
             </section>
 
             <section className="entry-section" id="killer-moves">
               <h2>仙道杀招</h2>
-              <KillerMoveGroups profile={character.killerMoveProfile} />
+              {character.killerMoveProfile ? (
+                <KillerMoveGroups profile={character.killerMoveProfile} />
+              ) : (
+                <DetailList items={character.moves} fallback="待逐章核录" />
+              )}
             </section>
+
+            {dossier && (
+              <section className="entry-section" id="domains">
+                <h2>天地秘境与蛊阵</h2>
+                <h3 className="entry-subheading">天地秘境</h3>
+                <ArchiveGroups groups={dossier.secretRealms} />
+                <h3 className="entry-subheading">蛊阵</h3>
+                <ArchiveGroups groups={dossier.formations} />
+              </section>
+            )}
 
             <section className="entry-section" id="immortal-house">
               <h2>仙蛊屋</h2>
-              <DetailList items={character.houses} />
+              {dossier ? <NamedRecordList items={dossier.houses} /> : <DetailList items={character.houses} />}
             </section>
+
+            {dossier && (
+              <section className="entry-section" id="forces">
+                <h2>分身与势力</h2>
+                <h3 className="entry-subheading">分身</h3>
+                <NamedRecordList items={dossier.clones} />
+                <h3 className="entry-subheading">获得传承</h3>
+                <ArchiveGroups groups={dossier.inheritances} />
+                <h3 className="entry-subheading">麾下蛊仙</h3>
+                <ArchiveGroups groups={dossier.subordinates} />
+                <h3 className="entry-subheading">奴役荒兽</h3>
+                <NamedRecordList items={dossier.beasts} />
+              </section>
+            )}
 
             <section className="entry-section" id="references">
               <h2>资料依据</h2>
               <div className="source-note">
-                <strong>{atlasSourceSummary.title}</strong>
+                <strong>{dossier ? "原著全文核查与公开词条对照" : atlasSourceSummary.title}</strong>
                 <p>
-                  本条目基于提供的原著全文索引建立。涉及仙蛊、杀招与仙蛊屋的内容，
-                  只展示已经整理录入的项目；仙蛊栏不收入凡蛊或无法确认品阶的泛称。
+                  {dossier
+                    ? "已直接解析你提供的 EPUB 章节正文，按名称全文定位关键设定；栏目与条目清单同步核对百度百科公开词条“角色能力”部分。仙蛊栏只收入可确认转数的仙蛊，不收入凡蛊。"
+                    : "本条目基于提供的原著全文索引建立。涉及仙蛊、杀招与仙蛊屋的内容，只展示已经整理录入的项目；仙蛊栏不收入凡蛊或无法确认品阶的泛称。"}
                 </p>
-                {source.status ? (
+                {dossier?.evidence ? (
+                  <>
+                    <dl>
+                      <div>
+                        <dt>文本底稿</dt>
+                        <dd>{dossier.evidence.corpus}</dd>
+                      </div>
+                      <div>
+                        <dt>章节文档</dt>
+                        <dd>{dossier.evidence.chapterDocuments} 篇</dd>
+                      </div>
+                      <div>
+                        <dt>公开核对</dt>
+                        <dd>百度百科：古月方源</dd>
+                      </div>
+                    </dl>
+                    <EvidenceChecks items={dossier.evidence.checks} />
+                  </>
+                ) : source.status ? (
                   <dl>
                     <div>
                       <dt>索引状态</dt>
@@ -1983,8 +1935,24 @@ function CharacterArticlePage({ content, characterId }) {
               </div>
               <div>
                 <dt>资料等级</dt>
-                <dd>{hasCuratedRecord ? "人物档案" : "全文定位"}</dd>
+                <dd>{dossier ? "原著核查档案" : hasCuratedRecord ? "人物档案" : "全文定位"}</dd>
               </div>
+              {dossier && (
+                <>
+                  <div>
+                    <dt>尊号</dt>
+                    <dd>炼天魔尊 / 大爱仙尊</dd>
+                  </div>
+                  <div>
+                    <dt>主修</dt>
+                    <dd>炼道</dd>
+                  </div>
+                  <div>
+                    <dt>体质</dt>
+                    <dd>至尊仙胎体</dd>
+                  </div>
+                </>
+              )}
             </dl>
           </aside>
         </div>
@@ -2000,8 +1968,9 @@ function ImmortalGuMatrix({ profile }) {
 
   (profile?.groups || []).forEach((group) => {
     group.items.forEach((item) => {
-      if (!immortalGuRanks.includes(item.rank)) return;
-      const key = `${group.path}-${item.rank}`;
+      const rank = item.rank && immortalGuRanks.includes(item.rank) ? item.rank : null;
+      if (!rank) return;
+      const key = `${group.path}-${rank}`;
       cellContents.set(key, [...(cellContents.get(key) || []), item]);
     });
   });
@@ -2073,7 +2042,83 @@ function KillerMoveGroups({ profile }) {
   );
 }
 
-function DetailList({ title, items = [] }) {
+function FactGrid({ items = [] }) {
+  return (
+    <dl className="dossier-facts">
+      {items.map((item) => (
+        <div key={item.label}>
+          <dt>{item.label}</dt>
+          <dd>{item.value}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+function PhaseList({ items = [] }) {
+  return (
+    <ol className="phase-list">
+      {items.map((item, index) => (
+        <li className="phase-item" key={item.title}>
+          <span className="phase-marker">{String(index + 1).padStart(2, "0")}</span>
+          <div>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+function NamedRecordList({ items = [] }) {
+  if (!items.length) return <p className="entry-empty">待逐章核录</p>;
+
+  return (
+    <div className="record-grid">
+      {items.map((item) => (
+        <section className="record-item" key={item.name}>
+          <h4>{item.name}</h4>
+          {item.meta && <span>{item.meta}</span>}
+          {item.text && <p>{item.text}</p>}
+        </section>
+      ))}
+    </div>
+  );
+}
+
+function ArchiveGroups({ groups = [] }) {
+  return (
+    <div className="archive-groups">
+      {groups.map((group) => (
+        <section className="archive-row" key={group.label}>
+          <h4>{group.label}</h4>
+          <ul>
+            {group.items.map((item) => <li key={item}>{item}</li>)}
+          </ul>
+        </section>
+      ))}
+    </div>
+  );
+}
+
+function EvidenceChecks({ items = [] }) {
+  return (
+    <div className="evidence-checks">
+      <strong>原著全文关键词命中</strong>
+      <ul>
+        {items.map((item) => (
+          <li key={item.term}>
+            <span>{item.term}</span>
+            <b>{item.hits} 次</b>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function DetailList({ title, items = [], fallback = "待逐章核录" }) {
   return (
     <div className="detail-list">
       {title && <h3>{title}</h3>}
@@ -2084,7 +2129,7 @@ function DetailList({ title, items = [] }) {
           ))}
         </ul>
       ) : (
-        <p>待逐章核录</p>
+        <p>{fallback}</p>
       )}
     </div>
   );
