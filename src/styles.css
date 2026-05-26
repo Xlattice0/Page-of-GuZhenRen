@@ -2150,6 +2150,122 @@ button {
   font-size: 0.84rem;
 }
 
+.realm-entry {
+  width: min(calc(100% - 48px), 1440px);
+}
+
+.reference-record.realm-record {
+  max-width: 1120px;
+  gap: 30px;
+}
+
+.realm-story-lead,
+.realm-story-section,
+.realm-related,
+.realm-sources {
+  padding-top: 28px;
+  border-top: 1px solid rgba(247, 242, 231, 0.1);
+}
+
+.realm-story-lead h2,
+.realm-story-section h2,
+.realm-related h2,
+.realm-sources h2 {
+  margin: 0 0 20px;
+  color: rgba(247, 242, 231, 0.93);
+  font-size: 1.3rem;
+  font-weight: 650;
+}
+
+.realm-story-lead p {
+  max-width: 850px;
+  margin: 0;
+  color: rgba(247, 242, 231, 0.68);
+  font-size: 0.96rem;
+  line-height: 1.88;
+}
+
+.realm-story-timeline {
+  border-top: 1px solid rgba(247, 242, 231, 0.08);
+}
+
+.realm-story-moment {
+  display: grid;
+  grid-template-columns: 194px minmax(0, 1fr);
+  gap: 26px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(247, 242, 231, 0.08);
+}
+
+.realm-story-moment > div {
+  display: grid;
+  align-content: start;
+  gap: 7px;
+}
+
+.realm-story-moment strong {
+  color: rgba(212, 181, 111, 0.92);
+  font-size: 0.89rem;
+  font-weight: 680;
+}
+
+.realm-story-moment small {
+  color: rgba(247, 242, 231, 0.42);
+  font-size: 0.74rem;
+}
+
+.realm-story-moment p {
+  max-width: 700px;
+  margin: 0;
+  color: rgba(247, 242, 231, 0.7);
+  font-size: 0.91rem;
+  line-height: 1.82;
+}
+
+.realm-related > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.realm-related span {
+  padding: 8px 12px;
+  border: 1px solid rgba(247, 242, 231, 0.12);
+  border-radius: 6px;
+  color: rgba(247, 242, 231, 0.68);
+  font-size: 0.8rem;
+}
+
+.realm-sources a,
+.realm-sources > div {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr) 16px;
+  gap: 8px 18px;
+  align-items: center;
+  min-height: 52px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(247, 242, 231, 0.08);
+  color: rgba(143, 184, 194, 0.88);
+  font-size: 0.85rem;
+}
+
+.realm-sources b {
+  color: rgba(212, 181, 111, 0.84);
+  font-size: 0.74rem;
+  font-weight: 680;
+}
+
+.realm-sources small {
+  grid-column: 2 / 3;
+  color: rgba(247, 242, 231, 0.42);
+  font-size: 0.74rem;
+}
+
+.realm-sources svg {
+  grid-column: 3;
+  grid-row: 1;
+}
+
 .atlas-section {
   width: min(100% - 48px, 1280px);
   margin: 0 auto;
@@ -2977,6 +3093,46 @@ button {
 
   .reference-record dl {
     grid-template-columns: 1fr;
+  }
+
+  .realm-entry {
+    width: 100%;
+  }
+
+  .reference-record.realm-record {
+    gap: 24px;
+  }
+
+  .realm-story-lead,
+  .realm-story-section,
+  .realm-related,
+  .realm-sources {
+    padding-top: 22px;
+  }
+
+  .realm-story-moment {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 18px 0;
+  }
+
+  .realm-sources a,
+  .realm-sources > div {
+    grid-template-columns: minmax(0, 1fr) 16px;
+    gap: 7px 12px;
+  }
+
+  .realm-sources b {
+    grid-column: 1 / -1;
+  }
+
+  .realm-sources small {
+    grid-column: 1 / -1;
+  }
+
+  .realm-sources svg {
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .entry-breadcrumb {

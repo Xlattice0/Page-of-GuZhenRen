@@ -804,6 +804,7 @@ function SystemsPage({ content }) {
 function ArchiveLibraryPage({ content, activeRoute, eyebrow, title, entries }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("全部");
+  const featuredSource = activeRoute === "realms" ? archiveAudit.publicSources[0] : archiveAudit.publicSource;
   const categories = ["全部", ...new Set(entries.map((item) => item.category))];
   const keyword = query.trim().toLowerCase();
   const filteredEntries = entries.filter((item) => {
@@ -866,8 +867,8 @@ function ArchiveLibraryPage({ content, activeRoute, eyebrow, title, entries }) {
 
         <div className="library-source">
           <span>{archiveAudit.corpus}</span>
-          <a href={archiveAudit.publicSource.href} rel="noreferrer" target="_blank">
-            {archiveAudit.publicSource.label}
+          <a href={featuredSource.href} rel="noreferrer" target="_blank">
+            {featuredSource.label}
             <ExternalLink size={14} />
           </a>
         </div>
@@ -2106,19 +2107,26 @@ function CharacterArticlePage({ content, characterId }) {
 
 function ReferencePlaceholderPage({ content, entry }) {
   const typeLabel = referenceTypeLabels[entry?.type] || "资料";
-  const record = entry?.type === "realm"
+  const isRealm = entry?.type === "realm";
+  const isGu = ["immortal-gu", "mortal-gu", "gu"].includes(entry?.type);
+  const record = isRealm
     ? secretRealmEntries.find((item) => item.name === entry.name)
-    : ["immortal-gu", "mortal-gu", "gu"].includes(entry?.type)
+    : isGu
       ? guArchiveEntries.find((item) => item.name === entry.name)
       : null;
+  const backLink = isRealm
+    ? { href: "/realms", label: "天地秘境", route: "realms" }
+    : isGu
+      ? { href: "/gu-catalog", label: "万蛊图鉴", route: "gu-catalog" }
+      : { href: "/atlas", label: "众生星图", route: "atlas" };
 
   return (
-    <PublicLayout content={content} activeRoute="atlas" showRail={false}>
-      <section className="reference-entry">
+    <PublicLayout content={content} activeRoute={backLink.route} showRail={false}>
+      <section className={`reference-entry${record?.story ? " realm-entry" : ""}`}>
         <div className="entry-breadcrumb">
-          <a href="/atlas">
+          <a href={backLink.href}>
             <ArrowLeft size={16} />
-            众生星图
+            {backLink.label}
           </a>
           <span>/</span>
           <strong>{typeLabel}</strong>
@@ -2128,7 +2136,7 @@ function ReferencePlaceholderPage({ content, entry }) {
           <h1>{entry?.name || "待整理条目"}</h1>
         </header>
         {record ? (
-          <article className="reference-record">
+          <article className={`reference-record${record.story ? " realm-record" : ""}`}>
             <div className="reference-tags">
               <span>{record.category}</span>
               <span>{record.path}</span>
@@ -2148,10 +2156,58 @@ function ReferencePlaceholderPage({ content, entry }) {
                 <dd>{record.hits > 0 ? `第 ${record.first}-${record.last} 篇` : "公开词条核对"}</dd>
               </div>
             </dl>
-            <a className="reference-source-link" href={archiveAudit.publicSource.href} rel="noreferrer" target="_blank">
-              {archiveAudit.publicSource.label}
-              <ExternalLink size={15} />
-            </a>
+            {record.story ? (
+              <>
+                <section className="realm-story-lead">
+                  <h2>秘境本相</h2>
+                  <p>{record.story.intro}</p>
+                </section>
+                <section className="realm-story-section">
+                  <h2>故事脉络</h2>
+                  <div className="realm-story-timeline">
+                    {record.story.timeline.map((moment) => (
+                      <div className="realm-story-moment" key={moment.phase}>
+                        <div>
+                          <strong>{moment.phase}</strong>
+                          <small>{moment.anchor}</small>
+                        </div>
+                        <p>{moment.text}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+                <section className="realm-related">
+                  <h2>牵连事物</h2>
+                  <div>
+                    {record.story.related.map((item) => <span key={item}>{item}</span>)}
+                  </div>
+                </section>
+                <section className="realm-sources">
+                  <h2>资料核对</h2>
+                  {record.story.sources.map((source) => (
+                    source.href ? (
+                      <a href={source.href} key={source.label} rel="noreferrer" target="_blank">
+                        <b>{source.kind}</b>
+                        <span>{source.label}</span>
+                        {source.note && <small>{source.note}</small>}
+                        <ExternalLink size={15} />
+                      </a>
+                    ) : (
+                      <div key={source.label}>
+                        <b>{source.kind}</b>
+                        <span>{source.label}</span>
+                        {source.note && <small>{source.note}</small>}
+                      </div>
+                    )
+                  ))}
+                </section>
+              </>
+            ) : (
+              <a className="reference-source-link" href={archiveAudit.publicSource.href} rel="noreferrer" target="_blank">
+                {archiveAudit.publicSource.label}
+                <ExternalLink size={15} />
+              </a>
+            )}
           </article>
         ) : (
           <div className="reference-pending">
