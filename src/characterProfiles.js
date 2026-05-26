@@ -7,6 +7,13 @@ export const characterProfiles = {
     intro:
       "古月山寨出身的天外之魔。前世五百年辗转五域，以春秋蝉重生后重走魔道，夺得至尊仙胎体，破坏宿命蛊，最终以炼道成尊。其行动核心始终是摆脱一切约束、追求永生。",
     aliases: ["方源", "古月方源", "常山阴", "柳贯一", "武遗海", "气海老祖", "炼天魔尊", "大爱仙尊"],
+    linkedReferences: [
+      { type: "person", items: ["方正", "白凝冰", "红莲魔尊"] },
+      { type: "location", items: ["青茅山", "古月山寨", "商家城", "三王山", "北原王庭", "义天山", "天庭", "疯魔窟"] },
+      { type: "faction", items: ["影宗", "大爱盟"] },
+      { type: "event", items: ["狼潮", "宿命大战"] },
+      { type: "immortal-gu", items: ["宿命蛊"] },
+    ],
     facts: [
       { label: "出身", value: "南疆青茅山古月山寨" },
       { label: "身份", value: "天外之魔 / 重生者 / 尊者" },

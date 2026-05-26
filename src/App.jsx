@@ -60,6 +60,21 @@ const characterReferenceAliases = {
   方正: "古月方正",
   "白兔 / 黑菟": "白兔姑娘",
 };
+const referenceTypeLabels = {
+  person: "人物",
+  location: "地域",
+  faction: "势力",
+  event: "事件",
+  physique: "体质",
+  path: "流派",
+  "immortal-gu": "仙蛊",
+  "killer-move": "仙道杀招",
+  realm: "天地秘境",
+  formation: "蛊阵",
+  house: "仙蛊屋",
+  inheritance: "传承",
+  beast: "异兽",
+};
 const immortalGuRanks = ["九转", "八转", "七转", "六转", "五转"];
 const atlasAmbiences = {
   southern: {
@@ -311,9 +326,18 @@ function characterHref(characterId) {
   return `/atlas/person/${encodeURIComponent(characterId)}`;
 }
 
+function referenceHref(type, name) {
+  return `/archive/${encodeURIComponent(type)}/${encodeURIComponent(name)}`;
+}
+
 function getCharacterRouteId() {
   const match = window.location.pathname.match(/^\/atlas\/person\/([^/]+)\/?$/);
   return match ? decodeURIComponent(match[1]) : "";
+}
+
+function getReferenceRouteEntry() {
+  const match = window.location.pathname.match(/^\/archive\/([^/]+)\/([^/]+)\/?$/);
+  return match ? { type: decodeURIComponent(match[1]), name: decodeURIComponent(match[2]) } : null;
 }
 
 function getRoute() {
@@ -324,6 +348,7 @@ function getRoute() {
   if (path === "/systems") return "systems";
   if (path === "/atlas") return "atlas";
   if (path.startsWith("/atlas/person/")) return "character";
+  if (path.startsWith("/archive/")) return "reference";
   if (path === "/admin") return "admin";
   return "home";
 }
@@ -1677,9 +1702,15 @@ function CharacterArticlePage({ content, characterId }) {
   const hasCuratedRecord = !String(character.id).startsWith("auto-");
   const dossier = character.dossier || null;
   const resolvePersonHref = (displayName) => {
-    const target = charactersByName.get(characterReferenceAliases[displayName] || displayName);
-    return target && target.id !== character.id ? characterHref(target.id) : "";
+    const canonicalName = characterReferenceAliases[displayName] || displayName;
+    const target = charactersByName.get(canonicalName);
+    if (target?.id === character.id) return "";
+    return target ? characterHref(target.id) : referenceHref("person", canonicalName);
   };
+  const resolveReferenceHref = (type, name) => (
+    type === "person" ? resolvePersonHref(name) : referenceHref(type, name)
+  );
+  const inlineReferences = dossier ? collectDossierReferences(dossier, resolveReferenceHref) : [];
 
   return (
     <PublicLayout content={content} activeRoute="atlas" showRail={false}>
@@ -1700,7 +1731,7 @@ function CharacterArticlePage({ content, characterId }) {
             <header className="entry-heading">
               <p>{region?.name || "五域两天"} · 人物条目</p>
               <h1>{character.name}</h1>
-              <span>{character.role}</span>
+              <span><LinkedText references={inlineReferences} text={character.role} /></span>
             </header>
 
             <nav className="entry-toc" aria-label="条目目录">
@@ -1720,10 +1751,10 @@ function CharacterArticlePage({ content, characterId }) {
           <article className="entry-article">
             <section className="entry-section" id="summary">
               <h2>人物概览</h2>
-              <p className="entry-intro">{character.intro}</p>
+              <p className="entry-intro"><LinkedText references={inlineReferences} text={character.intro} /></p>
               {dossier && (
                 <>
-                  <FactGrid items={dossier.facts} />
+                  <FactGrid items={dossier.facts} references={inlineReferences} />
                   <div className="dossier-aliases">
                     <strong>身份与称号</strong>
                     <ul>
@@ -1741,7 +1772,7 @@ function CharacterArticlePage({ content, characterId }) {
             {dossier && (
               <section className="entry-section" id="path">
                 <h2>身份历程</h2>
-                <PhaseList items={dossier.phases} />
+                <PhaseList items={dossier.phases} references={inlineReferences} />
               </section>
             )}
 
@@ -1749,9 +1780,9 @@ function CharacterArticlePage({ content, characterId }) {
               <section className="entry-section" id="cultivation">
                 <h2>体质与流派境界</h2>
                 <h3 className="entry-subheading">体质</h3>
-                <NamedRecordList items={dossier.physiques} />
+                <NamedRecordList items={dossier.physiques} referenceType="physique" resolveHref={resolveReferenceHref} references={inlineReferences} />
                 <h3 className="entry-subheading">流派境界</h3>
-                <ArchiveGroups groups={dossier.attainments} />
+                <ArchiveGroups groups={dossier.attainments} referenceType="path" resolveHref={resolveReferenceHref} />
               </section>
             )}
 
@@ -1760,12 +1791,12 @@ function CharacterArticlePage({ content, characterId }) {
               {dossier?.natalGu?.length > 0 && (
                 <>
                   <h3 className="entry-subheading">本命仙蛊</h3>
-                  <NamedRecordList items={dossier.natalGu} />
+                  <NamedRecordList items={dossier.natalGu} referenceType="immortal-gu" resolveHref={resolveReferenceHref} references={inlineReferences} />
                   <h3 className="entry-subheading">持有仙蛊</h3>
                 </>
               )}
               {character.immortalGuProfile?.groups?.length ? (
-                <ImmortalGuMatrix profile={character.immortalGuProfile} />
+                <ImmortalGuMatrix profile={character.immortalGuProfile} resolveHref={resolveReferenceHref} />
               ) : (
                 <p className="entry-empty">待逐章核录</p>
               )}
@@ -1774,9 +1805,9 @@ function CharacterArticlePage({ content, characterId }) {
             <section className="entry-section" id="killer-moves">
               <h2>仙道杀招</h2>
               {character.killerMoveProfile ? (
-                <KillerMoveGroups profile={character.killerMoveProfile} />
+                <KillerMoveGroups profile={character.killerMoveProfile} resolveHref={resolveReferenceHref} />
               ) : (
-                <DetailList items={character.moves} fallback="待逐章核录" />
+                <DetailList items={character.moves} fallback="待逐章核录" referenceType="killer-move" resolveHref={resolveReferenceHref} />
               )}
             </section>
 
@@ -1784,28 +1815,32 @@ function CharacterArticlePage({ content, characterId }) {
               <section className="entry-section" id="domains">
                 <h2>天地秘境与蛊阵</h2>
                 <h3 className="entry-subheading">天地秘境</h3>
-                <ArchiveGroups groups={dossier.secretRealms} />
+                <ArchiveGroups groups={dossier.secretRealms} referenceType="realm" resolveHref={resolveReferenceHref} />
                 <h3 className="entry-subheading">蛊阵</h3>
-                <ArchiveGroups groups={dossier.formations} />
+                <ArchiveGroups groups={dossier.formations} referenceType="formation" resolveHref={resolveReferenceHref} />
               </section>
             )}
 
             <section className="entry-section" id="immortal-house">
               <h2>仙蛊屋</h2>
-              {dossier ? <NamedRecordList items={dossier.houses} /> : <DetailList items={character.houses} />}
+              {dossier ? (
+                <NamedRecordList items={dossier.houses} referenceType="house" resolveHref={resolveReferenceHref} references={inlineReferences} />
+              ) : (
+                <DetailList items={character.houses} referenceType="house" resolveHref={resolveReferenceHref} />
+              )}
             </section>
 
             {dossier && (
               <section className="entry-section" id="forces">
                 <h2>分身与势力</h2>
                 <h3 className="entry-subheading">分身</h3>
-                <NamedRecordList items={dossier.clones} resolveHref={resolvePersonHref} />
+                <NamedRecordList items={dossier.clones} referenceType="person" resolveHref={resolveReferenceHref} references={inlineReferences} />
                 <h3 className="entry-subheading">获得传承</h3>
-                <ArchiveGroups groups={dossier.inheritances} />
+                <ArchiveGroups groups={dossier.inheritances} referenceType="inheritance" resolveHref={resolveReferenceHref} />
                 <h3 className="entry-subheading">麾下蛊仙</h3>
-                <ArchiveGroups groups={dossier.subordinates} resolveHref={resolvePersonHref} />
+                <ArchiveGroups groups={dossier.subordinates} referenceType="person" resolveHref={resolveReferenceHref} />
                 <h3 className="entry-subheading">奴役荒兽</h3>
-                <NamedRecordList items={dossier.beasts} />
+                <NamedRecordList items={dossier.beasts} referenceType="beast" resolveHref={resolveReferenceHref} references={inlineReferences} />
               </section>
             )}
 
@@ -1897,7 +1932,7 @@ function CharacterArticlePage({ content, characterId }) {
               </div>
               <div>
                 <dt>势力</dt>
-                <dd>{character.faction || "待核录"}</dd>
+                <dd><LinkedText references={inlineReferences} text={character.faction || "待核录"} /></dd>
               </div>
               <div>
                 <dt>资料等级</dt>
@@ -1927,7 +1962,34 @@ function CharacterArticlePage({ content, characterId }) {
   );
 }
 
-function ImmortalGuMatrix({ profile }) {
+function ReferencePlaceholderPage({ content, entry }) {
+  const typeLabel = referenceTypeLabels[entry?.type] || "资料";
+
+  return (
+    <PublicLayout content={content} activeRoute="atlas" showRail={false}>
+      <section className="reference-entry">
+        <div className="entry-breadcrumb">
+          <a href="/atlas">
+            <ArrowLeft size={16} />
+            众生星图
+          </a>
+          <span>/</span>
+          <strong>{typeLabel}</strong>
+        </div>
+        <header className="reference-heading">
+          <p>{typeLabel} · 条目</p>
+          <h1>{entry?.name || "待整理条目"}</h1>
+        </header>
+        <div className="reference-pending">
+          <strong>条目待整理</strong>
+          <p>资料尚未核录。</p>
+        </div>
+      </section>
+    </PublicLayout>
+  );
+}
+
+function ImmortalGuMatrix({ profile, resolveHref }) {
   const paths = [...new Set((profile?.groups || [])
     .filter((group) => group.items?.some((item) => immortalGuRanks.includes(item.rank)))
     .map((group) => group.path))];
@@ -1959,7 +2021,9 @@ function ImmortalGuMatrix({ profile }) {
         <tbody>
           {paths.map((path) => (
             <tr key={path}>
-              <th scope="row">{path}</th>
+              <th scope="row">
+                <a className="matrix-reference-link" href={resolveHref?.("path", path)}>{path}</a>
+              </th>
               {immortalGuRanks.map((rank) => {
                 const items = cellContents.get(`${path}-${rank}`) || [];
                 return (
@@ -1967,7 +2031,7 @@ function ImmortalGuMatrix({ profile }) {
                     {items.length
                       ? items.map((item) => (
                         <span className="gu-matrix-item" key={item.name}>
-                          {item.name}
+                          <a className="matrix-reference-link" href={resolveHref?.("immortal-gu", item.name)}>{item.name}</a>
                           {item.note && <small>{item.note}</small>}
                         </span>
                       ))
@@ -1983,7 +2047,7 @@ function ImmortalGuMatrix({ profile }) {
   );
 }
 
-function KillerMoveGroups({ profile }) {
+function KillerMoveGroups({ profile, resolveHref }) {
   const sections = profile?.sections || [];
 
   if (!sections.length) return <p className="entry-empty">-</p>;
@@ -1998,7 +2062,11 @@ function KillerMoveGroups({ profile }) {
               <section className="killer-move-category" key={`${section.label}-${group.label}`}>
                 <h4>{group.label}</h4>
                 <ul>
-                  {group.items.map((item) => <li key={item}>{item}</li>)}
+                  {group.items.map((item) => (
+                    <li className="linked-reference-chip" key={item}>
+                      <a href={resolveHref?.("killer-move", item)}>{item}</a>
+                    </li>
+                  ))}
                 </ul>
               </section>
             ))}
@@ -2009,28 +2077,76 @@ function KillerMoveGroups({ profile }) {
   );
 }
 
-function FactGrid({ items = [] }) {
+function collectDossierReferences(dossier, resolveHref) {
+  const references = new Map();
+  const add = (name, type) => {
+    if (!name || references.has(name)) return;
+    const href = resolveHref(type, name);
+    if (href) references.set(name, { href, name, type });
+  };
+
+  dossier.physiques?.forEach((item) => add(item.name, "physique"));
+  dossier.attainments?.forEach((group) => group.items.forEach((item) => add(item, "path")));
+  dossier.natalGu?.forEach((item) => add(item.name, "immortal-gu"));
+  dossier.immortalGuProfile?.groups?.forEach((group) => {
+    add(group.path, "path");
+    group.items.forEach((item) => add(item.name, "immortal-gu"));
+  });
+  dossier.killerMoveProfile?.sections?.forEach((section) => (
+    section.groups.forEach((group) => group.items.forEach((item) => add(item, "killer-move")))
+  ));
+  dossier.secretRealms?.forEach((group) => group.items.forEach((item) => add(item, "realm")));
+  dossier.formations?.forEach((group) => group.items.forEach((item) => add(item, "formation")));
+  dossier.houses?.forEach((item) => add(item.name, "house"));
+  dossier.clones?.forEach((item) => add(item.name, "person"));
+  dossier.inheritances?.forEach((group) => group.items.forEach((item) => add(item, "inheritance")));
+  dossier.subordinates?.forEach((group) => group.items.forEach((item) => add(item, "person")));
+  dossier.beasts?.forEach((item) => add(item.name, "beast"));
+  dossier.linkedReferences?.forEach((group) => group.items.forEach((item) => add(item, group.type)));
+
+  return Array.from(references.values()).sort((left, right) => right.name.length - left.name.length);
+}
+
+function LinkedText({ text = "", references = [] }) {
+  const inlineReferences = references.filter((item) => item.name.length > 1);
+  if (!inlineReferences.length || !text) return text;
+
+  const byName = new Map(inlineReferences.map((item) => [item.name, item]));
+  const escapedTerms = inlineReferences.map((item) => item.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const parts = text.split(new RegExp(`(${escapedTerms.join("|")})`, "g"));
+
+  return parts.map((part, index) => {
+    const reference = byName.get(part);
+    return reference ? (
+      <a className="inline-reference-link" href={reference.href} key={`${part}-${index}`}>
+        {part}
+      </a>
+    ) : part;
+  });
+}
+
+function FactGrid({ items = [], references = [] }) {
   return (
     <dl className="dossier-facts">
       {items.map((item) => (
         <div key={item.label}>
           <dt>{item.label}</dt>
-          <dd>{item.value}</dd>
+          <dd><LinkedText references={references} text={item.value} /></dd>
         </div>
       ))}
     </dl>
   );
 }
 
-function PhaseList({ items = [] }) {
+function PhaseList({ items = [], references = [] }) {
   return (
     <ol className="phase-list">
       {items.map((item, index) => (
         <li className="phase-item" key={item.title}>
           <span className="phase-marker">{String(index + 1).padStart(2, "0")}</span>
           <div>
-            <h3>{item.title}</h3>
-            <p>{item.text}</p>
+            <h3><LinkedText references={references} text={item.title} /></h3>
+            <p><LinkedText references={references} text={item.text} /></p>
           </div>
         </li>
       ))}
@@ -2038,26 +2154,27 @@ function PhaseList({ items = [] }) {
   );
 }
 
-function NamedRecordList({ items = [], resolveHref }) {
+function NamedRecordList({ items = [], referenceType, resolveHref, references = [] }) {
   if (!items.length) return <p className="entry-empty">待逐章核录</p>;
 
   return (
     <div className="record-grid">
       {items.map((item) => {
-        const href = resolveHref?.(item.name);
+        const href = referenceType && resolveHref?.(referenceType, item.name);
+        const typeLabel = referenceTypeLabels[referenceType] || "资料";
 
         return (
           <section className="record-item" key={item.name}>
             <h4>
               {href ? (
-                <a className="person-entry-link" href={href} aria-label={`查看${item.name}人物条目`}>
+                <a className="entry-reference-link" href={href} aria-label={`查看${item.name}${typeLabel}条目`}>
                   {item.name}
                   <ExternalLink size={13} />
                 </a>
               ) : item.name}
             </h4>
-            {item.meta && <span>{item.meta}</span>}
-            {item.text && <p>{item.text}</p>}
+            {item.meta && <span><LinkedText references={references} text={item.meta} /></span>}
+            {item.text && <p><LinkedText references={references} text={item.text} /></p>}
           </section>
         );
       })}
@@ -2065,7 +2182,7 @@ function NamedRecordList({ items = [], resolveHref }) {
   );
 }
 
-function ArchiveGroups({ groups = [], resolveHref }) {
+function ArchiveGroups({ groups = [], referenceType, resolveHref }) {
   return (
     <div className="archive-groups">
       {groups.map((group) => (
@@ -2073,11 +2190,12 @@ function ArchiveGroups({ groups = [], resolveHref }) {
           <h4>{group.label}</h4>
           <ul>
             {group.items.map((item) => {
-              const href = resolveHref?.(item);
+              const href = referenceType && resolveHref?.(referenceType, item);
+              const typeLabel = referenceTypeLabels[referenceType] || "资料";
 
               return (
-                <li className={href ? "linked-person-chip" : undefined} key={item}>
-                  {href ? <a href={href} aria-label={`查看${item}人物条目`}>{item}</a> : item}
+                <li className={href ? "linked-reference-chip" : undefined} key={item}>
+                  {href ? <a href={href} aria-label={`查看${item}${typeLabel}条目`}>{item}</a> : item}
                 </li>
               );
             })}
@@ -2104,14 +2222,18 @@ function EvidenceChecks({ items = [] }) {
   );
 }
 
-function DetailList({ title, items = [], fallback = "待逐章核录" }) {
+function DetailList({ title, items = [], fallback = "待逐章核录", referenceType, resolveHref }) {
   return (
     <div className="detail-list">
       {title && <h3>{title}</h3>}
       {items.length ? (
         <ul>
           {items.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item}>
+              {referenceType && resolveHref
+                ? <a className="entry-reference-link" href={resolveHref(referenceType, item)}>{item}</a>
+                : item}
+            </li>
           ))}
         </ul>
       ) : (
@@ -2512,5 +2634,6 @@ export default function App() {
   if (route === "systems") return <SystemsPage content={content} />;
   if (route === "atlas") return <AtlasPage content={content} />;
   if (route === "character") return <CharacterArticlePage characterId={getCharacterRouteId()} content={content} />;
+  if (route === "reference") return <ReferencePlaceholderPage content={content} entry={getReferenceRouteEntry()} />;
   return <HomePage content={content} loading={loading} error={error} />;
 }
