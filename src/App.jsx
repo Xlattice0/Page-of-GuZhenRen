@@ -55,6 +55,11 @@ const externalCharacterSources = {
     },
   ],
 };
+const characterReferenceAliases = {
+  方源: "古月方源",
+  方正: "古月方正",
+  "白兔 / 黑菟": "白兔姑娘",
+};
 const immortalGuRanks = ["九转", "八转", "七转", "六转", "五转"];
 const atlasAmbiences = {
   southern: {
@@ -1648,6 +1653,7 @@ function CharacterArticlePage({ content, characterId }) {
   const atlas = content.atlas || fallbackContent.atlas;
   const regions = atlas.regions || [];
   const characters = useMemo(() => curateAtlasCharacters(atlas.characters || []), [atlas.characters]);
+  const charactersByName = useMemo(() => new Map(characters.map((item) => [item.name, item])), [characters]);
   const character = characters.find((item) => item.id === characterId);
 
   if (!character) {
@@ -1670,6 +1676,10 @@ function CharacterArticlePage({ content, characterId }) {
   const externalSources = externalCharacterSources[character.name] || [];
   const hasCuratedRecord = !String(character.id).startsWith("auto-");
   const dossier = character.dossier || null;
+  const resolvePersonHref = (displayName) => {
+    const target = charactersByName.get(characterReferenceAliases[displayName] || displayName);
+    return target && target.id !== character.id ? characterHref(target.id) : "";
+  };
 
   return (
     <PublicLayout content={content} activeRoute="atlas" showRail={false}>
@@ -1789,11 +1799,11 @@ function CharacterArticlePage({ content, characterId }) {
               <section className="entry-section" id="forces">
                 <h2>分身与势力</h2>
                 <h3 className="entry-subheading">分身</h3>
-                <NamedRecordList items={dossier.clones} />
+                <NamedRecordList items={dossier.clones} resolveHref={resolvePersonHref} />
                 <h3 className="entry-subheading">获得传承</h3>
                 <ArchiveGroups groups={dossier.inheritances} />
                 <h3 className="entry-subheading">麾下蛊仙</h3>
-                <ArchiveGroups groups={dossier.subordinates} />
+                <ArchiveGroups groups={dossier.subordinates} resolveHref={resolvePersonHref} />
                 <h3 className="entry-subheading">奴役荒兽</h3>
                 <NamedRecordList items={dossier.beasts} />
               </section>
@@ -2028,30 +2038,49 @@ function PhaseList({ items = [] }) {
   );
 }
 
-function NamedRecordList({ items = [] }) {
+function NamedRecordList({ items = [], resolveHref }) {
   if (!items.length) return <p className="entry-empty">待逐章核录</p>;
 
   return (
     <div className="record-grid">
-      {items.map((item) => (
-        <section className="record-item" key={item.name}>
-          <h4>{item.name}</h4>
-          {item.meta && <span>{item.meta}</span>}
-          {item.text && <p>{item.text}</p>}
-        </section>
-      ))}
+      {items.map((item) => {
+        const href = resolveHref?.(item.name);
+
+        return (
+          <section className="record-item" key={item.name}>
+            <h4>
+              {href ? (
+                <a className="person-entry-link" href={href} aria-label={`查看${item.name}人物条目`}>
+                  {item.name}
+                  <ExternalLink size={13} />
+                </a>
+              ) : item.name}
+            </h4>
+            {item.meta && <span>{item.meta}</span>}
+            {item.text && <p>{item.text}</p>}
+          </section>
+        );
+      })}
     </div>
   );
 }
 
-function ArchiveGroups({ groups = [] }) {
+function ArchiveGroups({ groups = [], resolveHref }) {
   return (
     <div className="archive-groups">
       {groups.map((group) => (
         <section className="archive-row" key={group.label}>
           <h4>{group.label}</h4>
           <ul>
-            {group.items.map((item) => <li key={item}>{item}</li>)}
+            {group.items.map((item) => {
+              const href = resolveHref?.(item);
+
+              return (
+                <li className={href ? "linked-person-chip" : undefined} key={item}>
+                  {href ? <a href={href} aria-label={`查看${item}人物条目`}>{item}</a> : item}
+                </li>
+              );
+            })}
           </ul>
         </section>
       ))}

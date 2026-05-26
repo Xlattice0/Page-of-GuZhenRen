@@ -1357,6 +1357,22 @@ button {
   font-size: 0.91rem;
 }
 
+.person-entry-link {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  color: rgba(247, 242, 231, 0.94);
+  transition: color 180ms ease;
+}
+
+.person-entry-link svg {
+  color: rgba(212, 181, 111, 0.66);
+}
+
+.person-entry-link:hover {
+  color: var(--gold);
+}
+
 .record-item span {
   color: rgba(212, 181, 111, 0.78);
   font-size: 0.74rem;
@@ -1387,6 +1403,20 @@ button {
   margin: 6px 0 0;
   color: rgba(212, 181, 111, 0.83);
   font-size: 0.8rem;
+}
+
+.archive-row li.linked-person-chip {
+  border-color: rgba(212, 181, 111, 0.3);
+  background: rgba(212, 181, 111, 0.045);
+}
+
+.linked-person-chip a {
+  color: rgba(247, 242, 231, 0.85);
+  transition: color 180ms ease;
+}
+
+.linked-person-chip a:hover {
+  color: var(--gold);
 }
 
 .entry-detail-grid {
