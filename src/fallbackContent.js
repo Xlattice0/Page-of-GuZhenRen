@@ -221,6 +221,7 @@ export const fallbackContent = {
       { id: "western", name: "西漠", color: "#c89a6b" },
       { id: "white", name: "太古白天", color: "#d9d6c7" },
       { id: "black", name: "太古黑天", color: "#9b8bd3" },
+      { id: "renzu", name: "人祖传", color: "#c89b6b" },
       { id: "unverified", name: "待考", color: "#aaa398" },
     ],
     characters: generatedAtlasCharacters,

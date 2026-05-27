@@ -170,6 +170,16 @@ const atlasAmbiences = {
     stars: [0xb7ae9b, 0x7b878b],
     signature: "mist",
   },
+  renzu: {
+    clear: 0x060408,
+    fog: 0x0c0810,
+    core: 0x8b6f47,
+    orbit: [0x7d6948, 0x565b42],
+    ribbon: [0xc9a362, 0x8b916a, 0x6e5a4a],
+    dust: [0xcfb06e, 0x9ba878],
+    stars: [0xe0c482, 0x8aa075],
+    signature: "branch",
+  },
 };
 
 const curatedAtlasRegions = {
@@ -253,6 +263,14 @@ const curatedAtlasLinks = {
   萧荷尖: [["冰晶仙王", "两天盟共事"]],
   红莲魔尊: [["龙公", "师徒"], ["古月方源", "真传受益"]],
   乐土仙尊: [["陆畏因", "传承"], ["古月方源", "后手布局"]],
+  袁琼都: [["沙婆婆", "职责交接"], ["紫薇仙子", "天庭同僚"]],
+  周雄信: [["古月方源", "死于方源之手"]],
+  清夜: [["古月方源", "被万年斗飞车撞死"]],
+  顾六如: [["古月方源", "十二生肖战阵击杀"]],
+  冰塞川: [["巨阳仙尊", "长生天"], ["牛魔", "四荒同僚"], ["花子", "四荒同僚"]],
+  牛魔: [["冰塞川", "四荒同僚"], ["花子", "四荒同僚"]],
+  花子: [["冰塞川", "四荒同僚"], ["牛魔", "四荒同僚"]],
+  翼浩方: [["武庸", "南疆同僚"], ["池曲由", "南疆世家"]],
 };
 
 const adminTabs = [
@@ -273,12 +291,23 @@ function cloneContent(value) {
 }
 
 function mergeById(baseItems = [], incomingItems = []) {
+  // First pass: merge by id, incoming overwrites base for matching ids
   const byId = new Map();
   [...baseItems, ...incomingItems].forEach((item) => {
     const key = item?.id || item?.name;
     if (key) byId.set(key, item);
   });
-  return Array.from(byId.values());
+  // Second pass: deduplicate by name, base wins for name conflicts (more detail)
+  const seenNames = new Set();
+  const result = [];
+  // Process base first so generated entries with richer data take priority
+  [...baseItems, ...incomingItems].forEach((item) => {
+    if (item?.name && !seenNames.has(item.name)) {
+      seenNames.add(item.name);
+      result.push(item);
+    }
+  });
+  return result;
 }
 
 function mergeContent(base, incoming = {}) {

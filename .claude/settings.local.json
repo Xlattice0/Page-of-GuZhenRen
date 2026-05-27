@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:baike.baidu.com)",
+      "WebSearch",
+      "Bash(grep -v '蛊$')",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 *)",
+      "Bash(chcp 65001)",
+      "Bash(npx vite *)",
+      "Bash(pip install *)"
+    ]
+  }
+}

@@ -2385,6 +2385,1147 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
+    "name": "袁琼都",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转炼道蛊仙。继沙婆婆之后主掌修复宿命蛊，第一次宿命之战中以身为祭，献身殉蛊。",
+    "gu": [
+      "炼道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "炼道",
+          "items": [
+            {
+              "name": "炼道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-7a4282f415",
+    "relations": []
+  },
+  {
+    "name": "顾六如",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转宙道蛊仙，形销骨立，轮椅实为仙蛊屋。宿命之战中被古月方源以十二生肖战阵击杀。",
+    "gu": [
+      "宙道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "宙道",
+          "items": [
+            {
+              "name": "宙道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-7dafae33e6",
+    "relations": []
+  },
+  {
+    "name": "周雄信",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转信道蛊仙，白袍方脸。拥有战场杀招「流言笼」，传播速度极快。先死于方源春剪，复活后疯魔窟被击杀。",
+    "gu": [
+      "信道仙蛊(八转)"
+    ],
+    "moves": [
+      "流言笼(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "信道",
+          "items": [
+            {
+              "name": "信道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-14cf230b93",
+    "relations": []
+  },
+  {
+    "name": "清夜",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转暗道蛊仙。战场杀招「大夜弥天」理论范围无限，被万年斗飞车撞死于光阴长河。",
+    "gu": [
+      "暗道仙蛊(八转)"
+    ],
+    "moves": [
+      "大夜弥天(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "暗道",
+          "items": [
+            {
+              "name": "暗道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-04b1bef1cc",
+    "relations": []
+  },
+  {
+    "name": "赵山河",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转食道蛊仙，白皙肥胖。杀招「吞食」可吞金柱，被古月方源击杀。",
+    "gu": [
+      "食道仙蛊(八转)"
+    ],
+    "moves": [
+      "吞食(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "食道",
+          "items": [
+            {
+              "name": "食道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-6cc019e730",
+    "relations": []
+  },
+  {
+    "name": "张飞熊",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转变化道蛊仙，擅长熊类变化，肉身可硬抗七转仙蛊屋。被帝藏生击杀于藏龙窟。",
+    "gu": [
+      "变化道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-495e508c06",
+    "relations": []
+  },
+  {
+    "name": "朱雀儿",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转炎道兼变化道女仙，战斗风格多变。杀招「八赤虹」可藏匿真身，参与天庭宿命之战。",
+    "gu": [
+      "炎道仙蛊(八转)",
+      "变化道仙蛊(八转)"
+    ],
+    "moves": [
+      "八赤虹(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "炎道",
+          "items": [
+            {
+              "name": "炎道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-50a3dffeb8",
+    "relations": []
+  },
+  {
+    "name": "吴双",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转辅助蛊仙，人道杀招「无双」可大幅增加他人能力。替紫薇仙子挡刀，被刘流溜偷袭身亡。",
+    "gu": [
+      "人道仙蛊(八转)"
+    ],
+    "moves": [
+      "无双(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "人道",
+          "items": [
+            {
+              "name": "人道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-df9de0aa0c",
+    "relations": []
+  },
+  {
+    "name": "秦松",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭上古八转宇道蛊仙，擅长挪移之术，一身旧伤。第一次宿命之战寿尽而亡。",
+    "gu": [
+      "宇道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "宇道",
+          "items": [
+            {
+              "name": "宇道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-7e3db519ac",
+    "relations": []
+  },
+  {
+    "name": "七煞元君",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭上古八转气道蛊仙，遍历五域提炼出九十九头煞狴。参与疯魔窟与围攻气海老祖。",
+    "gu": [
+      "气道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "气道",
+          "items": [
+            {
+              "name": "气道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-5aed7f51ec",
+    "relations": []
+  },
+  {
+    "name": "眉公",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭三公之一，上古八转蛊仙，寿眉垂至胸前。可释放干枯藤蔓缠绕仙蛊屋吸收仙元。疯魔窟被战部渡击杀后复活。",
+    "gu": [
+      "木道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "木道",
+          "items": [
+            {
+              "name": "木道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-c2c823ebf6",
+    "relations": []
+  },
+  {
+    "name": "铜公",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭三公之一，上古八转蛊仙，肌肤似黄铜。可施展铜环杀招围困仙蛊屋。疯魔窟被气绝魔仙击杀后复活。",
+    "gu": [
+      "金道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "金道",
+          "items": [
+            {
+              "name": "金道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-863196dad3",
+    "relations": []
+  },
+  {
+    "name": "从严",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转律道蛊仙，参与天庭宿命之战。",
+    "gu": [
+      "律道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "律道",
+          "items": [
+            {
+              "name": "律道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-1f0031d3c2",
+    "relations": []
+  },
+  {
+    "name": "野樵子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转木道蛊仙，干瘦老汉，擅长栽培资源。被自由残缺变状态的古月方源击杀。",
+    "gu": [
+      "木道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "木道",
+          "items": [
+            {
+              "name": "木道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-36afebf180",
+    "relations": []
+  },
+  {
+    "name": "玉珠子",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转土道女仙，周身漂浮玉珠，最擅侦破。",
+    "gu": [
+      "土道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "土道",
+          "items": [
+            {
+              "name": "土道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-028abfdac3",
+    "relations": []
+  },
+  {
+    "name": "沙婆婆",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转炼道女仙，负责修复监天塔和宿命蛊。成功抢炼定仙游后寿尽而亡。",
+    "gu": [
+      "炼道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [
+      "监天塔"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "炼道",
+          "items": [
+            {
+              "name": "炼道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-92bf463e02",
+    "relations": []
+  },
+  {
+    "name": "九灵仙姑",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转变化道兼奴道女仙，可变太古年兽游走光阴长河。杀招「九灵变」一生只能用九次。",
+    "gu": [
+      "变化道仙蛊(八转)",
+      "奴道仙蛊(八转)"
+    ],
+    "moves": [
+      "九灵变(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "奴道",
+          "items": [
+            {
+              "name": "奴道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-67e972498e",
+    "relations": []
+  },
+  {
+    "name": "赤心行者",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转血道蛊仙，诛魔榜前任榜主，古月方正之师。曾潜入西漠伪装魔修执行天庭任务。",
+    "gu": [
+      "血道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [
+      "诛魔榜"
+    ],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "血道",
+          "items": [
+            {
+              "name": "血道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-313917b204",
+    "relations": []
+  },
+  {
+    "name": "正元老人",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭七转人道蛊仙，辈分极高，催动人道众杀招。第二次宿命之战被幽魂魔尊魂穿叛变。",
+    "gu": [
+      "人道仙蛊(七转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "人道",
+          "items": [
+            {
+              "name": "人道仙蛊",
+              "rank": "七转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-f2af576eda",
+    "relations": []
+  },
+  {
+    "name": "肉鞭仙",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转变化道蛊仙，可变化为太古走肉树，被帝藏生击杀。",
+    "gu": [
+      "变化道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-86f44f8042",
+    "relations": []
+  },
+  {
+    "name": "威灵仰",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转禁道蛊仙，参与北原远征军，在逆流河中被毛里球所杀。",
+    "gu": [
+      "禁道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "禁道",
+          "items": [
+            {
+              "name": "禁道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-dd4a8bc375",
+    "relations": []
+  },
+  {
+    "name": "梁凉",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭上古八转宇道蛊仙，曾炼制仙蛊定仙游并晋升至七转。征讨太古传奇祸空时战死。",
+    "gu": [
+      "宇道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "宇道",
+          "items": [
+            {
+              "name": "宇道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-ba5fc1ad57",
+    "relations": []
+  },
+  {
+    "name": "炼九生",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转炼道蛊仙，实为幽魂魔尊分魂。义天山大战中自爆化为大同风。",
+    "gu": [
+      "炼道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "炼道",
+          "items": [
+            {
+              "name": "炼道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-1eaab56cd3",
+    "relations": []
+  },
+  {
+    "name": "卫风",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转蛊仙，被千变老祖变化的夜煞女一击毙命。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "id": "curated-15cc4b3630",
+    "relations": []
+  },
+  {
+    "name": "星野望",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转蛊仙，奉命围堵古月方源与千变老祖。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "id": "curated-6e6bade174",
+    "relations": []
+  },
+  {
+    "name": "悲风老人",
+    "region": "central",
+    "faction": "中洲归档",
+    "role": "主要人物",
+    "intro": "天庭八转风道蛊仙，风云府出身，中洲十大古派。因孙风禅子犯错代为受罚，驻守东海藏龙窟。",
+    "gu": [
+      "风道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "风道",
+          "items": [
+            {
+              "name": "风道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-d7dafe9d4d",
+    "relations": []
+  },
+  {
+    "name": "冰塞川",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原长生天四荒仙人（西），八转宙道蛊仙。实力卓绝，主导长生天进攻天庭。",
+    "gu": [
+      "宙道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "宙道",
+          "items": [
+            {
+              "name": "宙道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-8afa9e28ab",
+    "relations": []
+  },
+  {
+    "name": "牛魔",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原长生天四荒仙人（北），八转蛊仙，身高八尺虎背熊腰。",
+    "gu": [
+      "力道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "力道",
+          "items": [
+            {
+              "name": "力道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-4a469f4ca5",
+    "relations": []
+  },
+  {
+    "name": "花子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原长生天四荒仙人（北），八转蛊仙，小女孩模样天真烂漫。",
+    "gu": [
+      "变化道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-ebaec6bca0",
+    "relations": []
+  },
+  {
+    "name": "努尔暴雄",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原八转雷道蛊仙，性情霸烈狂暴嗜杀。曾使努尔家登顶北原第一。",
+    "gu": [
+      "雷道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "雷道",
+          "items": [
+            {
+              "name": "雷道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-0cf015a9eb",
+    "relations": []
+  },
+  {
+    "name": "五行大法师",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原八转阵道散修，擅长模拟五道，求知欲极强四处偷师。已投靠长生天。",
+    "gu": [
+      "阵道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "阵道",
+          "items": [
+            {
+              "name": "阵道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-895df3a0ca",
+    "relations": []
+  },
+  {
+    "name": "刘流溜",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原八转蛊仙，奸猾好杀，号称北原之耻。天庭一战完成九连斩，击杀多名天庭蛊仙。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "id": "curated-8f06456a43",
+    "relations": []
+  },
+  {
+    "name": "廿二农夫",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原八转土道蛊仙，老农模样，极其擅长经营仙窍。",
+    "gu": [
+      "土道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "土道",
+          "items": [
+            {
+              "name": "土道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-cc9ae13fed",
+    "relations": []
+  },
+  {
+    "name": "耶律寇",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原八转金道蛊仙，拥有鹰眼，战斗天赋极强。",
+    "gu": [
+      "金道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "金道",
+          "items": [
+            {
+              "name": "金道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-424415d72e",
+    "relations": []
+  },
+  {
+    "name": "刘惠",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原历史上著名八转智道蛊仙，在长生天与天庭博弈中留下诸多布局。",
+    "gu": [
+      "智道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "智道",
+          "items": [
+            {
+              "name": "智道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-7e5678a232",
+    "relations": []
+  },
+  {
+    "name": "袁贲",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原八转骨道蛊仙，崇尚武道，号称北原第一战力。",
+    "gu": [
+      "骨道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "骨道",
+          "items": [
+            {
+              "name": "骨道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-270fc6e88e",
+    "relations": []
+  },
+  {
+    "name": "玉阳子",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原八转律道蛊仙，本名耶律瓦。叛魔后重归正道，在北原历史上留下重要一笔。",
+    "gu": [
+      "律道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "律道",
+          "items": [
+            {
+              "name": "律道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-9562cf464c",
+    "relations": []
+  },
+  {
+    "name": "北斗三仙",
+    "region": "northern",
+    "faction": "北原归档",
+    "role": "主要人物",
+    "intro": "北原七位八转蛊仙，可组成上古战阵「七极荒都」，战力可与龙公抗衡。",
+    "gu": [],
+    "moves": [
+      "七极荒都(八转)"
+    ],
+    "houses": [],
+    "immortalGuProfile": null,
+    "id": "curated-af160ec2c2",
+    "relations": []
+  },
+  {
+    "name": "翼浩方",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "主要人物",
+    "intro": "南疆翼家太上大长老，八转变化道蛊仙。擅长加持他人，加持手段闻名五域。",
+    "gu": [
+      "变化道仙蛊(八转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": {
+      "groups": [
+        {
+          "path": "变化道",
+          "items": [
+            {
+              "name": "变化道仙蛊",
+              "rank": "八转"
+            }
+          ]
+        }
+      ]
+    },
+    "id": "curated-79573943ad",
+    "relations": []
+  },
+  {
+    "name": "萧炎",
+    "region": "southern",
+    "faction": "南疆归档",
+    "role": "全文人物",
+    "intro": "西漠三转炎道蛊师，以丹火蛊为主要手段。性格直爽大方，后成为商心慈下属。",
+    "gu": [
+      "丹火蛊(三转)"
+    ],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "id": "curated-6606fa555d",
+    "relations": []
+  },
+  {
+    "name": "太日阳莽",
+    "region": "renzu",
+    "faction": "人祖传承归档",
+    "role": "全文人物",
+    "intro": "人祖长子，《人祖传》中记载的太古人物。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "id": "curated-78bc61956b",
+    "relations": []
+  },
+  {
+    "name": "北冥冰魄",
+    "region": "renzu",
+    "faction": "人祖传承归档",
+    "role": "全文人物",
+    "intro": "人祖三子，《人祖传》中记载的太古人物。北冥冰魄体即为以其命名的十绝体之一。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "id": "curated-32a3658768",
+    "relations": []
+  },
+  {
+    "name": "森海轮回",
+    "region": "renzu",
+    "faction": "人祖传承归档",
+    "role": "全文人物",
+    "intro": "人祖四女，《人祖传》中记载的太古人物。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "id": "curated-41b7ea4244",
+    "relations": []
+  },
+  {
+    "name": "炎煌雷泽",
+    "region": "renzu",
+    "faction": "人祖传承归档",
+    "role": "全文人物",
+    "intro": "人祖五子，《人祖传》中记载的太古人物。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "id": "curated-a2e7de44fe",
+    "relations": []
+  },
+  {
+    "name": "万金妙华",
+    "region": "renzu",
+    "faction": "人祖传承归档",
+    "role": "全文人物",
+    "intro": "人祖六女，《人祖传》中记载的太古人物。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "id": "curated-eb5d2f206a",
+    "relations": []
+  },
+  {
+    "name": "大力真武",
+    "region": "renzu",
+    "faction": "人祖传承归档",
+    "role": "全文人物",
+    "intro": "人祖七子，《人祖传》中记载的太古人物。大力真武体即为以其命名的十绝体之一。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "id": "curated-e3899e566c",
+    "relations": []
+  },
+  {
+    "name": "逍遥智心",
+    "region": "renzu",
+    "faction": "人祖传承归档",
+    "role": "全文人物",
+    "intro": "人祖八女，《人祖传》中记载的太古人物。逍遥智心体即为以其命名的十绝体之一。",
+    "gu": [],
+    "moves": [],
+    "houses": [],
+    "immortalGuProfile": null,
+    "id": "curated-2b275ba482",
+    "relations": []
+  },
+  {
     "id": "auto-0012-ea73001be3",
     "name": "巴十八",
     "region": "southern",
@@ -2646,19 +3787,6 @@ export const generatedAtlasCharacters = [
         }
       ]
     },
-    "relations": []
-  },
-  {
-    "id": "auto-0309-4c4bcf413f",
-    "name": "芳土",
-    "region": "southern",
-    "faction": "南疆归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
     "relations": []
   },
   {
@@ -2996,23 +4124,10 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0292-852bdc3a20",
-    "name": "古月一族",
-    "region": "southern",
-    "faction": "南疆归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0048-b9144c1c04",
     "name": "古月阴荒",
-    "region": "southern",
-    "faction": "南疆归档",
+    "region": "renzu",
+    "faction": "人祖传承归档",
     "role": "全文人物",
     "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
     "gu": [],
@@ -3225,8 +4340,8 @@ export const generatedAtlasCharacters = [
   {
     "id": "auto-0211-71cfaa095c",
     "name": "李逍遥",
-    "region": "southern",
-    "faction": "南疆归档",
+    "region": "eastern",
+    "faction": "东海归档",
     "role": "全文人物",
     "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
     "gu": [
@@ -3708,33 +4823,6 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0205-87e0ac1976",
-    "name": "吞财童子",
-    "region": "southern",
-    "faction": "南疆归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
-    "gu": [
-      "商道仙蛊"
-    ],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": {
-      "groups": [
-        {
-          "path": "食道",
-          "items": [
-            {
-              "name": "商道仙蛊",
-              "rank": "?转"
-            }
-          ]
-        }
-      ]
-    },
-    "relations": []
-  },
-  {
     "id": "auto-0040-0a97a787a2",
     "name": "卫德馨",
     "region": "southern",
@@ -4076,19 +5164,6 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0305-ab4c0c955c",
-    "name": "小云",
-    "region": "southern",
-    "faction": "南疆归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0044-720c714915",
     "name": "熊姜",
     "region": "southern",
@@ -4379,47 +5454,8 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0310-7d7080bfad",
-    "name": "白晴",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0263-bb3de45cd0",
-    "name": "白仙子",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0178-1d6b2397be",
     "name": "白相天灵",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0303-a2dcf08941",
-    "name": "白云",
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
@@ -4577,34 +5613,8 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0293-6b65af8a9c",
-    "name": "大古派",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0089-e0793ca165",
     "name": "丹仙",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0267-3f638d4029",
-    "name": "当代仙子",
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
@@ -4906,19 +5916,6 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0299-8d05c266e7",
-    "name": "连运",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0239-11a0a341a9",
     "name": "怜香仙子",
     "region": "central",
@@ -4945,60 +5942,8 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0266-f977ca3573",
-    "name": "灵缘仙子",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0290-f2e0090275",
-    "name": "灵缘斋",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0255-9cffdd80ce",
     "name": "刘家仙子",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0298-7ec64eceb4",
-    "name": "刘文武",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0287-8c9f8c7eb9",
-    "name": "龙公老祖",
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
@@ -5051,23 +5996,10 @@ export const generatedAtlasCharacters = [
   {
     "id": "auto-0308-d57a92abd8",
     "name": "慕容",
-    "region": "central",
-    "faction": "中洲归档",
+    "region": "northern",
+    "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0251-28b297c2b1",
-    "name": "慕容仙子",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "北原蛊仙，慕容部族出身。参与北原拍卖大会，与东海有所勾连。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5138,19 +6070,6 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0297-e501c21725",
-    "name": "秦娟",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0261-24f14625e1",
     "name": "秦仙子",
     "region": "central",
@@ -5192,19 +6111,6 @@ export const generatedAtlasCharacters = [
   {
     "id": "auto-0258-fa1575febf",
     "name": "若离仙子",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0268-0c5d2d880e",
-    "name": "三十六代仙子",
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
@@ -5401,10 +6307,10 @@ export const generatedAtlasCharacters = [
   {
     "id": "auto-0074-42b82d2f8f",
     "name": "万紫红",
-    "region": "central",
-    "faction": "中洲归档",
+    "region": "western",
+    "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "西漠八转木道蛊仙，早年祸乱西漠的魔头。杀手锏\"黄花瘦命\"极厉害，后加入天庭。",
     "gu": [
       "变化道仙蛊"
     ],
@@ -5428,8 +6334,8 @@ export const generatedAtlasCharacters = [
   {
     "id": "auto-0058-bc6fcc51c2",
     "name": "无极魔尊",
-    "region": "central",
-    "faction": "中洲归档",
+    "region": "northern",
+    "faction": "北原归档",
     "role": "全文人物",
     "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
     "gu": [
@@ -5453,19 +6359,6 @@ export const generatedAtlasCharacters = [
         }
       ]
     },
-    "relations": []
-  },
-  {
-    "id": "auto-0304-54bc9f6309",
-    "name": "夏琳",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
     "relations": []
   },
   {
@@ -5642,32 +6535,6 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0289-1c865a5a2f",
-    "name": "缘斋",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0265-d902a69d88",
-    "name": "缘斋当代仙子",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0243-63917e6684",
     "name": "月华仙子",
     "region": "central",
@@ -5683,19 +6550,6 @@ export const generatedAtlasCharacters = [
   {
     "id": "auto-0262-9b6aa47703",
     "name": "张仙子",
-    "region": "central",
-    "faction": "中洲归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0296-f22230b3a1",
-    "name": "张小姐",
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
@@ -6028,19 +6882,6 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0288-d1e347cc58",
-    "name": "黑凡老祖",
-    "region": "northern",
-    "faction": "北原归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0113-8a7e6d86cd",
     "name": "回风子",
     "region": "northern",
@@ -6072,19 +6913,6 @@ export const generatedAtlasCharacters = [
   {
     "id": "auto-0096-666ea49108",
     "name": "姜钰",
-    "region": "northern",
-    "faction": "北原归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0197-2b79db4bcb",
-    "name": "巨阳老祖",
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
@@ -6179,7 +7007,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "或主要势力根基归入北原。",
     "gu": [
       "商道仙蛊"
     ],
@@ -6762,7 +7590,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "东海蛊仙。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6785,19 +7613,6 @@ export const generatedAtlasCharacters = [
   {
     "id": "auto-0201-bb3c25ad4b",
     "name": "雷球上人",
-    "region": "eastern",
-    "faction": "东海归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0295-2411213686",
-    "name": "柳贯一",
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
@@ -7058,25 +7873,12 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0294-4642659b01",
-    "name": "万龙坞",
-    "region": "eastern",
-    "faction": "东海归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0145-d4a39b6806",
     "name": "奚雪",
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "或主要势力根基归入东海。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7138,19 +7940,6 @@ export const generatedAtlasCharacters = [
   {
     "id": "auto-0275-13d8cb908d",
     "name": "鱼姿仙子",
-    "region": "eastern",
-    "faction": "东海归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0146-e100d51ae0",
-    "name": "战部渡",
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
@@ -7333,19 +8122,6 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0234-e3644797cc",
-    "name": "黄沙仙子",
-    "region": "western",
-    "faction": "西漠归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0158-9bf4c845f7",
     "name": "江鹤",
     "region": "western",
@@ -7452,19 +8228,6 @@ export const generatedAtlasCharacters = [
   {
     "id": "auto-0189-371f44ccea",
     "name": "乱石洞主",
-    "region": "western",
-    "faction": "西漠归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0221-2c798ece4e",
-    "name": "千百老祖",
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
@@ -7869,25 +8632,12 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0284-578464d658",
-    "name": "惊世魔尊",
-    "region": "unverified",
-    "faction": "待考归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0170-a0ee02f64a",
     "name": "狂蛮魔尊",
-    "region": "unverified",
-    "faction": "待考归档",
+    "region": "northern",
+    "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "intro": "北原出身的力道与变化道尊者，上古三大魔尊之一。杀性极重，闯天庭打坏绣楼，一统五域对抗异人。",
     "gu": [
       "力道仙蛊(九转)",
       "变化道仙蛊(九转)"
@@ -7922,36 +8672,10 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0283-b82cd069a3",
-    "name": "狂魔魔尊",
-    "region": "unverified",
-    "faction": "待考归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0286-bbda8b2854",
-    "name": "炼日魔尊",
-    "region": "unverified",
-    "faction": "待考归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0167-14ad26849e",
     "name": "气绝魔仙",
-    "region": "unverified",
-    "faction": "待考归档",
+    "region": "northern",
+    "faction": "北原归档",
     "role": "全文人物",
     "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
     "gu": [
@@ -7977,38 +8701,12 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0280-b9afbb8caf",
-    "name": "人族魔尊",
-    "region": "unverified",
-    "faction": "待考归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0279-8a90407e7d",
-    "name": "人族太子",
-    "region": "unverified",
-    "faction": "待考归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0168-16be5e792c",
     "name": "人祖",
-    "region": "unverified",
-    "faction": "待考归档",
+    "region": "renzu",
+    "faction": "人祖传承归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "intro": "蛊界第一个人类，由蓝宝石化形。《人祖传》记载其十个子女的故事，是人道起源的核心人物。",
     "gu": [
       "希望蛊",
       "成功蛊",
@@ -8043,32 +8741,6 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0278-4d4198893b",
-    "name": "人祖太子",
-    "region": "unverified",
-    "faction": "待考归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0281-76a4ecba89",
-    "name": "三大魔尊",
-    "region": "unverified",
-    "faction": "待考归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
     "id": "auto-0311-126ecb1cb3",
     "name": "小姑娘",
     "region": "unverified",
@@ -8082,56 +8754,30 @@ export const generatedAtlasCharacters = [
     "relations": []
   },
   {
-    "id": "auto-0312-182799f43a",
-    "name": "小姑娘仙子",
-    "region": "unverified",
-    "faction": "待考归档",
+    "name": "厚土元央",
+    "region": "renzu",
+    "faction": "人祖传承归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "intro": "人祖九子，《人祖传》中记载的太古人物。",
     "gu": [],
     "moves": [],
     "houses": [],
     "immortalGuProfile": null,
-    "relations": []
+    "relations": [],
+    "id": "curated-7c5b05fc82"
   },
   {
-    "id": "auto-0285-2f8bddcc14",
-    "name": "小魔尊",
-    "region": "unverified",
-    "faction": "待考归档",
+    "name": "宇宙大衍",
+    "region": "renzu",
+    "faction": "人祖传承归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "intro": "人祖十子，《人祖传》中记载的太古人物。",
     "gu": [],
     "moves": [],
     "houses": [],
     "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0291-b34a30761b",
-    "name": "影宗",
-    "region": "unverified",
-    "faction": "待考归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
-  },
-  {
-    "id": "auto-0282-d8ebd5b22e",
-    "name": "原始魔尊",
-    "region": "unverified",
-    "faction": "待考归档",
-    "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
-    "immortalGuProfile": null,
-    "relations": []
+    "relations": [],
+    "id": "curated-523c809e5a"
   }
 ];
 

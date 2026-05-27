@@ -310,8 +310,8 @@
     ],
     "characters": [
       {
-        "id": "fang-yuan",
-        "name": "方源",
+        "id": "curated-9fcda65b80",
+        "name": "古月方源",
         "region": "southern",
         "faction": "大爱盟 / 琅琊派 / 影宗残局",
         "role": "主角，炼道尊者",
@@ -361,8 +361,8 @@
         ]
       },
       {
-        "id": "fang-zheng",
-        "name": "方正",
+        "id": "curated-4f943ba53a",
+        "name": "古月方正",
         "region": "southern",
         "faction": "古月山寨 / 中洲仙鹤门 / 天庭",
         "role": "方源胞弟",
@@ -388,7 +388,7 @@
         ]
       },
       {
-        "id": "bai-ning-bing",
+        "id": "curated-b790651253",
         "name": "白凝冰",
         "region": "southern",
         "faction": "白家 / 影宗合作线",
@@ -416,7 +416,7 @@
         ]
       },
       {
-        "id": "shang-xin-ci",
+        "id": "curated-b8311dfb9a",
         "name": "商心慈",
         "region": "southern",
         "faction": "商家",
@@ -441,7 +441,7 @@
         ]
       },
       {
-        "id": "shang-yan-fei",
+        "id": "curated-cac70564b1",
         "name": "商燕飞",
         "region": "southern",
         "faction": "商家",
@@ -463,7 +463,7 @@
         ]
       },
       {
-        "id": "tie-ruo-nan",
+        "id": "curated-f0566221e9",
         "name": "铁若男",
         "region": "southern",
         "faction": "铁家",
@@ -489,7 +489,7 @@
         ]
       },
       {
-        "id": "tie-xue-leng",
+        "id": "curated-4c0df358a7",
         "name": "铁血冷",
         "region": "southern",
         "faction": "铁家",
@@ -511,7 +511,7 @@
         ]
       },
       {
-        "id": "wu-yong",
+        "id": "curated-5842853a47",
         "name": "武庸",
         "region": "southern",
         "faction": "武家",
@@ -540,7 +540,7 @@
         ]
       },
       {
-        "id": "wu-du-xiu",
+        "id": "curated-fe263cdf56",
         "name": "武独秀",
         "region": "southern",
         "faction": "武家",
@@ -561,7 +561,7 @@
         ]
       },
       {
-        "id": "lu-wei-yin",
+        "id": "curated-8a84e16997",
         "name": "陆畏因",
         "region": "southern",
         "faction": "乐土传人",
@@ -588,7 +588,7 @@
         ]
       },
       {
-        "id": "feng-jiu-ge",
+        "id": "curated-756fc27292",
         "name": "凤九歌",
         "region": "central",
         "faction": "灵缘斋 / 中洲正道",
@@ -616,7 +616,7 @@
         ]
       },
       {
-        "id": "feng-jin-huang",
+        "id": "curated-04f7444636",
         "name": "凤金煌",
         "region": "central",
         "faction": "灵缘斋",
@@ -641,7 +641,7 @@
         ]
       },
       {
-        "id": "zhao-lian-yun",
+        "id": "curated-eb745fbf5a",
         "name": "赵怜云",
         "region": "central",
         "faction": "灵缘斋",
@@ -666,7 +666,7 @@
         ]
       },
       {
-        "id": "duke-long",
+        "id": "curated-7f8a8170d4",
         "name": "龙公",
         "region": "central",
         "faction": "天庭",
@@ -700,7 +700,7 @@
         ]
       },
       {
-        "id": "zi-wei",
+        "id": "curated-b6d15834d0",
         "name": "紫薇仙子",
         "region": "central",
         "faction": "天庭",
@@ -733,7 +733,7 @@
         ]
       },
       {
-        "id": "star-constellation",
+        "id": "curated-b3300b6805",
         "name": "星宿仙尊",
         "region": "central",
         "faction": "天庭",
@@ -766,7 +766,7 @@
         ]
       },
       {
-        "id": "ma-hong-yun",
+        "id": "curated-41e530ad47",
         "name": "马鸿运",
         "region": "northern",
         "faction": "北原散修 / 巨阳运道棋子",
@@ -791,7 +791,7 @@
         ]
       },
       {
-        "id": "hei-lou-lan",
+        "id": "curated-43edeb34ce",
         "name": "黑楼兰",
         "region": "northern",
         "faction": "黑家 / 黎山仙子一系",
@@ -822,7 +822,7 @@
         ]
       },
       {
-        "id": "hei-cheng",
+        "id": "curated-9e0b4fec17",
         "name": "黑城",
         "region": "northern",
         "faction": "黑家",
@@ -845,7 +845,7 @@
         ]
       },
       {
-        "id": "li-shan",
+        "id": "curated-50c0ae8528",
         "name": "黎山仙子",
         "region": "northern",
         "faction": "北原散修",
@@ -870,10 +870,10 @@
         ]
       },
       {
-        "id": "tai-bai-yun-sheng",
+        "id": "curated-7c69ea65cb",
         "name": "太白云生",
         "region": "northern",
-        "faction": "北原散修 / 方源同行者",
+        "faction": "北原归档",
         "role": "宙道治疗蛊仙",
         "intro": "北原篇重要同行者，性情仁厚，与方源长期同行。",
         "gu": [
@@ -892,7 +892,7 @@
         ]
       },
       {
-        "id": "chu-du",
+        "id": "curated-6f9d1f072b",
         "name": "楚度",
         "region": "northern",
         "faction": "楚门",
@@ -913,7 +913,7 @@
         ]
       },
       {
-        "id": "giant-sun",
+        "id": "curated-e40500e3a5",
         "name": "巨阳仙尊",
         "region": "northern",
         "faction": "长生天",
@@ -945,7 +945,7 @@
         ]
       },
       {
-        "id": "qi-sea",
+        "id": "curated-39735db8ac",
         "name": "气海老祖",
         "region": "eastern",
         "faction": "东海正气盟",
@@ -967,7 +967,7 @@
         ]
       },
       {
-        "id": "wu-shuai",
+        "id": "curated-bf5238aed0",
         "name": "吴帅",
         "region": "eastern",
         "faction": "龙人一脉 / 方源分身",
@@ -996,7 +996,7 @@
         ]
       },
       {
-        "id": "song-yi-shi",
+        "id": "curated-1432c25f15",
         "name": "宋亦诗",
         "region": "eastern",
         "faction": "宋家",
@@ -1017,7 +1017,7 @@
         ]
       },
       {
-        "id": "shen-cong-sheng",
+        "id": "curated-ba7cd5c1fa",
         "name": "沈从声",
         "region": "eastern",
         "faction": "沈家",
@@ -1038,7 +1038,7 @@
         ]
       },
       {
-        "id": "fang-gong",
+        "id": "curated-d5f9b080f3",
         "name": "房功",
         "region": "western",
         "faction": "房家",
@@ -1063,7 +1063,7 @@
         ]
       },
       {
-        "id": "fang-di-chang",
+        "id": "curated-88f198cade",
         "name": "房睇长",
         "region": "western",
         "faction": "房家",
@@ -1090,7 +1090,7 @@
         ]
       },
       {
-        "id": "thousand-transformations",
+        "id": "curated-1d6c68355f",
         "name": "千变老祖",
         "region": "western",
         "faction": "西漠散修",
@@ -1114,7 +1114,7 @@
         ]
       },
       {
-        "id": "hua-wen",
+        "id": "auto-0166-3ca3e2fb2a",
         "name": "华语老仙",
         "region": "white",
         "faction": "华文洞天 / 正气盟",
@@ -1135,10 +1135,10 @@
         ]
       },
       {
-        "id": "qi-jue",
+        "id": "auto-0167-14ad26849e",
         "name": "气绝魔仙",
-        "region": "unverified",
-        "faction": "复苏魔仙",
+        "region": "northern",
+        "faction": "北原归档",
         "role": "气道强者",
         "intro": "因时代变局复苏的气道强者，与气道传承和尊者棋局有关。",
         "gu": [
@@ -1161,7 +1161,7 @@
         ]
       },
       {
-        "id": "spectral-soul",
+        "id": "curated-ea4ee7ef26",
         "name": "幽魂魔尊",
         "region": "southern",
         "faction": "影宗",
@@ -1192,7 +1192,7 @@
         ]
       },
       {
-        "id": "ying-wu-xie",
+        "id": "curated-4a57efcd6c",
         "name": "影无邪",
         "region": "southern",
         "faction": "影宗",
@@ -1222,7 +1222,7 @@
         ]
       },
       {
-        "id": "red-lotus",
+        "id": "curated-975f301d82",
         "name": "红莲魔尊",
         "region": "central",
         "faction": "红莲真传",
@@ -1250,7 +1250,7 @@
         ]
       },
       {
-        "id": "paradise-earth",
+        "id": "curated-6ae71c255d",
         "name": "乐土仙尊",
         "region": "southern",
         "faction": "乐土传承",
