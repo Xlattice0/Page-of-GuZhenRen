@@ -90,6 +90,13 @@ button {
   backdrop-filter: saturate(160%) blur(24px);
 }
 
+.nav-leading {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 24px;
+}
+
 .brand-mark {
   display: inline-flex;
   align-items: center;
@@ -98,6 +105,150 @@ button {
   font-size: 0.9rem;
   font-weight: 750;
   white-space: nowrap;
+}
+
+.bgm-player {
+  display: flex;
+  width: clamp(260px, 24vw, 314px);
+  height: 34px;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 8px 3px 4px;
+  border: 1px solid rgba(247, 242, 231, 0.13);
+  border-radius: 6px;
+  background: rgba(18, 17, 15, 0.46);
+  color: rgba(247, 242, 231, 0.76);
+  transition: border-color 200ms ease, background 200ms ease;
+}
+
+.bgm-player:hover {
+  border-color: rgba(212, 181, 111, 0.32);
+  background: rgba(18, 17, 15, 0.72);
+}
+
+.bgm-player audio {
+  display: none;
+}
+
+.bgm-player.is-floating {
+  position: absolute;
+  z-index: 44;
+  top: 20px;
+  left: 22px;
+  width: min(306px, calc(100vw - 148px));
+  background: rgba(2, 5, 9, 0.46);
+  backdrop-filter: blur(18px) saturate(125%);
+}
+
+.bgm-command {
+  display: grid;
+  flex: 0 0 27px;
+  width: 27px;
+  height: 27px;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: rgba(247, 242, 231, 0.78);
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.bgm-command:hover {
+  background: rgba(212, 181, 111, 0.12);
+  color: #fff;
+}
+
+.bgm-track {
+  display: grid;
+  flex: 1 1 auto;
+  gap: 4px;
+  min-width: 0;
+}
+
+.bgm-caption {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.64rem;
+  line-height: 1;
+}
+
+.bgm-caption strong {
+  overflow: hidden;
+  color: rgba(247, 242, 231, 0.86);
+  font-weight: 560;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bgm-caption time {
+  flex: none;
+  color: rgba(247, 242, 231, 0.46);
+  font-variant-numeric: tabular-nums;
+}
+
+.bgm-seek,
+.bgm-volume {
+  height: 10px;
+  margin: 0;
+  appearance: none;
+  background: transparent;
+}
+
+.bgm-seek {
+  width: 100%;
+}
+
+.bgm-volume {
+  flex: 0 0 42px;
+  width: 42px;
+}
+
+.bgm-seek::-webkit-slider-runnable-track,
+.bgm-volume::-webkit-slider-runnable-track {
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(247, 242, 231, 0.2);
+}
+
+.bgm-seek::-webkit-slider-runnable-track {
+  background: linear-gradient(90deg, var(--gold) var(--seek-progress), rgba(247, 242, 231, 0.2) var(--seek-progress));
+}
+
+.bgm-seek::-webkit-slider-thumb,
+.bgm-volume::-webkit-slider-thumb {
+  width: 8px;
+  height: 8px;
+  margin-top: -3px;
+  border: 0;
+  border-radius: 50%;
+  appearance: none;
+  background: rgba(232, 214, 170, 0.92);
+}
+
+.bgm-seek::-moz-range-track,
+.bgm-volume::-moz-range-track {
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(247, 242, 231, 0.2);
+}
+
+.bgm-seek::-moz-range-progress {
+  height: 2px;
+  border-radius: 999px;
+  background: var(--gold);
+}
+
+.bgm-seek::-moz-range-thumb,
+.bgm-volume::-moz-range-thumb {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(232, 214, 170, 0.92);
 }
 
 .brand-dot {
@@ -4333,9 +4484,38 @@ button {
     padding: 0 16px;
   }
 
+  .nav-leading {
+    gap: 11px;
+    flex: none;
+  }
+
+  .bgm-player:not(.is-floating) {
+    width: 68px;
+    gap: 2px;
+    padding-right: 4px;
+  }
+
+  .bgm-player:not(.is-floating) .bgm-track,
+  .bgm-player:not(.is-floating) .bgm-volume {
+    display: none;
+  }
+
   .global-nav nav {
+    flex: 1 1 auto;
     gap: 12px;
+    min-width: 0;
     overflow-x: auto;
+    scrollbar-width: none;
+    white-space: nowrap;
+  }
+
+  .global-nav nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .global-nav nav a {
+    flex: none;
+    white-space: nowrap;
   }
 
   .product-rail {
@@ -4752,8 +4932,25 @@ button {
     padding: 0 12px;
   }
 
+  .nav-leading {
+    gap: 9px;
+  }
+
   .brand-mark {
-    font-size: 0.78rem;
+    width: auto;
+    gap: 0;
+    overflow: visible;
+    font-size: 0;
+  }
+
+  .bgm-player.is-floating {
+    top: 14px;
+    left: 12px;
+    width: min(236px, calc(100vw - 112px));
+  }
+
+  .bgm-player.is-floating .bgm-volume {
+    display: none;
   }
 
   .global-nav nav {

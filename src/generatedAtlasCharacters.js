@@ -8,14 +8,14 @@ export const generatedAtlasCharacters = [
     "intro": "青茅山白家天才蛊师，北冥冰魄体。与古月方源从同门到互相利用，多次交锋亦敌亦友。",
     "gu": [
       "阳蛊(八转)",
-      "阴蛊",
+      "阴蛊(?转)",
       "冰雪道仙蛊(八转)",
-      "阴阳转身蛊"
+      "阴阳转身蛊(?转)"
     ],
     "moves": [
       "北冥冰魄杀招(八转)",
       "冰封天地(八转)",
-      "白相真传杀招"
+      "白相真传杀招(?转)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -30,7 +30,7 @@ export const generatedAtlasCharacters = [
           ]
         },
         {
-          "path": "待考",
+          "path": "暗道",
           "items": [
             {
               "name": "阴蛊",
@@ -165,7 +165,7 @@ export const generatedAtlasCharacters = [
       "吃力蛊(六转)",
       "铁冠鹰力蛊(六转)",
       "飞熊之力蛊(六转)",
-      "力蛊",
+      "力蛊(?转)",
       "飞剑蛊(七转)",
       "浪剑蛊(七转)",
       "剑遁蛊(七转)",
@@ -175,8 +175,8 @@ export const generatedAtlasCharacters = [
       "血脉蛊(七转)",
       "血气蛊(六转)",
       "血颅蛊(六转)",
-      "血迹蛊",
-      "血誓蛊",
+      "血迹蛊(?转)",
+      "血誓蛊(?转)",
       "换魂蛊(七转)",
       "搜魂蛊(七转)",
       "摄魂蛊(七转)",
@@ -185,7 +185,7 @@ export const generatedAtlasCharacters = [
       "名缰蛊(七转)",
       "诗壁蛊(七转)",
       "道可道蛊(六转)",
-      "提纲蛊",
+      "提纲蛊(?转)",
       "定仙游(七转)",
       "镇宇蛊(七转)",
       "行空蛊(七转)",
@@ -193,7 +193,7 @@ export const generatedAtlasCharacters = [
       "拓宇蛊(七转)",
       "偷生蛊(八转)",
       "大盗蛊(八转)",
-      "偷袭蛊",
+      "偷袭蛊(?转)",
       "地脉蛊(八转)",
       "领土蛊(七转)",
       "黄沙蛊(六转)",
@@ -218,28 +218,28 @@ export const generatedAtlasCharacters = [
       "铁壁蛊(七转)",
       "妇人心蛊(六转)",
       "赤铜火蚁蛊(七转)",
-      "星念蛊",
-      "星光蛊",
-      "星芽蛊",
-      "星痕蛊",
-      "星眸蛊",
-      "暗渡蛊",
-      "骨刺蛊"
+      "星念蛊(?转)",
+      "星光蛊(?转)",
+      "星芽蛊(?转)",
+      "星痕蛊(?转)",
+      "星眸蛊(?转)",
+      "暗渡蛊(?转)",
+      "骨刺蛊(?转)"
     ],
     "moves": [
       "万我(七转)",
       "逆流护身印(八转)",
-      "万蛟",
-      "大盗鬼手",
-      "阎罗战场",
-      "万剑鬼蛟",
-      "剑客",
-      "剑羽刀翅",
-      "万念剑瀑",
-      "阎帝",
-      "鬼官衣",
-      "人如故",
-      "江山如故",
+      "万蛟(?转)",
+      "大盗鬼手(?转)",
+      "阎罗战场(?转)",
+      "万剑鬼蛟(?转)",
+      "剑客(?转)",
+      "剑羽刀翅(?转)",
+      "万念剑瀑(?转)",
+      "阎帝(?转)",
+      "鬼官衣(?转)",
+      "人如故(?转)",
+      "江山如故(?转)",
       "春剪(八转)",
       "夏扇(八转)",
       "冬裘(八转)",
@@ -276,9 +276,9 @@ export const generatedAtlasCharacters = [
       "星火遁(六转)",
       "星云磨盘(六转)",
       "万星飞萤(六转)",
-      "翠流珠",
-      "天地游",
-      "风火光电轮"
+      "翠流珠(?转)",
+      "天地游(?转)",
+      "风火光电轮(?转)"
     ],
     "houses": [
       "四元方悔血炼池(九转)",
@@ -1089,17 +1089,20 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "古月方源的同族弟弟，资质中上，性格温和善良。与方源形成鲜明对照，后期被天庭收为弟子。",
+    "intro": "古月方源孪生弟弟，甲等资质。青茅山古月山寨出身，开窍大典测出甲等后成为山寨希望之星。青茅山冰封后被天鹤上人救至中洲仙鹤门，后被方源救至琅琊福地，饱受毛民欺凌。凤九歌将其救回后得天庭扶持，转修血道升仙，拜赤心行者门下，继承诛魔榜榜主。",
     "gu": [
-      "冷血仙蛊",
-      "血仇仙蛊",
-      "奴道仙蛊"
+      "冷血仙蛊(六转/本命)",
+      "血仇仙蛊(六转)",
+      "血渐冷(六转)",
+      "血亲心仇(七转)"
     ],
     "moves": [
-      "血渐冷",
-      "血亲心仇"
+      "血渐冷(六转/冻结对手热血至死)",
+      "血亲心仇(七转/模拟运道克制方源)"
     ],
-    "houses": [],
+    "houses": [
+      "诛魔榜"
+    ],
     "immortalGuProfile": {
       "groups": [
         {
@@ -1107,11 +1110,11 @@ export const generatedAtlasCharacters = [
           "items": [
             {
               "name": "冷血仙蛊",
-              "rank": "?转"
+              "rank": "六转"
             },
             {
               "name": "血仇仙蛊",
-              "rank": "?转"
+              "rank": "六转"
             }
           ]
         },
@@ -1134,16 +1137,18 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "南疆仙尊，乐土祖地开创者。陆畏因的传承来源，对古月方源留下后手布局。",
+    "intro": "近古时代九转蛊尊，十大尊者之一，南疆出身。真名乐土，别名青兽/土乐，菇人与人混血。性情最为仁厚慈悲，与人不争。独创天机仙蛊，创轮回战场——古往今来第一战场杀招，范围内战死者不会真正死亡。抚平幽魂魔尊对天下的伤害，五域建立多处乐土。",
     "gu": [
-      "土道仙蛊(九转)",
-      "乐土传承仙蛊",
-      "救赎仙蛊"
+      "土道仙蛊(九转/成尊)",
+      "天机仙蛊(九转/独创)",
+      "乐土传承仙蛊(?转)",
+      "救赎仙蛊(?转)"
     ],
     "moves": [
+      "轮回战场(九转/古今第一战场杀招)",
       "三世梦境(九转)",
-      "乐土救赎杀招",
-      "大地复苏"
+      "大地复苏(?转)",
+      "乐土救赎杀招(?转)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -1154,15 +1159,20 @@ export const generatedAtlasCharacters = [
             {
               "name": "土道仙蛊",
               "rank": "九转"
-            },
-            {
-              "name": "乐土传承仙蛊",
-              "rank": "?转"
             }
           ]
         },
         {
-          "path": "待考",
+          "path": "天道",
+          "items": [
+            {
+              "name": "天机仙蛊",
+              "rank": "九转"
+            }
+          ]
+        },
+        {
+          "path": "人道",
           "items": [
             {
               "name": "救赎仙蛊",
@@ -1180,14 +1190,14 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "南疆蛊仙，乐土仙尊的传承者。与古月方源有合作与布局关系。",
+    "intro": "南疆蛊仙，乐土仙尊传承者。神秘莫测，掌握泥沙俱下、土扶成墙、六向迷途三大杀招，三者融合可形成迷境。收叶凡为徒，搭救上极天鹰。与方源既有合作又有博弈，是乐土仙尊留下的后手执行者。",
     "gu": [
-      "土道仙蛊",
-      "乐土传承仙蛊"
+      "土道仙蛊(八转)"
     ],
     "moves": [
-      "三世梦境(八转)",
-      "乐土救赎术"
+      "泥沙俱下(八转)",
+      "土扶成墙(八转)",
+      "六向迷途(八转)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -1215,14 +1225,11 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "南疆商家大小姐，商燕飞之女。在商道和经营上有极高天赋，与古月方源有旧识和交易。",
+    "intro": "南疆商家少主，商燕飞之女。本名张心慈，商燕飞年轻时在张家的私生女，母亲死后变卖家产组建商队。生性柔弱心慈手软，却在商道上天赋异禀。在方源帮助下回归商家后迅速崛起，最终成为商家族长。",
     "gu": [
-      "商道仙蛊"
+      "商道仙蛊(八转)"
     ],
-    "moves": [
-      "商家经营术",
-      "商道博弈"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -1245,15 +1252,11 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "南疆商家现任家主，商心慈的父亲。在商道上与古月方源有交锋。",
+    "intro": "南疆商家族长，商心慈之父。年轻时在张家留下私生女商心慈。权势滔天，一举一动都能影响南疆格局。在商道上与古月方源有交锋与合作。",
     "gu": [
-      "血道仙蛊",
-      "商道仙蛊"
+      "商道仙蛊(八转)"
     ],
-    "moves": [
-      "商家经营杀招",
-      "血道杀招"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -1285,9 +1288,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "南疆商家蛊仙，商家长老。",
+    "intro": "南疆商家少主之一，商睚眦下台后代其打理势力。觊觎少主之位但被商心慈异军突起所阻。参与三王传承探索。",
     "gu": [
-      "商道蛊"
+      "商道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -1312,15 +1315,11 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "南疆铁家家主的女儿，性格刚烈嫉恶如仇。追查方源的踪迹并与之对立。",
+    "intro": "南疆铁家神捕铁血冷之女，性格刚烈嫉恶如仇。负责调查青茅山贾金生命案，追查方源踪迹并与之对立。后来在商家与叶凡交手，经历多次成长。",
     "gu": [
-      "律道仙蛊",
-      "铁家侦查仙蛊"
+      "侦查仙蛊(?转)"
     ],
-    "moves": [
-      "律道追查",
-      "铁家侦查术"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -1347,15 +1346,12 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "南疆铁家前任家主，铁若男的父亲。",
+    "intro": "南疆铁家神捕，铁若男之父。受贾富重金聘用调查青茅山贾金生命案。战力强大，在狼潮中现身救下古月博与白家族长，声名显赫。",
     "gu": [
-      "侦查仙蛊",
-      "律道仙蛊(八转)"
+      "律道仙蛊(八转)",
+      "侦查仙蛊(?转)"
     ],
-    "moves": [
-      "神捕追查(八转)",
-      "律道压制"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -1382,14 +1378,12 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "南疆武家老祖母，武庸的母亲。实力高深莫测。",
+    "intro": "南疆武家太上大长老，武庸之母，一代传奇女蛊仙。年轻时因与外人私通被罚禁足，却意外获得武家先人传承，暗中修至八转。大限将至前将仙蛊与武家权柄传给武庸。拥有食道仙蛊药香。",
     "gu": [
       "风道仙蛊(八转)",
-      "武家仙蛊"
+      "食道仙蛊药香(八转/治疗)"
     ],
-    "moves": [
-      "风道杀招(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -1416,15 +1410,11 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "南疆武家继承人，武独秀之子。与古月方源既是敌手也有交易，性格刚硬重视家族利益。",
+    "intro": "南疆武家太上大长老，武独秀之子，八转风道蛊仙。母亲大限后将武家交其执掌。外表才具不足，实则韬光养晦、隐藏极深。南联盟主，统领南疆正道对抗天庭。拥有仙蛊屋玉清滴风小竹楼。",
     "gu": [
-      "风道仙蛊(八转)",
-      "武家传承仙蛊(八转)"
+      "风道仙蛊(八转)"
     ],
-    "moves": [
-      "送友风(八转)",
-      "风道杀招(八转)"
-    ],
+    "moves": [],
     "houses": [
       "玉清滴风小竹楼"
     ],
@@ -1453,15 +1443,15 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "幽魂魔尊的分魂之一，影宗真传。与古月方源有夺胎因果，曾附体古月方源。",
+    "intro": "幽魂魔尊分魂之一，影宗真传。砚石老人为其命名，出生仅七个时辰即成就六转蛊仙。掌握梦道杀招引魂入梦，纯梦求真体。义天山大战中与方源互换身体。与白凝冰、妙音仙子、白兔姑娘等人影宗同行。",
     "gu": [
       "梦道仙蛊(八转)",
       "魂道仙蛊(八转)",
-      "引魂入梦蛊"
+      "引魂入梦蛊(七转)"
     ],
     "moves": [
-      "引魂入梦(七转)",
-      "魂道杀招"
+      "引魂入梦(七转/梦道巅峰杀招)",
+      "纯梦求真变(七转)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -1492,6 +1482,15 @@ export const generatedAtlasCharacters = [
               "rank": "?转"
             }
           ]
+        },
+        {
+          "path": "待考",
+          "items": [
+            {
+              "name": "引魂入梦蛊",
+              "rank": "?转"
+            }
+          ]
         }
       ]
     },
@@ -1503,21 +1502,22 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "影宗之主，魂道至尊。以分魂之术分裂出影无邪紫山真君等，与古月方源争夺至尊仙胎蛊。",
+    "intro": "近古时代九转魔尊，十大尊者之一，南疆出身。开创魂道，杀性最重，屠戮天下无物不可杀。创立影宗，魂魄有千臂千手三头颅。炼制至尊仙胎蛊，以分魂之术分裂出影无邪、紫山真君、薄青、砚石老人等。名言：天下之大，壮魂首选荡魂山，炼魂首选落魄谷。",
     "gu": [
-      "魂道仙蛊(九转)",
-      "至尊仙胎蛊(炼制者)",
-      "食道仙蛊"
+      "魂道仙蛊(九转/开创)",
+      "至尊仙胎蛊(九转/炼制者)",
+      "食道仙蛊(九转)"
     ],
     "moves": [
-      "井井有条(九转)",
-      "魂道灭世杀招",
-      "至尊仙胎炼制法",
-      "魂穿"
+      "魂狩(战场杀招)",
+      "阎罗战场(?转)",
+      "阎帝(?转)",
+      "鬼官衣(?转)"
     ],
     "houses": [
       "万鬼楼",
-      "武魂殿"
+      "武魂殿",
+      "羽圣城"
     ],
     "immortalGuProfile": {
       "groups": [
@@ -1558,13 +1558,11 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "主要人物",
-    "intro": "灵缘斋蛊仙，凤九歌的妻子，凤金煌的母亲。",
+    "intro": "中洲灵缘斋蛊仙，凤九歌之妻，凤金煌之母。以真情感化凤九歌脱离魔道归入正道。",
     "gu": [
       "音道仙蛊"
     ],
-    "moves": [
-      "音道杀招"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -1587,14 +1585,14 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "主要人物",
-    "intro": "凤九歌与白晴仙子的女儿，灵缘斋当代仙子。与古月方源在梦道领域竞争。",
+    "intro": "凤九歌与白晴仙子之女，灵缘斋当代仙子。原为大梦仙尊种子人选，宿命蛊毁后不再注定。掌握梦翼仙蛊，与方源在梦道领域竞争。",
     "gu": [
-      "梦翼仙蛊",
+      "梦翼仙蛊(八转)",
       "梦道仙蛊"
     ],
     "moves": [
-      "梦翼翱翔(八转)",
-      "梦道杀招"
+      "纯梦求真变(七转)",
+      "碎梦(八转)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -1622,15 +1620,20 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "主要人物",
-    "intro": "中洲灵缘斋音道蛊仙，凤金煌之父，白晴仙子的丈夫。执掌命运歌，与古月方源为敌手。",
+    "intro": "中洲灵缘斋音道蛊仙，亚仙尊战力。自幼痴迷音乐，得空响仙翁传承。曾一人一琴连败七大正道门派，后为白晴仙子感化归正。宿命之战中高唱命运歌反水天庭，打破宿命。毕生追求唱尽自己、众生和天地，共创作九大歌曲。",
     "gu": [
-      "音道仙蛊(八转)",
-      "命甲仙蛊"
+      "命甲仙蛊(八转/核心)",
+      "音道仙蛊(八转)"
     ],
     "moves": [
-      "命运歌(八转)",
-      "天地歌(八转)",
-      "俯首歌(八转)"
+      "碧玉歌(八转/化万物为玉)",
+      "得宝歌(八转/安抚炼化野生蛊虫)",
+      "天地歌(八转/镇压一切)",
+      "离歌(八转/分离蛊阵与仙蛊屋)",
+      "俯首歌(八转/涵盖智奴音魂四道)",
+      "大风歌(八转/召来大同风)",
+      "命运歌(八转/打破宿命)",
+      "向天歌(八转)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -1658,16 +1661,15 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "主要人物",
-    "intro": "天庭出身的魔尊，龙公的弟子。开创红莲真传，古月方源受益于其传承。",
+    "intro": "上古三大魔尊之一，宙道九转尊者，中洲天庭出身。真名洪亭，龙公之徒。炼制春秋蝉，以爱情蛊损坏宿命蛊。在光阴长河留七道真传，布局百万年对抗宿命。",
     "gu": [
-      "春秋蝉(六转)",
-      "悔蛊",
+      "春秋蝉(六转/炼制者)",
       "宙道仙蛊(九转)"
     ],
     "moves": [
-      "红莲真传(九转)",
-      "春秋蝉逆转(九转)",
-      "宙道杀招"
+      "前有古人(九转/宙道杀招)",
+      "后有来者(九转)",
+      "红莲真传(七道)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -1699,15 +1701,23 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "主要人物",
-    "intro": "天庭守护者，红莲魔尊的师尊。实力登顶亚仙尊，与古月方源在宿命大战中正面交锋。",
+    "intro": "天庭三公之一，八转气道兼变化道蛊仙，亚仙尊战力。龙人之祖，红莲魔尊之师。创人人如龙炼蛊法开创龙人一族。镇压帝藏生于藏龙窟，宿命大战中以龙御上宾碾压八转群仙，最终寿尽而亡。",
     "gu": [
       "气道仙蛊(八转)",
       "变化道仙蛊(八转)"
     ],
     "moves": [
-      "三气归来(八转)",
-      "龙御上宾(八转)",
-      "气道杀招"
+      "龙御上宾(八转/燃寿增幅越战越强)",
+      "三气归来(八转/元始仙尊所创王牌)",
+      "龙爪击(八转/撕裂防御)",
+      "乱龙拳(八转/混乱念头)",
+      "撼世龙锤(八转/击穿劫运坛)",
+      "气墙/自转游龙气墙(八转/三重叠加)",
+      "气流剪(八转/群体攻击)",
+      "气呼山(八转/镇压帝藏生)",
+      "气盖山河(八转/镇压万里)",
+      "龙啸波+随身闪(八转/瞬移)",
+      "人人如龙炼蛊法(人道杀招/开创龙人族)"
     ],
     "houses": [
       "监天塔"
@@ -1742,17 +1752,19 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "主要人物",
-    "intro": "天庭尊者之一，星道始祖。在天庭之战中与古月方源巨阳仙尊形成三尊对峙。",
+    "intro": "太古时代九转仙尊，天庭二代仙王，中洲灵缘斋出身。开创智道与星道，十大尊者中最智慧者。执掌智慧蛊与宿命蛊，打造监天塔与星宿棋盘。后合道天意。",
     "gu": [
       "智道仙蛊(九转)",
-      "星道仙蛊(九转)"
+      "星道仙蛊(九转)",
+      "智慧蛊(九转)"
     ],
     "moves": [
-      "星宿棋盘推演(九转)",
-      "智道尊者杀招"
+      "九九连环不绝阵(九转)",
+      "星投大阵(九转)"
     ],
     "houses": [
-      "星宿棋盘"
+      "星宿棋盘",
+      "监天塔"
     ],
     "immortalGuProfile": {
       "groups": [
@@ -1784,15 +1796,12 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "主要人物",
-    "intro": "灵缘斋运道仙子，马鸿运的恋人。继承巨阳仙尊运道传承，与古月方源有多次运道交锋。",
+    "intro": "灵缘斋运道仙子，马鸿运恋人，天外之魔。继承巨阳仙尊运道真传，与马鸿运共同执掌爱情蛊。宿命蛊毁灭后与方源多次运道交锋。",
     "gu": [
-      "爱情蛊(八转)",
-      "运道仙蛊"
+      "爱情蛊(八转/与马鸿运共有)",
+      "运道仙蛊(八转)"
     ],
-    "moves": [
-      "爱情蛊杀招(八转)",
-      "运道协同"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -1819,15 +1828,12 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "主要人物",
-    "intro": "天庭智道蛊仙，擅长推演天机。多次推算古月方源的行踪，后期受制于幽魂魔尊。",
+    "intro": "中洲灵缘斋八转智道蛊仙，当世智道大宗师。修行星宿真传，智道造诣媲美监天塔主。宿命之战中统领天庭大局，后受制于幽魂魔尊被魂穿叛变天庭。",
     "gu": [
       "智道仙蛊(八转)",
       "星道仙蛊(八转)"
     ],
-    "moves": [
-      "智道推算(八转)",
-      "星道推演(八转)"
-    ],
+    "moves": [],
     "houses": [
       "星宿棋盘"
     ],
@@ -1861,13 +1867,11 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "主要人物",
-    "intro": "北原力道八转蛊仙。与古月方源有多次力道交易和对抗。",
+    "intro": "北原八转力道蛊仙，霸仙。与方源有多次力道交易和对抗。战力强悍，曾击败黑月仙子（黑楼兰）。",
     "gu": [
       "力道仙蛊(八转)"
     ],
-    "moves": [
-      "楚门力道杀招(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -1890,14 +1894,11 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "主要人物",
-    "intro": "北原黑家前任家主，黑楼兰的父亲。与黑楼兰有父女仇怨，扶持姜钰。",
+    "intro": "北原黑家前任家主，黑楼兰之父。觊觎女儿十绝体体质欲加害，被黑楼兰手刃报仇。与姜钰有扶持利用关系。",
     "gu": [
       "暗道仙蛊(八转)"
     ],
-    "moves": [
-      "暗箭杀招(八转)",
-      "黑牢囚困"
-    ],
+    "moves": [],
     "houses": [
       "黑牢"
     ],
@@ -1922,15 +1923,18 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "主要人物",
-    "intro": "北原黑家继承人，十绝体之一的大力真武体。与古月方源建立盟约，联手在北原争夺真阳楼。",
+    "intro": "北原黑家继承人，黑城与苏仙儿之女，十绝体中的大力真武体。因父亲觊觎其体质从小伪装男儿身。手刃黑城报仇，与方源盟约联手争夺真阳楼。后诈死以黑月仙子身份潜入灵缘斋。",
     "gu": [
       "力道仙蛊(八转)",
-      "炎道仙蛊"
+      "炎道仙蛊",
+      "暗渡仙蛊"
     ],
     "moves": [
-      "大力真武杀招(八转)"
+      "图腾(八转/万兽混彩天所得)"
     ],
-    "houses": [],
+    "houses": [
+      "黑牢"
+    ],
     "immortalGuProfile": {
       "groups": [
         {
@@ -1961,19 +1965,27 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "主要人物",
-    "intro": "北原仙尊，运道始祖。与古月方源多次尊者级对弈，与星宿仙尊形成三尊对峙。",
+    "intro": "中古时代九转仙尊，十大尊者之一，北原出身。开创运道、血道、阴阳道三大流派。血脉后裔遍布五域，创建长生天。寿八千岁余，名言恨不能尽娶天下女子。分身血海老祖开创血道。疯魔窟重生后兼修血运两道。",
     "gu": [
       "运道仙蛊(九转)",
-      "血道仙蛊"
+      "鸿运齐天蛊(八转/众生运核心)",
+      "狗屎运蛊"
     ],
     "moves": [
-      "运道庇护(九转)",
-      "血脉追踪",
-      "劫运坛发动"
+      "转运金光大道(九转)",
+      "飞来横祸(九转)",
+      "应运而生(九转/复活)",
+      "绵金撞柱(九转/破逆流护身印)",
+      "流连废运积重而返(九转/消磨气运)",
+      "众生天地我居中(九转/抽取五域气运)",
+      "万事无常有飞黄(九转/己运众生运天地运大成)"
     ],
     "houses": [
-      "劫运坛",
-      "八十八角真阳楼"
+      "劫运坛(众生运核心)",
+      "八十八角真阳楼",
+      "镇运天宫",
+      "广夏后宫",
+      "心悦后宫"
     ],
     "immortalGuProfile": {
       "groups": [
@@ -2005,15 +2017,11 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "主要人物",
-    "intro": "琅琊洞天之地灵，掌管琅琊派。与古月方源有合作与决裂，与毛六潜伏关系复杂。",
+    "intro": "琅琊福地之地灵，长毛老祖所留。掌管琅琊派和炼道传承。与方源有合作与决裂，与毛六潜伏关系复杂。",
     "gu": [
-      "炼道仙蛊",
-      "长毛传承仙蛊"
+      "炼道仙蛊(八转)"
     ],
-    "moves": [
-      "炼道主持",
-      "长毛炼道大阵"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -2040,13 +2048,11 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "主要人物",
-    "intro": "北原蛊仙，与黑楼兰有亲族同盟关系，与古月方源有盟约交易。",
+    "intro": "北原蛊仙，与黑楼兰有亲族同盟关系。与方源有盟约交易。",
     "gu": [
       "信道仙蛊(八转)"
     ],
-    "moves": [
-      "山盟誓约(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -2069,13 +2075,11 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "主要人物",
-    "intro": "北原马家运道传人，赵怜云的恋人。运道天赋异禀，与巨阳仙尊有运道牵连。",
+    "intro": "北原马家运道传人，赵怜云恋人。运道天赋异禀，身怀鸿运齐天蛊。与巨阳仙尊有运道牵连。",
     "gu": [
       "鸿运齐天蛊(八转)"
     ],
-    "moves": [
-      "鸿运齐天(被动·运道庇护)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -2098,15 +2102,15 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "主要人物",
-    "intro": "东海蛊仙，人如故杀招的持有者。与古月方源同行，在东海和北原多次联手。",
+    "intro": "北原宙道蛊仙，人如故与江山如故杀招持有者。与方源在东海和北原多次联手，是方源重要的同行伙伴。",
     "gu": [
       "人如故(八转)",
       "江山如故(八转)",
-      "宙道仙蛊"
+      "宙道仙蛊(八转)"
     ],
     "moves": [
-      "人如故(治疗)",
-      "江山如故(修复)"
+      "人如故(八转)",
+      "江山如故(八转)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -2138,7 +2142,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "主要人物",
-    "intro": "东海气海洞天之主，古月方源的分身之一。",
+    "intro": "东海气海洞天之主，八转气道蛊仙。古月方源的分身之一，在东海建立威望。掌握气海无量等气道杀招，与气绝魔仙在东海对决。",
     "gu": [
       "气道仙蛊(八转)"
     ],
@@ -2168,12 +2172,12 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "主要人物",
-    "intro": "东海蛊仙，俘虏古月方正，后天庭赎回。",
+    "intro": "东海沈家八转音道蛊仙。奴役悲风老人，俘虏古月方源后天庭赎回。",
     "gu": [
       "音道仙蛊(八转)"
     ],
     "moves": [
-      "音道杀招(八转)"
+      "绕梁之音(八转/奴役同级蛊仙)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -2197,13 +2201,11 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "主要人物",
-    "intro": "东海蛊仙，与古月方源有东海旧事。",
+    "intro": "东海宋家女蛊仙，与古月方源有东海旧事。引导李逍遥入道，与李逍遥联手可抗八转。",
     "gu": [
       "水道仙蛊"
     ],
-    "moves": [
-      "水道杀招"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -2226,16 +2228,12 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "主要人物",
-    "intro": "东海龙人蛊仙，后被古月方源炼化为分身，负责东海事务。",
+    "intro": "东海龙人蛊仙，龙宫之主。古月方源将其炼化为分身，负责东海事务，奴役帝藏生。",
     "gu": [
       "奴道仙蛊(八转)",
       "龙人传承仙蛊"
     ],
-    "moves": [
-      "龙人战法(八转)",
-      "奴道行军",
-      "万军蚁穴(战场)"
-    ],
+    "moves": [],
     "houses": [
       "龙宫"
     ],
@@ -2264,13 +2262,11 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "主要人物",
-    "intro": "西漠房家继承人，房功之子。与古月方源有算计与争夺。",
+    "intro": "西漠房家继承人，房功之子，八转智道蛊仙。与方源有算计与争夺，在西漠战场上对抗天庭。",
     "gu": [
       "智道仙蛊(八转)"
     ],
-    "moves": [
-      "智道推算(八转)"
-    ],
+    "moves": [],
     "houses": [
       "豆神宫"
     ],
@@ -2295,14 +2291,12 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "主要人物",
-    "intro": "西漠房家家主，房睇长的父亲。",
+    "intro": "西漠房家族长，房睇长之父，八转土道蛊仙。掌管豆神宫与问津坞。",
     "gu": [
       "土道仙蛊(八转)",
       "房家仙蛊"
     ],
-    "moves": [
-      "土道固守(八转)"
-    ],
+    "moves": [],
     "houses": [
       "豆神宫",
       "问津坞"
@@ -2332,12 +2326,12 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "主要人物",
-    "intro": "西漠蛊仙，变化道修行者。与古月方源在真传争夺中交锋。",
+    "intro": "西漠八转变化道蛊仙，占据西漠沙漠数千年。继承狂蛮魔尊变化道真传，号称千变。好色，娶妻成百上千。与翠波仙子有旧，与方源在真传争夺中交锋。",
     "gu": [
       "变化道仙蛊(八转)"
     ],
     "moves": [
-      "万像宫变化(八转)"
+      "千变万化(八转)"
     ],
     "houses": [
       "万像宫"
@@ -2363,9 +2357,9 @@ export const generatedAtlasCharacters = [
     "region": "white",
     "faction": "太古白天归档",
     "role": "主要人物",
-    "intro": "太古白天洞天之主。",
+    "intro": "太古白天华文洞天之主，八转信道蛊仙。",
     "gu": [
-      "信道仙蛊"
+      "信道仙蛊(八转)"
     ],
     "moves": [],
     "houses": [],
@@ -3397,11 +3391,13 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "主要人物",
-    "intro": "南疆翼家太上大长老，八转变化道蛊仙。擅长加持他人，加持手段闻名五域。",
+    "intro": "南疆翼家太上大长老，八转变化道蛊仙。招牌杀招人形变，擅长加持他人，加持手段闻名五域。南疆正道核心战力，参与宿命之战对抗天庭。",
     "gu": [
       "变化道仙蛊(八转)"
     ],
-    "moves": [],
+    "moves": [
+      "人形变(八转/变化道加持)"
+    ],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -3424,7 +3420,7 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "西漠三转炎道蛊师，以丹火蛊为主要手段。性格直爽大方，后成为商心慈下属。",
+    "intro": "南疆四转炎道蛊师，以丹火蛊为主要手段。性格直爽大方，后成为商心慈下属。在南疆自来火中登场。",
     "gu": [
       "丹火蛊(三转)"
     ],
@@ -3531,12 +3527,12 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆巴家太上大长老，八转律道蛊仙。一生苦修连击之术，律道辅助杀招可让其他杀招威力迅速递增。南疆正道核心战力。",
     "gu": [
-      "力道仙蛊(八转)"
+      "律道仙蛊(八转)"
     ],
     "moves": [
-      "力道重击(八转)"
+      "连击之术(八转/律道辅助)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -3560,13 +3556,11 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆散修蛊仙，红宝石眼眸。主持梦境仙缘生意凡蛊屋，提供蛊仙撞仙缘服务。合作众多南疆正道家族，财富暴增。",
     "gu": [
       "变化道仙蛊(八转)"
     ],
-    "moves": [
-      "白兔变化(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -3589,9 +3583,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆白家相关人物。白相仙蛇蛊与北冥冰魄体有特殊关联，曾因白凝冰的体质而现身。",
     "gu": [
-      "变化道相关蛊"
+      "变化道相关蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -3616,9 +3610,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "百家寨第一家老，族长之叔父，六十八岁。在商道上与方源白凝冰相遇。",
     "gu": [
-      "商道蛊"
+      "商道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -3643,9 +3637,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "商队中的侦察蛊师，被方源训斥后怀怨。",
     "gu": [
-      "医道蛊"
+      "医道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -3670,9 +3664,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "商队青年蛊师，陈家子弟，负责喂食翼蛇。一转修为，好色。",
     "gu": [
-      "金道蛊"
+      "金道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -3697,12 +3691,13 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆池家太上大长老，八转阵道大宗师。主持布置义天山超级蛊阵，平生最强仙蛊阵为三曲九池阵。认可池伤可继承其衣钵。",
     "gu": [
-      "水道仙蛊(八转)"
+      "水道仙蛊(八转)",
+      "阵道仙蛊(八转)"
     ],
     "moves": [
-      "水道杀招(八转)"
+      "三曲九池阵(八转/巅峰仙蛊阵)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -3726,9 +3721,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆池家蛊仙，阵道天才。被池曲由认可为衣钵传人，有望成为阵道大宗师。追求乔丝柳，巡查超级蛊阵各处。",
     "gu": [
-      "水道仙蛊"
+      "水道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -3753,7 +3748,7 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "姚葛辟福地之地灵，形如大树。认主条件包括十万仙元石和元莲仙尊的鲜血。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -3766,18 +3761,17 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆七转蛊仙紫嫣然，号称毒蝎娘子。坐镇紫毒福地，掌握入梦游仙蛊。擅长毒道，福地中栽种无数毒草。",
     "gu": [
-      "毒道仙蛊(八转)"
+      "毒道仙蛊(七转)",
+      "入梦游仙蛊(?转)"
     ],
-    "moves": [
-      "毒道杀招(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
         {
-          "path": "待考",
+          "path": "毒道",
           "items": [
             {
               "name": "毒道仙蛊",
@@ -3795,7 +3789,7 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "粉红地灵蛇，对方源产生崇拜之情的地灵。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -3808,10 +3802,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "古月一族族长，古月方正与方源的舅父。三转蛊师，在狼潮中守御山寨，寄望方正对抗白凝冰。",
     "gu": [
-      "家法蛊",
-      "月光蛊"
+      "家法蛊(?转)",
+      "月光蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -3845,9 +3839,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "古月一族子弟，古月赤练之孙。开窍大典测出乙等资质，依赖祖父权势暗中作弊提升。",
     "gu": [
-      "力道相关蛊"
+      "力道相关蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -3872,9 +3866,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "古月一族当权家老，赤之分家领袖，一头红发。与古月漠尘对立，暗中为孙子古月赤城铺路。",
     "gu": [
-      "赤练蛇蛊"
+      "赤练蛇蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -3899,9 +3893,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "古月一族蛊师，方源方正之舅父。对两兄弟刻薄，设法拖延方源修行，阻挠其升到二转。",
     "gu": [
-      "冰道蛊"
+      "冰道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -3926,9 +3920,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "古月一族二转蛊师，擅长防御，有一把力气。曾败于二转时的白凝冰手下但逃得一命。",
     "gu": [
-      "兽力虚影蛊"
+      "兽力虚影蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -3953,9 +3947,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "古月一族子弟，古月漠尘之孙。开窍大典乙等资质，元海六成六。身材高大马脸，与古月赤城竞争。",
     "gu": [
-      "力道相关蛊"
+      "力道相关蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -3980,7 +3974,7 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "古月一族当权家老，漠之分家领袖。马脸老者，与古月赤练长期对立，扶持孙子古月漠北争夺家族权势。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -3993,10 +3987,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "古月一族二转精英，乙等资质中的伪甲等。族长古月博亲自抚养，脾气温和有亲和力。被定为族长接班人培养，最终死于狼潮围攻。",
     "gu": [
-      "月光蛊",
-      "治疗蛊"
+      "月光蛊(?转)",
+      "治疗蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4030,9 +4024,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "古月一族治疗蛊师，古月青书小组成员。被冰刃风暴斩杀。",
     "gu": [
-      "药道蛊"
+      "药道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4057,10 +4051,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "古月一族药堂家老，族中第一治疗蛊师。资格极老，可坐着与族长答话。疼爱孙女古月药乐。",
     "gu": [
-      "药道蛊",
-      "治疗蛊"
+      "药道蛊(?转)",
+      "治疗蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4089,9 +4083,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "古月药姬孙女，乙等资质。狼潮中深陷狼群失踪，凶多吉少。",
     "gu": [
-      "药道蛊"
+      "药道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4116,7 +4110,7 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "古月一族先代族长，利用血鬼尸蛊化为僵尸长存。千年经营积累庞大血蝠群，守护古月山寨。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -4129,7 +4123,7 @@ export const generatedAtlasCharacters = [
     "region": "renzu",
     "faction": "人祖传承归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "，被统称之为十绝体。 “人祖在彻底死亡之前，前前后后一共生有十子。大儿子太日阳莽，二女儿古月阴荒……里面就有一子，名为北冥冰魄。人祖的传说，似真似假，影射了蛊师修行中的许多秘密。人祖十子，分别代表",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -4142,9 +4136,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [
-      "暗道仙蛊"
+      "暗道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4169,10 +4163,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆散修蛊仙，修行木道兼酒道。",
     "gu": [
-      "木道仙蛊",
-      "酒道蛊"
+      "木道仙蛊(?转)",
+      "酒道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4206,9 +4200,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "青茅山商队领袖，四转蛊师。与古月一族有贸易往来，贾金生之兄。",
     "gu": [
-      "商道仙蛊"
+      "商道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4233,16 +4227,16 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "贾富之弟，在青茅山古月山寨附近被杀，引发方源被调查的事件。",
     "gu": [
-      "金道仙蛊"
+      "金道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
         {
-          "path": "待考",
+          "path": "金道",
           "items": [
             {
               "name": "金道仙蛊",
@@ -4260,9 +4254,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆散修蛊师，与方源在酒楼相遇，劝阻方源挑战古月蛮石。",
     "gu": [
-      "水道仙蛊"
+      "水道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4287,13 +4281,11 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [
       "力道仙蛊(八转)"
     ],
-    "moves": [
-      "力道开碑(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -4316,9 +4308,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [
-      "炎道蛊"
+      "炎道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4343,7 +4335,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "东海渔人后代，得醉酒青牛剑道传承。与宋亦诗联手可抗八转。因方源改变东海局势而被影响命运。",
     "gu": [
       "剑道蛊(来自异世)"
     ],
@@ -4370,9 +4362,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [
-      "飞行蛊"
+      "飞行蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4397,13 +4389,11 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆女蛊仙，影宗同行者。与白兔姑娘交好，参与影无邪等人的行动。",
     "gu": [
       "音道仙蛊(八转)"
     ],
-    "moves": [
-      "妙音杀招(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -4426,13 +4416,11 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆乔家女蛊仙，池伤追求的对象。",
     "gu": [
       "水道仙蛊(八转)"
     ],
-    "moves": [
-      "水道杀招(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -4455,9 +4443,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [
-      "水道仙蛊"
+      "水道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4482,10 +4470,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆商家蛊仙，商家少主之一。",
     "gu": [
-      "风道蛊",
-      "商道蛊"
+      "风道蛊(?转)",
+      "商道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4519,10 +4507,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆商家蛊仙，商家少主之一。",
     "gu": [
-      "水道蛊",
-      "商道蛊"
+      "水道蛊(?转)",
+      "商道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4556,7 +4544,7 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆商家创始人，死后将仙窍留在商量山中成为宝界。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -4569,10 +4557,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆商家蛊仙，商家少主之一。",
     "gu": [
-      "音道蛊",
-      "商道蛊"
+      "音道蛊(?转)",
+      "商道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4606,9 +4594,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆商家蛊仙，向商心慈透露方源真实身份。",
     "gu": [
-      "商道蛊"
+      "商道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4633,10 +4621,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆商家少主，因故被罚失去少主身份，将势力交由商一帆代管。",
     "gu": [
-      "商道蛊",
-      "暗器蛊"
+      "商道蛊(?转)",
+      "暗器蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4670,9 +4658,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [
-      "土道仙蛊"
+      "土道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4697,10 +4685,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆铁家蛊仙，修行力道。",
     "gu": [
-      "力道仙蛊",
-      "铁家蛊"
+      "力道仙蛊(?转)",
+      "铁家蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4734,9 +4722,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆铁家蛊仙，修行刀道。",
     "gu": [
-      "刀道蛊"
+      "刀道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4761,7 +4749,7 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -4774,9 +4762,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆铁家蛊仙。后升仙成功成为六转。",
     "gu": [
-      "铁家蛊"
+      "铁家蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4801,9 +4789,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [
-      "铁家蛊"
+      "铁家蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4828,16 +4816,16 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆蛊仙，修行治疗。",
     "gu": [
-      "治疗仙蛊"
+      "治疗仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
         {
-          "path": "待考",
+          "path": "医道",
           "items": [
             {
               "name": "治疗仙蛊",
@@ -4855,9 +4843,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [
-      "侦查仙蛊"
+      "侦查仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4882,10 +4870,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆武家蛊仙，修行力道。",
     "gu": [
-      "力道仙蛊",
-      "武家蛊"
+      "力道仙蛊(?转)",
+      "武家蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4919,10 +4907,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆武家蛊仙，修行律道。",
     "gu": [
-      "律道仙蛊",
-      "武家蛊"
+      "律道仙蛊(?转)",
+      "武家蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4956,10 +4944,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆武家蛊仙，修行风道。",
     "gu": [
-      "风道仙蛊",
-      "武家蛊"
+      "风道仙蛊(?转)",
+      "武家蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -4988,15 +4976,12 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆夏家太上大长老，八转水道蛊仙。南疆正道核心，参与义天山梦境蛊阵与宿命之战。",
     "gu": [
       "水道仙蛊(八转)",
-      "风道仙蛊"
+      "风道仙蛊(?转)"
     ],
-    "moves": [
-      "水道杀招(八转)",
-      "风道辅助"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -5028,10 +5013,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆夏家蛊仙，擅风道。参与南疆正道事务。",
     "gu": [
-      "风道仙蛊",
-      "移动蛊"
+      "风道仙蛊(?转)",
+      "移动蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -5065,9 +5050,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆蛊仙，修行风道。",
     "gu": [
-      "风道仙蛊"
+      "风道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -5092,9 +5077,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆蛊仙，修行土道。",
     "gu": [
-      "土道仙蛊"
+      "土道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -5119,10 +5104,10 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "商心慈侍女，随侍左右。",
     "gu": [
-      "变化道仙蛊",
-      "梦道蛊"
+      "变化道仙蛊(?转)",
+      "梦道蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -5133,6 +5118,15 @@ export const generatedAtlasCharacters = [
           "items": [
             {
               "name": "变化道仙蛊",
+              "rank": "?转"
+            }
+          ]
+        },
+        {
+          "path": "待考",
+          "items": [
+            {
+              "name": "梦道蛊",
               "rank": "?转"
             }
           ]
@@ -5156,7 +5150,7 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5169,9 +5163,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [
-      "力道仙蛊"
+      "力道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -5196,13 +5190,11 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆熊家女蛊仙，与古月药乐交好。",
     "gu": [
       "力道仙蛊(八转)"
     ],
-    "moves": [
-      "力道杀招(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -5225,13 +5217,11 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆熊家寨二转蛊师第一人，身怀熊豪蛊，号称青茅山第一大力士。",
     "gu": [
       "力道仙蛊(八转)"
     ],
-    "moves": [
-      "力道杀招(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -5254,9 +5244,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [
-      "力道仙蛊"
+      "力道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -5281,13 +5271,11 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "《蛊真人》人物。",
     "gu": [
       "炎道仙蛊(八转)"
     ],
-    "moves": [
-      "炎道杀招(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -5310,15 +5298,12 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "幽魂魔尊分魂之一，七转智道蛊仙。与影无邪合作，为影宗谋划。参与义天山大战。",
     "gu": [
       "土道仙蛊(八转)",
-      "律道仙蛊"
+      "律道仙蛊(?转)"
     ],
-    "moves": [
-      "砚石镇压(八转)",
-      "律道判罚"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -5350,13 +5335,12 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "南疆七转气道散修，拥有九龙护棺气运。遭遇白凝冰险些丧命后拜陆畏因为师，入黑天修行。得玄黄母气蛊和天师传承，为上极天鹰之主。",
     "gu": [
-      "变化道仙蛊"
+      "变化道仙蛊(七转)",
+      "气道仙蛊(?转)"
     ],
-    "moves": [
-      "变化道杀招"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -5379,9 +5363,9 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "商心慈商队护卫蛊师，忠心事主。",
     "gu": [
-      "土道仙蛊"
+      "土道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -5406,15 +5390,12 @@ export const generatedAtlasCharacters = [
     "region": "southern",
     "faction": "南疆归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入南疆。",
+    "intro": "幽魂魔尊分魂之'紫'，八转智道蛊仙，影宗一代智囊。义天山大战后带领影宗残余。最终将影宗赠予方源。",
     "gu": [
       "魂道仙蛊(八转)",
-      "紫念仙蛊"
+      "紫念仙蛊(?转)"
     ],
-    "moves": [
-      "紫念洞悉(八转)",
-      "魂道杀招"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -5424,6 +5405,15 @@ export const generatedAtlasCharacters = [
             {
               "name": "魂道仙蛊",
               "rank": "八转"
+            }
+          ]
+        },
+        {
+          "path": "待考",
+          "items": [
+            {
+              "name": "紫念仙蛊",
+              "rank": "?转"
             }
           ]
         },
@@ -5446,7 +5436,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "道的光痕，五彩斑斓，彼此交接，形成一幅囊括百里之地的巨大立体阵图。 首次参与修复的女蛊仙白沧水，震惊道：“这座炼道蛊阵，再近一步，恐怕就是一座八转的仙蛊屋了！” 仙蛊屋本身就是蛊修流",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5459,7 +5449,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "苦恼。 “我打破三十层大殿，可谓披荆斩棘，见到了你，结果你说你不能认我为主？”白凝冰望着白相天灵，脸上像是笼罩了一层冰。 白相天灵是个小老头。 他抽着旱烟，坐在台阶上，看来",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5472,7 +5462,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "斗都发生在战场杀招紫辰断命之中。 青岳至诚左右搜寻不到，心中泛起了怀疑。 “百合仙子乃是七转蛊仙中的好手，若是有人能够悄然将其杀死，可能性真的不大。除非是八转蛊仙出手……”",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5485,7 +5475,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "出一丝不屑的笑。然而目光紧紧地盯住白凝冰。 白凝冰如冰雪仙子，银发蓝眸，论姿容美貌还盖过百莲一头。更关键是，她是三转巅峰修为，引发了百战猎的兴趣。 他哼了一声：“看来你们古月一族中",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5498,13 +5488,11 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "幽魂魔尊分魂之'青'，八转剑道亚仙尊。曾剑劈五洲，战力接近九转。墨瑶之夫，与墨瑶殉情。",
     "gu": [
       "剑道仙蛊(八转)"
     ],
-    "moves": [
-      "剑道杀招(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -5527,7 +5515,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "#13; 宫殿重重，光明万丈。 监天塔耸立其间，四大八转蛊仙：监天塔主、白沧水、炼九生、碧晨天，分列东南西北四个方位。 巨大的蛊阵，在半空中描绘出恢弘的光影。 无数的珍稀",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5540,7 +5528,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "道中人，人人得而诛之！”方正脸色冷峻无比，没有想太多，立即驱动鹤群猛扑而下。 “嘿嘿嘿，碧霞仙子，今日你在劫难逃了！” “想不到今天运气这么好，能得到碧霞小仙子的芳泽。就算是受到再重的",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5553,7 +5541,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "《蛊真人》人物。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5566,7 +5554,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "，比冰刃蛊带劲多了！我喜欢！”白凝冰却充耳不闻，大声狞笑。 她化为女性，本来盛颜仙姿，如冰雪仙子。但一战斗起来，尽显昔日豪情，男儿澎湃，更近乎癫狂。 但渐渐的，她攻击的频率开始缓慢下来",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5579,7 +5567,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "小人都统统闭嘴。我就是门派这些年来，贡献最大的大功臣！这一次攻略狐仙福地，我会亲自出动。而且还邀请了苍郁仙子，残阳老君。苍郁仙子战力和我不相上下，掌握至少三道凡道杀招，残阳老君更是七转蛊仙，拥有攻伐仙…",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5592,7 +5580,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "战场。 炼蛊大阵之中。 两大战团，正斗得激烈。 “枪！”天庭八转车尾轻喝。 顿时，一只参天古木般的巨大黑铁长枪，暴射而出，直刺五行大法师。 “箭",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5605,10 +5593,16 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
-    "moves": [],
-    "houses": [],
+    "intro": "中洲天庭八转木道蛊仙，天莲派太上大长老。继承元莲真传和因果神树杀招。宿命之战中死于方源鬼剑之下。",
+    "gu": [
+      "木道仙蛊(八转)"
+    ],
+    "moves": [
+      "因果神树(八转/元莲真传)"
+    ],
+    "houses": [
+      "豆神宫"
+    ],
     "immortalGuProfile": null,
     "relations": []
   },
@@ -5618,7 +5612,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "#13; 和人道十子不同，阮丹乃是太古传奇荒兽，寿命绵长，阅历丰富，底蕴深厚至极。 “阮丹仙友你开创丹道，但对其他流派知晓不多。然而这座衍化仙阵，却是能够以你为中心，让你深刻接触到其他流派种种",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5631,7 +5625,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "稳第一交椅。 他一度绞动风云，是五域乱战时期，割据一方的枭雄霸主。 而真正的繁星天灵，方源也没有亲眼见到过，更不知道洞天认主的条件。 几天后，黑楼兰带着力气仙蛊，通过星门来",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5644,7 +5638,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "三仙。 青衣女子眉目清冷，为青索仙子。黄裳女子娇小白皙，号黄沙仙子。粉裙女子娇媚动人，为粉梦仙子。 三人结伴，站在一起，和鬼王、红玉散人分隔一段距离，泾渭分明。 青索仙子盯",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5657,7 +5651,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "已有了解。毓秀仙子比她只强不弱，数天前的大战，我方正是增兵和其纠缠，将其拖住。” “至于丰雅仙子，似乎实力更强，但她从未出手过，一直在闭关推算疯魔窟的九层奥秘。书山就是她的成果。” 陆",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5670,7 +5664,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "莲派的蛊仙，这一次被星宿仙尊亲自筛选上来，成为衍化大阵的入阵者之一。 阮丹点头，赞道：“冯仙子所言甚是。像丹道这等全新流派，发展的第一步是要流传广泛。然后无数蛊修一代代接触、修行，以各不相同的人",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5683,7 +5677,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "被百足家吞并，家名已灭，不再受到其他黄金家族的承认，甚至还会有不屑、唾弃和仇恨。 “见过宫婉婷仙子大人。”和药家、努尔家一样，随后而来的这些家族蛊仙，都主动向宫婉婷问好。 对方自身的战力",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5696,7 +5690,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "东方。 东方一只孔雀飞来，仙气盎然，口吐人言，声音清脆动听：“卓战。” “是何若仙子您啊！”卓战立即变了脸色，笑眯眯的，讨好地道。 孔雀飞仙何若，六转变化道蛊仙。 &#13",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5709,7 +5703,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "的仙鹤掌门人也没有。 不过此刻，盘坐在天鹤上人面前的这位老人，却非比寻常。 鹤风扬，太上长老，六转蛊师，号称鹤羽飞仙！ 他此刻身着白袍，系着黑腰带，大袖翩翩，盘坐在蒲团上",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5722,7 +5716,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "名为红袖、添香，不知道是哪一个？”更多的男性蛊仙，则看向女蛊仙。 “观其红裙如火，应当是红袖仙子。添香仙子，生有体香，若是来此，此刻大厅恐怕已经香气扑鼻了。”熟知内情的某个蛊仙津津乐道起来。 &#",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5735,7 +5729,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "是红云舞娘，还是千变意志，都没有对影无邪的这番话产生怀疑。 方源见此，便道：“千变大人，红云仙子，诚然天庭蛊仙是追杀我们而来。但翠波仙子却是我们救下的，这是事实吧？” 他语气平淡，面无",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5748,7 +5742,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "“哈哈哈！”天鹤上人大笑，“徒弟，你还不算太笨，总算领悟到了。不错，那个小女孩儿，就是狐仙地灵。一路向前冲吧，勇往直前。这荡魂山非常难爬，至少要爬个一年半载。以防万一，为师接下来不会多说话，只在",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5761,7 +5755,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "付。沈家欺压过他们，任修平更是生死仇敌，童画是叛徒。 该请哪一位？ 鬼七爷、化蝶仙子和蜂将，纷纷面露难色。 庙明神却哈哈一笑，神情诚挚地回应道：“楚兄，眼下重中之重就是乐土",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5774,7 +5768,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "结而成的门，脸上涌起坚决的神情：“我不管什么当代仙子，我只想要尽快地救出马鸿运哥哥！” 幻灭仙子李君影就站在徐浩的身边，此刻闻言，不禁露出一丝微笑。 她伸出柔荑，轻轻抚摸了一下赵怜云的",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5787,7 +5781,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "个在关键时刻，提醒凤九歌的声音，自然是她紫薇仙子。 八转命甲仙蛊，起到的真正作用，乃是给黄史上人提供一个清晰的线索，让他能够快速准确地找寻到凤九歌。 光阴长河是很难进入的。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5800,7 +5794,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "是想引导我们前往继仙山，还请上仙移步。”陈尺见此，连忙道。 方源点点头，心怀着戒备，跟上黄钟天灵。 眼下这局面，他势单力孤，对方却有九位蛊仙，两位七转，七位六转。若是他们忽然发难，围攻",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5813,10 +5807,12 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "天庭监天塔之主，出身天莲派。义天山大战中力竭而亡。",
     "gu": [],
     "moves": [],
-    "houses": [],
+    "houses": [
+      "监天塔"
+    ],
     "immortalGuProfile": null,
     "relations": []
   },
@@ -5826,7 +5822,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "发，都散发着一丝丝的光晕。 这种光晕并不耀眼，却衬托得他宛若神明。 此人名为君神光，修为高达八转，专修光道，乃是中洲十大古派的太上长老，最近这段时间被紫薇仙子招纳，成为天庭一员。 &",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5839,7 +5835,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "#13; 片刻后，他痴痴地站在深潭边上，看着连可心飞上天际，消失在云从之中。 “连可心，可心仙子……”古月方想口中喃喃，捂住心口。 连可心的容颜深深地印刻在他的心中。 他知",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5852,7 +5848,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "历史，古往今来，也不过只出了三位。后人称他们为‘三老’。分别是远古时代大宗师天难老怪，上古时代大宗师空绝老仙，中古时代大宗师长毛老祖。” 墨瑶继续如数家珍道：“这其中，天难老怪，性情怪癖，妄图炼化",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5865,7 +5861,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "只好冷哼一声，选择突围。 万蛟根本拦不住她，即便她身受重伤。这就是当年能够抵抗幽魂魔尊的雷鬼真君，一身战力，惊世绝伦！ 方源叹息一声，心知自己强于防御，战力虽可迈入勉强八转这个层次，但",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5878,7 +5874,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "控。 梦境在自行推演，石人蛊仙瓮声瓮气地道：“我土基修行律道，自然是信命的。自从我见到若离仙子您，我就知道您就是我命中的注定，是要用一辈子去追求去爱的人呐！” 若离仙子微微一笑，眉头",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5891,13 +5887,12 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "中洲天庭八转炎道蛊仙，出身厉家。自创阳莽背火衣，曾横扫中洲。败于薄青剑下，先后两次死于方源之手。",
     "gu": [
       "炎道仙蛊(八转)"
     ],
     "moves": [
-      "阳莽背火衣(八转)",
-      "炎道杀招"
+      "阳莽背火衣(八转)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -5921,7 +5916,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "。还有就算将资质提升到十绝程度，将来渡劫恐怕会十分危险。” 按照凤金煌的情报中提及到的，怜香仙子当初升仙之劫，极为恐怖。几乎等同于七转蛊仙要渡的浩劫！ 很可能是僵尸升仙，太过逆天，从而",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5934,7 +5929,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "片刻之后，从甬道中，走来两个身影。 一男一女，皆是蛊仙。 女仙身着白衣，如莲花仙子，清纯动人，灵动的双眸顾盼间又透着一丝活泼气息。男仙则是中年模样，老成持重，走在女子身后。 &#13",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5947,7 +5942,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "道众仙，也在同时微微色变，都感受到了一股欢喜之情。 宫痛快微微摇头，强做镇定，低声道：“刘家仙子稍安勿躁，刘兄并未死亡，还有一口气呢。” “你给我镇静，这么多人看着呢，不要丢了我刘家的",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5960,7 +5955,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "你的天资，便刻意栽培你成为奴道蛊师。如今你的奴道造诣，已经登堂入室，接下来为父已经替你做了安排，参加绿蚁居士的收徒大典。” “绿蚁居士？”方源故作不解，心中却是恍然，联想起一个名号——居易仙侣。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5973,7 +5968,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "了近二十位。被击溃的八转蛊仙们伤势沉重，都来到山腰，想要求见圣人。” “哦？”第三高位的明皓仙子不禁流露出感兴趣的神色，“果然不愧是方源呐。没想到他栽培下属，也有一手。” 顿了一顿，明",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -5986,8 +5981,11 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
-    "gu": [],
+    "intro": "中洲灵缘斋第三十六代仙子，墨人出身，七转炼道、智道、魂道兼修。薄青之妻，与薄青殉情。灵缘斋传说中的人物。",
+    "gu": [
+      "炼道仙蛊(七转)",
+      "智道仙蛊(七转)"
+    ],
     "moves": [],
     "houses": [],
     "immortalGuProfile": null,
@@ -6012,7 +6010,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "” 八转、九转的仙窍，称之为洞天。 繁星洞天的主人，是一千七百年前的八转蛊仙七星子。 七星子早已陨落，方源五百年前世，有一日繁星洞天从中洲高空坠落，分裂成数十块仙窍碎片，",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6025,7 +6023,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "戮无算，杀得四野皆是尸体，血流成河。虽然那一次，他纵横披靡，无敌天下，强行夺取了兽灾传承，但却得不到麒麟天灵的认可，勉强得到了万物大同变杀招等等，仙蛊却是没有到手，只算是夺得一半的传承。 后来，方",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6038,10 +6036,10 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "中洲天庭八转蛊仙，原为巨阳仙尊强娶之妃，封印金棺三十万年。苏醒后转修运道，掌握盗天魔尊的赌博蛊。龙公战死后代掌天庭，天庭第二战力。",
     "gu": [
       "智道仙蛊(八转)",
-      "信道仙蛊"
+      "信道仙蛊(八转)"
     ],
     "moves": [],
     "houses": [],
@@ -6075,7 +6073,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "则布置了这个暗手。这运道真传的确玄妙，偌大的天庭居然从未发现。不过天意仍旧眷属我天庭，在关键时刻，有秦仙子苏醒，识破了巨阳仙尊的诡计。” 紫薇仙子深呼吸一口气：“按照这样的布置，巨阳仙尊便将天庭",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6088,7 +6086,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "，关草泽是战力垫底的存在。若是当场比试的话，对他而言最是吃亏不过。 “这不好，这不好。”青鸾童子摇头不止。 “快刀斩乱麻，不过一块福地而已，今早确定下来，免得浪费时间！”烈阳太君装着糊",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6101,7 +6099,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "有三位女仙。 这三仙各个美貌，窈窕多姿，正是花海三仙。 青衣女子眉目清冷，为青索仙子。黄裳女子娇小白皙，号黄沙仙子。粉裙女子娇媚动人，为粉梦仙子。 三人结伴，站在一起，和鬼",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6114,7 +6112,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "掌控。 梦境在自行推演，石人蛊仙瓮声瓮气地道：“我土基修行律道，自然是信命的。自从我见到若离仙子您，我就知道您就是我命中的注定，是要用一辈子去追求去爱的人呐！” 若离仙子微微一笑，眉头",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6127,7 +6125,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "乱！有的是人买！一个穷光蛋，也想买上古的炼蛊材料。” 方源冷哼一声。 仙猴王石磊乃是七转蛊仙，脾气火爆高傲，不仅将福地经营得很好，而且战力卓绝。 他自命不凡，但也的确有",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6140,7 +6138,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "先运用见面曾相识，伪装成另外身份，混入洞天中。随后又有偷道手段，成功盗取了一切仙蛊。 那兽劫天灵虽然清醒精明，但哪里是狡诈如狐的方源的对手？ 做到这步后，方源再无顾虑，出去后换了一个身",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6153,7 +6151,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "对得起帮助你渡劫，陨落的诸仙吗？” 龙公对洪亭严厉喝斥。 “好了，龙公大人，淑仙仙子陨落这是多么大的悲痛，我们完全能够理解红莲仙尊的感受。他只是一时情绪激动罢了。”有其他的天庭蛊仙劝解",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6166,7 +6164,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "血屠，原本不过是个屠夫，不就是得到了血海传承，成了中洲有名的魔修吗？” “昔年，万龙坞的宋紫星，得到了血海真传之一，叛逃了门派，连着我们十大派都为此蒙羞。现在人家已经是七转的蛊仙，号称‘血龙’。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6179,7 +6177,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "”查明周遭情况后，李小白俯身施救。 当他将昏死过去的女子拖上岸后，惊讶地发现，这人居然是苏琪涵！ “怎么回事？” “这位苏琪涵乃是当朝一品大员苏丞相的爱女，负责此次十大才",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6192,7 +6190,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "方源忽然心头一震。 贩卖炼蛊材料的金道蛊仙铁甲子、魂道蛊仙王感仰、木道蛊仙檀香仙子、奴道蛊仙雪熊大仙……这些人的名字，很熟悉。不都是针对琅琊福地，参加第二波攻潮的蛊仙么？",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6205,7 +6203,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "不是第一次来，但晚辈仍旧为龙宫的磅礴气息折服。”汤琼感叹不已，神情真挚。 吴帅笑了笑：“汤琼仙子，所来何事？” 汤琼正色道：“启禀前辈，这一次气海老祖举办东海酒宴，邀请整个东海蛊仙界的",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6218,10 +6216,10 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "情悠然，语气柔和，但越是回忆，双眼中森寒的杀机越是旺盛充盈。 这白眉老者，来自中洲，号为天鹤上人。 昔年，他以五转的御鹤蛊，驾驭万兽王级的鹤王成名。能驾驭万兽王，就意味着掌握一只上万规",
     "gu": [
-      "奴道仙蛊",
-      "气道仙蛊"
+      "奴道仙蛊(?转)",
+      "气道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -6255,7 +6253,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "方源微微错愕了一下，目光泛喜：“这应该就是星鹫峰了。看来我的方向是正确的，按照前世蛊仙天哭上人的叙述，秃鹫的目光所向之处，便是圣宫！” 王庭福地，在北原人心目中，地位崇高神圣，是精神",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6268,7 +6266,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "添香，不知道是哪一个？”更多的男性蛊仙，则看向女蛊仙。 “观其红裙如火，应当是红袖仙子。添香仙子，生有体香，若是来此，此刻大厅恐怕已经香气扑鼻了。”熟知内情的某个蛊仙津津乐道起来。 方",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6281,7 +6279,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "#13; “所谓绝迹，不过只是说的凡间俗世罢了。我最近刚刚在宝黄天的交易中，就看到过一团星萤，好像是万象星君的货。”地灵回忆道。 “真的？”方源双眼骤亮。 他之所以换得通天蛊，又换神念",
     "gu": [
       "星道仙蛊(八转)"
     ],
@@ -6312,7 +6310,7 @@ export const generatedAtlasCharacters = [
     "role": "全文人物",
     "intro": "西漠八转木道蛊仙，早年祸乱西漠的魔头。杀手锏\"黄花瘦命\"极厉害，后加入天庭。",
     "gu": [
-      "变化道仙蛊"
+      "变化道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -6337,13 +6335,13 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "丘，虽然危险，有人潜藏于此，展开修行，不足为怪。琅琊派已经在干这种事情了。 而疯魔窟却是无极魔尊一手制造，洞窟中充斥魔音，能让蛊仙不可避免地陷入疯狂之中，最终神智完全丧失。历史上，就连一位八转蛊仙",
     "gu": [
       "律道仙蛊(九转)"
     ],
     "moves": [
       "律道审判(九转)",
-      "规则订立"
+      "规则订立(?转)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -6367,7 +6365,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "、飞沙阁、海角阁都去取出，南疆七转蛊仙们连忙进入屋内。 “啊！” 一声惨叫，旋空童子手里拿着一位南疆蛊仙的人头，已然得手。 趁此时机，其余的南疆七转均进入仙蛊屋内。 &#1",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6380,7 +6378,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "方都卖，但要一个个来。先说这星萤虫，至少要十万只。” 小狐仙传了神念过去，立即有位号称“摇光仙子”的女蛊仙叫起来，说她福地中培育了不少的星萤虫，并且愿意交换。 方源呵呵一笑。 &#13",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6393,7 +6391,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "通天蛊中，买下了许多星屑草。但此草十分特殊，不能栽种在凡土当中，只能种在云中。 买卖时，瑶光仙子曾建议方源，购买云土培育星屑草。但方源并没有采纳她的建议，皆因狐仙福地当中，就有一块规模庞大的阴云。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6406,7 +6404,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "手段通知了对方。 果然，尤婵没有等候多久，就有一位南宫家的蛊仙前来迎接。 “尤婵仙子，华大师派我前来恭迎，他已在华桥亭等候了。”南宫家的蛊仙彬彬有礼，全无超级势力的傲气。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6419,7 +6417,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "一座玉亭，独立在海水深处，散发着六转仙蛊屋的气息。 玉亭中，蛊仙谢宝树招待着他的知己好友游仙子。 望着玉亭之外，一大片一大片的沧桑树，游仙子感慨道：“又到了年蛊收获的时节了啊，这些沧",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6432,7 +6430,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "。 “不妙，这处战场杀招竟然如此难解。我的仙元已经被消融了三十多颗了！” “玉露仙子乃是乐土仙尊的二弟子，八转的大能！乐土仙尊最擅长战场杀招，玉露仙子师承乐土仙尊，已经学到精髓，不仅掌",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6445,7 +6443,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "13; “这三位女仙分别是明皓、毓秀以及丰雅，皆是主修智道，兼修星道。明皓仙子的实力，贵方已有了解。毓秀仙子比她只强不弱，数天前的大战，我方正是增兵和其纠缠，将其拖住。” “至于丰雅仙子，似乎实力",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6458,17 +6456,18 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "中古时代九转仙尊，天庭三代仙王，中洲出身。木道兼画道，初代逆流河主。创天元宝莲皇，打造神帝城与豆神宫。开创天莲派。",
     "gu": [
       "木道仙蛊(九转)",
-      "画道仙蛊"
+      "画道仙蛊(九转)"
     ],
     "moves": [
-      "因果神树(九转)",
-      "木道生生不息"
+      "逆流护身印(九转)",
+      "天元宝莲(九转)"
     ],
     "houses": [
-      "豆神宫"
+      "豆神宫",
+      "神帝城"
     ],
     "immortalGuProfile": {
       "groups": [
@@ -6500,16 +6499,17 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "太古时代第一位九转蛊尊，天庭初代仙王，中洲出身。开创气道与奴道，创建门派制度。寿两万五千岁为最长寿尊者。名言：人乃万物之灵，蛊是天地真精。",
     "gu": [
       "气道仙蛊(九转)",
       "奴道仙蛊(九转)"
     ],
     "moves": [
-      "元气归宗(九转)",
-      "奴道统御"
+      "三气归来(九转/元始真传)"
     ],
-    "houses": [],
+    "houses": [
+      "监天塔"
+    ],
     "immortalGuProfile": {
       "groups": [
         {
@@ -6540,7 +6540,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "散修，居然相互为难！想当初，我可是购买过你的年蛊，照顾过你的生意！” 谢宝树叹息一声：“月华仙子，不到万不得已，我也不想出此下策。我的年蛊生意早已经名存实亡，唯一转换门路。你若是能分我一半的月华菇",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6553,7 +6553,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "，只见集市入口，出现一抹绿色倩影。 方源也纳闷，这什么情况？ “张小姐！”“张仙子！！”一群家奴蜂拥而去，一时间，集市入口摩肩擦踵，人头攒动。 这些人大多是被蛊师责罚，没",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6566,7 +6566,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "#13; 西漠蛊师当场跪拜，要求加入武家。 武庸当即应允。 这位西漠蛊师叫做钟义，品性、才情皆不弱，稍加培养便是蛊仙种子，值得武家收下。 因为方源的关系，武家的蛊仙在近",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6579,7 +6579,7 @@ export const generatedAtlasCharacters = [
     "region": "central",
     "faction": "中洲归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入中洲。",
+    "intro": "意，那也是无法战胜的。 盗天魔尊受到挫败，却并未气馁。人乃万物之灵，他想到了一个办法，将自然天灵和其他的蛊虫一起，形成一记九转仙道杀招。 这令方源不仅联想起了自己身上的鬼不觉杀招，它也",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6592,7 +6592,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "势如此浩大，凌梅仙子哪敢硬拼，满脑子都只有一个念头，那就是逃命！ 凌梅仙子来自天妒楼，和傲雪仙子同掌七转偃月蛊，两人合并，能使出无双偃月斩。 无双偃月斩威力极强，乃是天妒楼名镇中洲的招",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6605,7 +6605,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "弟子开口道。 “天梯山？”方正连连点头，“这事情太大了，我当然清楚。天梯山上，忽然出现了白狐仙子的传承。白狐仙子可是正道著名人物，六转的蛊仙，占据着狐仙福地。这个传承一出现，就引动许多蛊仙出世。只",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6618,7 +6618,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "《蛊真人》人物。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6631,7 +6631,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "《蛊真人》人物。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6644,7 +6644,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "有三转的白凝冰、百莲，以及另外两位女蛊师，年龄和百莲相仿，均有二转修为。 其中一位，名为百盛景，对方源十分感激。 先前正是她中的毒，被方源的清热蛊解救。 队伍其热融融，方",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6657,7 +6657,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "至上。” “不过，小兽王杀了薛三四，也得罪了一个人物。飞天虎拜了一个干爹，乃是四转高阶的百岁童子。这些天，百岁童子一直在闭关炼蛊，这次传承开启，他一定会出现。到那时，很可能就要找黑白双煞的麻烦了。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6670,13 +6670,11 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "北原八转奴道蛊仙，以烹饪美食闻名。一己之力创建百足家，吞并黑家。北原黄金家族之一。",
     "gu": [
       "奴道仙蛊(八转)"
     ],
-    "moves": [
-      "奴道统御(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -6699,7 +6697,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "常山阴最要好的朋友。常山阴失踪之后，常飚娶了他的妻子，将他三岁大的儿子抚养成人。便是如今常家的少族长常极右。要对付狼王，不妨从这方面着手，或许能收到奇效呢。” “哦？这主意不错！”刘文武眼前一亮",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6712,7 +6710,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "跑，顿时令情况严峻了。 首领连忙指挥：“你、你、你，快去跟上马鸿运，务必保护好他。另外叫常丽小姐，快去前面准备！” “是，大人。” 尽管常家蛊师俱都精锐，但马鸿运随处乱",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6725,13 +6723,11 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "北原智道蛊仙，长生天成员。",
     "gu": [
-      "智道仙蛊"
+      "智道仙蛊(八转)"
     ],
-    "moves": [
-      "智道推算(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -6754,7 +6750,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "叹息一声，伸出手来，将这位死不瞑目的七转毛民蛊仙的眼皮子轻轻阖上。 “啊，不——！”名叫二毛的女性毛民蛊仙，看到这一幕，彻底地崩溃了。哀嚎一声后，扑在大毛的尸体上，双眼一翻，竟然昏厥过去了。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6767,8 +6763,10 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
-    "gu": [],
+    "intro": "北原炎道仙僵，北原僵盟成员，黑楼兰之大姨妈。后成为炼蛊材料。",
+    "gu": [
+      "炎道仙蛊(八转)"
+    ],
     "moves": [],
     "houses": [],
     "immortalGuProfile": null,
@@ -6780,8 +6778,11 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
-    "gu": [],
+    "intro": "北原宫家外姓太上家老，八转变化道蛊仙。实为灵缘斋安插北原的间谍，娶宫婉婷为妻。",
+    "gu": [
+      "变化道仙蛊(八转)",
+      "炎道仙蛊"
+    ],
     "moves": [],
     "houses": [],
     "immortalGuProfile": null,
@@ -6793,7 +6794,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "，失去了往日里那份勇猛精进之意。我此次就是来助你一臂之力，帮衬你渡过最后一劫，成为真正的八转蛊仙！”古凉说着，身上的气息就发生了变化，从七转变成了八转。 原来，他是一位八转蛊仙，但却一直伪装成",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6806,7 +6807,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "。 连可心侦查了一下，发现这位毛民蛊师竟是一位毛民和人族的混血儿。 “他叫做古月方想。”毛十二适时地介绍道。 连可心顿时瞳孔猛缩，浑身剧震。 毛十二连忙伸手：“",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6819,7 +6820,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "呢。” “组长，这你可就看错我们方源老弟了。他怎么可能会这么小气。方源老弟，你说对吧？”古月空井朗声笑着，似乎很开怀。 另一位女蛊师则靠近方源，一副亲近熟稔的样子，道：“方源小弟，好心",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6832,7 +6833,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "，婉声答应道。 …… 铛……铛……铛…… 仙蛊天锣之音，响彻蛊仙贺狼子心中。 他盘坐于地，睁开双眼，从七窍中缓缓流淌出血迹。 “这仙蛊天锣，果然厉",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6845,7 +6846,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "外，手持着一份书信。 黑楼兰解开书信阅览，顿知缘由。 原来，当年黑家太上家老黑柏，看中太白云生，曾经多次指点或者搭救他。如今黑家大军陷入困难局面，一直暗中注视的黑柏，便书信一封，传",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6858,7 +6859,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "黑城干脆跪到地上，仰头哀求道：“我愿意效犬马之劳，我愿意将黑家的机密都告诉你们！其中就包括八转老祖黑凡的宙道传承！苏仙儿接近我，不就是为了这份传承吗？你们不都是想要这份传承！我会把我所知道的，都告诉你…",
     "gu": [
       "暗道仙蛊(八转)"
     ],
@@ -6887,7 +6888,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "招牌手段，顷刻间，回风子化作一股清风，向着落魄谷上空飘摇而去。 此招乃移动杀招，无数次令回风子脱离险境，让敌人惘然无奈地长叹。最著名的一次，是回风子凭借此招，逃离八转蛊仙药皇的追捕。",
     "gu": [
       "风道仙蛊(八转)"
     ],
@@ -6916,7 +6917,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "大损，这才在几年后的福地地灾中身陨。但孩子是无辜的，你不能因此就一直冷漠他啊，还把他过继给了二十七房姜钰仙子，每年都不许他祭拜他的亲身母亲。” 黑城不悦地冷哼一声，却没有搭话。 黑",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6929,7 +6930,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "“哈哈哈，好，咱们寻了近千处地点，终于找到了一个理想的薄弱地点了。”天聋老人大笑一声。 凌梅仙子吐出一口浊气，感慨道：“寻找了这么多天，总算得到良好结果，不容易啊。” “已经浪费了不少",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6942,7 +6943,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "第八十三节：马英杰 踏踏踏…… 一连串急促的声音，由远及近。 很快，一队蛊师骑着恐",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6955,7 +6956,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "堂堂的风狼王，完全被这个男人玩弄于鼓掌之间。” “此人的驭兽术，足以媲美江暴牙，杨破樱，马尊。当今北原又出现了一位一流奴道强者！” “如果他麾下的狼群再强大几倍，他甚至能以一人之力",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6968,7 +6969,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "“好了，不要搞这个什么蛊阵了。咱们直接去逆流河，带走马鸿运，还有那只爱情蛊！”狗尾续命貂毛里球大大咧咧地一挥巨爪。 顿时狂风暴起，无数蛊虫气息洋溢而出，瞬间形成一记仙道杀招。 &#1",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6981,7 +6982,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "怪这灾劫规模莫名其妙地暴涨这么多！”琅琊地灵也很气愤。 “好了，差不多可以收手了。”蛊仙毛六心中暗道。 他就是影宗安插在琅琊福地中的内应，原先有三人，如今只剩下他一位了。 &#13",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -6994,7 +6995,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "十七节：虎头蛇尾的攻防战 琅琊地灵脸色剧变，难以置信地看着眼前的这一幕。 “毛十二，毛十三，你们俩怎么回事？”毛民蛊仙们又惊又怒，其中一位大声喝骂。 “你们身为毛民，却帮",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7009,7 +7010,7 @@ export const generatedAtlasCharacters = [
     "role": "全文人物",
     "intro": "或主要势力根基归入北原。",
     "gu": [
-      "商道仙蛊"
+      "商道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -7034,9 +7035,9 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "可不是白来的。啧啧啧……”廿二富摇头晃脑。 他虽然是七转修为的家族前辈，但生性贪财，就算廿二平之和七转尸毒老怪交手，陷入苦战当中，他也没有去帮衬出手，而是首先拾掇廿二平之斩下的蛊仙尸体。 &#13",
     "gu": [
-      "商道仙蛊"
+      "商道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -7061,7 +7062,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "根可见。 见到此人，周围大多数的蛊仙眼中，纷纷闪现出忌惮之色。 这是七转蛊仙皮水寒，魔道中人，兼修冰、水两道，成名已久。 孔雀飞仙何若，见着皮水寒阻住自家去路，却不闪避退",
     "gu": [
       "水道仙蛊(八转)"
     ],
@@ -7088,13 +7089,12 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "北原七转魂道兼金道蛊仙，影宗副使。举办北原拍卖大会，是影宗在北原的重要布局者。",
     "gu": [
-      "魂道仙蛊(八转)"
+      "魂道仙蛊(八转)",
+      "金道仙蛊(八转)"
     ],
-    "moves": [
-      "魂道杀招(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -7117,7 +7117,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "一位八转仙僵道。 周围仙僵等人，敬畏地看着他，纷纷附和。 这位八转仙僵，号称尸爆雷王，最擅长的就是用最小的代价，引爆仙僵躯壳，引发恐怖的爆炸攻击。 他脾气暴躁，心狠手辣，之",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7130,7 +7130,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "九节：五德山上五德门 这一天，方正听完另一位长老的公开讲授，走在回去的路上，却被一位叫做史宏的弟子拦住。 “方正长老。”史宏首先施了一礼。 方正还礼，心底还有些不好意思",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7143,7 +7143,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "可危，已然濒临破碎。 更恐怖的是，方源已经快速逼近！ 王庭福地已经千疮百孔，霜玉地灵又被封印，剩下的力量对方源而言毫不足虑，分秒可破。 致命的杀劫已然来到，马鸿运赵怜云却毫",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7156,7 +7156,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "，被蛊仙们恨之入骨。若非如此，他早就能买到寿蛊，何至于落到现在这步田地呢？这些年我隐隐查探到，你嫂子苏仙儿的死，也是他在背后策划的阴谋！” 黑城吐露秘辛，说出的话，让黑柏十分惊愕。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7169,7 +7169,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "挺希望方源一方违反协约的。 这样一来，敌人灭亡身死，这片福地就落到羽民一方的手中了。至于太白地灵认主什么的，那就是后话了。 当然，方源、太白云生不能出手，也不能唤来黑楼兰、黎山仙子这些",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7182,7 +7182,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "; “弯月仙子，你是至死不降吗？”萧荷尖、寒灰仙姑等人居高临下，俯视废墟中的濒死蛊仙。 弯月仙子有着八转修为，乃是弯月洞天之主，拥有地利，但是双拳难敌四手，此时的她只剩下最后一口气吊着。 &#13",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7195,7 +7195,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "夫乃是真正的千变老祖，而他便是我的胞弟万化老祖。”真的千变老祖随口扯谎。 万象宫殿变化的万化老祖，淡淡点头：“天庭，你们没有想到吧？你们想要对付我兄弟，却没想到要对付两位八转！我崇尚隐修，本想这一",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7208,7 +7208,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "更是死伤惨重。 “这就是方寸山了？”这时，一位女仙，从后面缓步走出。 她号称万寿娘子，乃是雪胡老祖之妻，七转修为，北原四大炼道蛊仙之一。 她一出现，就将目光投向方寸山，对于",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7221,7 +7221,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "而求其次，利用里面的传承内容，再结合自身炼道宗师的底蕴，炼成招灾蛊。 正是因为如此，她对王庭地灵的价值，知道得一清二楚！ 当年，巨阳仙尊还不是九转的时候，在王庭福地的继承权的竞争中，获",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7234,7 +7234,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "条件！ 地灵都是认死理的存在，只要方源拿出宋紫星的头颅交给地灵，便可成为星象福地的主人。星象地灵是不会管宋紫星是否还活着的。 它只是单纯的执念，再结合福地的天地伟力形成。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7247,7 +7247,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "得我吗？”旋即方源淡淡而笑，“我可是向你的本体，购买过星屑草，以及春星雨杀招的人呐。” 星象童子目光一闪，重新打量了一番方源，神色也缓和了一丝：“原来是你啊，我有一点印象。” “单靠地",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7260,12 +7260,13 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "北原大雪山福地第一峰主，八转冰雪道蛊仙，北原八转第一人。方寸山之争强势击败药皇与百足天君联手，将太古白天打裂。逆流河之战孤身压制天庭两座仙蛊屋。万寿娘子之夫。",
     "gu": [
-      "冰雪道仙蛊(八转)"
+      "冰雪道仙蛊(八转)",
+      "鸿运齐天仙蛊(八转/炼制目标)"
     ],
     "moves": [
-      "冰雪封天(八转)"
+      "万里冰封(八转/涵盖万里)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -7289,7 +7290,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "百日大战。 黑城丢下仙蛊屋黑牢，逃窜出来，被方源收拾。 再后来，焚天魔女对付雪山老祖，结果双方达成妥协，焚天魔女击退了黑家太上四大长老的青城纵横，而雪山老祖趁机在黑家大本营偷盗仙材，大",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7302,9 +7303,9 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "峰上，坐落着一座冰晶七塔楼阁。楼阁的牌匾上，上书三个大字——“雪松阁”。 身为此地主人的雪松子，乃是北原赫赫有名的魔道六转蛊仙。 他身材高瘦，一身淡蓝长衫，雪白的长发垂落到地上，此刻",
     "gu": [
-      "冰雪道仙蛊"
+      "冰雪道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -7329,7 +7330,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "福地。方源光道境界只是普通而已，这又是七转福地，自然无法吞并。 接下来的时间里，方源询问鸭子地灵，再次得到不少情报。 鸭子地灵还记得本体生前的不少事情，这使得方源对影无邪布置下的陷阱，",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7342,10 +7343,10 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "北原八转炼道蛊仙，号称药皇，北原炼道四能之首。继任长生天南荒之位。",
     "gu": [
-      "木道仙蛊",
-      "丹道仙蛊"
+      "木道仙蛊(八转)",
+      "丹道仙蛊(八转)"
     ],
     "moves": [],
     "houses": [],
@@ -7379,9 +7380,9 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "杀招中也没有八转的仙蛊参与组合。所以，这只吞天犬的战斗力，只有七转层次。 而汪大仙的对手耶律群星，身材又高又瘦，宛若一根竹竿。他长有三缕胡须，面皮白中带黄。此刻他距离吞天犬遥远，身边数百颗星辰碎片",
     "gu": [
-      "星道仙蛊"
+      "星道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -7406,7 +7407,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "北原炼道八转大宗师，盗天魔尊时代人物。帮盗天炼制遁空蛊，百般延命苟活至巨阳仙尊时代。创建琅琊福地，琅琊地灵之前身。",
     "gu": [
       "炼道仙蛊(八转)"
     ],
@@ -7433,7 +7434,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "个人族的蛊仙，是恶魔，早就计划着将我们一网打尽。他们是绝不会放过我们的。你们选新的羽民王吧。我先跟随周中老祖宗，先去一步了！” 说话，他当场引颈就戮！ “王！”羽民暴动，齐声怒吼，声震",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7446,7 +7447,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "13; 第一百六十四节：猪头地灵 令狐虚乃是西漠魔道蛊仙，专修偷道。 房家蛊仙房东西怒不可遏，沙包福地开启事",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7459,7 +7460,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入北原。",
+    "intro": "袁让尊前脚刚刚进入单间，一位俊朗书生，身后亦步亦趋地跟随着一位女蛊仙，也进入拍卖场。 “自在书生也来了？”大厅中蛊仙们的目光，再次被吸引。 “我早就听闻自在书生艳福不浅，身边有两位蛊仙",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7472,7 +7473,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "#13; 焚天魔女忽的轻笑一声：“原来如此，难怪你们夫妇二人，曾经不惜代价，从僵盟总部换取了奴道宗师百八十奴的仙道杀招——下克上。为的就是，利用下克上这种奴道手段，来收服这头一指流鲨吧。” 奴道，",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7485,7 +7486,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "的，就是鬼七爷、蜂将、花蝶女仙三人，但此次安排他却未告知他们，因此这三人都是本色出演。 曾落子、土头驮、童画三仙，庙明神日常也多有接触，算得上知根知底，他们三位皆是东海七转蛊仙中少有的强者。 &",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7498,7 +7499,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "宿仙尊的梦境，在那里，他动用解梦杀招，收获颇丰。 但在此时此刻，方源的解梦却无法令他通过定海上人的梦境。 定海上人只是八转级数，当然不如星宿仙尊。 但是梦境的强弱，却和两者",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7511,7 +7512,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "有关键一步，那就是找到对方的天灵，然后将其彻底毁灭。 “给我死！”梦求真手段频频施展，把飞鱼天灵虐得昏头转向。 雷电交加，暴雨侵袭，天降陨石，熔岩喷发等等攻势之后，飞鱼天灵被梦求真消灭",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7524,9 +7525,9 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "身边，已经结成了一个蛊仙的利益团伙。 这个利益团伙一共有四人。以庙明神为中心，花蝶女仙、蜂将、鬼七爷为庙明神马首是瞻。 其中，花蝶女仙、蜂将皆是六转修为，鬼七爷是七转蛊仙，庙明神的",
     "gu": [
-      "奴道仙蛊"
+      "奴道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -7551,7 +7552,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "已经结成了一个蛊仙的利益团伙。 这个利益团伙一共有四人。以庙明神为中心，花蝶女仙、蜂将、鬼七爷为庙明神马首是瞻。 其中，花蝶女仙、蜂将皆是六转修为，鬼七爷是七转蛊仙，庙明神的修为和战",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7564,7 +7565,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "易捏紧双拳，心中暗下决心。 与此同时，远处的方源也是双眼骤然一亮，口中喃喃：“发现你了，洪易。” 这洪易运气不输给韩立，也是五域大战时期，涌现出来的七转传奇。他力道、魂道兼修，天资",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7577,7 +7578,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "可以自由变化身份，管你是不是庙明神！ 只要不是八转蛊仙就好。 “只是，我杀了花蝶女仙。见面曾相识却不可遮蔽智道推算，不能保证我身份不暴露。” 见面曾相识，不是万能的。 &#",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7590,7 +7591,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "东海蛊仙。",
+    "intro": "《蛊真人》人物。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7603,7 +7604,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "鹤门弱于万龙坞，这基本上是公认的。除此之外，就是万龙坞在这一场的参赛蛊师，实在太强大了，就是那个号称火工龙头的炼道蛊师！” “什么？火工龙头竟然是万龙坞的蛊师，他不是散修吗？” “嘿嘿",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7616,7 +7617,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "声息。 魔尊幽魂伸手一挥，一道黑雾巨鞭迅速成形，想要将青黑人脸雷球抽飞。 但雷球上人脸阴冷一笑，速度再增，躲过黑鞭的抽打，逼近魔尊幽魂。 魔尊幽魂正要催动另外杀招，但雷球已",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7629,7 +7630,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "想法，不知道又作何感受。 “我虽然无法铺设战场杀招，但战力明显强上一截。但花蝶女仙却是和庙明神关系密切。我若杀她，有不少把握。”方源考虑此中的可能。 庙明神乃是东海的七转强者，地位类",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7642,7 +7643,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "高，戚家一直没有出现八转蛊仙，而任由万气流逝消散。 直至如今，方源觊觎气相的洞天，惊醒了气海天灵，使得它勉强催起无量气海杀招，时隔多年，令此招重现天日。 “此招虽是厉害，不过气相已逝，",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7655,7 +7656,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "峰。他们时常联手，一起共探白天、黑天，关系紧密。因此被统称为巡天五相。咱们戚家先祖，便是五相中之一的气相。而咱们戚家，也是以气道为主修。” “八转蛊仙！”戚荷咋舌不已。 戚灾感叹道",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7668,7 +7669,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "这些山峰破碎之后，转眼就又凝聚起来，阻挡住两座仙蛊屋。 “这是……七煞元君前辈！”峰伯、倩魂仙子俱都惊喜。 七煞元君也是气道中名留青史的强者，成就八转之后，他游走天下，专门寻找各处的煞",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7681,7 +7682,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "#13; “不是紫山真君太弱，而是龙公更强！”方源远远跟着龙宫，渐渐脱离战场。 宋启元、青岳安等人既然出现，证明东海的正道之间已经商议妥当。在五域中，东海因为资源最为丰富，八转蛊仙的数量也是最多",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7694,7 +7695,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "：“你倒是有些眼光，这可是小爷我好不容易从我爷爷手中讨要过来耍的。我爷爷便是东海中大名鼎鼎的奴道蛊仙任修平！” 方源点点头，淡淡地道：“任修平我知道，此人是七转巅峰强者，前不久传闻，他终于找寻到",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7707,7 +7708,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "位蛊仙缓缓逼近龙公身后，他身着黑袍，看不见容貌，默不作声，宛若幽魂漂浮而来阴气十足。 “容婆、扬子河、石淼还有张阴，你们都是东海蛊仙界中的散仙、魔仙，辛辛苦苦修行到八转容易么？何必到我面前来送",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7720,9 +7721,9 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "啊！”沈从声用微颤的声音，叫道。 他来到这里的真正目的，就是拯救先祖沈伤。 沈伤乃是沈家最为杰出的蛊仙，天赋才情之卓绝，当时就被公认。甚至在他还只是六转蛊仙时，就有智道八转大能点评",
     "gu": [
-      "水道仙蛊"
+      "水道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -7747,7 +7748,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "龙公身后，他身着黑袍，看不见容貌，默不作声，宛若幽魂漂浮而来阴气十足。 “容婆、扬子河、石淼还有张阴，你们都是东海蛊仙界中的散仙、魔仙，辛辛苦苦修行到八转容易么？何必到我面前来送死呢？”龙公被",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7760,7 +7761,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "了看守这里，影宗就地收服了一群石人。稍加提点，培养出了一位石人蛊仙。 这位石人蛊仙，正是石奴。 本来，魔尊幽魂筹谋数万年，要炼制至尊仙胎蛊。石奴虽然只有七转，但到底也是份战力。 &",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7773,7 +7774,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "袋，最糟糕的情况，都已经汇报上去了。剩下来的都是些好消息。 首先，在福地南部，栖息着一支石人部落。 石人乃是异人中的一种，生活在地底下，以矿石为食。 这个消息，对于方源",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7786,7 +7787,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "多超级势力中，也是排位前十的存在。 家族中就外在公开的蛊仙，就有十八人。宋家的太上大长老宋启元，成为八转蛊仙已经很多年了，战力雄浑，深不可测。 宋启元的儿子宋调令，则是一位七转蛊仙。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7799,7 +7800,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "斩获。 “是什么法子？”方源追问。 太白云生便道：“鲨魔有一位双修道侣，名为苏白曼，也是仙僵之体。早年时候，苏白曼抓住一次机缘，击败强敌，获得了一只宙道仙蛊，称之为宙锚。此蛊能在光阴",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7812,7 +7813,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "就让罗木子、轮飞异常不爽。 因为乔丝柳就坐着主位，右手边就是方源，左手边则是她的闺蜜好友天露仙子。 至于其他几位男性蛊仙，都被隔在远处。 “月亮节？”方源神情淡淡，端坐在主",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7825,9 +7826,9 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "了，彻底出名了！” “任凭是谁，只要能以七转修为，让八转蛊仙无可奈何，就足以名垂青史。”童画感慨道。 “能以七转修为，抗衡八转，真叫人向往啊。”庙明神摇头苦笑，“可惜这等人物，我无",
     "gu": [
-      "画道仙蛊"
+      "画道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -7852,7 +7853,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "旁，静静地听着，面不改色，心中囧然。 这个话题，立即引起了其他蛊仙的兴趣。 土头驮大声叫道：“现在这个柳贯一，真是老火了，彻底出名了！” “任凭是谁，只要能以七转修为，让",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7865,7 +7866,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "后，她便睁开幽深的黑眸，淡淡地道：“已经找到了方源的线索。” 她面前盘坐的蛊仙老者，号称万海龙流，顿时微笑出声：“紫薇仙子不愧是天庭中，与监天塔主齐名的智道好手，居然用一股意识，就推算出了关键线索",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7891,7 +7892,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "不过好景不长，数天后，方源终于泄露了身份。 发现他的是东海一位散修八转，名为阳骏，驾驭着仙蛊屋宝马香车，追赶龙宫时，意外发现了方源。 方源狠狠地和他对拼一记，便立即撤走",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7904,7 +7905,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "的药。 拥有着八转的龙宫，但吴帅却无任何心思去争名夺利。 他暗中对绿蚁居士、易酒仙姑，对书道阁主下手，将他们全都奴役。但做到了曾经的梦想，他本可以将书九灵幽禁，甚至将范极捉来，在书九灵",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7917,7 +7918,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "其中也有蛊仙们相互尊重，不会无缘无故地动用侦察蛊随意窥视他人的情况。 尤其是凤九歌假扮的幽兰仙子，背后是八转大能。让人更意想不到，会有人胆大如斯。 在众人炯炯目光的注视下，“幽兰仙子”",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7930,7 +7931,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "琅琊福地为了人造天地秘境，损失掉了难以计数的炼道、水道道痕。 “若非我吞并气海洞天，依照幼鹿天灵的伤势情况，也几乎撑不下去了。接下来的几场万劫，就很可能摧毁了这片洞天。” 所以，琅琊地",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7943,7 +7944,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "性，根本构不成竞争关系。 所以，石三百故作不知道：“接下来，我要继续布置一处土道资源点。鱼姿仙子可愿和我继续合作吗？” 石三百当然希望有土道蛊仙来合作，但眼下至尊仙窍人手实在紧张。 &",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7956,7 +7957,7 @@ export const generatedAtlasCharacters = [
     "region": "eastern",
     "faction": "东海归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入东海。",
+    "intro": "，他身着黑袍，看不见容貌，默不作声，宛若幽魂漂浮而来阴气十足。 “容婆、扬子河、石淼还有张阴，你们都是东海蛊仙界中的散仙、魔仙，辛辛苦苦修行到八转容易么？何必到我面前来送死呢？”龙公被四位八转",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7969,7 +7970,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "害。二位可能有所不知，我魏大哥虽然只是三转巅峰，但是一身战力卓绝。乃是商燕飞大人座下的第三战将，人称白光刀客。若换做我来，恐怕撑不到二十回合。” “输就输了，没有什么大不了的。魏央，待我日后有了趁",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7982,7 +7983,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "布眼线，监控其余九大古派，暂时还没有发现哪些门派中有特殊反应。这次行动的关键人物已经训练妥当，只需要残阳老祖、苍郁仙子出手帮衬，便能夺回狐仙福地。”鹤风扬道。 “残阳老祖乃是七转战力，苍郁仙子在六",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -7995,7 +7996,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "澜光。 “小女子仙号翠波，阁下是谁？虚言恫吓我弟，很好玩么？” 方源打量这位翠波仙子。 她身上洋溢着七转蛊仙的气息，自认为和七转修为的方源，能够平等对话。 她肤",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8008,15 +8009,21 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "中古时代九转魔尊，西漠出身，真名本杰孙。天外之魔，原星际机甲世界设计师。开创偷道，以宇道成尊。十大尊者中最富有者，一心只想回家。名言盗亦有道万事留一线。七转盗走天元宝皇莲成就盗天之名。",
     "gu": [
       "偷道仙蛊(九转)",
-      "宇道仙蛊(九转)"
+      "宇道仙蛊(九转)",
+      "态度蛊(八转/核心)"
     ],
     "moves": [
-      "神不知(九转)",
-      "鬼不觉(九转)",
-      "无相手(九转)"
+      "神不知(九转/免疫推算与天劫)",
+      "鬼不觉(九转/屏蔽灵魂感知)",
+      "天相(九转/侦查太古白天)",
+      "见面曾相识(八转/以态度蛊为核心)",
+      "无相手(偷道招牌/夺取蛊虫)",
+      "无间道(宇道/大幅缩减路程)",
+      "海阔天空(宇道/封印本源积累道痕)",
+      "金红战甲(天外机甲所创)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -8049,7 +8056,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "后，房家的援军也赶来汇合，两位七转，一位六转。 房安蕾则稳定了伤势，一直处于昏迷状态，被房沉带回房家大本营修养。 赶来的两位七转援军之一，替代了房安蕾，执掌落英馆。 如",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8062,7 +8069,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "黄袍，面容肃穆。 “见过太上三长老。”房棱、房云纷纷行礼。 “房家太上三长老房化生……”方源心底迅速闪过一系列有关他的情报。 “是你！就是你躲进落英馆中，把攻势引来，我家",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8075,7 +8082,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "小心吃撑了肚皮。” 败军老鬼嘎嘎大笑：“我虽然是七转修为，不过已近八转。” 房棱摇头：“这又如何？你敢去渡劫吗？” 败军老鬼摸了摸自己的山羊胡须：“自然是不敢的。不过现",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8088,7 +8095,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "掩饰地流露出惊骇之色。 房棱双目瞪大，一时无言。 “这是，这是八转仙蛊！！”房云失声惊呼。 败军老鬼洋洋得意：“好教你们二人知晓，这只八转仙蛊名为魂兽令，能令我直接奴役",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8101,7 +8108,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "虽然成为了七转蛊仙，但命途并非一帆风顺的，时起时落，可见运气不好，也被方源排除。 惟独像韩立、马鸿运这种人物，一帆风顺，奇遇连连，这才是方源的目标。 不过后者现在不知去向，黎山仙子",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8114,7 +8121,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "的底蕴呢？尤其是其他九大古派，丝毫不弱于咱们仙鹤门。不过掌管伏虎福地的主人，乃是咱们门中的太上三长老虎魔上人。他培养的石人奴隶，堪称中州第一！在宝黄天中都独占鳌头，他的伟力和财富，非你我这些凡人能够想…",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8127,7 +8134,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "眼细长。手腕上都带着护臂，小腿上有结实的绑脚，整个人透露出一丝精干的意味。 “小民，拜见江鹤大人！”那两个年轻猎手刚刚站起来想走，见到这名蛊师就立即又跪下去，行五体投地的大礼。 这",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8140,7 +8147,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "3; 追了一会儿，前方出现两个蛊仙的身影。 正是那两个蛊仙散修，平日里独居一处，一位叫做蒋基，一位名唤高米。 “坚持住，我们来了！” 两仙也在飞奔，迅速地和周敏、冯军汇",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8153,7 +8160,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "3; 许多蛊仙直接绕过眼前的小战场，前往书山支援。 “巨阳仙尊！你在里面吗？出来见我！”金箍仙王大吼，十分愤怒。 他曾经邀请巨阳仙尊参观游览天庭，结果就在那一次，巨阳仙尊种下了手段。宿",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8166,7 +8173,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "“大智仙母到！” “青森大圣到！” 异族的八转大能来了很多。 金毛仙王乃是毛民，浑身浓厚的毛发金光璀璨。疾云天仙则是羽民身份，容貌俊美的青年模样。大智仙母是一位老妪，墨人",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8179,7 +8186,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "任何生机，好像是仙道杀招？” “这是金珠子。中古时代，天庭成员中涌现出一位金道大能，号称金珠仙王。这些金珠子正是他的得意杀招，独一无二的手段。”牛魔淡淡地道。 花子捂嘴，嘻嘻笑道：“天",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8192,7 +8199,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "“是我错了，我错了！几位哥哥勿怪，我其实也只是好奇而已。” 孔日天了解清楚了情况，便回到孔升天老祖宗的意志身旁，悄然告诉他了一切。 孔升天的意志听完之后，也流露出一抹古怪之意。 &#13",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8205,7 +8212,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "。”魔道七转蛊仙开口道。 他中年模样，劲装武服，披着赤红的大氅，身材雄壮。姓丹名乔，号称烈魔仙，主修炎道，凶名广传。 “哈哈哈。”凶雷恶人大笑，“烈魔仙，你不愧是魔道蛊仙，凡事都认利",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8218,7 +8225,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "许还玩弄蛊虫，总之一看就知道不是什么好东西。 那么他叫什么名字呢……超级魔王？黑山老妖？绿袍老祖？ 不不不。 想了想，不如就叫蛊真人吧。 正巧当时在起点要创建一",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8231,7 +8238,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "仙，却非沈从声这种层次。 异族大联盟中八转蛊仙数量并不少，冰晶仙王想了想，便派遣石人八转乱石洞主应付。 第一",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8244,7 +8251,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "壮大，最终酿出太古传奇魂兽青仇。 青仇借助豆神宫而生，因此也被豆神宫囚禁。 青仇自然不愿，在此后的无数光阴岁月当中，不断尝试，想要勘破豆神宫的奥妙，重而执掌这座八转仙蛊屋。 &#1",
     "gu": [
       "木道仙蛊(八转)"
     ],
@@ -8271,7 +8278,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "#13; 但记忆浮现，让它视野一阵朦胧。 “逃，快逃啊！” “谁能救救我呀，青家老祖宗们，你们怎么还不出手？” “爹！娘！你们在哪里啊？” …… 哭",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8284,7 +8291,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "，就交到你的身上了。” 萧山双眼骤亮，激动得雄躯剧颤。 蛊仙！ 萧家老祖！ “难道这传闻是真的？我萧家祖上真的出过蛊仙？这股声音，让我觉得是如此的亲切。我是五转",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8297,7 +8304,7 @@ export const generatedAtlasCharacters = [
     "region": "western",
     "faction": "西漠归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入西漠。",
+    "intro": "更准确的说，他就是以刀翅血蝠立业的。 在前世的三百多年后，他误打误撞，得到了血海老祖的一处传承。依靠刀翅血蝠群，以及自身的五转修为，成为一方霸主。 这血海老祖，乃是七转魔道",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8310,7 +8317,7 @@ export const generatedAtlasCharacters = [
     "region": "white",
     "faction": "太古白天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古白天。",
+    "intro": "到，在五域中或许也感应不到，但是到了太古两天之中，却是有了十分清晰的感应。 “黑天天灵、白天天灵分别照应太古黑天、太古白天，宛若福地地灵，洞天天灵，掌握太古两天的权柄。” “正是因为这",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8323,7 +8330,7 @@ export const generatedAtlasCharacters = [
     "region": "white",
     "faction": "太古白天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古白天。",
+    "intro": "也是这个情况。”最后，商家太上大长老猜测道。 他猜的一点都没有错。 能够打动宝黄天天灵的，世间恐怕也只有黄天碎片了。 太古九天破碎已久，黄天碎片早已绝迹。除非大气运、大机缘者",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8336,7 +8343,7 @@ export const generatedAtlasCharacters = [
     "region": "white",
     "faction": "太古白天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古白天。",
+    "intro": "有一个重要人物，还需要贵方出力争取。” 骷髅姥姥顿了顿，继续道：“此人也是八转蛊仙，人称华语老仙，执掌华文洞天。他在东海白天这块，有着很大的声望。如果将此人争取过来，必定能够带出一串的白天蛊仙，能",
     "gu": [
       "信道仙蛊(八转)"
     ],
@@ -8363,13 +8370,11 @@ export const generatedAtlasCharacters = [
     "region": "white",
     "faction": "太古白天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古白天。",
+    "intro": "太古白天火原洞天之主，八转炎道蛊仙。",
     "gu": [
       "炎道仙蛊(八转)"
     ],
-    "moves": [
-      "炎道杀招(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -8392,13 +8397,11 @@ export const generatedAtlasCharacters = [
     "region": "black",
     "faction": "太古黑天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "intro": "太古黑天异人领袖，八转冰雪道蛊仙。异族大联盟首领，与萧荷尖同为两天盟核心。",
     "gu": [
       "冰雪道仙蛊(八转)"
     ],
-    "moves": [
-      "冰晶天地(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -8421,7 +8424,7 @@ export const generatedAtlasCharacters = [
     "region": "black",
     "faction": "太古黑天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "intro": "3; 十多位异人蛊仙隐隐形成两拨人马，相互对峙着。 左边一拨，以冰晶仙王为首，乱石洞主、臭蛋洞主、毛怪洞主簇拥。 右边一拨人马，则是以萧荷尖领袖，青森大圣和大智仙母辅佐。",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8434,9 +8437,9 @@ export const generatedAtlasCharacters = [
     "region": "black",
     "faction": "太古黑天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "intro": "“夜天狼君来得早。”安魂洞天一方的八转女仙笑着回应道。 “是我们慢了一步，寒灰仙姑啊。”夜天狼君苦笑一声，手指着敞开的洞天门户，“那些异族蛊仙都已经进去了。我是专程等你一起进去，否则",
     "gu": [
-      "炎道仙蛊"
+      "炎道仙蛊(?转)"
     ],
     "moves": [],
     "houses": [],
@@ -8461,7 +8464,7 @@ export const generatedAtlasCharacters = [
     "region": "black",
     "faction": "太古黑天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "intro": "兴奋之意。 毛十二的贡献，她们也旋即看到了，毛十二位于第十八位。 第十九位是黑犬地灵。 然后下一刻，第十九位的黑犬地灵就陡然冒起，将毛十二挤了下去。 毛十二也旋",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8474,7 +8477,7 @@ export const generatedAtlasCharacters = [
     "region": "black",
     "faction": "太古黑天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "intro": "，幽魂还未成就魔尊的时候，却是已经掌握了食道手段。有一次，他在太古黑天中探索，竟意外地碰到了一只太古黑天天灵。” “幽魂想要开创杀道的心情十分迫切，他从这只天灵的身上看到了开创杀道的巨大契机。于是",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8487,7 +8490,7 @@ export const generatedAtlasCharacters = [
     "region": "black",
     "faction": "太古黑天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "intro": "想要迅速促成洞天本土势力的大联合。但是中洲黑天这一片，异族众多，我人族却只有两位八转。幸好我已联络上骷髅姥姥，他是东海黑天的八转蛊仙。你此去东海，便是代表安魂洞天，和骷髅姥姥接触，表明我等联手的诚意。…",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8500,7 +8503,7 @@ export const generatedAtlasCharacters = [
     "region": "black",
     "faction": "太古黑天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "intro": "位异人蛊仙隐隐形成两拨人马，相互对峙着。 左边一拨，以冰晶仙王为首，乱石洞主、臭蛋洞主、毛怪洞主簇拥。 右边一拨人马，则是以萧荷尖领袖，青森大圣和大智仙母辅佐。 还有第三拨",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8513,7 +8516,7 @@ export const generatedAtlasCharacters = [
     "region": "black",
     "faction": "太古黑天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "intro": "#13; 第五十四节：九转雷电蛊 森雷洞天。 “森雷洞主，你背叛两天联盟，竟通敌气海老祖，罪不可恕，今日就是你授首之时。”萧荷尖威临高空，俯瞰下方。 &#1",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8526,13 +8529,11 @@ export const generatedAtlasCharacters = [
     "region": "black",
     "faction": "太古黑天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "intro": "太古黑天异人领袖，八转暗道蛊仙。与冰晶仙王同为两天盟核心人物。",
     "gu": [
       "暗道仙蛊(八转)"
     ],
-    "moves": [
-      "暗道杀招(八转)"
-    ],
+    "moves": [],
     "houses": [],
     "immortalGuProfile": {
       "groups": [
@@ -8555,7 +8556,7 @@ export const generatedAtlasCharacters = [
     "region": "black",
     "faction": "太古黑天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "intro": "13; “尽管我开创了得宝歌，能够炼化野生仙蛊，但是此时情景，抢夺成功的可能性太小。” 夜煞女、青岚仙妃都十分戒备，抢夺他人仙蛊的难度极高，历史上唯有盗天魔尊做得风生水起。自他之后，就算是偷道的",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8568,7 +8569,7 @@ export const generatedAtlasCharacters = [
     "region": "black",
     "faction": "太古黑天归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入太古黑天。",
+    "intro": "狼群中飞出一位蛊仙。 这位蛊仙赫然也有八转修为，鹰视狼顾，一副枭雄之像。 “夜天狼君来得早。”安魂洞天一方的八转女仙笑着回应道。 “是我们慢了一步，寒灰仙姑啊。”夜天狼君苦",
     "gu": [
       "暗道仙蛊(八转)"
     ],
@@ -8597,7 +8598,7 @@ export const generatedAtlasCharacters = [
     "region": "unverified",
     "faction": "待考归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "intro": "得无数年后，历经三个大时代，会分别出现两男一女三位尊者。第一位是幽魂魔尊，第二位是乐土仙尊，第三位是大梦仙尊。而关于遁空蛊的难题，将会在大梦仙尊手中解决。 一言仙乃是八转智道蛊仙，精通测算，常常一",
     "gu": [
       "梦道仙蛊(九转/未成)"
     ],
@@ -8624,7 +8625,7 @@ export const generatedAtlasCharacters = [
     "region": "unverified",
     "faction": "待考归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "intro": "。 宝黄天的来源，就牵涉到太古九天中的黄天。 中古时期，有一位八转蛊仙，号称多宝真人，意外得获得一块黄天碎片。他将其融入自家的洞天之后，就形成了宝黄天。 宝黄天是一处十分特",
     "gu": [],
     "moves": [],
     "houses": [],
@@ -8644,7 +8645,7 @@ export const generatedAtlasCharacters = [
     ],
     "moves": [
       "狂蛮变(九转)",
-      "力道碎天"
+      "力道碎天(?转)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -8677,7 +8678,7 @@ export const generatedAtlasCharacters = [
     "region": "northern",
     "faction": "北原归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "intro": "天，不是要等到五域乱战，梦境四起的时候，才会出世的吗？” “怪！怪！怪！” 气绝魔仙乃是上古时代的大能，八转蛊仙，战力极强，曾经和无极魔尊三战，一胜一平一负。 当然，前两次",
     "gu": [
       "气道仙蛊(八转)"
     ],
@@ -8708,13 +8709,13 @@ export const generatedAtlasCharacters = [
     "role": "全文人物",
     "intro": "蛊界第一个人类，由蓝宝石化形。《人祖传》记载其十个子女的故事，是人道起源的核心人物。",
     "gu": [
-      "希望蛊",
-      "成功蛊",
-      "失败蛊"
+      "希望蛊(?转)",
+      "成功蛊(?转)",
+      "失败蛊(?转)"
     ],
     "moves": [
-      "希望开窍",
-      "失败成功融合"
+      "希望开窍(?转)",
+      "失败成功融合(?转)"
     ],
     "houses": [],
     "immortalGuProfile": {
@@ -8746,7 +8747,7 @@ export const generatedAtlasCharacters = [
     "region": "unverified",
     "faction": "待考归档",
     "role": "全文人物",
-    "intro": "《蛊真人》人物，按出身或主要势力根基归入待考。",
+    "intro": "而私密的交易，更能让这种阴暗面展现出来。 古月药姬沉吟了一下：“老身知道行规，你放心，小姑娘，老身也不问购买酒虫的那人姓名，只想打听一下最后成交的价格。” 女蛊师又鞠了一躬：“实在",
     "gu": [],
     "moves": [],
     "houses": [],

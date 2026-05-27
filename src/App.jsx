@@ -12,12 +12,16 @@ import {
   LogOut,
   Map as MapIcon,
   Network,
+  Pause,
+  Play,
   Plus,
   RefreshCw,
   Save,
   Search,
   Sparkles,
   Trash2,
+  Volume2,
+  VolumeX,
   Waves,
   X,
 } from "lucide-react";
@@ -596,15 +600,195 @@ function AtmosphereScene() {
   return <canvas className="atmosphere-scene" ref={canvasRef} aria-hidden="true" />;
 }
 
+const backgroundTrack = {
+  artist: "蜡笔小兴",
+  title: "仙尊悔而我不悔",
+  src: "/assets/audio/xianzun-hui-er-wo-bu-hui.m4a",
+};
+const musicStateKey = "guzhenren:background-track";
+
+function readMusicState() {
+  try {
+    return JSON.parse(window.sessionStorage.getItem(musicStateKey) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function displayAudioTime(value) {
+  if (!Number.isFinite(value)) return "--:--";
+  const seconds = Math.max(0, Math.floor(value));
+  return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
+}
+
+function BackgroundMusicPlayer({ floating = false }) {
+  const initialState = useRef(readMusicState());
+  const audioRef = useRef(null);
+  const [playing, setPlaying] = useState(false);
+  const [muted, setMuted] = useState(Boolean(initialState.current.muted));
+  const [volume, setVolume] = useState(initialState.current.volume ?? 0.42);
+  const [position, setPosition] = useState(initialState.current.position ?? 0);
+  const [duration, setDuration] = useState(0);
+
+  const saveState = (overrides = {}) => {
+    const audio = audioRef.current;
+    const state = {
+      muted,
+      playing: playing && !audio?.paused,
+      position: audio?.currentTime ?? position,
+      volume,
+      ...overrides,
+    };
+    window.sessionStorage.setItem(musicStateKey, JSON.stringify(state));
+  };
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return undefined;
+    audio.volume = volume;
+    audio.muted = muted;
+    saveState();
+    return undefined;
+  }, [muted, volume]);
+
+  useEffect(() => {
+    const saveBeforeLeaving = () => saveState();
+    window.addEventListener("pagehide", saveBeforeLeaving);
+    return () => {
+      saveBeforeLeaving();
+      window.removeEventListener("pagehide", saveBeforeLeaving);
+    };
+  }, [muted, playing, position, volume]);
+
+  const handleLoadedMetadata = async () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    const saved = initialState.current;
+    setDuration(audio.duration);
+    if (Number.isFinite(saved.position) && saved.position < audio.duration - 0.2) {
+      audio.currentTime = saved.position;
+      setPosition(saved.position);
+    }
+    if (saved.playing) {
+      try {
+        await audio.play();
+        setPlaying(true);
+      } catch {
+        setPlaying(false);
+      }
+    }
+  };
+
+  const togglePlayback = async () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (audio.paused) {
+      try {
+        await audio.play();
+        setPlaying(true);
+        saveState({ playing: true });
+      } catch {
+        setPlaying(false);
+      }
+      return;
+    }
+    audio.pause();
+    setPlaying(false);
+    saveState({ playing: false });
+  };
+
+  const seek = (event) => {
+    const nextPosition = Number(event.target.value);
+    const audio = audioRef.current;
+    if (audio) audio.currentTime = nextPosition;
+    setPosition(nextPosition);
+    saveState({ position: nextPosition });
+  };
+
+  const changeVolume = (event) => {
+    const nextVolume = Number(event.target.value);
+    setVolume(nextVolume);
+    setMuted(nextVolume === 0);
+  };
+
+  const toggleMuted = () => {
+    setMuted((current) => !current);
+  };
+
+  return (
+    <section className={`bgm-player${floating ? " is-floating" : ""}`} aria-label="背景音乐播放器">
+      <audio
+        loop
+        onLoadedMetadata={handleLoadedMetadata}
+        onPause={() => setPlaying(false)}
+        onPlay={() => setPlaying(true)}
+        onTimeUpdate={(event) => setPosition(event.currentTarget.currentTime)}
+        preload="metadata"
+        ref={audioRef}
+      >
+        <source src={backgroundTrack.src} type="audio/mp4" />
+      </audio>
+      <button
+        aria-label={playing ? "暂停背景音乐" : "播放背景音乐"}
+        className="bgm-command"
+        onClick={togglePlayback}
+        title={playing ? "暂停" : "播放"}
+        type="button"
+      >
+        {playing ? <Pause size={14} fill="currentColor" /> : <Play size={14} fill="currentColor" />}
+      </button>
+      <div className="bgm-track">
+        <div className="bgm-caption">
+          <strong title={`${backgroundTrack.artist} - ${backgroundTrack.title}`}>{backgroundTrack.title}</strong>
+          <time>{displayAudioTime(position)}</time>
+        </div>
+        <input
+          aria-label="音乐播放进度"
+          className="bgm-seek"
+          max={duration || 1}
+          min="0"
+          onChange={seek}
+          step="0.1"
+          style={{ "--seek-progress": `${duration ? (position / duration) * 100 : 0}%` }}
+          type="range"
+          value={Math.min(position, duration || 1)}
+        />
+      </div>
+      <button
+        aria-label={muted ? "取消静音" : "静音"}
+        className="bgm-command bgm-mute"
+        onClick={toggleMuted}
+        title={muted ? "取消静音" : "静音"}
+        type="button"
+      >
+        {muted || volume === 0 ? <VolumeX size={15} /> : <Volume2 size={15} />}
+      </button>
+      <input
+        aria-label="背景音乐音量"
+        className="bgm-volume"
+        max="1"
+        min="0"
+        onChange={changeVolume}
+        step="0.05"
+        type="range"
+        value={muted ? 0 : volume}
+      />
+    </section>
+  );
+}
+
 function SiteChrome({ content, activeRoute }) {
   return (
     <>
       <div className="progress-line" aria-hidden="true" />
       <header className="global-nav">
-        <a className="brand-mark" href="/">
-          <span className="brand-dot" />
-          {content.meta?.siteName || "蛊真人"}
-        </a>
+        <div className="nav-leading">
+          <a className="brand-mark" href="/">
+            <span className="brand-dot" />
+            {content.meta?.siteName || "蛊真人"}
+          </a>
+          <BackgroundMusicPlayer />
+        </div>
         <nav aria-label="主导航">
           {(content.nav || []).map((item) => (
             <a className={item.route === activeRoute ? "active" : ""} key={item.href} href={item.href}>
@@ -884,6 +1068,7 @@ function TimelinePage({ content }) {
       className={`chronostream${activeEra ? ` is-${activeEra}` : ""}`}
       style={{ "--river-accent": activeReach?.accent || "#83afbf" }}
     >
+      <BackgroundMusicPlayer floating />
       <picture className="chronostream-landscape" aria-hidden="true">
         <source media="(max-width: 700px)" srcSet="/assets/timeline/river-of-time-epoch-mobile.webp" />
         <img alt="" src="/assets/timeline/river-of-time-epoch-desktop.webp" />
