@@ -710,40 +710,38 @@ function MomentsPage({ content }) {
 }
 
 const timeRiverDesktopLayout = {
-  source: { x: 7, y: 12 },
-  first: { x: 35, y: 34, side: "east" },
-  secondGate: { x: 56, y: 53, side: "west" },
-  second: [
-    { x: 59, y: 57, side: "east" },
-    { x: 62, y: 60, side: "west" },
-    { x: 65, y: 63, side: "east" },
-    { x: 68, y: 66, side: "west" },
-    { x: 71, y: 69, side: "east" },
-    { x: 74, y: 72, side: "west" },
-    { x: 77, y: 75, side: "east" },
-    { x: 80, y: 78, side: "west" },
-    { x: 83, y: 81, side: "east" },
-    { x: 86, y: 84, side: "west" },
-    { x: 89, y: 87, side: "west" },
+  origin: { x: 78, y: 78 },
+  first: { x: 84, y: 82, side: "west" },
+  secondGate: { x: 28, y: 27, side: "east" },
+  secondDetails: [
+    { x: 31, y: 30, side: "east" },
+    { x: 34, y: 33, side: "west" },
+    { x: 37, y: 36, side: "east" },
+    { x: 40, y: 39, side: "west" },
+    { x: 43, y: 42, side: "east" },
+    { x: 46, y: 45, side: "west" },
+    { x: 49, y: 48, side: "east" },
+    { x: 52, y: 51, side: "west" },
+    { x: 55, y: 54, side: "east" },
+    { x: 58, y: 57, side: "west" },
   ],
 };
 
 const timeRiverMobileLayout = {
-  source: { x: 9, y: 10 },
-  first: { x: 30, y: 34, side: "east" },
-  secondGate: { x: 54, y: 55, side: "west" },
-  second: [
-    { x: 57, y: 58, side: "east" },
-    { x: 60, y: 61, side: "west" },
-    { x: 63, y: 64, side: "east" },
-    { x: 66, y: 67, side: "west" },
-    { x: 69, y: 70, side: "east" },
-    { x: 72, y: 73, side: "west" },
-    { x: 75, y: 76, side: "east" },
-    { x: 78, y: 79, side: "west" },
-    { x: 81, y: 82, side: "east" },
-    { x: 84, y: 85, side: "west" },
-    { x: 87, y: 88, side: "west" },
+  origin: { x: 77, y: 79 },
+  first: { x: 83, y: 83, side: "west" },
+  secondGate: { x: 25, y: 26, side: "east" },
+  secondDetails: [
+    { x: 28, y: 29, side: "east" },
+    { x: 31, y: 32, side: "west" },
+    { x: 34, y: 35, side: "east" },
+    { x: 37, y: 38, side: "west" },
+    { x: 40, y: 41, side: "east" },
+    { x: 43, y: 44, side: "west" },
+    { x: 46, y: 47, side: "east" },
+    { x: 49, y: 50, side: "west" },
+    { x: 52, y: 53, side: "east" },
+    { x: 55, y: 56, side: "west" },
   ],
 };
 
@@ -751,12 +749,12 @@ function TimelinePage({ content }) {
   const reaches = content.timelineRiver || timeRiverReaches;
   const [isNarrow, setIsNarrow] = useState(() => window.matchMedia("(max-width: 700px)").matches);
   const layout = isNarrow ? timeRiverMobileLayout : timeRiverDesktopLayout;
-  const petPointRef = useRef(layout.source);
+  const petPointRef = useRef(layout.origin);
   const travelFrameRef = useRef(0);
   const [activeEra, setActiveEra] = useState(null);
   const [activeIndex, setActiveIndex] = useState(null);
   const [memoryIndex, setMemoryIndex] = useState(null);
-  const [petPoint, setPetPoint] = useState(layout.source);
+  const [petPoint, setPetPoint] = useState(layout.origin);
   const [petDirection, setPetDirection] = useState("right");
   const [travelling, setTravelling] = useState(false);
   const activeReach = activeIndex === null ? null : reaches[activeIndex];
@@ -774,10 +772,12 @@ function TimelinePage({ content }) {
 
   useEffect(() => {
     const point = activeIndex === null
-      ? layout.source
+      ? layout.origin
       : activeIndex === 0
         ? layout.first
-        : layout.second[activeIndex - 1];
+        : activeIndex === 1
+          ? layout.secondGate
+          : layout.secondDetails[activeIndex - 2];
     petPointRef.current = point;
     setPetPoint(point);
   }, [isNarrow]);
@@ -827,7 +827,7 @@ function TimelinePage({ content }) {
 
   const enterEra = (era) => {
     const index = era === "first" ? 0 : 1;
-    const target = era === "first" ? layout.first : layout.second[0];
+    const target = era === "first" ? layout.first : layout.secondGate;
     setActiveEra(era);
     setActiveIndex(index);
     movePetTo(target, () => setMemoryIndex(index));
@@ -836,14 +836,14 @@ function TimelinePage({ content }) {
   const travelToSecondReach = (index) => {
     setActiveEra("second");
     setActiveIndex(index);
-    movePetTo(layout.second[index - 1], () => setMemoryIndex(index));
+    movePetTo(layout.secondDetails[index - 2], () => setMemoryIndex(index));
   };
 
-  const returnToSource = () => {
+  const returnToOverview = () => {
     setActiveEra(null);
     setActiveIndex(null);
     setMemoryIndex(null);
-    movePetTo(layout.source, () => {});
+    movePetTo(layout.origin, () => {});
   };
 
   const closeMemory = () => {
@@ -860,25 +860,31 @@ function TimelinePage({ content }) {
         <img alt="" src="/assets/timeline/river-of-time-epoch-desktop.webp" />
       </picture>
       <div className="chronostream-shade" aria-hidden="true" />
+      <div className="chronostream-water-motion" aria-hidden="true">
+        <span />
+        <span />
+        <span />
+      </div>
       <div className="chronostream-motes" aria-hidden="true">
         {Array.from({ length: 14 }, (_, index) => <span key={index} />)}
       </div>
       <svg className="chronostream-flow" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
         <path className="chronostream-main-current" d="M -4 10 C 9 13, 20 20, 29 29 S 45 43, 55 53 S 76 74, 104 96" />
-        <path className={`chronostream-era-current first${activeEra === "second" ? " is-muted" : ""}`} d="M 13 18 C 22 23, 28 29, 39 39" />
-        <path className={`chronostream-era-current second${activeEra === "first" ? " is-muted" : ""}`} d="M 53 52 C 63 60, 74 75, 92 90" />
+        <path className={`chronostream-era-current second${activeEra === "first" ? " is-muted" : ""}`} d="M 18 18 C 26 23, 34 31, 44 43 S 52 51, 61 59" />
+        <path className={`chronostream-era-current first${activeEra === "second" ? " is-muted" : ""}`} d="M 62 60 C 69 67, 77 74, 92 87" />
       </svg>
       <a className="chronostream-exit" href="/" aria-label="返回首页" title="返回首页">
         <ArrowLeft size={18} />
       </a>
       {activeEra && (
-        <button className="chronostream-overview" onClick={returnToSource} type="button" aria-label="回到长河源头" title="回到长河源头">
+        <button className="chronostream-overview" onClick={returnToOverview} type="button" aria-label="回到长河总览" title="回到长河总览">
           <Waves size={18} />
         </button>
       )}
 
       <div className="chronostream-eras" aria-label="两世河域">
         <button
+          aria-label="进入第一世，五百年"
           aria-current={activeEra === "first" ? "true" : undefined}
           className={`chronostream-era first${activeEra === "first" ? " is-active" : ""}${activeEra === "second" ? " is-muted" : ""}`}
           onClick={() => enterEra("first")}
@@ -893,6 +899,7 @@ function TimelinePage({ content }) {
           </span>
         </button>
         <button
+          aria-label="进入第二世，重生后五十七年"
           aria-current={activeEra === "second" ? "true" : undefined}
           className={`chronostream-era second${activeEra === "second" ? " is-active" : ""}${activeEra === "first" ? " is-muted" : ""}`}
           onClick={() => enterEra("second")}
@@ -910,9 +917,9 @@ function TimelinePage({ content }) {
 
       {activeEra === "second" && (
         <div className="chronostream-nodes" aria-label="第二世纪年">
-          {reaches.slice(1).map((reach, offset) => {
-            const index = offset + 1;
-            const point = layout.second[offset];
+          {reaches.slice(2).map((reach, offset) => {
+            const index = offset + 2;
+            const point = layout.secondDetails[offset];
             return (
               <button
                 aria-current={index === activeIndex ? "true" : undefined}
@@ -935,7 +942,7 @@ function TimelinePage({ content }) {
       )}
 
       <div
-        aria-label="沿光阴长河行走的方源"
+        aria-label="逆游光阴长河的方源"
         className={`chronostream-pet ${travelling ? `is-moving is-${petDirection}` : "is-idle"}`}
         style={{ "--pet-x": `${petPoint.x}%`, "--pet-y": `${petPoint.y}%` }}
       >
@@ -944,7 +951,7 @@ function TimelinePage({ content }) {
 
       {memoryReach && (
         <aside
-          className={`chronostream-memory${memoryIndex > 6 ? " is-upper" : ""}${(memoryIndex === 0 ? layout.first.x : layout.second[memoryIndex - 1].x) > 55 ? " on-left" : " on-right"}`}
+          className={`chronostream-memory${memoryIndex > 6 ? " is-upper" : ""}${(memoryIndex === 0 ? layout.first.x : memoryIndex === 1 ? layout.secondGate.x : layout.secondDetails[memoryIndex - 2].x) > 55 ? " on-left" : " on-right"}`}
           key={memoryReach.title}
         >
           <button className="chronostream-close" onClick={closeMemory} type="button" aria-label="关闭剧情">
@@ -953,6 +960,15 @@ function TimelinePage({ content }) {
           <p>{memoryIndex === 0 ? "第一世 / 五百年" : `第二世 / ${memoryReach.age}`}</p>
           <h2>{memoryReach.title}</h2>
           <span>{memoryReach.summary}</span>
+          <button
+            className="chronostream-era-switch"
+            onClick={() => enterEra(memoryIndex === 0 ? "second" : "first")}
+            type="button"
+          >
+            <Waves size={15} />
+            <span>{memoryIndex === 0 ? "逆流重生至第二世" : "顺流回望第一世"}</span>
+            <small>{memoryIndex === 0 ? "五十七年" : "五百年"}</small>
+          </button>
           <ol>
             {memoryReach.events.map((event) => <li key={event}>{event}</li>)}
           </ol>

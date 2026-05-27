@@ -736,6 +736,7 @@ button {
 .chronostream-landscape,
 .chronostream-landscape img,
 .chronostream-shade,
+.chronostream-water-motion,
 .chronostream-flow,
 .chronostream-motes,
 .chronostream-eras,
@@ -760,8 +761,57 @@ button {
   pointer-events: none;
 }
 
-.chronostream-flow {
+.chronostream-water-motion {
   z-index: 2;
+  overflow: hidden;
+  opacity: 0.44;
+  pointer-events: none;
+  mask-image: linear-gradient(134deg, transparent 4%, #000 21%, #000 76%, transparent 98%);
+}
+
+.chronostream-water-motion::before {
+  position: absolute;
+  inset: -4%;
+  background:
+    url("/assets/timeline/river-of-time-epoch-desktop.webp") center / cover no-repeat;
+  content: "";
+  filter: brightness(1.16) contrast(1.08) saturate(1.05);
+  mix-blend-mode: screen;
+  opacity: 0.22;
+  transform-origin: center;
+  animation: chronostream-surface-drift 24s ease-in-out infinite alternate;
+}
+
+.chronostream-water-motion span {
+  position: absolute;
+  top: -10%;
+  left: -16%;
+  width: 126%;
+  height: 118%;
+  background:
+    linear-gradient(133deg, transparent 16%, rgba(193, 221, 233, 0.1) 34%, transparent 36%, transparent 62%, rgba(219, 188, 106, 0.1) 64%, transparent 66%);
+  mix-blend-mode: screen;
+  opacity: 0.42;
+  transform: translate3d(-4%, -3%, 0);
+  animation: chronostream-ripple-pass 21s linear infinite;
+}
+
+.chronostream-water-motion span:nth-child(2) {
+  opacity: 0.26;
+  transform: translate3d(-11%, -8%, 0) scale(1.05);
+  animation-duration: 29s;
+  animation-delay: -13s;
+}
+
+.chronostream-water-motion span:nth-child(3) {
+  opacity: 0.18;
+  transform: translate3d(-7%, -6%, 0) scale(0.97);
+  animation-duration: 34s;
+  animation-delay: -5s;
+}
+
+.chronostream-flow {
+  z-index: 3;
   pointer-events: none;
 }
 
@@ -796,7 +846,7 @@ button {
 }
 
 .chronostream-motes {
-  z-index: 3;
+  z-index: 4;
   pointer-events: none;
 }
 
@@ -866,7 +916,8 @@ button {
 }
 
 .chronostream-eras {
-  z-index: 9;
+  z-index: 14;
+  pointer-events: none;
 }
 
 .chronostream-era {
@@ -882,6 +933,7 @@ button {
   color: rgba(247, 242, 231, 0.74);
   transform: translate(-50%, -50%);
   transition: filter 720ms ease, opacity 720ms ease;
+  pointer-events: auto;
 }
 
 .chronostream-era::before {
@@ -891,8 +943,8 @@ button {
 }
 
 .chronostream-era.is-muted {
-  opacity: 0.2;
-  filter: blur(3.4px);
+  opacity: 0.46;
+  filter: blur(1.2px);
 }
 
 .chronostream-era-copy {
@@ -949,7 +1001,7 @@ button {
 }
 
 .chronostream-nodes {
-  z-index: 10;
+  z-index: 12;
 }
 
 .chronostream-node {
@@ -1060,33 +1112,67 @@ button {
   z-index: 22;
   top: var(--pet-y);
   left: var(--pet-x);
-  width: clamp(72px, 7.4vw, 114px);
-  aspect-ratio: 192 / 208;
+  width: clamp(112px, 10.4vw, 168px);
+  aspect-ratio: 262 / 176;
   pointer-events: none;
-  transform: translate(-50%, -78%);
+  transform: translate(-50%, -54%);
   filter: drop-shadow(0 7px 11px rgba(0, 0, 0, 0.62));
 }
 
+.chronostream-pet::before {
+  position: absolute;
+  z-index: 0;
+  right: 5%;
+  bottom: 10%;
+  left: 4%;
+  height: 18%;
+  border: 1px solid rgba(174, 216, 231, 0.28);
+  border-radius: 50%;
+  content: "";
+  opacity: 0.46;
+  transform: scaleX(0.74);
+  animation: chronostream-pet-wake 3.4s ease-out infinite;
+}
+
+.chronostream-pet::after {
+  position: absolute;
+  z-index: 2;
+  right: 8%;
+  bottom: 18%;
+  left: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(216, 236, 243, 0.64) 30%, rgba(216, 236, 243, 0.25) 70%, transparent);
+  content: "";
+  opacity: 0.48;
+}
+
 .chronostream-pet span {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
   height: 100%;
-  background-image: url("/assets/pets/fang-yuan-spritesheet.webp");
+  background-image: url("/assets/pets/fang-yuan-swim-strip.webp");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 800% 900%;
+  background-size: 800% 100%;
 }
 
 .chronostream-pet.is-idle span {
-  animation: fang-yuan-idle 1.7s steps(5) infinite;
+  animation: fang-yuan-swim 1.8s steps(7) infinite;
 }
 
 .chronostream-pet.is-moving.is-right span {
-  animation: fang-yuan-walk-right 0.8s steps(7) infinite;
+  animation: fang-yuan-swim 0.86s steps(7) infinite;
+  transform: scaleX(-1);
 }
 
 .chronostream-pet.is-moving.is-left span {
-  animation: fang-yuan-walk-left 0.8s steps(7) infinite;
+  animation: fang-yuan-swim 0.82s steps(7) infinite;
+}
+
+.chronostream-pet.is-moving::before {
+  animation-duration: 1.85s;
 }
 
 .chronostream-memory {
@@ -1159,6 +1245,37 @@ button {
   line-height: 1.62;
 }
 
+.chronostream-era-switch {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 12px 13px;
+  border: 1px solid rgba(222, 195, 124, 0.22);
+  border-radius: 5px;
+  background: rgba(222, 195, 124, 0.055);
+  color: rgba(247, 242, 231, 0.84);
+  font-size: 0.78rem;
+  transition: border-color 220ms ease, background 220ms ease, color 220ms ease;
+}
+
+.chronostream-era-switch:hover {
+  border-color: rgba(222, 195, 124, 0.46);
+  background: rgba(222, 195, 124, 0.1);
+  color: #fff;
+}
+
+.chronostream-era-switch svg {
+  color: rgba(222, 195, 124, 0.9);
+}
+
+.chronostream-era-switch small {
+  margin-left: auto;
+  color: rgba(222, 195, 124, 0.72);
+  font-size: 0.7rem;
+}
+
 @keyframes chronostream-current {
   from {
     stroke-dashoffset: 0;
@@ -1166,6 +1283,28 @@ button {
 
   to {
     stroke-dashoffset: -36;
+  }
+}
+
+@keyframes chronostream-surface-drift {
+  from {
+    transform: translate3d(-0.7%, -0.55%, 0) scale(1.016);
+  }
+
+  to {
+    transform: translate3d(0.75%, 0.7%, 0) scale(1.025);
+  }
+}
+
+@keyframes chronostream-ripple-pass {
+  from {
+    background-position: 0 0;
+    transform: translate3d(-4%, -3%, 0);
+  }
+
+  to {
+    background-position: 70px 94px;
+    transform: translate3d(5%, 5%, 0);
   }
 }
 
@@ -1193,33 +1332,25 @@ button {
   }
 }
 
-@keyframes fang-yuan-idle {
+@keyframes fang-yuan-swim {
   from {
     background-position: 0% 0%;
   }
 
   to {
-    background-position: 71.428% 0%;
+    background-position: 100% 0%;
   }
 }
 
-@keyframes fang-yuan-walk-right {
+@keyframes chronostream-pet-wake {
   from {
-    background-position: 0% 12.5%;
+    opacity: 0.46;
+    transform: scaleX(0.65) scaleY(0.78);
   }
 
   to {
-    background-position: 100% 12.5%;
-  }
-}
-
-@keyframes fang-yuan-walk-left {
-  from {
-    background-position: 0% 25%;
-  }
-
-  to {
-    background-position: 100% 25%;
+    opacity: 0;
+    transform: scaleX(1.12) scaleY(1.46);
   }
 }
 
@@ -4721,6 +4852,10 @@ button {
     object-position: center top;
   }
 
+  .chronostream-water-motion::before {
+    background-image: url("/assets/timeline/river-of-time-epoch-mobile.webp");
+  }
+
   .chronostream-shade {
     background:
       radial-gradient(circle at 50% 50%, transparent 25%, rgba(3, 6, 7, 0.12) 68%, rgba(3, 6, 7, 0.46) 100%);
@@ -4753,7 +4888,9 @@ button {
   }
 
   .chronostream-era.second .chronostream-era-copy {
-    right: 24px;
+    right: auto;
+    left: 42px;
+    text-align: left;
   }
 
   .chronostream-era.first.is-active .chronostream-era-copy {
@@ -4761,7 +4898,9 @@ button {
   }
 
   .chronostream-era.second.is-active .chronostream-era-copy {
-    right: 64px;
+    right: auto;
+    left: 84px;
+    text-align: left;
   }
 
   .chronostream-era-copy small {
@@ -4817,7 +4956,7 @@ button {
   }
 
   .chronostream-pet {
-    width: clamp(58px, 19vw, 76px);
+    width: clamp(94px, 29vw, 126px);
   }
 
   .chronostream-memory {
@@ -4844,6 +4983,10 @@ button {
 
   .chronostream-memory ol {
     font-size: 0.74rem;
+  }
+
+  .chronostream-era-switch {
+    margin-bottom: 13px;
   }
 }
 
